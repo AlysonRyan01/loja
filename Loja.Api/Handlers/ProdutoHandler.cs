@@ -37,7 +37,7 @@ public class ProdutoHandler : IProdutoHandler
             
             foreach (var imagem in produto.Imagens)
             {
-                imagem.ProdutoId = produto.Id;
+                imagem.ProdutoId = produto.Id; 
             }
             
             await _context.Produtos.AddAsync(produto);

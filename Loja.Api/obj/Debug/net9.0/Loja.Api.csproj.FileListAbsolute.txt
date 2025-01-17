@@ -12,12 +12,16 @@ D:\GitHubRepository\loja\Loja.Api\bin\Debug\net9.0\Humanizer.dll
 D:\GitHubRepository\loja\Loja.Api\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 D:\GitHubRepository\loja\Loja.Api\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 D:\GitHubRepository\loja\Loja.Api\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\GitHubRepository\loja\Loja.Api\bin\Debug\net9.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\GitHubRepository\loja\Loja.Api\bin\Debug\net9.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
 D:\GitHubRepository\loja\Loja.Api\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+D:\GitHubRepository\loja\Loja.Api\bin\Debug\net9.0\Microsoft.AspNetCore.Razor.Language.dll
 D:\GitHubRepository\loja\Loja.Api\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\GitHubRepository\loja\Loja.Api\bin\Debug\net9.0\Microsoft.Build.Locator.dll
 D:\GitHubRepository\loja\Loja.Api\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
 D:\GitHubRepository\loja\Loja.Api\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
 D:\GitHubRepository\loja\Loja.Api\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\GitHubRepository\loja\Loja.Api\bin\Debug\net9.0\Microsoft.CodeAnalysis.Razor.dll
 D:\GitHubRepository\loja\Loja.Api\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
 D:\GitHubRepository\loja\Loja.Api\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
 D:\GitHubRepository\loja\Loja.Api\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
@@ -53,6 +57,8 @@ D:\GitHubRepository\loja\Loja.Api\bin\Debug\net9.0\Microsoft.OpenApi.dll
 D:\GitHubRepository\loja\Loja.Api\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
 D:\GitHubRepository\loja\Loja.Api\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
 D:\GitHubRepository\loja\Loja.Api\bin\Debug\net9.0\Mono.TextTemplating.dll
+D:\GitHubRepository\loja\Loja.Api\bin\Debug\net9.0\Newtonsoft.Json.dll
+D:\GitHubRepository\loja\Loja.Api\bin\Debug\net9.0\Newtonsoft.Json.Bson.dll
 D:\GitHubRepository\loja\Loja.Api\bin\Debug\net9.0\SQLitePCLRaw.batteries_v2.dll
 D:\GitHubRepository\loja\Loja.Api\bin\Debug\net9.0\SQLitePCLRaw.core.dll
 D:\GitHubRepository\loja\Loja.Api\bin\Debug\net9.0\SQLitePCLRaw.provider.e_sqlite3.dll
@@ -200,3 +206,4 @@ D:\GitHubRepository\loja\Loja.Api\obj\Debug\net9.0\refint\Loja.Api.dll
 D:\GitHubRepository\loja\Loja.Api\obj\Debug\net9.0\Loja.Api.pdb
 D:\GitHubRepository\loja\Loja.Api\obj\Debug\net9.0\Loja.Api.genruntimeconfig.cache
 D:\GitHubRepository\loja\Loja.Api\obj\Debug\net9.0\ref\Loja.Api.dll
+D:\GitHubRepository\loja\Loja.Api\bin\Debug\net9.0\Loja.Api.staticwebassets.runtime.json

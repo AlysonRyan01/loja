@@ -1,6 +1,5 @@
 ﻿using Loja.Api.Data;
 using Loja.Core.Handlers;
-using Loja.Core.Models;
 using Loja.Core.Requisicoes.Produtos;
 using Loja.Core.Respostas;
 using Microsoft.AspNetCore.Mvc;
@@ -35,7 +34,7 @@ public class ProdutoController : ControllerBase
                     result.Dados.Descricao,
                     result.Dados.Preco,
                     ImagensTotais = result.Dados.Imagens.Count,
-                }, 201, "Produto criado com sucesso!"))
+                }, 201, result.Mensagem))
                 : StatusCode(500, "Algo deu errado");
         }
         catch (Exception ex)

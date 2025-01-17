@@ -1,4 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Http;
+
 
 namespace Loja.Core.Requisicoes.Produtos;
 
@@ -17,5 +19,5 @@ public class CriarProdutoRequisicao
     public decimal Preco { get; set; }
 
     [MinLength(1, ErrorMessage = "O produto deve ter pelo menos uma imagem.")]
-    public List<string> Imagens { get; set; } = new();
+    public List<IFormFile> Imagens { get; set; } = null!;
 }

@@ -25,8 +25,5 @@ public class ProdutoMap : IEntityTypeConfiguration<Produto>
         builder.Property(x => x.Preco)
             .IsRequired()
             .HasColumnType("DECIMAL(18,2)");
-
-        builder.Property(x => x.Imagens)
-            .HasColumnType("VARCHAR");
     }
 }

@@ -6,5 +6,5 @@ public class Produto
     public string Titulo { get; set; } = String.Empty;
     public string Descricao { get; set; } = String.Empty;
     public decimal Preco { get; set; }
-    public List<string> Imagens { get; set; } = new();
+    public List<Imagem> Imagens { get; set; } = new();
 }

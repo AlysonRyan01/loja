@@ -5,5 +5,5 @@ namespace Loja.Core.Services;
 
 public interface IUploadImagemService
 {
-    Task<List<Imagem>?> UploadImagem(List<IFormFile> imagens);
+    Task<List<Imagem>> UploadImagem(List<IFormFile> imagens);
 }

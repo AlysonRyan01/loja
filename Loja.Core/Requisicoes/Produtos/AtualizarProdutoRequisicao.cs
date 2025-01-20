@@ -1,9 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Http;
 
 namespace Loja.Core.Requisicoes.Produtos;
 
 public class AtualizarProdutoRequisicao
 {
+    public long Id { get; set; }
+    
     [Required(ErrorMessage = "O título é obrigatório.")]
     [StringLength(100, ErrorMessage = "O título não pode ter mais de 100 caracteres.")]
     public string Titulo { get; set; } = string.Empty;
@@ -17,5 +20,5 @@ public class AtualizarProdutoRequisicao
     public decimal Preco { get; set; }
 
     [MinLength(1, ErrorMessage = "O produto deve ter pelo menos uma imagem.")]
-    public List<string> Imagens { get; set; } = new();
+    public List<IFormFile> Imagens { get; set; } = new();
 }

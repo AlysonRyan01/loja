@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loja.Core", "Loja.Core\Loja
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loja.Api", "Loja.Api\Loja.Api.csproj", "{787C3DFE-19EA-45BF-80B9-90AB66B96126}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loja.Web", "Loja.Web\Loja.Web.csproj", "{B262C43A-BCCC-4FBC-9DC8-A3A9654F190B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{787C3DFE-19EA-45BF-80B9-90AB66B96126}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{787C3DFE-19EA-45BF-80B9-90AB66B96126}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{787C3DFE-19EA-45BF-80B9-90AB66B96126}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B262C43A-BCCC-4FBC-9DC8-A3A9654F190B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B262C43A-BCCC-4FBC-9DC8-A3A9654F190B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B262C43A-BCCC-4FBC-9DC8-A3A9654F190B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B262C43A-BCCC-4FBC-9DC8-A3A9654F190B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

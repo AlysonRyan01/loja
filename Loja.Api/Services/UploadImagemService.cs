@@ -15,32 +15,42 @@ public class UploadImagemService : IUploadImagemService
         }
     }
     
-    public async Task<List<Imagem>?> UploadImagem(List<IFormFile> imagens)
+    public async Task<List<Imagem>> UploadImagem(List<IFormFile> imagens)
     {
-        var ListaDeImagens = new List<Imagem>();
-        
-        if (!imagens.Any()  || string.IsNullOrWhiteSpace(imagens.First()?.FileName))
-            return null;
-
-        foreach (var imagem in imagens)
+        try
         {
-            var fileName = Path.GetFileNameWithoutExtension(imagem.FileName) + "_" + Guid.NewGuid().ToString() + Path.GetExtension(imagem.FileName);
-            
-            var filePath = Path.Combine(_diretorioImagens, fileName);
-            
-            var imagemUrl = Path.Combine("/Imagens", fileName);
-            
-            await using (var stream = new FileStream(filePath, FileMode.Create))
-            {
-                await imagem.CopyToAsync(stream);
-            }
-            
-            ListaDeImagens.Add(new Imagem
-            {
-                Url = imagemUrl,
-            });
-        }
+            var listaDeImagens = new List<Imagem>();
 
-        return ListaDeImagens;
+            foreach (var imagem in imagens)
+            {
+                var fileName = Path.GetFileNameWithoutExtension(imagem.FileName) + "_" + Guid.NewGuid().ToString() + Path.GetExtension(imagem.FileName);
+            
+                var filePath = Path.Combine(_diretorioImagens, fileName);
+            
+                var imagemUrl = Path.Combine("/Imagens", fileName);
+            
+                await using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await imagem.CopyToAsync(stream);
+                }
+            
+                listaDeImagens.Add(new Imagem
+                {
+                    Url = imagemUrl,
+                });
+            }
+
+            return listaDeImagens;
+        }
+        catch (IOException ex)
+        {
+            Console.WriteLine(ex);
+            throw;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex);
+            throw;
+        }
     }
 }

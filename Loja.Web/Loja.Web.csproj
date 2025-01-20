@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Dima.Web</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="9.0.0" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="9.0.1" />
+    <PackageReference Include="MudBlazor" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\sample-data\weather.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Loja.Core\Loja.Core.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -90,6 +90,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\1665092374210TV1_f7a6de2f-7bfe-4ea7-ac53-f748b08b0fc3.jpeg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\mp2960.131_zoomtv2_6c21ff8a-9562-4050-8cf2-6e344b966a7d.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Loja.Api</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Loja.Api</BasePath>
+      <RelativePath>Imagens/mp2960.131_zoomtv2_6c21ff8a-9562-4050-8cf2-6e344b966a7d.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>l2zioie4sa</Fingerprint>
+      <Integrity>DQLUeufCXqo/xQEoYnsfypdDQHuGyuuhrJ0Nu8BQkU0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\mp2960.131_zoomtv2_6c21ff8a-9562-4050-8cf2-6e344b966a7d.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\mp2960.131_zoomtv2_92566caf-b8af-4bee-8dea-f99292deeede.jpeg'))">
       <SourceType>Package</SourceType>
       <SourceId>Loja.Api</SourceId>

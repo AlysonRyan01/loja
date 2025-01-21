@@ -12,17 +12,13 @@ public class CarrinhoItemMap : IEntityTypeConfiguration<CarrinhoItem>
 
         builder.HasKey(x => x.Id);
 
-        builder.Property(x => x.CarrinhoId)
-            .IsRequired()
-            .HasColumnType("BIGINT");
-
         builder.Property(x => x.Quantidade)
             .IsRequired()
             .HasColumnType("INT");
 
-        builder.HasOne(x => x.Produto)
-            .WithMany()
-            .HasForeignKey(x => x.ProdutoId)
-            .OnDelete(DeleteBehavior.Restrict);
+        builder.HasOne(x => x.Carrinho)
+            .WithMany(c => c.CarrinhoItens) 
+            .HasForeignKey(x => x.CarrinhoId)
+            .OnDelete(DeleteBehavior.Cascade);
     }
 }

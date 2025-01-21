@@ -26,6 +26,9 @@ namespace Loja.Api.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("INTEGER");
 
+                    b.Property<long>("CarrinhoId")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("TEXT");
@@ -73,6 +76,9 @@ namespace Loja.Api.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CarrinhoId")
+                        .IsUnique();
+
                     b.HasIndex("NormalizedEmail")
                         .IsUnique();
 
@@ -88,9 +94,6 @@ namespace Loja.Api.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<long>("UserId")
-                        .HasColumnType("BIGINT");
-
                     b.HasKey("Id");
 
                     b.ToTable("Carrinho", (string)null);
@@ -103,7 +106,7 @@ namespace Loja.Api.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<long>("CarrinhoId")
-                        .HasColumnType("BIGINT");
+                        .HasColumnType("INTEGER");
 
                     b.Property<long>("ProdutoId")
                         .HasColumnType("INTEGER");
@@ -293,10 +296,21 @@ namespace Loja.Api.Migrations
                     b.ToTable("IdentityUserToken", (string)null);
                 });
 
+            modelBuilder.Entity("Loja.Api.Models.User", b =>
+                {
+                    b.HasOne("Loja.Core.Models.Carrinho", "Carrinho")
+                        .WithOne()
+                        .HasForeignKey("Loja.Api.Models.User", "CarrinhoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Carrinho");
+                });
+
             modelBuilder.Entity("Loja.Core.Models.CarrinhoItem", b =>
                 {
                     b.HasOne("Loja.Core.Models.Carrinho", "Carrinho")
-                        .WithMany("CarrinhoItems")
+                        .WithMany("CarrinhoItens")
                         .HasForeignKey("CarrinhoId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -304,7 +318,7 @@ namespace Loja.Api.Migrations
                     b.HasOne("Loja.Core.Models.Produto", "Produto")
                         .WithMany()
                         .HasForeignKey("ProdutoId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Carrinho");
@@ -373,7 +387,7 @@ namespace Loja.Api.Migrations
 
             modelBuilder.Entity("Loja.Core.Models.Carrinho", b =>
                 {
-                    b.Navigation("CarrinhoItems");
+                    b.Navigation("CarrinhoItens");
                 });
 
             modelBuilder.Entity("Loja.Core.Models.Produto", b =>

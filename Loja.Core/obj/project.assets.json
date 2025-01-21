@@ -455,7 +455,6 @@
       "packagesPath": "C:\\Users\\alyso\\.nuget\\packages\\",
       "outputPath": "D:\\GitHubRepository\\loja\\Loja.Core\\obj\\",
       "projectStyle": "PackageReference",
-      "UsingMicrosoftNETSdk": false,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
@@ -486,7 +485,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net9.0": {

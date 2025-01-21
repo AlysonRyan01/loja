@@ -5,6 +5,7 @@ using Loja.Api.Services;
 using Loja.Core;
 using Loja.Core.Handlers;
 using Loja.Core.Services;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -24,17 +25,28 @@ builder.Services.AddIdentityCore<User>()
     .AddEntityFrameworkStores<LojaDataContext>()
     .AddApiEndpoints();
 
+builder.Services.AddAuthentication(IdentityConstants.ApplicationScheme)
+    .AddIdentityCookies();
+
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.Cookie.Name = "Identity.Cookie";
+    options.Cookie.HttpOnly = true;
+    options.ExpireTimeSpan = TimeSpan.FromDays(14);
+    options.LoginPath = "/Account/Login";
+    options.AccessDeniedPath = "/Account/AccessDenied";
+    options.SlidingExpiration = true;
+});
+
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(x =>
 {
     x.CustomSchemaIds(n => n.FullName); 
 });
 
-builder.Services.AddAuthentication(IdentityConstants.ApplicationScheme)
-    .AddIdentityCookies(); 
-builder.Services.AddAuthorization();
-
 builder.Services.AddTransient<IProdutoHandler, ProdutoHandler>();
+builder.Services.AddTransient<IIdentityHandler, IdentityHandler>();
 builder.Services.AddTransient<IUploadImagemService, UploadImagemService>();
 
 var app = builder.Build();

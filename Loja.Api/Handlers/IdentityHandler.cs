@@ -1,11 +1,13 @@
 ﻿using System.Data.Common;
+using System.Security.Claims;
 using Loja.Api.Data;
-using Loja.Api.Models;
 using Loja.Core.Handlers;
 using Loja.Core.Models;
+using Loja.Core.Models.Identity;
 using Loja.Core.Requisicoes.Identity;
 using Loja.Core.Respostas;
 using Microsoft.AspNetCore.Identity;
+using User = Loja.Api.Models.User;
 
 namespace Loja.Api.Handlers;
 
@@ -95,6 +97,63 @@ public class IdentityHandler : IIdentityHandler
         catch (Exception e)
         {
             return new Resposta<string>(e.Message, 500, "Erro no servidor");
+        }
+    }
+
+    public async Task<Resposta<UserInfo>> UserInfo(ClaimsPrincipal logedUser)
+    {
+        try
+        {
+            var userId = logedUser?.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
+            
+            if(string.IsNullOrEmpty(userId))
+                return new Resposta<UserInfo>(null, 401, "Usuario nao autenticado");
+            
+            var user = await _userManager.FindByIdAsync(userId);
+            
+            if(user == null)
+                return new Resposta<UserInfo>(null, 404, "Usuario nao encontrado");
+
+            var userInfo = new UserInfo
+            {
+                Email = user.Email,
+                IsEmailConfirmed = user.EmailConfirmed
+            };
+            
+            return new Resposta<UserInfo>(userInfo, 200, "Usuario encontrado com sucesso");
+
+        }
+        catch (Exception e)
+        {
+            return new Resposta<UserInfo>(null, 500, "Erro no servidor");
+        }
+    }
+    
+    public async Task<Resposta<IEnumerable<RoleClaim>>> UserRoles(ClaimsPrincipal logedUser)
+    {
+        try
+        {
+            if(logedUser.Identity == null || !logedUser.Identity.IsAuthenticated)
+                return new Resposta<IEnumerable<RoleClaim>>(null, 401, "Usuario nao autenticado");
+            
+            var identity = (ClaimsIdentity)logedUser.Identity;
+            var roles = identity
+                .FindAll(identity.RoleClaimType)
+                .Select(x => new RoleClaim
+                {
+                    Issuer = x.Issuer,
+                    OriginalIssuer = x.OriginalIssuer,
+                    Type = x.Type,
+                    Value = x.Value,
+                    ValueType = x.ValueType
+                });
+            
+            return new Resposta<IEnumerable<RoleClaim>>(roles, 200, "Roles encontradas com sucesso!");
+
+        }
+        catch (Exception e)
+        {
+            return new Resposta<IEnumerable<RoleClaim>>(null, 500, "Erro no servidor");
         }
     }
 }

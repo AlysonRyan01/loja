@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Loja.Api.Controllers;
 
-[Route("Account")]
+[Route("v1/identity/")]
 [ApiController]
 public class IdentityController : ControllerBase
 {
@@ -18,7 +18,7 @@ public class IdentityController : ControllerBase
         _logger = logger;
     }
     
-    [HttpPost("/v1/conta/login")]
+    [HttpPost("/login")]
     public async Task<IActionResult> Login(LoginRequest request)
     {
         try
@@ -38,7 +38,7 @@ public class IdentityController : ControllerBase
         }
     }
     
-    [HttpPost("/v1/conta/register")]
+    [HttpPost("/register")]
     public async Task<IActionResult> Register(RegisterRequest request)
     {
         try
@@ -58,7 +58,7 @@ public class IdentityController : ControllerBase
         }
     }
 
-    [HttpPost("/v1/conta/logout")]
+    [HttpPost("/logout")]
     public async Task<IActionResult> Logout()
     {
         try
@@ -70,6 +70,38 @@ public class IdentityController : ControllerBase
         {
             _logger.LogError(e.Message);
             return BadRequest(new Resposta<string>("Erro no logout", 401, e.Message));
+        }
+    }
+
+    [HttpGet("/manage/info")]
+    public async Task<IActionResult> GetUserInfo()
+    {
+        try
+        {
+            var result = await _handler.UserInfo(User);
+            
+            return result.IsSuccess ? Ok(result.Dados) : BadRequest(result.Mensagem);
+        }
+        catch (Exception e)
+        {
+            _logger.LogError(e.Message);
+            return BadRequest(new Resposta<string>("Erro ao obter o usuario.", 401, e.Message));
+        }
+    }
+    
+    [HttpGet("/manage/roles")]
+    public async Task<IActionResult> GetUserRoles()
+    {
+        try
+        {
+            var result = await _handler.UserRoles(User);
+            
+            return result.IsSuccess ? Ok(result.Dados) : BadRequest(result.Mensagem);
+        }
+        catch (Exception e)
+        {
+            _logger.LogError(e.Message);
+            return BadRequest(new Resposta<string>("Erro ao obter as roles.", 401, e.Message));
         }
     }
 }

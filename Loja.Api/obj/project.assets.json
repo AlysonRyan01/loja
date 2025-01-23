@@ -7822,12 +7822,13 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\Loja.Api.csproj",
+      "projectUniqueName": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\Loja.Api.csproj",
       "projectName": "Loja.Api",
-      "projectPath": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\Loja.Api.csproj",
+      "projectPath": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\Loja.Api.csproj",
       "packagesPath": "C:\\Users\\TVS'PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\obj\\",
+      "outputPath": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\obj\\",
       "projectStyle": "PackageReference",
+      "UsingMicrosoftNETSdk": false,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
@@ -7863,8 +7864,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "all"
-      },
-      "SdkAnalysisLevel": "9.0.100"
+      }
     },
     "frameworks": {
       "net9.0": {

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DTJLz71CQjHoeRuFKG6p/Hl9dGkCk54lCQbpgd2IheQ=",
+  "Hash": "Z1Blc8WLDOOCJWXiXFcGSAczESP4kNWNQzlMHIXyXjQ=",
   "Source": "Loja.Api",
   "BasePath": "_content/Loja.Api",
   "Mode": "Default",
@@ -10,17 +10,59 @@
     {
       "Name": "Loja.Api\\wwwroot",
       "Source": "Loja.Api",
-      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\1---FRONTAL-32S5135_87e93803-b413-4f87-82d6-7367de95de0d.jpeg",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\1---FRONTAL-32S5135 (1)_2ffb34f3-c652-491f-a995-4673b375dd02.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
+      "BasePath": "_content/Loja.Api",
+      "RelativePath": "Imagens/1---FRONTAL-32S5135 (1)_2ffb34f3-c652-491f-a995-4673b375dd02#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5jcubahnln",
+      "Integrity": "8b2Cr1ucmR4WvBlL7cS9Bcwcp3Dds14TILCqJHBA1c0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Imagens\\1---FRONTAL-32S5135 (1)_2ffb34f3-c652-491f-a995-4673b375dd02.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\1---FRONTAL-32S5135 (1)_bb90000c-1afc-471d-949d-c5e11ef17e94.jpeg",
+      "SourceId": "Loja.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
+      "BasePath": "_content/Loja.Api",
+      "RelativePath": "Imagens/1---FRONTAL-32S5135 (1)_bb90000c-1afc-471d-949d-c5e11ef17e94#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5jcubahnln",
+      "Integrity": "8b2Cr1ucmR4WvBlL7cS9Bcwcp3Dds14TILCqJHBA1c0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Imagens\\1---FRONTAL-32S5135 (1)_bb90000c-1afc-471d-949d-c5e11ef17e94.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\1---FRONTAL-32S5135_87e93803-b413-4f87-82d6-7367de95de0d.jpeg",
+      "SourceId": "Loja.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/1---FRONTAL-32S5135_87e93803-b413-4f87-82d6-7367de95de0d#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -38,10 +80,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\1---FRONTAL-32S5135_87e93803-b413-4f87-82d6-7367de95de0d.jpeg"
     },
     {
-      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\1665092374210TV1_4caf4637-eb57-42d6-820b-6ce1d51bf8de.jpeg",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\1665092374210TV1_4caf4637-eb57-42d6-820b-6ce1d51bf8de.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/1665092374210TV1_4caf4637-eb57-42d6-820b-6ce1d51bf8de#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -59,10 +101,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\1665092374210TV1_4caf4637-eb57-42d6-820b-6ce1d51bf8de.jpeg"
     },
     {
-      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\1665092374210TV1_4fe9bfed-314a-4a80-9d66-a0dcdf34ce08.jpeg",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\1665092374210TV1_4fe9bfed-314a-4a80-9d66-a0dcdf34ce08.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/1665092374210TV1_4fe9bfed-314a-4a80-9d66-a0dcdf34ce08#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -80,10 +122,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\1665092374210TV1_4fe9bfed-314a-4a80-9d66-a0dcdf34ce08.jpeg"
     },
     {
-      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\1665092374210TV1_baec61cf-bbba-4304-bbd8-caf9f655291f.jpeg",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\1665092374210TV1_baec61cf-bbba-4304-bbd8-caf9f655291f.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/1665092374210TV1_baec61cf-bbba-4304-bbd8-caf9f655291f#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -101,10 +143,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\1665092374210TV1_baec61cf-bbba-4304-bbd8-caf9f655291f.jpeg"
     },
     {
-      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\1665092374210TV1_bd800138-108b-4059-83c6-75b593b5ca2c.jpeg",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\1665092374210TV1_bd800138-108b-4059-83c6-75b593b5ca2c.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/1665092374210TV1_bd800138-108b-4059-83c6-75b593b5ca2c#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -122,10 +164,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\1665092374210TV1_bd800138-108b-4059-83c6-75b593b5ca2c.jpeg"
     },
     {
-      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_97ab331b-13ec-4c44-bee5-559f9390cf45.jpeg",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_97ab331b-13ec-4c44-bee5-559f9390cf45.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/mp2960.131_zoomtv2_97ab331b-13ec-4c44-bee5-559f9390cf45#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -143,10 +185,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\mp2960.131_zoomtv2_97ab331b-13ec-4c44-bee5-559f9390cf45.jpeg"
     },
     {
-      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_9c227d70-0b16-452b-939b-2660d7c7c954.jpeg",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_9c227d70-0b16-452b-939b-2660d7c7c954.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/mp2960.131_zoomtv2_9c227d70-0b16-452b-939b-2660d7c7c954#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -164,10 +206,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\mp2960.131_zoomtv2_9c227d70-0b16-452b-939b-2660d7c7c954.jpeg"
     },
     {
-      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_a4c26b16-06ac-4d3b-a4ef-823a1e992c78.jpeg",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_a4c26b16-06ac-4d3b-a4ef-823a1e992c78.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/mp2960.131_zoomtv2_a4c26b16-06ac-4d3b-a4ef-823a1e992c78#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -185,10 +227,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\mp2960.131_zoomtv2_a4c26b16-06ac-4d3b-a4ef-823a1e992c78.jpeg"
     },
     {
-      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_fdb8ef06-a262-411a-a501-a90f2ff73c60.jpeg",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_fdb8ef06-a262-411a-a501-a90f2ff73c60.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/mp2960.131_zoomtv2_fdb8ef06-a262-411a-a501-a90f2ff73c60#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -208,8 +250,172 @@
   ],
   "Endpoints": [
     {
+      "Route": "Imagens/1---FRONTAL-32S5135 (1)_2ffb34f3-c652-491f-a995-4673b375dd02.5jcubahnln.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\1---FRONTAL-32S5135 (1)_2ffb34f3-c652-491f-a995-4673b375dd02.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30888"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8b2Cr1ucmR4WvBlL7cS9Bcwcp3Dds14TILCqJHBA1c0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 23 Jan 2025 18:20:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5jcubahnln"
+        },
+        {
+          "Name": "label",
+          "Value": "Imagens/1---FRONTAL-32S5135 (1)_2ffb34f3-c652-491f-a995-4673b375dd02.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8b2Cr1ucmR4WvBlL7cS9Bcwcp3Dds14TILCqJHBA1c0="
+        }
+      ]
+    },
+    {
+      "Route": "Imagens/1---FRONTAL-32S5135 (1)_2ffb34f3-c652-491f-a995-4673b375dd02.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\1---FRONTAL-32S5135 (1)_2ffb34f3-c652-491f-a995-4673b375dd02.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30888"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8b2Cr1ucmR4WvBlL7cS9Bcwcp3Dds14TILCqJHBA1c0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 23 Jan 2025 18:20:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8b2Cr1ucmR4WvBlL7cS9Bcwcp3Dds14TILCqJHBA1c0="
+        }
+      ]
+    },
+    {
+      "Route": "Imagens/1---FRONTAL-32S5135 (1)_bb90000c-1afc-471d-949d-c5e11ef17e94.5jcubahnln.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\1---FRONTAL-32S5135 (1)_bb90000c-1afc-471d-949d-c5e11ef17e94.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30888"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8b2Cr1ucmR4WvBlL7cS9Bcwcp3Dds14TILCqJHBA1c0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 23 Jan 2025 18:19:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5jcubahnln"
+        },
+        {
+          "Name": "label",
+          "Value": "Imagens/1---FRONTAL-32S5135 (1)_bb90000c-1afc-471d-949d-c5e11ef17e94.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8b2Cr1ucmR4WvBlL7cS9Bcwcp3Dds14TILCqJHBA1c0="
+        }
+      ]
+    },
+    {
+      "Route": "Imagens/1---FRONTAL-32S5135 (1)_bb90000c-1afc-471d-949d-c5e11ef17e94.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\1---FRONTAL-32S5135 (1)_bb90000c-1afc-471d-949d-c5e11ef17e94.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30888"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8b2Cr1ucmR4WvBlL7cS9Bcwcp3Dds14TILCqJHBA1c0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 23 Jan 2025 18:19:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8b2Cr1ucmR4WvBlL7cS9Bcwcp3Dds14TILCqJHBA1c0="
+        }
+      ]
+    },
+    {
       "Route": "Imagens/1---FRONTAL-32S5135_87e93803-b413-4f87-82d6-7367de95de0d.5jcubahnln.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\1---FRONTAL-32S5135_87e93803-b413-4f87-82d6-7367de95de0d.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\1---FRONTAL-32S5135_87e93803-b413-4f87-82d6-7367de95de0d.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -254,7 +460,7 @@
     },
     {
       "Route": "Imagens/1---FRONTAL-32S5135_87e93803-b413-4f87-82d6-7367de95de0d.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\1---FRONTAL-32S5135_87e93803-b413-4f87-82d6-7367de95de0d.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\1---FRONTAL-32S5135_87e93803-b413-4f87-82d6-7367de95de0d.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -291,7 +497,7 @@
     },
     {
       "Route": "Imagens/1665092374210TV1_4caf4637-eb57-42d6-820b-6ce1d51bf8de.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\1665092374210TV1_4caf4637-eb57-42d6-820b-6ce1d51bf8de.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\1665092374210TV1_4caf4637-eb57-42d6-820b-6ce1d51bf8de.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -328,7 +534,7 @@
     },
     {
       "Route": "Imagens/1665092374210TV1_4caf4637-eb57-42d6-820b-6ce1d51bf8de.yo3q8e6xr5.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\1665092374210TV1_4caf4637-eb57-42d6-820b-6ce1d51bf8de.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\1665092374210TV1_4caf4637-eb57-42d6-820b-6ce1d51bf8de.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -373,7 +579,7 @@
     },
     {
       "Route": "Imagens/1665092374210TV1_4fe9bfed-314a-4a80-9d66-a0dcdf34ce08.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\1665092374210TV1_4fe9bfed-314a-4a80-9d66-a0dcdf34ce08.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\1665092374210TV1_4fe9bfed-314a-4a80-9d66-a0dcdf34ce08.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -410,7 +616,7 @@
     },
     {
       "Route": "Imagens/1665092374210TV1_4fe9bfed-314a-4a80-9d66-a0dcdf34ce08.yo3q8e6xr5.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\1665092374210TV1_4fe9bfed-314a-4a80-9d66-a0dcdf34ce08.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\1665092374210TV1_4fe9bfed-314a-4a80-9d66-a0dcdf34ce08.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -455,7 +661,7 @@
     },
     {
       "Route": "Imagens/1665092374210TV1_baec61cf-bbba-4304-bbd8-caf9f655291f.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\1665092374210TV1_baec61cf-bbba-4304-bbd8-caf9f655291f.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\1665092374210TV1_baec61cf-bbba-4304-bbd8-caf9f655291f.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -492,7 +698,7 @@
     },
     {
       "Route": "Imagens/1665092374210TV1_baec61cf-bbba-4304-bbd8-caf9f655291f.yo3q8e6xr5.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\1665092374210TV1_baec61cf-bbba-4304-bbd8-caf9f655291f.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\1665092374210TV1_baec61cf-bbba-4304-bbd8-caf9f655291f.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -537,7 +743,7 @@
     },
     {
       "Route": "Imagens/1665092374210TV1_bd800138-108b-4059-83c6-75b593b5ca2c.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\1665092374210TV1_bd800138-108b-4059-83c6-75b593b5ca2c.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\1665092374210TV1_bd800138-108b-4059-83c6-75b593b5ca2c.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -574,7 +780,7 @@
     },
     {
       "Route": "Imagens/1665092374210TV1_bd800138-108b-4059-83c6-75b593b5ca2c.yo3q8e6xr5.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\1665092374210TV1_bd800138-108b-4059-83c6-75b593b5ca2c.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\1665092374210TV1_bd800138-108b-4059-83c6-75b593b5ca2c.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -619,7 +825,7 @@
     },
     {
       "Route": "Imagens/mp2960.131_zoomtv2_97ab331b-13ec-4c44-bee5-559f9390cf45.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_97ab331b-13ec-4c44-bee5-559f9390cf45.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_97ab331b-13ec-4c44-bee5-559f9390cf45.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -656,7 +862,7 @@
     },
     {
       "Route": "Imagens/mp2960.131_zoomtv2_97ab331b-13ec-4c44-bee5-559f9390cf45.l2zioie4sa.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_97ab331b-13ec-4c44-bee5-559f9390cf45.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_97ab331b-13ec-4c44-bee5-559f9390cf45.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -701,7 +907,7 @@
     },
     {
       "Route": "Imagens/mp2960.131_zoomtv2_9c227d70-0b16-452b-939b-2660d7c7c954.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_9c227d70-0b16-452b-939b-2660d7c7c954.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_9c227d70-0b16-452b-939b-2660d7c7c954.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -738,7 +944,7 @@
     },
     {
       "Route": "Imagens/mp2960.131_zoomtv2_9c227d70-0b16-452b-939b-2660d7c7c954.l2zioie4sa.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_9c227d70-0b16-452b-939b-2660d7c7c954.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_9c227d70-0b16-452b-939b-2660d7c7c954.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -783,7 +989,7 @@
     },
     {
       "Route": "Imagens/mp2960.131_zoomtv2_a4c26b16-06ac-4d3b-a4ef-823a1e992c78.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_a4c26b16-06ac-4d3b-a4ef-823a1e992c78.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_a4c26b16-06ac-4d3b-a4ef-823a1e992c78.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -820,7 +1026,7 @@
     },
     {
       "Route": "Imagens/mp2960.131_zoomtv2_a4c26b16-06ac-4d3b-a4ef-823a1e992c78.l2zioie4sa.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_a4c26b16-06ac-4d3b-a4ef-823a1e992c78.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_a4c26b16-06ac-4d3b-a4ef-823a1e992c78.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -865,7 +1071,7 @@
     },
     {
       "Route": "Imagens/mp2960.131_zoomtv2_fdb8ef06-a262-411a-a501-a90f2ff73c60.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_fdb8ef06-a262-411a-a501-a90f2ff73c60.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_fdb8ef06-a262-411a-a501-a90f2ff73c60.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -902,7 +1108,7 @@
     },
     {
       "Route": "Imagens/mp2960.131_zoomtv2_fdb8ef06-a262-411a-a501-a90f2ff73c60.l2zioie4sa.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_fdb8ef06-a262-411a-a501-a90f2ff73c60.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_fdb8ef06-a262-411a-a501-a90f2ff73c60.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {

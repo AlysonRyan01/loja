@@ -1,5 +1,6 @@
 D:\GitHubRepository\loja\Loja.Api\bin\Debug\net9.0\appsettings.Development.json
 D:\GitHubRepository\loja\Loja.Api\bin\Debug\net9.0\appsettings.json
+D:\GitHubRepository\loja\Loja.Api\bin\Debug\net9.0\Loja.Api.staticwebassets.runtime.json
 D:\GitHubRepository\loja\Loja.Api\bin\Debug\net9.0\Loja.Api.staticwebassets.endpoints.json
 D:\GitHubRepository\loja\Loja.Api\bin\Debug\net9.0\Loja.Api.exe
 D:\GitHubRepository\loja\Loja.Api\bin\Debug\net9.0\Loja.Api.deps.json
@@ -206,4 +207,3 @@ D:\GitHubRepository\loja\Loja.Api\obj\Debug\net9.0\refint\Loja.Api.dll
 D:\GitHubRepository\loja\Loja.Api\obj\Debug\net9.0\Loja.Api.pdb
 D:\GitHubRepository\loja\Loja.Api\obj\Debug\net9.0\Loja.Api.genruntimeconfig.cache
 D:\GitHubRepository\loja\Loja.Api\obj\Debug\net9.0\ref\Loja.Api.dll
-D:\GitHubRepository\loja\Loja.Api\bin\Debug\net9.0\Loja.Api.staticwebassets.runtime.json

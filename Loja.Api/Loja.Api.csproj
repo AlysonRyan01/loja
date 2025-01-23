@@ -25,4 +25,9 @@
     <ProjectReference Include="..\Loja.Core\Loja.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+    <Folder Include="wwwroot\Imagens\" />
+  </ItemGroup>
+
 </Project>

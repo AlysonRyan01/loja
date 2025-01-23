@@ -16,5 +16,13 @@ public class CarrinhoMap : IEntityTypeConfiguration<Carrinho>
             .WithOne(x => x.Carrinho)
             .HasForeignKey(x => x.CarrinhoId) 
             .OnDelete(DeleteBehavior.Cascade);
+        
+        builder.Property(x => x.ValorTotal)
+            .IsRequired()
+            .HasColumnType("DECIMAL(18,2)");
+        
+        builder.Property(x => x.UserId)
+            .IsRequired()
+            .HasColumnType("BIGINT");
     }
 }

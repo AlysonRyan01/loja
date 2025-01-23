@@ -1,17 +1,20 @@
-﻿namespace Loja.Core.Models;
+﻿using System.Text.Json.Serialization;
+
+namespace Loja.Core.Models;
 
 public class CarrinhoItem
 {
     public long Id { get; set; }
     
-    public Produto Produto { get; set; } = new();
+    public Produto Produto { get; set; }
     public long ProdutoId { get; set; }
     
     public int Quantidade { get; set; }
     
-    public Carrinho Carrinho { get; set; } = new();
+    [JsonIgnore]
+    public Carrinho Carrinho { get; set; }
     public long CarrinhoId { get; set; }
     
-    public decimal PrecoTotal => Produto.Preco * Quantidade;
+    public decimal PrecoTotal { get; set; }
 
 }

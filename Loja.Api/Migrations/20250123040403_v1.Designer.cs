@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Loja.Api.Migrations
 {
     [DbContext(typeof(LojaDataContext))]
-    [Migration("20250121033242_v1")]
+    [Migration("20250123040403_v1")]
     partial class v1
     {
         /// <inheritdoc />
@@ -97,7 +97,15 @@ namespace Loja.Api.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<long>("UserId")
+                        .HasColumnType("BIGINT");
+
+                    b.Property<decimal>("ValorTotal")
+                        .HasColumnType("DECIMAL(18,2)");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Carrinho", (string)null);
                 });
@@ -110,6 +118,9 @@ namespace Loja.Api.Migrations
 
                     b.Property<long>("CarrinhoId")
                         .HasColumnType("INTEGER");
+
+                    b.Property<decimal>("PrecoTotal")
+                        .HasColumnType("DECIMAL(18,2)");
 
                     b.Property<long>("ProdutoId")
                         .HasColumnType("INTEGER");
@@ -124,6 +135,64 @@ namespace Loja.Api.Migrations
                     b.HasIndex("ProdutoId");
 
                     b.ToTable("CarrinhoItem", (string)null);
+                });
+
+            modelBuilder.Entity("Loja.Core.Models.Identity.UserIdentity", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("AccessFailedCount")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<long>("CarrinhoId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("EmailConfirmed")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("LockoutEnabled")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTimeOffset?>("LockoutEnd")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("NormalizedEmail")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("NormalizedUserName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("PasswordHash")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("PhoneNumberConfirmed")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("SecurityStamp")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("TwoFactorEnabled")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("UserName")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CarrinhoId");
+
+                    b.ToTable("UserIdentity");
                 });
 
             modelBuilder.Entity("Loja.Core.Models.Imagem", b =>
@@ -188,9 +257,14 @@ namespace Loja.Api.Migrations
                     b.Property<long?>("UserId")
                         .HasColumnType("INTEGER");
 
+                    b.Property<long?>("UserIdentityId")
+                        .HasColumnType("INTEGER");
+
                     b.HasKey("Id");
 
                     b.HasIndex("UserId");
+
+                    b.HasIndex("UserIdentityId");
 
                     b.ToTable("Roles");
                 });
@@ -310,6 +384,17 @@ namespace Loja.Api.Migrations
                     b.Navigation("Carrinho");
                 });
 
+            modelBuilder.Entity("Loja.Core.Models.Carrinho", b =>
+                {
+                    b.HasOne("Loja.Core.Models.Identity.UserIdentity", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Loja.Core.Models.CarrinhoItem", b =>
                 {
                     b.HasOne("Loja.Core.Models.Carrinho", "Carrinho")
@@ -329,6 +414,17 @@ namespace Loja.Api.Migrations
                     b.Navigation("Produto");
                 });
 
+            modelBuilder.Entity("Loja.Core.Models.Identity.UserIdentity", b =>
+                {
+                    b.HasOne("Loja.Core.Models.Carrinho", "Carrinho")
+                        .WithMany()
+                        .HasForeignKey("CarrinhoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Carrinho");
+                });
+
             modelBuilder.Entity("Loja.Core.Models.Imagem", b =>
                 {
                     b.HasOne("Loja.Core.Models.Produto", "Produto")
@@ -345,6 +441,10 @@ namespace Loja.Api.Migrations
                     b.HasOne("Loja.Api.Models.User", null)
                         .WithMany("Roles")
                         .HasForeignKey("UserId");
+
+                    b.HasOne("Loja.Core.Models.Identity.UserIdentity", null)
+                        .WithMany("Roles")
+                        .HasForeignKey("UserIdentityId");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<long>", b =>
@@ -391,6 +491,11 @@ namespace Loja.Api.Migrations
             modelBuilder.Entity("Loja.Core.Models.Carrinho", b =>
                 {
                     b.Navigation("CarrinhoItens");
+                });
+
+            modelBuilder.Entity("Loja.Core.Models.Identity.UserIdentity", b =>
+                {
+                    b.Navigation("Roles");
                 });
 
             modelBuilder.Entity("Loja.Core.Models.Produto", b =>

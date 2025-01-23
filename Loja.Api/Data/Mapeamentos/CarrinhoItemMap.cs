@@ -20,5 +20,9 @@ public class CarrinhoItemMap : IEntityTypeConfiguration<CarrinhoItem>
             .WithMany(c => c.CarrinhoItens) 
             .HasForeignKey(x => x.CarrinhoId)
             .OnDelete(DeleteBehavior.Cascade);
+        
+        builder.Property(x => x.PrecoTotal)
+            .IsRequired() 
+            .HasColumnType("DECIMAL(18,2)"); 
     }
 }

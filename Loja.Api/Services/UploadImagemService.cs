@@ -3,11 +3,11 @@ using Loja.Core.Services;
 
 namespace Loja.Api.Services;
 
-public class UploadImagemService : IUploadImagemService
+public class ImagemService : IUploadImagemService
 {
     private readonly string _diretorioImagens = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Imagens");
     
-    public UploadImagemService()
+    public ImagemService()
     {
         if (!Directory.Exists(_diretorioImagens))
         {
@@ -36,7 +36,7 @@ public class UploadImagemService : IUploadImagemService
             
                 listaDeImagens.Add(new Imagem
                 {
-                    Url = imagemUrl,
+                    Url = imagemUrl
                 });
             }
 
@@ -51,6 +51,43 @@ public class UploadImagemService : IUploadImagemService
         {
             Console.WriteLine(ex);
             throw;
+        }
+    }
+
+    public bool ExcluirImagem(List<Imagem> imagens)
+    {
+        int contadorDeImagens = imagens.Count;
+        int imagensExcluidas = 0;
+        
+        try
+        {
+            foreach (var imagem in imagens)
+            {
+                var imagemUrl = imagem.Url;
+
+                var relativePath = imagemUrl.StartsWith("/") ? imagemUrl.Substring(1) : imagemUrl;
+                relativePath = relativePath.Replace("\\", "/");
+                
+                if (relativePath.StartsWith("Imagens/"))
+                {
+                    relativePath = relativePath.Substring("Imagens/".Length);
+                }
+
+                var filePath = Path.Combine(_diretorioImagens, relativePath);
+
+                if (File.Exists(filePath))
+                {
+                    File.Delete(filePath);
+                    imagensExcluidas++;
+                }
+            }
+
+            return imagensExcluidas == contadorDeImagens;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Erro ao excluir a imagem: {ex.Message}");
+            return false;
         }
     }
 }

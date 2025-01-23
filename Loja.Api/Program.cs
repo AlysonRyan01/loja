@@ -7,6 +7,7 @@ using Loja.Core.Handlers;
 using Loja.Core.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,14 +31,37 @@ builder.Services.AddAuthentication(IdentityConstants.ApplicationScheme)
 builder.Services.AddAuthorization();
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(x =>
+builder.Services.AddSwaggerGen(c =>
 {
-    x.CustomSchemaIds(n => n.FullName); 
+    c.AddSecurityDefinition("Cookie", new OpenApiSecurityScheme
+    {
+        Type = SecuritySchemeType.ApiKey,
+        In = ParameterLocation.Cookie,
+        Name = "YourAppCookie",
+        Scheme = "cookie"
+    });
+
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Cookie"
+                }
+            },
+            new string[] {}
+        }
+    });
 });
 
 builder.Services.AddTransient<IProdutoHandler, ProdutoHandler>();
 builder.Services.AddTransient<IIdentityHandler, IdentityHandler>();
-builder.Services.AddTransient<IUploadImagemService, UploadImagemService>();
+builder.Services.AddTransient<IUploadImagemService, ImagemService>();
+builder.Services.AddTransient<ICarrinhoItemHandler, CarrinhoItemHandler>();
+builder.Services.AddTransient<ICarrinhoHandler, CarrinhoHandler>();
 
 var app = builder.Build();
 

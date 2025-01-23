@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lWsX9cVdFCZH7MoMBpPBsj25hxFK1ZU9igxEw5GTWow=",
+  "Hash": "AYllgNZNOgbUguBJmfpyzuDhWrmSPiyRXS6OX/syD7w=",
   "Source": "Loja.Api",
   "BasePath": "_content/Loja.Api",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\1---FRONTAL-32S5135_0d770dd7-4fa3-4109-a19e-3aa6a4da6eb5.jpeg",
+      "Identity": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\1---FRONTAL-32S5135_87e93803-b413-4f87-82d6-7367de95de0d.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
-      "RelativePath": "Imagens/1---FRONTAL-32S5135_0d770dd7-4fa3-4109-a19e-3aa6a4da6eb5#[.{fingerprint}]?.jpeg",
+      "RelativePath": "Imagens/1---FRONTAL-32S5135_87e93803-b413-4f87-82d6-7367de95de0d#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -35,36 +35,15 @@
       "Integrity": "8b2Cr1ucmR4WvBlL7cS9Bcwcp3Dds14TILCqJHBA1c0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Imagens\\1---FRONTAL-32S5135_0d770dd7-4fa3-4109-a19e-3aa6a4da6eb5.jpeg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\1---FRONTAL-32S5135_87e93803-b413-4f87-82d6-7367de95de0d.jpeg"
     },
     {
-      "Identity": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\1---FRONTAL-32S5135_8680451c-3a3b-4c49-acff-e6cfd0c6c29a.jpeg",
+      "Identity": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\1665092374210TV1_4caf4637-eb57-42d6-820b-6ce1d51bf8de.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
-      "RelativePath": "Imagens/1---FRONTAL-32S5135_8680451c-3a3b-4c49-acff-e6cfd0c6c29a#[.{fingerprint}]?.jpeg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "5jcubahnln",
-      "Integrity": "8b2Cr1ucmR4WvBlL7cS9Bcwcp3Dds14TILCqJHBA1c0=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Imagens\\1---FRONTAL-32S5135_8680451c-3a3b-4c49-acff-e6cfd0c6c29a.jpeg"
-    },
-    {
-      "Identity": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\1665092374210TV1_05209ef3-029b-43d7-96ba-4053c79f8bc5.jpeg",
-      "SourceId": "Loja.Api",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\",
-      "BasePath": "_content/Loja.Api",
-      "RelativePath": "Imagens/1665092374210TV1_05209ef3-029b-43d7-96ba-4053c79f8bc5#[.{fingerprint}]?.jpeg",
+      "RelativePath": "Imagens/1665092374210TV1_4caf4637-eb57-42d6-820b-6ce1d51bf8de#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -77,15 +56,15 @@
       "Integrity": "MjXUQWfRWrY5zr7z+e9NTTTj3bRV1RA/vrINZrUDGs0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Imagens\\1665092374210TV1_05209ef3-029b-43d7-96ba-4053c79f8bc5.jpeg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\1665092374210TV1_4caf4637-eb57-42d6-820b-6ce1d51bf8de.jpeg"
     },
     {
-      "Identity": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\1665092374210TV1_3b7937fc-c9dc-49c1-b871-08a7eeadd990.jpeg",
+      "Identity": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\1665092374210TV1_4fe9bfed-314a-4a80-9d66-a0dcdf34ce08.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
-      "RelativePath": "Imagens/1665092374210TV1_3b7937fc-c9dc-49c1-b871-08a7eeadd990#[.{fingerprint}]?.jpeg",
+      "RelativePath": "Imagens/1665092374210TV1_4fe9bfed-314a-4a80-9d66-a0dcdf34ce08#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -98,15 +77,15 @@
       "Integrity": "MjXUQWfRWrY5zr7z+e9NTTTj3bRV1RA/vrINZrUDGs0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Imagens\\1665092374210TV1_3b7937fc-c9dc-49c1-b871-08a7eeadd990.jpeg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\1665092374210TV1_4fe9bfed-314a-4a80-9d66-a0dcdf34ce08.jpeg"
     },
     {
-      "Identity": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\1665092374210TV1_f7a6de2f-7bfe-4ea7-ac53-f748b08b0fc3.jpeg",
+      "Identity": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\1665092374210TV1_baec61cf-bbba-4304-bbd8-caf9f655291f.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
-      "RelativePath": "Imagens/1665092374210TV1_f7a6de2f-7bfe-4ea7-ac53-f748b08b0fc3#[.{fingerprint}]?.jpeg",
+      "RelativePath": "Imagens/1665092374210TV1_baec61cf-bbba-4304-bbd8-caf9f655291f#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -119,15 +98,36 @@
       "Integrity": "MjXUQWfRWrY5zr7z+e9NTTTj3bRV1RA/vrINZrUDGs0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Imagens\\1665092374210TV1_f7a6de2f-7bfe-4ea7-ac53-f748b08b0fc3.jpeg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\1665092374210TV1_baec61cf-bbba-4304-bbd8-caf9f655291f.jpeg"
     },
     {
-      "Identity": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_6c21ff8a-9562-4050-8cf2-6e344b966a7d.jpeg",
+      "Identity": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\1665092374210TV1_bd800138-108b-4059-83c6-75b593b5ca2c.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
-      "RelativePath": "Imagens/mp2960.131_zoomtv2_6c21ff8a-9562-4050-8cf2-6e344b966a7d#[.{fingerprint}]?.jpeg",
+      "RelativePath": "Imagens/1665092374210TV1_bd800138-108b-4059-83c6-75b593b5ca2c#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yo3q8e6xr5",
+      "Integrity": "MjXUQWfRWrY5zr7z+e9NTTTj3bRV1RA/vrINZrUDGs0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Imagens\\1665092374210TV1_bd800138-108b-4059-83c6-75b593b5ca2c.jpeg"
+    },
+    {
+      "Identity": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_97ab331b-13ec-4c44-bee5-559f9390cf45.jpeg",
+      "SourceId": "Loja.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\",
+      "BasePath": "_content/Loja.Api",
+      "RelativePath": "Imagens/mp2960.131_zoomtv2_97ab331b-13ec-4c44-bee5-559f9390cf45#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -140,15 +140,15 @@
       "Integrity": "DQLUeufCXqo/xQEoYnsfypdDQHuGyuuhrJ0Nu8BQkU0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Imagens\\mp2960.131_zoomtv2_6c21ff8a-9562-4050-8cf2-6e344b966a7d.jpeg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\mp2960.131_zoomtv2_97ab331b-13ec-4c44-bee5-559f9390cf45.jpeg"
     },
     {
-      "Identity": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_92566caf-b8af-4bee-8dea-f99292deeede.jpeg",
+      "Identity": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_a4c26b16-06ac-4d3b-a4ef-823a1e992c78.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
-      "RelativePath": "Imagens/mp2960.131_zoomtv2_92566caf-b8af-4bee-8dea-f99292deeede#[.{fingerprint}]?.jpeg",
+      "RelativePath": "Imagens/mp2960.131_zoomtv2_a4c26b16-06ac-4d3b-a4ef-823a1e992c78#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -161,15 +161,15 @@
       "Integrity": "DQLUeufCXqo/xQEoYnsfypdDQHuGyuuhrJ0Nu8BQkU0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Imagens\\mp2960.131_zoomtv2_92566caf-b8af-4bee-8dea-f99292deeede.jpeg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\mp2960.131_zoomtv2_a4c26b16-06ac-4d3b-a4ef-823a1e992c78.jpeg"
     },
     {
-      "Identity": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_a5096fc6-2b47-4a7d-a71e-b5de610c5238.jpeg",
+      "Identity": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_fdb8ef06-a262-411a-a501-a90f2ff73c60.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
-      "RelativePath": "Imagens/mp2960.131_zoomtv2_a5096fc6-2b47-4a7d-a71e-b5de610c5238#[.{fingerprint}]?.jpeg",
+      "RelativePath": "Imagens/mp2960.131_zoomtv2_fdb8ef06-a262-411a-a501-a90f2ff73c60#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -182,34 +182,13 @@
       "Integrity": "DQLUeufCXqo/xQEoYnsfypdDQHuGyuuhrJ0Nu8BQkU0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Imagens\\mp2960.131_zoomtv2_a5096fc6-2b47-4a7d-a71e-b5de610c5238.jpeg"
-    },
-    {
-      "Identity": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_b519b868-7ccb-4334-bdb4-c01d26b273b0.jpeg",
-      "SourceId": "Loja.Api",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\",
-      "BasePath": "_content/Loja.Api",
-      "RelativePath": "Imagens/mp2960.131_zoomtv2_b519b868-7ccb-4334-bdb4-c01d26b273b0#[.{fingerprint}]?.jpeg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "l2zioie4sa",
-      "Integrity": "DQLUeufCXqo/xQEoYnsfypdDQHuGyuuhrJ0Nu8BQkU0=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Imagens\\mp2960.131_zoomtv2_b519b868-7ccb-4334-bdb4-c01d26b273b0.jpeg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\mp2960.131_zoomtv2_fdb8ef06-a262-411a-a501-a90f2ff73c60.jpeg"
     }
   ],
   "Endpoints": [
     {
-      "Route": "Imagens/1---FRONTAL-32S5135_0d770dd7-4fa3-4109-a19e-3aa6a4da6eb5.5jcubahnln.jpeg",
-      "AssetFile": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\1---FRONTAL-32S5135_0d770dd7-4fa3-4109-a19e-3aa6a4da6eb5.jpeg",
+      "Route": "Imagens/1---FRONTAL-32S5135_87e93803-b413-4f87-82d6-7367de95de0d.5jcubahnln.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\1---FRONTAL-32S5135_87e93803-b413-4f87-82d6-7367de95de0d.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -230,7 +209,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 02:33:51 GMT"
+          "Value": "Wed, 22 Jan 2025 23:15:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -244,7 +223,7 @@
         },
         {
           "Name": "label",
-          "Value": "Imagens/1---FRONTAL-32S5135_0d770dd7-4fa3-4109-a19e-3aa6a4da6eb5.jpeg"
+          "Value": "Imagens/1---FRONTAL-32S5135_87e93803-b413-4f87-82d6-7367de95de0d.jpeg"
         },
         {
           "Name": "integrity",
@@ -253,8 +232,8 @@
       ]
     },
     {
-      "Route": "Imagens/1---FRONTAL-32S5135_0d770dd7-4fa3-4109-a19e-3aa6a4da6eb5.jpeg",
-      "AssetFile": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\1---FRONTAL-32S5135_0d770dd7-4fa3-4109-a19e-3aa6a4da6eb5.jpeg",
+      "Route": "Imagens/1---FRONTAL-32S5135_87e93803-b413-4f87-82d6-7367de95de0d.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\1---FRONTAL-32S5135_87e93803-b413-4f87-82d6-7367de95de0d.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -275,7 +254,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 02:33:51 GMT"
+          "Value": "Wed, 22 Jan 2025 23:15:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -290,90 +269,8 @@
       ]
     },
     {
-      "Route": "Imagens/1---FRONTAL-32S5135_8680451c-3a3b-4c49-acff-e6cfd0c6c29a.5jcubahnln.jpeg",
-      "AssetFile": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\1---FRONTAL-32S5135_8680451c-3a3b-4c49-acff-e6cfd0c6c29a.jpeg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "30888"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"8b2Cr1ucmR4WvBlL7cS9Bcwcp3Dds14TILCqJHBA1c0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 03:00:25 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "5jcubahnln"
-        },
-        {
-          "Name": "label",
-          "Value": "Imagens/1---FRONTAL-32S5135_8680451c-3a3b-4c49-acff-e6cfd0c6c29a.jpeg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-8b2Cr1ucmR4WvBlL7cS9Bcwcp3Dds14TILCqJHBA1c0="
-        }
-      ]
-    },
-    {
-      "Route": "Imagens/1---FRONTAL-32S5135_8680451c-3a3b-4c49-acff-e6cfd0c6c29a.jpeg",
-      "AssetFile": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\1---FRONTAL-32S5135_8680451c-3a3b-4c49-acff-e6cfd0c6c29a.jpeg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "30888"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"8b2Cr1ucmR4WvBlL7cS9Bcwcp3Dds14TILCqJHBA1c0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 03:00:25 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-8b2Cr1ucmR4WvBlL7cS9Bcwcp3Dds14TILCqJHBA1c0="
-        }
-      ]
-    },
-    {
-      "Route": "Imagens/1665092374210TV1_05209ef3-029b-43d7-96ba-4053c79f8bc5.jpeg",
-      "AssetFile": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\1665092374210TV1_05209ef3-029b-43d7-96ba-4053c79f8bc5.jpeg",
+      "Route": "Imagens/1665092374210TV1_4caf4637-eb57-42d6-820b-6ce1d51bf8de.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\1665092374210TV1_4caf4637-eb57-42d6-820b-6ce1d51bf8de.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -394,7 +291,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 03:00:25 GMT"
+          "Value": "Thu, 23 Jan 2025 00:42:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -409,8 +306,8 @@
       ]
     },
     {
-      "Route": "Imagens/1665092374210TV1_05209ef3-029b-43d7-96ba-4053c79f8bc5.yo3q8e6xr5.jpeg",
-      "AssetFile": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\1665092374210TV1_05209ef3-029b-43d7-96ba-4053c79f8bc5.jpeg",
+      "Route": "Imagens/1665092374210TV1_4caf4637-eb57-42d6-820b-6ce1d51bf8de.yo3q8e6xr5.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\1665092374210TV1_4caf4637-eb57-42d6-820b-6ce1d51bf8de.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -431,7 +328,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 03:00:25 GMT"
+          "Value": "Thu, 23 Jan 2025 00:42:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -445,7 +342,7 @@
         },
         {
           "Name": "label",
-          "Value": "Imagens/1665092374210TV1_05209ef3-029b-43d7-96ba-4053c79f8bc5.jpeg"
+          "Value": "Imagens/1665092374210TV1_4caf4637-eb57-42d6-820b-6ce1d51bf8de.jpeg"
         },
         {
           "Name": "integrity",
@@ -454,8 +351,8 @@
       ]
     },
     {
-      "Route": "Imagens/1665092374210TV1_3b7937fc-c9dc-49c1-b871-08a7eeadd990.jpeg",
-      "AssetFile": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\1665092374210TV1_3b7937fc-c9dc-49c1-b871-08a7eeadd990.jpeg",
+      "Route": "Imagens/1665092374210TV1_4fe9bfed-314a-4a80-9d66-a0dcdf34ce08.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\1665092374210TV1_4fe9bfed-314a-4a80-9d66-a0dcdf34ce08.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -476,7 +373,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 03:16:49 GMT"
+          "Value": "Wed, 22 Jan 2025 23:15:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -491,8 +388,8 @@
       ]
     },
     {
-      "Route": "Imagens/1665092374210TV1_3b7937fc-c9dc-49c1-b871-08a7eeadd990.yo3q8e6xr5.jpeg",
-      "AssetFile": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\1665092374210TV1_3b7937fc-c9dc-49c1-b871-08a7eeadd990.jpeg",
+      "Route": "Imagens/1665092374210TV1_4fe9bfed-314a-4a80-9d66-a0dcdf34ce08.yo3q8e6xr5.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\1665092374210TV1_4fe9bfed-314a-4a80-9d66-a0dcdf34ce08.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -513,7 +410,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 03:16:49 GMT"
+          "Value": "Wed, 22 Jan 2025 23:15:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -527,7 +424,7 @@
         },
         {
           "Name": "label",
-          "Value": "Imagens/1665092374210TV1_3b7937fc-c9dc-49c1-b871-08a7eeadd990.jpeg"
+          "Value": "Imagens/1665092374210TV1_4fe9bfed-314a-4a80-9d66-a0dcdf34ce08.jpeg"
         },
         {
           "Name": "integrity",
@@ -536,8 +433,8 @@
       ]
     },
     {
-      "Route": "Imagens/1665092374210TV1_f7a6de2f-7bfe-4ea7-ac53-f748b08b0fc3.jpeg",
-      "AssetFile": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\1665092374210TV1_f7a6de2f-7bfe-4ea7-ac53-f748b08b0fc3.jpeg",
+      "Route": "Imagens/1665092374210TV1_baec61cf-bbba-4304-bbd8-caf9f655291f.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\1665092374210TV1_baec61cf-bbba-4304-bbd8-caf9f655291f.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -558,7 +455,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 02:36:32 GMT"
+          "Value": "Thu, 23 Jan 2025 02:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -573,8 +470,8 @@
       ]
     },
     {
-      "Route": "Imagens/1665092374210TV1_f7a6de2f-7bfe-4ea7-ac53-f748b08b0fc3.yo3q8e6xr5.jpeg",
-      "AssetFile": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\1665092374210TV1_f7a6de2f-7bfe-4ea7-ac53-f748b08b0fc3.jpeg",
+      "Route": "Imagens/1665092374210TV1_baec61cf-bbba-4304-bbd8-caf9f655291f.yo3q8e6xr5.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\1665092374210TV1_baec61cf-bbba-4304-bbd8-caf9f655291f.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -595,7 +492,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 02:36:32 GMT"
+          "Value": "Thu, 23 Jan 2025 02:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -609,7 +506,7 @@
         },
         {
           "Name": "label",
-          "Value": "Imagens/1665092374210TV1_f7a6de2f-7bfe-4ea7-ac53-f748b08b0fc3.jpeg"
+          "Value": "Imagens/1665092374210TV1_baec61cf-bbba-4304-bbd8-caf9f655291f.jpeg"
         },
         {
           "Name": "integrity",
@@ -618,8 +515,90 @@
       ]
     },
     {
-      "Route": "Imagens/mp2960.131_zoomtv2_6c21ff8a-9562-4050-8cf2-6e344b966a7d.jpeg",
-      "AssetFile": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_6c21ff8a-9562-4050-8cf2-6e344b966a7d.jpeg",
+      "Route": "Imagens/1665092374210TV1_bd800138-108b-4059-83c6-75b593b5ca2c.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\1665092374210TV1_bd800138-108b-4059-83c6-75b593b5ca2c.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32978"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MjXUQWfRWrY5zr7z+e9NTTTj3bRV1RA/vrINZrUDGs0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 23 Jan 2025 00:22:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MjXUQWfRWrY5zr7z+e9NTTTj3bRV1RA/vrINZrUDGs0="
+        }
+      ]
+    },
+    {
+      "Route": "Imagens/1665092374210TV1_bd800138-108b-4059-83c6-75b593b5ca2c.yo3q8e6xr5.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\1665092374210TV1_bd800138-108b-4059-83c6-75b593b5ca2c.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32978"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MjXUQWfRWrY5zr7z+e9NTTTj3bRV1RA/vrINZrUDGs0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 23 Jan 2025 00:22:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yo3q8e6xr5"
+        },
+        {
+          "Name": "label",
+          "Value": "Imagens/1665092374210TV1_bd800138-108b-4059-83c6-75b593b5ca2c.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MjXUQWfRWrY5zr7z+e9NTTTj3bRV1RA/vrINZrUDGs0="
+        }
+      ]
+    },
+    {
+      "Route": "Imagens/mp2960.131_zoomtv2_97ab331b-13ec-4c44-bee5-559f9390cf45.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_97ab331b-13ec-4c44-bee5-559f9390cf45.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -640,7 +619,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 03:18:14 GMT"
+          "Value": "Wed, 22 Jan 2025 23:15:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -655,8 +634,8 @@
       ]
     },
     {
-      "Route": "Imagens/mp2960.131_zoomtv2_6c21ff8a-9562-4050-8cf2-6e344b966a7d.l2zioie4sa.jpeg",
-      "AssetFile": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_6c21ff8a-9562-4050-8cf2-6e344b966a7d.jpeg",
+      "Route": "Imagens/mp2960.131_zoomtv2_97ab331b-13ec-4c44-bee5-559f9390cf45.l2zioie4sa.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_97ab331b-13ec-4c44-bee5-559f9390cf45.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -677,7 +656,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 03:18:14 GMT"
+          "Value": "Wed, 22 Jan 2025 23:15:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -691,7 +670,7 @@
         },
         {
           "Name": "label",
-          "Value": "Imagens/mp2960.131_zoomtv2_6c21ff8a-9562-4050-8cf2-6e344b966a7d.jpeg"
+          "Value": "Imagens/mp2960.131_zoomtv2_97ab331b-13ec-4c44-bee5-559f9390cf45.jpeg"
         },
         {
           "Name": "integrity",
@@ -700,8 +679,8 @@
       ]
     },
     {
-      "Route": "Imagens/mp2960.131_zoomtv2_92566caf-b8af-4bee-8dea-f99292deeede.jpeg",
-      "AssetFile": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_92566caf-b8af-4bee-8dea-f99292deeede.jpeg",
+      "Route": "Imagens/mp2960.131_zoomtv2_a4c26b16-06ac-4d3b-a4ef-823a1e992c78.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_a4c26b16-06ac-4d3b-a4ef-823a1e992c78.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -722,7 +701,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 02:36:32 GMT"
+          "Value": "Thu, 23 Jan 2025 00:42:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -737,8 +716,8 @@
       ]
     },
     {
-      "Route": "Imagens/mp2960.131_zoomtv2_92566caf-b8af-4bee-8dea-f99292deeede.l2zioie4sa.jpeg",
-      "AssetFile": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_92566caf-b8af-4bee-8dea-f99292deeede.jpeg",
+      "Route": "Imagens/mp2960.131_zoomtv2_a4c26b16-06ac-4d3b-a4ef-823a1e992c78.l2zioie4sa.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_a4c26b16-06ac-4d3b-a4ef-823a1e992c78.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -759,7 +738,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 02:36:32 GMT"
+          "Value": "Thu, 23 Jan 2025 00:42:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -773,7 +752,7 @@
         },
         {
           "Name": "label",
-          "Value": "Imagens/mp2960.131_zoomtv2_92566caf-b8af-4bee-8dea-f99292deeede.jpeg"
+          "Value": "Imagens/mp2960.131_zoomtv2_a4c26b16-06ac-4d3b-a4ef-823a1e992c78.jpeg"
         },
         {
           "Name": "integrity",
@@ -782,8 +761,8 @@
       ]
     },
     {
-      "Route": "Imagens/mp2960.131_zoomtv2_a5096fc6-2b47-4a7d-a71e-b5de610c5238.jpeg",
-      "AssetFile": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_a5096fc6-2b47-4a7d-a71e-b5de610c5238.jpeg",
+      "Route": "Imagens/mp2960.131_zoomtv2_fdb8ef06-a262-411a-a501-a90f2ff73c60.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_fdb8ef06-a262-411a-a501-a90f2ff73c60.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -804,7 +783,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 03:16:49 GMT"
+          "Value": "Thu, 23 Jan 2025 02:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -819,8 +798,8 @@
       ]
     },
     {
-      "Route": "Imagens/mp2960.131_zoomtv2_a5096fc6-2b47-4a7d-a71e-b5de610c5238.l2zioie4sa.jpeg",
-      "AssetFile": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_a5096fc6-2b47-4a7d-a71e-b5de610c5238.jpeg",
+      "Route": "Imagens/mp2960.131_zoomtv2_fdb8ef06-a262-411a-a501-a90f2ff73c60.l2zioie4sa.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_fdb8ef06-a262-411a-a501-a90f2ff73c60.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -841,7 +820,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 03:16:49 GMT"
+          "Value": "Thu, 23 Jan 2025 02:53:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -855,89 +834,7 @@
         },
         {
           "Name": "label",
-          "Value": "Imagens/mp2960.131_zoomtv2_a5096fc6-2b47-4a7d-a71e-b5de610c5238.jpeg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-DQLUeufCXqo/xQEoYnsfypdDQHuGyuuhrJ0Nu8BQkU0="
-        }
-      ]
-    },
-    {
-      "Route": "Imagens/mp2960.131_zoomtv2_b519b868-7ccb-4334-bdb4-c01d26b273b0.jpeg",
-      "AssetFile": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_b519b868-7ccb-4334-bdb4-c01d26b273b0.jpeg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "105774"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"DQLUeufCXqo/xQEoYnsfypdDQHuGyuuhrJ0Nu8BQkU0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 03:00:25 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-DQLUeufCXqo/xQEoYnsfypdDQHuGyuuhrJ0Nu8BQkU0="
-        }
-      ]
-    },
-    {
-      "Route": "Imagens/mp2960.131_zoomtv2_b519b868-7ccb-4334-bdb4-c01d26b273b0.l2zioie4sa.jpeg",
-      "AssetFile": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_b519b868-7ccb-4334-bdb4-c01d26b273b0.jpeg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "105774"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"DQLUeufCXqo/xQEoYnsfypdDQHuGyuuhrJ0Nu8BQkU0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 03:00:25 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "l2zioie4sa"
-        },
-        {
-          "Name": "label",
-          "Value": "Imagens/mp2960.131_zoomtv2_b519b868-7ccb-4334-bdb4-c01d26b273b0.jpeg"
+          "Value": "Imagens/mp2960.131_zoomtv2_fdb8ef06-a262-411a-a501-a90f2ff73c60.jpeg"
         },
         {
           "Name": "integrity",

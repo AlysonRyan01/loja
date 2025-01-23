@@ -10,5 +10,5 @@ public interface IProdutoHandler
     Task<Resposta<Produto?>> AtualizarProdutoAsync(AtualizarProdutoRequisicao requisicao);
     Task<Resposta<Produto?>> RemoverProdutoAsync(int id);
     Task<Resposta<Produto?>> ObterProdutoPorIdAsync(int id);
-    Task<Resposta<List<Produto?>>> ObterTodosProdutos();
+    Task<Resposta<List<Produto>?>> ObterTodosProdutos();
 }

@@ -12,18 +12,6 @@ namespace Loja.Api.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Carrinho",
-                columns: table => new
-                {
-                    Id = table.Column<long>(type: "INTEGER", nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Carrinho", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "IdentityRoleClaim",
                 columns: table => new
                 {
@@ -51,6 +39,68 @@ namespace Loja.Api.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Produto", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Imagem",
+                columns: table => new
+                {
+                    Id = table.Column<long>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Url = table.Column<string>(type: "TEXT", nullable: false),
+                    ProdutoId = table.Column<long>(type: "BIGINT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Imagem", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Imagem_Produto_ProdutoId",
+                        column: x => x.ProdutoId,
+                        principalTable: "Produto",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Carrinho",
+                columns: table => new
+                {
+                    Id = table.Column<long>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    UserId = table.Column<long>(type: "BIGINT", nullable: false),
+                    ValorTotal = table.Column<decimal>(type: "DECIMAL(18,2)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Carrinho", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "CarrinhoItem",
+                columns: table => new
+                {
+                    Id = table.Column<long>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    ProdutoId = table.Column<long>(type: "INTEGER", nullable: false),
+                    Quantidade = table.Column<int>(type: "INT", nullable: false),
+                    CarrinhoId = table.Column<long>(type: "INTEGER", nullable: false),
+                    PrecoTotal = table.Column<decimal>(type: "DECIMAL(18,2)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_CarrinhoItem", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_CarrinhoItem_Carrinho_CarrinhoId",
+                        column: x => x.CarrinhoId,
+                        principalTable: "Carrinho",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_CarrinhoItem_Produto_ProdutoId",
+                        column: x => x.ProdutoId,
+                        principalTable: "Produto",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -87,48 +137,34 @@ namespace Loja.Api.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "CarrinhoItem",
+                name: "UserIdentity",
                 columns: table => new
                 {
                     Id = table.Column<long>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    ProdutoId = table.Column<long>(type: "INTEGER", nullable: false),
-                    Quantidade = table.Column<int>(type: "INT", nullable: false),
-                    CarrinhoId = table.Column<long>(type: "INTEGER", nullable: false)
+                    CarrinhoId = table.Column<long>(type: "INTEGER", nullable: false),
+                    UserName = table.Column<string>(type: "TEXT", nullable: true),
+                    NormalizedUserName = table.Column<string>(type: "TEXT", nullable: true),
+                    Email = table.Column<string>(type: "TEXT", nullable: true),
+                    NormalizedEmail = table.Column<string>(type: "TEXT", nullable: true),
+                    EmailConfirmed = table.Column<bool>(type: "INTEGER", nullable: false),
+                    PasswordHash = table.Column<string>(type: "TEXT", nullable: true),
+                    SecurityStamp = table.Column<string>(type: "TEXT", nullable: true),
+                    ConcurrencyStamp = table.Column<string>(type: "TEXT", nullable: true),
+                    PhoneNumber = table.Column<string>(type: "TEXT", nullable: true),
+                    PhoneNumberConfirmed = table.Column<bool>(type: "INTEGER", nullable: false),
+                    TwoFactorEnabled = table.Column<bool>(type: "INTEGER", nullable: false),
+                    LockoutEnd = table.Column<DateTimeOffset>(type: "TEXT", nullable: true),
+                    LockoutEnabled = table.Column<bool>(type: "INTEGER", nullable: false),
+                    AccessFailedCount = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_CarrinhoItem", x => x.Id);
+                    table.PrimaryKey("PK_UserIdentity", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_CarrinhoItem_Carrinho_CarrinhoId",
+                        name: "FK_UserIdentity_Carrinho_CarrinhoId",
                         column: x => x.CarrinhoId,
                         principalTable: "Carrinho",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_CarrinhoItem_Produto_ProdutoId",
-                        column: x => x.ProdutoId,
-                        principalTable: "Produto",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Imagem",
-                columns: table => new
-                {
-                    Id = table.Column<long>(type: "INTEGER", nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
-                    Url = table.Column<string>(type: "TEXT", nullable: false),
-                    ProdutoId = table.Column<long>(type: "BIGINT", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Imagem", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Imagem_Produto_ProdutoId",
-                        column: x => x.ProdutoId,
-                        principalTable: "Produto",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -221,7 +257,8 @@ namespace Loja.Api.Migrations
                     Name = table.Column<string>(type: "TEXT", nullable: true),
                     NormalizedName = table.Column<string>(type: "TEXT", nullable: true),
                     ConcurrencyStamp = table.Column<string>(type: "TEXT", nullable: true),
-                    UserId = table.Column<long>(type: "INTEGER", nullable: true)
+                    UserId = table.Column<long>(type: "INTEGER", nullable: true),
+                    UserIdentityId = table.Column<long>(type: "INTEGER", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -231,7 +268,17 @@ namespace Loja.Api.Migrations
                         column: x => x.UserId,
                         principalTable: "IdentityUser",
                         principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_Roles_UserIdentity_UserIdentityId",
+                        column: x => x.UserIdentityId,
+                        principalTable: "UserIdentity",
+                        principalColumn: "Id");
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Carrinho_UserId",
+                table: "Carrinho",
+                column: "UserId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_CarrinhoItem_CarrinhoId",
@@ -280,11 +327,33 @@ namespace Loja.Api.Migrations
                 name: "IX_Roles_UserId",
                 table: "Roles",
                 column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Roles_UserIdentityId",
+                table: "Roles",
+                column: "UserIdentityId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_UserIdentity_CarrinhoId",
+                table: "UserIdentity",
+                column: "CarrinhoId");
+
+            migrationBuilder.AddForeignKey(
+                name: "FK_Carrinho_UserIdentity_UserId",
+                table: "Carrinho",
+                column: "UserId",
+                principalTable: "UserIdentity",
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Cascade);
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropForeignKey(
+                name: "FK_Carrinho_UserIdentity_UserId",
+                table: "Carrinho");
+
             migrationBuilder.DropTable(
                 name: "CarrinhoItem");
 
@@ -314,6 +383,9 @@ namespace Loja.Api.Migrations
 
             migrationBuilder.DropTable(
                 name: "IdentityUser");
+
+            migrationBuilder.DropTable(
+                name: "UserIdentity");
 
             migrationBuilder.DropTable(
                 name: "Carrinho");

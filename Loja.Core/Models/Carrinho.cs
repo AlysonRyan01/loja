@@ -1,7 +1,12 @@
-﻿namespace Loja.Core.Models;
+﻿using Loja.Core.Models.Identity;
+
+namespace Loja.Core.Models;
 
 public class Carrinho
 {
     public long Id { get; set; }
-    public List<CarrinhoItem> CarrinhoItens { get; set; } = new();
+    public long UserId { get; set; }
+    public List<CarrinhoItem> CarrinhoItens { get; set; }
+    
+    public decimal ValorTotal { get; set; }
 }

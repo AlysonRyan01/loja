@@ -7,17 +7,9 @@ using Microsoft.EntityFrameworkCore;
 namespace Loja.Api.Controllers;
 
 [ApiController]
-public class ProdutoController : ControllerBase
+public class ProdutoController(IProdutoHandler produtoHandler, ILogger<ProdutoController> logger)
+    : ControllerBase
 {
-    private readonly IProdutoHandler _produtoHandler;
-    private readonly ILogger<ProdutoController> _logger;
-    
-    public ProdutoController(IProdutoHandler produtoHandler, ILogger<ProdutoController> logger)
-    {
-        _produtoHandler = produtoHandler;
-        _logger = logger;
-    }
-
     [HttpPost("v1/produto/criar")]
     public async Task<IActionResult> Post([FromForm] CriarProdutoRequisicao request)
     {
@@ -26,7 +18,7 @@ public class ProdutoController : ControllerBase
             if (!ModelState.IsValid)
                 return BadRequest(new Resposta<string>(null, 400, "Erro de validação nos dados fornecidos"));
 
-            var result = await _produtoHandler.CriarProdutoAsync(request);
+            var result = await produtoHandler.CriarProdutoAsync(request);
 
             return result.IsSuccess
                 ? Created($"v1/produto/{result.Dados?.Id}", result)
@@ -34,30 +26,30 @@ public class ProdutoController : ControllerBase
         }
         catch (DbUpdateException dbEx)
         {
-            _logger.LogError(dbEx, "Erro ao salvar no banco de dados: {Mensagem}", dbEx.Message);
+            logger.LogError(dbEx, "Erro ao salvar no banco de dados: {Mensagem}", dbEx.Message);
             return StatusCode(500, new Resposta<string>(null, 500, "Erro ao salvar os dados no banco de dados"));
         }
         catch (ArgumentException argEx)
         {
-            _logger.LogWarning(argEx, "Erro de argumento inválido: {Mensagem}", argEx.Message);
+            logger.LogWarning(argEx, "Erro de argumento inválido: {Mensagem}", argEx.Message);
             return BadRequest(new Resposta<string>(null, 400, "Argumentos inválidos fornecidos"));
         }
         catch (Exception ex)
         {
-            _logger.LogError(ex, "Erro inesperado: {Mensagem}", ex.Message);
+            logger.LogError(ex, "Erro inesperado: {Mensagem}", ex.Message);
             return StatusCode(500, new Resposta<string>(null, 500, "Erro interno do servidor"));
         }
     }
     
     [HttpPut("v1/produto/")]
-    public async Task<IActionResult> Put([FromForm] AtualizarProdutoRequisicao request)
+    public async Task<IActionResult> Put([FromForm] AtualizarProdutoRequisicao requisicao)
     {
         try
         {
             if (!ModelState.IsValid)
                 return BadRequest(new Resposta<string>(null, 400, "Erro de validação nos dados fornecidos"));
 
-            var result = await _produtoHandler.AtualizarProdutoAsync(request);
+            var result = await produtoHandler.AtualizarProdutoAsync(requisicao);
 
             return result.IsSuccess
                 ? Ok(result)
@@ -65,17 +57,17 @@ public class ProdutoController : ControllerBase
         }
         catch (DbUpdateException dbEx)
         {
-            _logger.LogError(dbEx, "Erro ao salvar no banco de dados: {Mensagem}", dbEx.Message);
+            logger.LogError(dbEx, "Erro ao salvar no banco de dados: {Mensagem}", dbEx.Message);
             return StatusCode(500, new Resposta<dynamic>(null, 500, "Erro ao salvar os dados no banco de dados"));
         }
         catch (ArgumentException argEx)
         {
-            _logger.LogWarning(argEx, "Erro de argumento inválido: {Mensagem}", argEx.Message);
+            logger.LogWarning(argEx, "Erro de argumento inválido: {Mensagem}", argEx.Message);
             return BadRequest(new Resposta<dynamic>(null, 400, "Argumentos inválidos fornecidos"));
         }
         catch (Exception ex)
         {
-            _logger.LogError(ex, "Erro inesperado: {Mensagem}", ex.Message);
+            logger.LogError(ex, "Erro inesperado: {Mensagem}", ex.Message);
             return StatusCode(500, new Resposta<dynamic>(null, 500, "Erro interno do servidor"));
         }
     }
@@ -88,7 +80,7 @@ public class ProdutoController : ControllerBase
             if (!ModelState.IsValid)
                 return BadRequest(new Resposta<dynamic>(null, 400, "Erro de validação nos dados fornecidos"));
 
-            var result = await _produtoHandler.RemoverProdutoAsync(id);
+            var result = await produtoHandler.RemoverProdutoAsync(id);
 
             return result.IsSuccess
                 ? Ok(result)
@@ -96,17 +88,17 @@ public class ProdutoController : ControllerBase
         }
         catch (DbUpdateException dbEx)
         {
-            _logger.LogError(dbEx, "Erro ao salvar no banco de dados: {Mensagem}", dbEx.Message);
+            logger.LogError(dbEx, "Erro ao salvar no banco de dados: {Mensagem}", dbEx.Message);
             return StatusCode(500, new Resposta<string>(null, 500, "Erro ao salvar os dados no banco de dados"));
         }
         catch (ArgumentException argEx)
         {
-            _logger.LogWarning(argEx, "Erro de argumento inválido: {Mensagem}", argEx.Message);
+            logger.LogWarning(argEx, "Erro de argumento inválido: {Mensagem}", argEx.Message);
             return BadRequest(new Resposta<string>(null, 400, "Argumentos inválidos fornecidos"));
         }
         catch (Exception ex)
         {
-            _logger.LogError(ex, "Erro inesperado: {Mensagem}", ex.Message);
+            logger.LogError(ex, "Erro inesperado: {Mensagem}", ex.Message);
             return StatusCode(500, new Resposta<string>(null, 500, "Erro interno do servidor"));
         }
     }
@@ -119,7 +111,7 @@ public class ProdutoController : ControllerBase
             if (!ModelState.IsValid)
                 return BadRequest(new Resposta<dynamic>(null, 400, "Erro de validação nos dados fornecidos"));
             
-            var result = await _produtoHandler.ObterProdutoPorIdAsync(id);
+            var result = await produtoHandler.ObterProdutoPorIdAsync(id);
 
             return result.IsSuccess
                 ? Ok(result)
@@ -127,17 +119,17 @@ public class ProdutoController : ControllerBase
         }
         catch (DbUpdateException dbEx)
         {
-            _logger.LogError(dbEx, "Erro ao salvar no banco de dados: {Mensagem}", dbEx.Message);
+            logger.LogError(dbEx, "Erro ao salvar no banco de dados: {Mensagem}", dbEx.Message);
             return StatusCode(500, new Resposta<string>(null, 500, "Erro ao salvar os dados no banco de dados"));
         }
         catch (ArgumentException argEx)
         {
-            _logger.LogWarning(argEx, "Erro de argumento inválido: {Mensagem}", argEx.Message);
+            logger.LogWarning(argEx, "Erro de argumento inválido: {Mensagem}", argEx.Message);
             return BadRequest(new Resposta<string>(null, 400, "Argumentos inválidos fornecidos"));
         }
         catch (Exception ex)
         {
-            _logger.LogError(ex, "Erro inesperado: {Mensagem}", ex.Message);
+            logger.LogError(ex, "Erro inesperado: {Mensagem}", ex.Message);
             return StatusCode(500, new Resposta<string>(null, 500, "Erro interno do servidor"));
         }
     }
@@ -150,7 +142,7 @@ public class ProdutoController : ControllerBase
             if (!ModelState.IsValid)
                 return BadRequest(new Resposta<dynamic>(null, 400, "Erro de validação nos dados fornecidos"));
             
-            var result = await _produtoHandler.ObterTodosProdutos();
+            var result = await produtoHandler.ObterTodosProdutos();
 
             return result.IsSuccess
                 ? Ok(result)
@@ -158,17 +150,17 @@ public class ProdutoController : ControllerBase
         }
         catch (DbUpdateException dbEx)
         {
-            _logger.LogError(dbEx, "Erro ao salvar no banco de dados: {Mensagem}", dbEx.Message);
+            logger.LogError(dbEx, "Erro ao salvar no banco de dados: {Mensagem}", dbEx.Message);
             return StatusCode(500, new Resposta<string>(null, 500, "Erro ao salvar os dados no banco de dados"));
         }
         catch (ArgumentException argEx)
         {
-            _logger.LogWarning(argEx, "Erro de argumento inválido: {Mensagem}", argEx.Message);
+            logger.LogWarning(argEx, "Erro de argumento inválido: {Mensagem}", argEx.Message);
             return BadRequest(new Resposta<string>(null, 400, "Argumentos inválidos fornecidos"));
         }
         catch (Exception ex)
         {
-            _logger.LogError(ex, "Erro inesperado: {Mensagem}", ex.Message);
+            logger.LogError(ex, "Erro inesperado: {Mensagem}", ex.Message);
             return StatusCode(500, new Resposta<string>(null, 500, "Erro interno do servidor"));
         }
     }

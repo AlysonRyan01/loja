@@ -7,33 +7,25 @@ namespace Loja.Api.Controllers;
 
 [Route("v1/identity/")]
 [ApiController]
-public class IdentityController : ControllerBase
+public class IdentityController(IIdentityHandler handler, ILogger<ProdutoController> logger)
+    : ControllerBase
 {
-    private readonly IIdentityHandler _handler;
-    private readonly ILogger<ProdutoController> _logger;
-
-    public IdentityController(IIdentityHandler handler, ILogger<ProdutoController> logger)
-    {
-        _handler = handler;
-        _logger = logger;
-    }
-    
     [HttpPost("/login")]
     public async Task<IActionResult> Login(LoginRequest request)
     {
         try
         {
             if(!ModelState.IsValid)
-                return BadRequest(new Resposta<string>("Erro no ModelState", 401, "Erro no ModelState"));
+                return BadRequest(new Resposta<string>("Erro de validacao", 401, "Erro de validacao"));
             
-            var result = await _handler.LoginAsync(request);
+            var result = await handler.LoginAsync(request);
             
-            return result.IsSuccess ? Ok(result.Mensagem) : Unauthorized(result.Mensagem);
+            return result.IsSuccess ? Ok(result) : Unauthorized(result);
                 
         }
         catch (Exception e)
         {
-            _logger.LogError(e.Message);
+            logger.LogError(e.Message);
             return BadRequest(new Resposta<string>("Erro no login", 401, e.Message));
         }
     }
@@ -44,16 +36,16 @@ public class IdentityController : ControllerBase
         try
         {
             if(!ModelState.IsValid)
-                return BadRequest(new Resposta<string>("Erro no ModelState", 401, "Erro no ModelState"));
+                return BadRequest(new Resposta<string>("Erro de validacao", 401, "Erro de validacao"));
             
-            var result = await _handler.RegisterAsync(request);
+            var result = await handler.RegisterAsync(request);
             
-            return result.IsSuccess ? Ok(result.Mensagem) : Unauthorized(result.Mensagem);
+            return result.IsSuccess ? Ok(result) : Unauthorized(result);
                 
         }
         catch (Exception e)
         {
-            _logger.LogError(e.Message);
+            logger.LogError(e.Message);
             return BadRequest(new Resposta<string>("Erro no cadastro", 401, e.Message));
         }
     }
@@ -63,12 +55,12 @@ public class IdentityController : ControllerBase
     {
         try
         {
-            var result = await _handler.LogoutAsync();
-            return result.IsSuccess ? Ok(result.Mensagem) : BadRequest(result.Mensagem);
+            var result = await handler.LogoutAsync();
+            return result.IsSuccess ? Ok(result) : BadRequest(result);
         }
         catch (Exception e)
         {
-            _logger.LogError(e.Message);
+            logger.LogError(e.Message);
             return BadRequest(new Resposta<string>("Erro no logout", 401, e.Message));
         }
     }
@@ -78,13 +70,13 @@ public class IdentityController : ControllerBase
     {
         try
         {
-            var result = await _handler.UserInfo(User);
+            var result = await handler.UserInfo(User);
             
-            return result.IsSuccess ? Ok(result.Dados) : BadRequest(result.Mensagem);
+            return result.IsSuccess ? Ok(result) : BadRequest(result);
         }
         catch (Exception e)
         {
-            _logger.LogError(e.Message);
+            logger.LogError(e.Message);
             return BadRequest(new Resposta<string>("Erro ao obter o usuario.", 401, e.Message));
         }
     }
@@ -94,13 +86,13 @@ public class IdentityController : ControllerBase
     {
         try
         {
-            var result = await _handler.UserRoles(User);
+            var result = await handler.UserRoles(User);
             
-            return result.IsSuccess ? Ok(result.Dados) : BadRequest(result.Mensagem);
+            return result.IsSuccess ? Ok(result) : BadRequest(result);
         }
         catch (Exception e)
         {
-            _logger.LogError(e.Message);
+            logger.LogError(e.Message);
             return BadRequest(new Resposta<string>("Erro ao obter as roles.", 401, e.Message));
         }
     }

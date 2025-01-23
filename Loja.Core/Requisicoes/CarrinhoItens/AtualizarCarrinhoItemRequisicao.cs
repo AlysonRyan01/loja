@@ -2,7 +2,7 @@
 
 namespace Loja.Core.Requisicoes.CarrinhoItens;
 
-public class AtualizarProdutoRequisicao
+public class AtualizarCarrinhoItemRequisicao
 {
     [Required(ErrorMessage = "O ID do produto é obrigatório.")]
     public long ProdutoId { get; set; }

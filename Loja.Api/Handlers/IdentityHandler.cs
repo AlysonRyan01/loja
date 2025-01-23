@@ -7,7 +7,7 @@ using Loja.Core.Models.Identity;
 using Loja.Core.Requisicoes.Identity;
 using Loja.Core.Respostas;
 using Microsoft.AspNetCore.Identity;
-using User = Loja.Api.Models.User;
+
 
 namespace Loja.Api.Handlers;
 
@@ -47,27 +47,35 @@ public class IdentityHandler : IIdentityHandler
     public async Task<Resposta<string>> RegisterAsync(RegisterRequest request)
     {
         using var transaction = await _context.Database.BeginTransactionAsync();
+        
         try
         {
-            var carrinho = new Carrinho();
-            
-            _context.Carrinhos.Add(carrinho);
-            
-            await _context.SaveChangesAsync();
-            
             var user = new User
             {
                 Email = request.Email,
                 UserName = request.Email,
-                CarrinhoId = carrinho.Id
             };
-            
-            var result = await _userManager.CreateAsync(user, request.Password);
 
+            var result = await _userManager.CreateAsync(user, request.Password);
+            
             if (!result.Succeeded)
             {
                 await transaction.RollbackAsync();
                 return new Resposta<string>("Erro ao registrar usuário", 400, "Verifique os erros nos campos fornecidos.");
+            }
+
+            var carrinho = new Carrinho
+            {
+                UserId = user.Id,
+            };
+            
+            _context.Carrinhos.Add(carrinho); 
+            var carrinhoResult = await _context.SaveChangesAsync();
+
+            if (carrinhoResult == 0)
+            {
+                await transaction.RollbackAsync();
+                return new Resposta<string>("Erro ao criar carrinho", 400, "Erro ao associar carrinho ao usuário.");
             }
 
             await transaction.CommitAsync();

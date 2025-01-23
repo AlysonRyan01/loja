@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
-using Loja.Api.Models;
 using Loja.Core.Models;
+using Loja.Core.Models.Identity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;

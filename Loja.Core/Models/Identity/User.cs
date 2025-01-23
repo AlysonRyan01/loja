@@ -1,8 +1,8 @@
-﻿namespace Loja.Core.Models.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 
-public class User
+namespace Loja.Core.Models.Identity;
+
+public class User : IdentityUser<long>
 {
-    public string Email { get; set; } = string.Empty;
-    public bool IsEmailConfirmed { get; set; }
-    public Dictionary<string, string> Claims { get; set; } = [];
+    public List<IdentityRole<long>>? Roles { get; set; } = new();
 }

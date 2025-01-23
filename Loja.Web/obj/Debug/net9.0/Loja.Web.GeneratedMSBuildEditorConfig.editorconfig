@@ -16,29 +16,29 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = Dima.Web
 build_property.RootNamespace = Dima.Web
-build_property.ProjectDir = D:\GitHubRepository\loja\Loja.Web\
+build_property.ProjectDir = C:\Users\TVS'PC\Documents\MeusProjetos\loja\Loja.Web\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\GitHubRepository\loja\Loja.Web
+build_property.MSBuildProjectDirectory = C:\Users\TVS'PC\Documents\MeusProjetos\loja\Loja.Web
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[D:/GitHubRepository/loja/Loja.Web/App.razor]
+[C:/Users/TVS'PC/Documents/MeusProjetos/loja/Loja.Web/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubRepository/loja/Loja.Web/Layout/MainLayout.razor]
+[C:/Users/TVS'PC/Documents/MeusProjetos/loja/Loja.Web/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubRepository/loja/Loja.Web/Pages/Home.razor]
+[C:/Users/TVS'PC/Documents/MeusProjetos/loja/Loja.Web/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubRepository/loja/Loja.Web/_Imports.razor]
+[C:/Users/TVS'PC/Documents/MeusProjetos/loja/Loja.Web/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

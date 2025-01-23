@@ -1,9 +1,9 @@
 using Loja.Api.Data;
 using Loja.Api.Handlers;
-using Loja.Api.Models;
 using Loja.Api.Services;
 using Loja.Core;
 using Loja.Core.Handlers;
+using Loja.Core.Models.Identity;
 using Loja.Core.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;

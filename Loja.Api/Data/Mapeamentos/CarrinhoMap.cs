@@ -22,7 +22,12 @@ public class CarrinhoMap : IEntityTypeConfiguration<Carrinho>
             .HasColumnType("DECIMAL(18,2)");
         
         builder.Property(x => x.UserId)
-            .IsRequired()
-            .HasColumnType("BIGINT");
+            .IsRequired();
+
+        builder.HasOne(x => x.User)
+            .WithOne()
+            .HasForeignKey<Carrinho>(x => x.UserId)
+            .OnDelete(DeleteBehavior.Cascade);
+
     }
 }

@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Loja.Api.Migrations
 {
     [DbContext(typeof(LojaDataContext))]
-    [Migration("20250123180739_v1")]
+    [Migration("20250124021929_v1")]
     partial class v1
     {
         /// <inheritdoc />
@@ -327,7 +327,7 @@ namespace Loja.Api.Migrations
                     b.HasOne("Loja.Core.Models.Produto", "Produto")
                         .WithMany()
                         .HasForeignKey("ProdutoId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Carrinho");

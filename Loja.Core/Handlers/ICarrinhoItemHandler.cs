@@ -9,6 +9,6 @@ public interface ICarrinhoItemHandler
 {
     Task<Resposta<CarrinhoItem>> CriarCarrinhoItemAsync(CriarCarrinhoItemRequisicao requisicao, ClaimsPrincipal user);
     Task<Resposta<CarrinhoItem>> AtualizarrCarrinhoItemAsync(AtualizarCarrinhoItemRequisicao requisicao, ClaimsPrincipal user);
-    Task<Resposta<CarrinhoItem>> RemoverCarrinhoItemAsync(long id, ClaimsPrincipal user);
-    Task<Resposta<CarrinhoItem>> ObterCarrinhoItemAsync(ClaimsPrincipal user);
+    Task<Resposta<CarrinhoItem>> RemoverCarrinhoItemAsync(RemoverCarrinhoItemRequisicao requisicao, ClaimsPrincipal user);
+    Task<Resposta<List<CarrinhoItem>?>> ObterCarrinhoItemAsync(ClaimsPrincipal user);
 }

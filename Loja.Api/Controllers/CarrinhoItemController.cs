@@ -53,5 +53,48 @@ public class CarrinhoItemController(ICarrinhoItemHandler handler, ILogger<Carrin
         }
     }
     
+    [HttpDelete("/remover")]
+    public async Task<IActionResult> Delete(RemoverCarrinhoItemRequisicao requisicao)
+    {
+        try
+        {
+            var user = HttpContext.User;
+            
+            if(!ModelState.IsValid)
+                return BadRequest(new Resposta<string>("Erro de validacao", 400, "Erro de validacao"));
+            
+            var result = await handler.RemoverCarrinhoItemAsync(requisicao, user);
+            
+            return result.IsSuccess ? Ok(result) : Unauthorized(result);
+                
+        }
+        catch (Exception e)
+        {
+            logger.LogError(e.Message);
+            return BadRequest(new Resposta<string>("Erro no servidor", 400, e.Message));
+        }
+    }
+    
+    [HttpGet("/obter")]
+    public async Task<IActionResult> Get()
+    {
+        try
+        {
+            var user = HttpContext.User;
+            
+            if(!ModelState.IsValid)
+                return BadRequest(new Resposta<string>("Erro de validacao", 400, "Erro de validacao"));
+            
+            var result = await handler.ObterCarrinhoItemAsync(user);
+            
+            return result.IsSuccess ? Ok(result) : Unauthorized(result);
+                
+        }
+        catch (Exception e)
+        {
+            logger.LogError(e.Message);
+            return BadRequest(new Resposta<string>("Erro no servidor", 400, e.Message));
+        }
+    }
     
 }

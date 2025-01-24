@@ -324,7 +324,7 @@ namespace Loja.Api.Migrations
                     b.HasOne("Loja.Core.Models.Produto", "Produto")
                         .WithMany()
                         .HasForeignKey("ProdutoId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Carrinho");

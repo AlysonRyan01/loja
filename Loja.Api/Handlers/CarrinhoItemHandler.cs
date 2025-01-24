@@ -81,15 +81,7 @@ public class CarrinhoItemHandler(
                 return new Resposta<CarrinhoItem>(null, 404, "Produto ou carrinho inválido.");
 
             var carrinho = carrinhoItem.Carrinho;
-
-            if (requisicao.Quantidade == 0)
-            {
-                carrinho.ValorTotal -= carrinhoItem.PrecoTotal;
-                context.Carrinhos.Update(carrinho);
-                await RemoverCarrinhoItemAsync(requisicao.Id, user);
-                return new Resposta<CarrinhoItem>(carrinhoItem, 200, "CarrinhoItem removido com sucesso.");
-            }
-
+            
             var diferencaQuantidade = requisicao.Quantidade - carrinhoItem.Quantidade;
             carrinhoItem.Quantidade = requisicao.Quantidade;
             carrinhoItem.PrecoTotal += carrinhoItem.Produto.Preco * diferencaQuantidade;
@@ -114,7 +106,7 @@ public class CarrinhoItemHandler(
         }
     }
 
-    public async Task<Resposta<CarrinhoItem>> RemoverCarrinhoItemAsync(long id, ClaimsPrincipal user)
+    public async Task<Resposta<CarrinhoItem>> RemoverCarrinhoItemAsync(RemoverCarrinhoItemRequisicao requisicao, ClaimsPrincipal user)
     {
         try
         {
@@ -129,12 +121,21 @@ public class CarrinhoItemHandler(
             var carrinhoItem = await context.CarrinhoItens
                 .Include(x => x.Produto)
                 .Include(x => x.Carrinho)
-                .FirstOrDefaultAsync(x => x.Id == id && x.Carrinho.UserId == userId);
+                .FirstOrDefaultAsync(x => x.Id == requisicao.Id && x.Carrinho.UserId == userId);
+
+            if (carrinhoItem == null)
+                return new Resposta<CarrinhoItem>(null, 404, "CarrinhoItem não encontrado.");
 
             if (carrinhoItem?.Carrinho == null)
-                return new Resposta<CarrinhoItem>(null, 404, "Produto ou carrinho inválido.");
+                return new Resposta<CarrinhoItem>(null, 404, "Carrinho inválido.");
 
             var carrinho = carrinhoItem.Carrinho;
+            
+            carrinho.ValorTotal -= carrinhoItem.PrecoTotal;
+
+            context.CarrinhoItens.Remove(carrinhoItem);
+            context.Carrinhos.Update(carrinho);
+            await context.SaveChangesAsync();
             
             return new Resposta<CarrinhoItem>(carrinhoItem, 200, "CarrinhoItem removido com sucesso.");
         }
@@ -150,8 +151,39 @@ public class CarrinhoItemHandler(
         }
     }
 
-    public Task<Resposta<CarrinhoItem>> ObterCarrinhoItemAsync(ClaimsPrincipal user)
+    public async Task<Resposta<List<CarrinhoItem>?>> ObterCarrinhoItemAsync(ClaimsPrincipal user)
     {
-        throw new NotImplementedException();
+        try
+        {
+            var userIdClaim = user.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            
+            if (string.IsNullOrEmpty(userIdClaim))
+                return new Resposta<List<CarrinhoItem>?>(null, 401, "Usuário não autenticado");
+            
+            if (!long.TryParse(userIdClaim, out long userId))
+                return new Resposta<List<CarrinhoItem>?>(null, 400, "ID de usuario invalido");
+            
+            var carrinhoItem = await context.CarrinhoItens
+                .Include(x => x.Produto)
+                    .ThenInclude(p => p.Imagens)
+                .Include(x => x.Carrinho)
+                .Where(x => x.Carrinho.UserId == userId)
+                .ToListAsync();
+            
+            if(!carrinhoItem.Any())
+                return new Resposta<List<CarrinhoItem>?>(null, 404, "Nenhum carrinhoItem encontrado");
+            
+            return new Resposta<List<CarrinhoItem>?>(carrinhoItem, 200, "CarrinhoItem(s) obtido(s) com sucesso");
+        }
+        catch (DbUpdateException dbEx)
+        {
+            logger.LogError(dbEx.Message);
+            return new Resposta<List<CarrinhoItem>?>(null, 500, "Erro ao retornar os carrinhosItens do banco de dados");
+        }
+        catch (Exception ex)
+        {
+            logger.LogError(ex.Message);
+            return new Resposta<List<CarrinhoItem>?>(null, 500, "Ocorreu um erro inesperado ao retornar os carrinhos itens");
+        }
     }
 }

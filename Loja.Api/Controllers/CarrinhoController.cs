@@ -1,28 +1,25 @@
-﻿using System.Security.Claims;
-using Loja.Core.Handlers;
+﻿using Loja.Core.Handlers;
 using Loja.Core.Respostas;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Loja.Api.Controllers;
 
-[Route("v1/carrinho/")]
+[Route("v1/carrinho")]
 [ApiController]
 public class CarrinhoController(ICarrinhoHandler handler, ILogger<CarrinhoController> logger) : ControllerBase
 {
-    [HttpGet("/")]
+    [HttpGet("detalhes")]
     public async Task<IActionResult> GetById()
     {
         try
         {
             var user = HttpContext.User;
-            
-            if(!ModelState.IsValid)
-                return BadRequest(new Resposta<string>("Erro de validacao", 401, "Erro de validacao"));
-            
+            if (!ModelState.IsValid)
+                return BadRequest(new Resposta<string>("Erro de validação", 401, "Erro de validação"));
+
             var result = await handler.ObterCarrinhoPorUserAsync(user);
-            
+
             return result.IsSuccess ? Ok(result) : BadRequest(result);
-                
         }
         catch (Exception e)
         {

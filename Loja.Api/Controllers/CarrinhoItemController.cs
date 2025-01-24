@@ -5,11 +5,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Loja.Api.Controllers;
 
-[Route("api/[controller]")]
+[Route("api/carrinho-item")]
 [ApiController]
 public class CarrinhoItemController(ICarrinhoItemHandler handler, ILogger<CarrinhoItemController> logger) : ControllerBase
 {
-    [HttpPost]
+    [HttpPost("create")]
     public async Task<IActionResult> Create(CriarCarrinhoItemRequisicao requisicao)
     {
         try
@@ -30,7 +30,7 @@ public class CarrinhoItemController(ICarrinhoItemHandler handler, ILogger<Carrin
         }
     }
 
-    [HttpPut("{id:long}")]
+    [HttpPut("update/{id:long}")]
     public async Task<IActionResult> Update(long id, AtualizarCarrinhoItemRequisicao requisicao)
     {
         try
@@ -52,7 +52,7 @@ public class CarrinhoItemController(ICarrinhoItemHandler handler, ILogger<Carrin
         }
     }
 
-    [HttpDelete("{id:long}")]
+    [HttpDelete("delete/{id:long}")]
     public async Task<IActionResult> Delete(long id)
     {
         try
@@ -74,7 +74,7 @@ public class CarrinhoItemController(ICarrinhoItemHandler handler, ILogger<Carrin
         }
     }
 
-    [HttpGet]
+    [HttpGet("list")]
     public async Task<IActionResult> Get()
     {
         try

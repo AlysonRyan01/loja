@@ -52,40 +52,44 @@ public class ProdutoHandler(
 
     public async Task<Resposta<Produto?>> AtualizarProdutoAsync(AtualizarProdutoRequisicao requisicao)
     {
+        using var transaction = await context.Database.BeginTransactionAsync();
+    
         try
         {
             var produto = await context.Produtos
                 .Include(x => x.Imagens)
                 .FirstOrDefaultAsync(p => p.Id == requisicao.Id);
-            
-            if(produto == null)
-                return new Resposta<Produto?>(null, 404, "Produto nao encontrado");
+
+            if (produto == null)
+                return new Resposta<Produto?>(null, 404, "Produto não encontrado");
             
             if (requisicao.Imagens.Any())
             {
                 var novasImagens = await uploadImagemService.UploadImagem(requisicao.Imagens);
+                await context.Imagens.AddRangeAsync(novasImagens);
                 produto.Imagens.AddRange(novasImagens);
             }
-            
-            var imagens = await uploadImagemService.UploadImagem(requisicao.Imagens);
             
             produto.Titulo = requisicao.Titulo;
             produto.Descricao = requisicao.Descricao;
             produto.Preco = requisicao.Preco;
-            produto.Imagens = imagens;
-            
+
             context.Produtos.Update(produto);
-            await context.SaveChangesAsync();
             
+            await context.SaveChangesAsync();
+            await transaction.CommitAsync();
+
             return new Resposta<Produto?>(produto, 200, "Produto atualizado com sucesso");
         }
         catch (DbUpdateException dbEx)
         {
+            await transaction.RollbackAsync();
             logger.LogError(dbEx.Message);
             return new Resposta<Produto?>(null, 500, "Erro ao salvar o produto no banco de dados");
         }
         catch (Exception ex)
         {
+            await transaction.RollbackAsync();
             logger.LogError(ex.Message);
             return new Resposta<Produto?>(null, 500, "Ocorreu um erro inesperado ao cadastrar o produto");
         }
@@ -93,32 +97,50 @@ public class ProdutoHandler(
 
     public async Task<Resposta<Produto?>> RemoverProdutoAsync(RemoverProdutoRequisicao requisicao)
     {
+        using var transaction = await context.Database.BeginTransactionAsync();
+        
         try
         {
             var produto = await context
                 .Produtos
+                .Include(x => x.Imagens)
                 .AsNoTracking()
                 .FirstOrDefaultAsync(p => p.Id == requisicao.Id);
-
-            var imagens = await context.Imagens.Where(x => x.ProdutoId == requisicao.Id).ToListAsync();
-
-            uploadImagemService.ExcluirImagem(imagens);
             
-            if(produto == null)
-                return new Resposta<Produto?>(null, 404, "Produto nao encontrado");
+            if (produto == null)
+                return new Resposta<Produto?>(null, 404, "Produto não encontrado");
+
+            var carrinhoItens = await context.CarrinhoItens
+                .AsNoTracking()
+                .Where(x => x.ProdutoId == requisicao.Id)
+                .ToListAsync();
+            
+            if (carrinhoItens.Any())
+                context.CarrinhoItens.RemoveRange(carrinhoItens);
+
+            if (produto.Imagens.Any())
+            {
+                var imagens = produto.Imagens.ToList();
+                context.Imagens.RemoveRange(imagens);
+                uploadImagemService.ExcluirImagem(imagens);
+            }
             
             context.Produtos.Remove(produto);
+            
             await context.SaveChangesAsync();
+            await transaction.CommitAsync();
             
             return new Resposta<Produto?>(produto, 200, "Produto removido com sucesso");
         }
         catch (DbUpdateException dbEx)
         {
+            await transaction.RollbackAsync();
             logger.LogError(dbEx.Message);
             return new Resposta<Produto?>(null, 500, "Erro ao salvar o produto no banco de dados");
         }
         catch (Exception ex)
         {
+            await transaction.RollbackAsync();
             logger.LogError(ex.Message);
             return new Resposta<Produto?>(null, 500, "Ocorreu um erro inesperado ao cadastrar o produto");
         }

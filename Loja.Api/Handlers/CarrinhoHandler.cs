@@ -29,6 +29,13 @@ public class CarrinhoHandler(
             
             if(carrinho == null)
                 return new Resposta<Carrinho>(null, 401, "Carrinho nao encontrado");
+
+            decimal valorTotalCarrinho = 0;
+
+            foreach (var item in carrinho.CarrinhoItens)
+                valorTotalCarrinho += item.PrecoTotal;
+            
+            carrinho.ValorTotal = valorTotalCarrinho;
             
             return new Resposta<Carrinho>(carrinho, 200, "Carrinho obtido com sucesso");
         }

@@ -10,7 +10,7 @@ namespace Loja.Api.Controllers;
 public class ProdutoController(IProdutoHandler produtoHandler, ILogger<ProdutoController> logger)
     : ControllerBase
 {
-    [HttpPost("v1/produto/criar")]
+    [HttpPost("v1/produto/create")]
     public async Task<IActionResult> Post([FromForm] CriarProdutoRequisicao request)
     {
         try
@@ -41,13 +41,15 @@ public class ProdutoController(IProdutoHandler produtoHandler, ILogger<ProdutoCo
         }
     }
     
-    [HttpPut("v1/produto/")]
-    public async Task<IActionResult> Put([FromForm] AtualizarProdutoRequisicao requisicao)
+    [HttpPut("v1/produto/update/{id:long}")]
+    public async Task<IActionResult> Put(long id, [FromForm] AtualizarProdutoRequisicao requisicao)
     {
         try
         {
             if (!ModelState.IsValid)
                 return BadRequest(new Resposta<string>(null, 400, "Erro de validação nos dados fornecidos"));
+            
+            requisicao.Id = id;
 
             var result = await produtoHandler.AtualizarProdutoAsync(requisicao);
 
@@ -72,7 +74,7 @@ public class ProdutoController(IProdutoHandler produtoHandler, ILogger<ProdutoCo
         }
     }
     
-    [HttpDelete("v1/produto/{id:long}")]
+    [HttpDelete("v1/produto/delete/{id:long}")]
     public async Task<IActionResult> Delete(long id)
     {
         try
@@ -144,7 +146,7 @@ public class ProdutoController(IProdutoHandler produtoHandler, ILogger<ProdutoCo
         }
     }
     
-    [HttpGet("v1/produto/")]
+    [HttpGet("v1/produto/list")]
     public async Task<IActionResult> GetAll()
     {
         try

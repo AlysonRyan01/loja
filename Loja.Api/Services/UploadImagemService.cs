@@ -53,7 +53,7 @@ public class ImagemService : IUploadImagemService
             throw;
         }
     }
-
+    
     public bool ExcluirImagem(List<Imagem> imagens)
     {
         int contadorDeImagens = imagens.Count;

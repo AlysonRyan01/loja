@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Loja.Api.Controllers;
 
-[Route("api/carrinho-item")]
+[Route("v1/carrinho-item")]
 [ApiController]
 public class CarrinhoItemController(ICarrinhoItemHandler handler, ILogger<CarrinhoItemController> logger) : ControllerBase
 {

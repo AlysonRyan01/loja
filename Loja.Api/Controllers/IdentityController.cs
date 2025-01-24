@@ -5,12 +5,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Loja.Api.Controllers;
 
-[Route("v1/identity/")]
 [ApiController]
 public class IdentityController(IIdentityHandler handler, ILogger<ProdutoController> logger)
     : ControllerBase
 {
-    [HttpPost("/login")]
+    [HttpPost("v1/identity/login")]
     public async Task<IActionResult> Login(LoginRequest request)
     {
         try
@@ -30,7 +29,7 @@ public class IdentityController(IIdentityHandler handler, ILogger<ProdutoControl
         }
     }
     
-    [HttpPost("/register")]
+    [HttpPost("v1/identity/register")]
     public async Task<IActionResult> Register(RegisterRequest request)
     {
         try
@@ -50,7 +49,7 @@ public class IdentityController(IIdentityHandler handler, ILogger<ProdutoControl
         }
     }
 
-    [HttpPost("/logout")]
+    [HttpPost("v1/identity/logout")]
     public async Task<IActionResult> Logout()
     {
         try
@@ -65,7 +64,7 @@ public class IdentityController(IIdentityHandler handler, ILogger<ProdutoControl
         }
     }
 
-    [HttpGet("/manage/info")]
+    [HttpGet("v1/identity/manage/info")]
     public async Task<IActionResult> GetUserInfo()
     {
         try
@@ -81,7 +80,7 @@ public class IdentityController(IIdentityHandler handler, ILogger<ProdutoControl
         }
     }
     
-    [HttpGet("/manage/roles")]
+    [HttpGet("v1/identity/manage/roles")]
     public async Task<IActionResult> GetUserRoles()
     {
         try

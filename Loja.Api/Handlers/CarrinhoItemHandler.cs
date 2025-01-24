@@ -163,17 +163,23 @@ public class CarrinhoItemHandler(
             if (!long.TryParse(userIdClaim, out long userId))
                 return new Resposta<List<CarrinhoItem>?>(null, 400, "ID de usuario invalido");
             
-            var carrinhoItem = await context.CarrinhoItens
+            var carrinhoItens = await context.CarrinhoItens
                 .Include(x => x.Produto)
                     .ThenInclude(p => p.Imagens)
                 .Include(x => x.Carrinho)
                 .Where(x => x.Carrinho.UserId == userId)
                 .ToListAsync();
             
-            if(!carrinhoItem.Any())
+            if(!carrinhoItens.Any())
                 return new Resposta<List<CarrinhoItem>?>(null, 404, "Nenhum carrinhoItem encontrado");
+
+            foreach (var carrinhoItem in carrinhoItens)
+            {
+                carrinhoItem.PrecoTotal = carrinhoItem.Produto.Preco * carrinhoItem.Quantidade;
+            }
+            context.CarrinhoItens.UpdateRange(carrinhoItens);
             
-            return new Resposta<List<CarrinhoItem>?>(carrinhoItem, 200, "CarrinhoItem(s) obtido(s) com sucesso");
+            return new Resposta<List<CarrinhoItem>?>(carrinhoItens, 200, "CarrinhoItem(s) obtido(s) com sucesso");
         }
         catch (DbUpdateException dbEx)
         {

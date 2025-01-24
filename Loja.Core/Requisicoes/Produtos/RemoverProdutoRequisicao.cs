@@ -2,5 +2,5 @@
 
 public class RemoverProdutoRequisicao
 {
-    public int Id;
+    public long Id;
 }

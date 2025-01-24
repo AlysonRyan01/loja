@@ -9,7 +9,7 @@ namespace Loja.Api.Controllers;
 [ApiController]
 public class CarrinhoController(ICarrinhoHandler handler, ILogger<CarrinhoController> logger) : ControllerBase
 {
-    [HttpGet]
+    [HttpGet("/")]
     public async Task<IActionResult> GetById()
     {
         try

@@ -91,16 +91,16 @@ public class ProdutoHandler(
         }
     }
 
-    public async Task<Resposta<Produto?>> RemoverProdutoAsync(int id)
+    public async Task<Resposta<Produto?>> RemoverProdutoAsync(RemoverProdutoRequisicao requisicao)
     {
         try
         {
             var produto = await context
                 .Produtos
                 .AsNoTracking()
-                .FirstOrDefaultAsync(p => p.Id == id);
-            
-            var imagens = await context.Imagens.Where(x => x.ProdutoId == id).ToListAsync();
+                .FirstOrDefaultAsync(p => p.Id == requisicao.Id);
+
+            var imagens = await context.Imagens.Where(x => x.ProdutoId == requisicao.Id).ToListAsync();
 
             uploadImagemService.ExcluirImagem(imagens);
             
@@ -124,14 +124,14 @@ public class ProdutoHandler(
         }
     }
 
-    public async Task<Resposta<Produto?>> ObterProdutoPorIdAsync(int id)
+    public async Task<Resposta<Produto?>> ObterProdutoPorIdAsync(ObterProdutoPorIdRequisicao requisicao)
     {
         try
         {
             var produto = await context
                 .Produtos
                 .Include(x => x.Imagens)
-                .FirstOrDefaultAsync(p => p.Id == id);
+                .FirstOrDefaultAsync(p => p.Id == requisicao.Id);
             
             if(produto == null)
                 return new Resposta<Produto?>(null, 404, "Produto nao encontrado");

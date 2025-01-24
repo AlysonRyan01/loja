@@ -22,17 +22,17 @@ public class ProdutoHandler(IHttpClientFactory httpClientFactory) : IProdutoHand
         throw new NotImplementedException();
     }
 
-    public async Task<Resposta<Produto?>> RemoverProdutoAsync(int id)
+    public async Task<Resposta<Produto?>> RemoverProdutoAsync(RemoverProdutoRequisicao requisicao)
     {
         throw new NotImplementedException();
     }
 
-    public async Task<Resposta<Produto?>> ObterProdutoPorIdAsync(int id)
+    public async Task<Resposta<Produto?>> ObterProdutoPorIdAsync(ObterProdutoPorIdRequisicao requisicao)
     {
         throw new NotImplementedException();
     }
 
-    public async Task<Resposta<List<Produto?>>> ObterTodosProdutos()
+    public async Task<Resposta<List<Produto>?>> ObterTodosProdutos()
     {
         throw new NotImplementedException();
     }

@@ -5,24 +5,23 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Loja.Api.Controllers;
 
-[Route("v1/CarrinhoItem/")]
+[Route("api/[controller]")]
 [ApiController]
 public class CarrinhoItemController(ICarrinhoItemHandler handler, ILogger<CarrinhoItemController> logger) : ControllerBase
 {
-    [HttpPost("/criar")]
-    public async Task<IActionResult> Post(CriarCarrinhoItemRequisicao requisicao)
+    [HttpPost]
+    public async Task<IActionResult> Create(CriarCarrinhoItemRequisicao requisicao)
     {
         try
         {
             var user = HttpContext.User;
-            
-            if(!ModelState.IsValid)
-                return BadRequest(new Resposta<string>("Erro de validacao", 400, "Erro de validacao"));
-            
+
+            if (!ModelState.IsValid)
+                return BadRequest(new Resposta<string>("Erro de validação", 400, "Erro de validação"));
+
             var result = await handler.CriarCarrinhoItemAsync(requisicao, user);
-            
+
             return result.IsSuccess ? Ok(result) : Unauthorized(result);
-                
         }
         catch (Exception e)
         {
@@ -30,21 +29,21 @@ public class CarrinhoItemController(ICarrinhoItemHandler handler, ILogger<Carrin
             return BadRequest(new Resposta<string>("Erro no servidor", 400, e.Message));
         }
     }
-    
-    [HttpPut("/editar")]
-    public async Task<IActionResult> Put(AtualizarCarrinhoItemRequisicao requisicao)
+
+    [HttpPut("{id:long}")]
+    public async Task<IActionResult> Update(long id, AtualizarCarrinhoItemRequisicao requisicao)
     {
         try
         {
             var user = HttpContext.User;
-            
-            if(!ModelState.IsValid)
-                return BadRequest(new Resposta<string>("Erro de validacao", 400, "Erro de validacao"));
-            
+
+            if (!ModelState.IsValid)
+                return BadRequest(new Resposta<string>("Erro de validação", 400, "Erro de validação"));
+
+            requisicao.Id = id;
             var result = await handler.AtualizarrCarrinhoItemAsync(requisicao, user);
-            
+
             return result.IsSuccess ? Ok(result) : Unauthorized(result);
-                
         }
         catch (Exception e)
         {
@@ -52,21 +51,21 @@ public class CarrinhoItemController(ICarrinhoItemHandler handler, ILogger<Carrin
             return BadRequest(new Resposta<string>("Erro no servidor", 400, e.Message));
         }
     }
-    
-    [HttpDelete("/remover")]
-    public async Task<IActionResult> Delete(RemoverCarrinhoItemRequisicao requisicao)
+
+    [HttpDelete("{id:long}")]
+    public async Task<IActionResult> Delete(long id)
     {
         try
         {
             var user = HttpContext.User;
-            
-            if(!ModelState.IsValid)
-                return BadRequest(new Resposta<string>("Erro de validacao", 400, "Erro de validacao"));
-            
+
+            if (!ModelState.IsValid)
+                return BadRequest(new Resposta<string>("Erro de validação", 400, "Erro de validação"));
+
+            var requisicao = new RemoverCarrinhoItemRequisicao { Id = id };
             var result = await handler.RemoverCarrinhoItemAsync(requisicao, user);
-            
+
             return result.IsSuccess ? Ok(result) : Unauthorized(result);
-                
         }
         catch (Exception e)
         {
@@ -74,21 +73,20 @@ public class CarrinhoItemController(ICarrinhoItemHandler handler, ILogger<Carrin
             return BadRequest(new Resposta<string>("Erro no servidor", 400, e.Message));
         }
     }
-    
-    [HttpGet("/obter")]
+
+    [HttpGet]
     public async Task<IActionResult> Get()
     {
         try
         {
             var user = HttpContext.User;
-            
-            if(!ModelState.IsValid)
-                return BadRequest(new Resposta<string>("Erro de validacao", 400, "Erro de validacao"));
-            
+
+            if (!ModelState.IsValid)
+                return BadRequest(new Resposta<string>("Erro de validação", 400, "Erro de validação"));
+
             var result = await handler.ObterCarrinhoItemAsync(user);
-            
+
             return result.IsSuccess ? Ok(result) : Unauthorized(result);
-                
         }
         catch (Exception e)
         {
@@ -96,5 +94,4 @@ public class CarrinhoItemController(ICarrinhoItemHandler handler, ILogger<Carrin
             return BadRequest(new Resposta<string>("Erro no servidor", 400, e.Message));
         }
     }
-    
 }

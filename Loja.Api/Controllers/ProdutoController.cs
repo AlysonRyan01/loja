@@ -72,15 +72,20 @@ public class ProdutoController(IProdutoHandler produtoHandler, ILogger<ProdutoCo
         }
     }
     
-    [HttpDelete("v1/produto/{id:int}")]
-    public async Task<IActionResult> Delete(int id)
+    [HttpDelete("v1/produto/{id:long}")]
+    public async Task<IActionResult> Delete(long id)
     {
         try
         {
             if (!ModelState.IsValid)
                 return BadRequest(new Resposta<dynamic>(null, 400, "Erro de validação nos dados fornecidos"));
+            
+            var requisicao = new RemoverProdutoRequisicao
+            {
+                Id = id
+            };
 
-            var result = await produtoHandler.RemoverProdutoAsync(id);
+            var result = await produtoHandler.RemoverProdutoAsync(requisicao);
 
             return result.IsSuccess
                 ? Ok(result)
@@ -103,15 +108,20 @@ public class ProdutoController(IProdutoHandler produtoHandler, ILogger<ProdutoCo
         }
     }
     
-    [HttpGet("v1/produto/{id:int}")]
-    public async Task<IActionResult> GetById(int id)
+    [HttpGet("v1/produto/{id:long}")]
+    public async Task<IActionResult> GetById(long id)
     {
         try
         {
             if (!ModelState.IsValid)
                 return BadRequest(new Resposta<dynamic>(null, 400, "Erro de validação nos dados fornecidos"));
             
-            var result = await produtoHandler.ObterProdutoPorIdAsync(id);
+            var requisicao = new ObterProdutoPorIdRequisicao
+            {
+                Id = id
+            };
+            
+            var result = await produtoHandler.ObterProdutoPorIdAsync(requisicao);
 
             return result.IsSuccess
                 ? Ok(result)

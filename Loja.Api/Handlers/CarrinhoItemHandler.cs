@@ -172,12 +172,13 @@ public class CarrinhoItemHandler(
             
             if(!carrinhoItens.Any())
                 return new Resposta<List<CarrinhoItem>?>(null, 404, "Nenhum carrinhoItem encontrado");
-
+            
             foreach (var carrinhoItem in carrinhoItens)
             {
                 carrinhoItem.PrecoTotal = carrinhoItem.Produto.Preco * carrinhoItem.Quantidade;
             }
             context.CarrinhoItens.UpdateRange(carrinhoItens);
+            await context.SaveChangesAsync();
             
             return new Resposta<List<CarrinhoItem>?>(carrinhoItens, 200, "CarrinhoItem(s) obtido(s) com sucesso");
         }

@@ -37,6 +37,9 @@ public class CarrinhoHandler(
             
             carrinho.ValorTotal = valorTotalCarrinho;
             
+            context.Carrinhos.Update(carrinho);
+            await context.SaveChangesAsync();
+            
             return new Resposta<Carrinho>(carrinho, 200, "Carrinho obtido com sucesso");
         }
         catch (DbUpdateException dbEx)

@@ -11,6 +11,9 @@ using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Environment.ContentRootPath = Directory.GetCurrentDirectory();
+builder.Environment.WebRootPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
+
 builder.Services.AddControllers();
 
 Configuration.ConnectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? String.Empty;
@@ -66,7 +69,6 @@ builder.Services.AddTransient<ICarrinhoHandler, CarrinhoHandler>();
 var app = builder.Build();
 
 app.UseStaticFiles();
-
 app.UseHttpsRedirection();
 app.UseRouting();
 

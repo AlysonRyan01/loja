@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LIrtBAWuUyAhnVrsOsPQFsEjFLKLfEX/FlRkpXx89qQ=",
+  "Hash": "YzHeod1jaIRBxrGeJ4LPm2GRjOwQ1Q+VJ4pZqOvcVWA=",
   "Source": "Loja.Api",
   "BasePath": "_content/Loja.Api",
   "Mode": "Default",
@@ -8,9 +8,9 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "Loja.Api\\wwwroot",
+      "Name": "Loja.Api/wwwroot",
       "Source": "Loja.Api",
-      "ContentRoot": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\",
+      "ContentRoot": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/",
       "BasePath": "_content/Loja.Api",
       "Pattern": "**"
     }

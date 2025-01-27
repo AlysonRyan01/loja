@@ -1,0 +1,36 @@
+@using MudBlazor.Utilities
+@inherits LayoutComponentBase
+
+<MudThemeProvider Theme="theme"/>
+<MudSnackbarProvider/> 
+
+<MudLayout>
+    <MudMainContent>
+        <MudContainer>
+            @Body
+        </MudContainer>
+    </MudMainContent>
+</MudLayout>
+
+@code
+{
+    private MudTheme theme = new()
+    {
+        Typography = new Typography
+        {
+            Default = new DefaultTypography
+            {
+                FontFamily = ["Open Sans", "sans-serif"]
+            }
+        },
+        PaletteLight = new PaletteLight
+        {
+            Primary = "#bf0603",
+            Background = Colors.Gray.Lighten4,
+            AppbarBackground = "#bf0603",
+            AppbarText = Colors.Shades.White,
+            TextPrimary = Colors.Shades.White,
+            PrimaryContrastText = Colors.Shades.White
+        }
+    };
+}

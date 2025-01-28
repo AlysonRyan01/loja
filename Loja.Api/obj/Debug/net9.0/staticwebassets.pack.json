@@ -1,27 +1,27 @@
 {
   "Files": [
     {
-      "Id": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7.webp",
-      "PackagePath": "staticwebassets\\Imagens\\smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7.webp"
+      "Id": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7.webp",
+      "PackagePath": "staticwebassets/Imagens/smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7.webp"
     },
     {
-      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.Loja.Api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.Loja.Api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
-      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.Loja.Api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.Loja.Api.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.Loja.Api.props",
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.build.Loja.Api.props",
       "PackagePath": "build\\Loja.Api.props"
     },
     {
-      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.Loja.Api.props",
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.Loja.Api.props",
       "PackagePath": "buildMultiTargeting\\Loja.Api.props"
     },
     {
-      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.Loja.Api.props",
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.Loja.Api.props",
       "PackagePath": "buildTransitive\\Loja.Api.props"
     }
   ],

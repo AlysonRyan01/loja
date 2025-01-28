@@ -1,3 +1,4 @@
+using Loja.Api;
 using Loja.Api.Data;
 using Loja.Api.Handlers;
 using Loja.Api.Services;
@@ -11,12 +12,27 @@ using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddCors(options => options.AddPolicy(
+    ApiConfiguration.CorsPolicyName,
+    policy => policy
+        .WithOrigins(
+        [
+            Configuration.BackendUrl,
+            Configuration.FrontendUrl
+        ])
+        .AllowAnyMethod()
+        .AllowAnyHeader()
+        .AllowCredentials()
+));
+
 builder.Environment.ContentRootPath = Directory.GetCurrentDirectory();
 builder.Environment.WebRootPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
 
 builder.Services.AddControllers();
 
 Configuration.ConnectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? String.Empty;
+Configuration.BackendUrl = builder.Configuration.GetValue<string>("BackendUrl") ?? String.Empty;
+Configuration.FrontendUrl = builder.Configuration.GetValue<string>("FrontendUrl") ?? String.Empty;
 
 builder.Services.AddDbContext<LojaDataContext>(x =>
 {
@@ -67,6 +83,8 @@ builder.Services.AddTransient<ICarrinhoItemHandler, CarrinhoItemHandler>();
 builder.Services.AddTransient<ICarrinhoHandler, CarrinhoHandler>();
 
 var app = builder.Build();
+
+app.UseCors(ApiConfiguration.CorsPolicyName);
 
 app.UseStaticFiles();
 app.UseHttpsRedirection();

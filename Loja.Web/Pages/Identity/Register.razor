@@ -1,0 +1,67 @@
+@page "/register"
+@layout LoginLayout
+@inherits RegisterPage
+
+<PageTitle>TVS - Entrar</PageTitle>
+
+<MudGrid Justify="Justify.Center" AlignItems="AlignItems.Center">
+    <MudItem xs="12" sm="12" md="11" lg="11" xl="11" xxl="11">
+        <MudPaper Class="mud-width-full d-flex" Style="border-radius: 8px; overflow: hidden; min-width: 100%; min-height: 100%;" Elevation="12">
+            <MudItem xs="12" sm="5" Style="background-color: #bf0603; text-align: center;" Class="d-flex justify-center align-center flex-column">
+                <h1 style="margin-bottom: 0.5em; color: white">Bem-vindo de volta!</h1>
+                <p style="margin-bottom: 1em; color: lightgray">Para manter-se conectado conosco, faça login com suas informações pessoais</p>
+                <MudButton Variant="Variant.Outlined" Color="Color.Secondary">Entrar</MudButton>
+            </MudItem>
+
+            <MudItem xs="12" sm="7" Style="text-align: center;" Class="d-flex justify-center align-center flex-column pa-16">
+                <h1 style="color: #bf0603">Criar Conta</h1>
+                <EditForm Model="request" OnValidSubmit="OnValidSubmitAsync">
+                    <DataAnnotationsValidator/>
+                    
+                    <MudTextField
+                        T="string"
+                        Label="E-mail"
+                        HelperText="Campo obrigatório"
+                        InputType="InputType.Email"
+                        For="@(() => request.Email)"
+                        @bind-Value="request.Email"/>
+
+                    <MudTextField
+                        T="string"
+                        Label="Senha"
+                        HelperText="Campo obrigatório"
+                        InputType="InputType.Password"
+                        For="@(() => request.Password)"
+                        @bind-Value="request.Password"
+                        Style="width: 100%;"/>
+
+                    <MudTextField
+                        T="string"
+                        Label="Digite a senha novamente"
+                        HelperText="Campo obrigatório"
+                        InputType="InputType.Password"
+                        For="@(() => request.ConfirmPassword)"
+                        @bind-Value="request.ConfirmPassword"
+                        Style="width: 100%;"/>
+                    
+                    <div class="d-flex mt-8">
+                        @if (IsBusy == true)
+                        {
+                            <MudProgressCircular Color="Color.Info" Indeterminate="true" />
+                        }
+                        else
+                        {
+                            <MudButton
+                                ButtonType="ButtonType.Submit"
+                                Variant="Variant.Filled"
+                                Color="Color.Primary"
+                                FullWidth="true">
+                                CADASTRAR
+                            </MudButton>
+                        }
+                    </div>
+                </EditForm>
+            </MudItem>
+        </MudPaper>
+    </MudItem>
+</MudGrid>

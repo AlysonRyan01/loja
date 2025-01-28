@@ -1,40 +1,16 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAssetEndpoint Include="_content/Loja.Api/Imagens/1---FRONTAL-32S5135_73f2424d-9564-4784-88ee-683667f3532f.5jcubahnln.jpeg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\1---FRONTAL-32S5135_73f2424d-9564-4784-88ee-683667f3532f.jpeg'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/Loja.Api/Imagens/smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7.4rtvi3yhoj.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7.webp'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5jcubahnln"},{"Name":"integrity","Value":"sha256-8b2Cr1ucmR4WvBlL7cS9Bcwcp3Dds14TILCqJHBA1c0="},{"Name":"label","Value":"_content/Loja.Api/Imagens/1---FRONTAL-32S5135_73f2424d-9564-4784-88ee-683667f3532f.jpeg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"30888"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00228b2Cr1ucmR4WvBlL7cS9Bcwcp3Dds14TILCqJHBA1c0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 25 Jan 2025 02:07:18 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"4rtvi3yhoj"},{"Name":"integrity","Value":"sha256-oLl1pDpEZJTmhGJyxKjyedXJMcXLv\u002BceGOwyKCqPb1I="},{"Name":"label","Value":"_content/Loja.Api/Imagens/smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7.webp"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"55452"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022oLl1pDpEZJTmhGJyxKjyedXJMcXLv\u002BceGOwyKCqPb1I=\u0022"},{"Name":"Last-Modified","Value":"Mon, 27 Jan 2025 21:47:29 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Loja.Api/Imagens/1---FRONTAL-32S5135_73f2424d-9564-4784-88ee-683667f3532f.jpeg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\1---FRONTAL-32S5135_73f2424d-9564-4784-88ee-683667f3532f.jpeg'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/Loja.Api/Imagens/smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7.webp'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8b2Cr1ucmR4WvBlL7cS9Bcwcp3Dds14TILCqJHBA1c0="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"30888"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00228b2Cr1ucmR4WvBlL7cS9Bcwcp3Dds14TILCqJHBA1c0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 25 Jan 2025 02:07:18 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Loja.Api/Imagens/1665092374210TV1_06111a30-7e59-44c1-a2e6-c91645160f65.jpeg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\1665092374210TV1_06111a30-7e59-44c1-a2e6-c91645160f65.jpeg'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-MjXUQWfRWrY5zr7z\u002Be9NTTTj3bRV1RA/vrINZrUDGs0="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"32978"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022MjXUQWfRWrY5zr7z\u002Be9NTTTj3bRV1RA/vrINZrUDGs0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 25 Jan 2025 02:07:18 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Loja.Api/Imagens/1665092374210TV1_06111a30-7e59-44c1-a2e6-c91645160f65.yo3q8e6xr5.jpeg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\1665092374210TV1_06111a30-7e59-44c1-a2e6-c91645160f65.jpeg'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"yo3q8e6xr5"},{"Name":"integrity","Value":"sha256-MjXUQWfRWrY5zr7z\u002Be9NTTTj3bRV1RA/vrINZrUDGs0="},{"Name":"label","Value":"_content/Loja.Api/Imagens/1665092374210TV1_06111a30-7e59-44c1-a2e6-c91645160f65.jpeg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"32978"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022MjXUQWfRWrY5zr7z\u002Be9NTTTj3bRV1RA/vrINZrUDGs0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 25 Jan 2025 02:07:18 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Loja.Api/Imagens/mp2960.131_zoomtv2_7d207d31-5959-44cf-80cb-dbc6d9837879.jpeg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\mp2960.131_zoomtv2_7d207d31-5959-44cf-80cb-dbc6d9837879.jpeg'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-DQLUeufCXqo/xQEoYnsfypdDQHuGyuuhrJ0Nu8BQkU0="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"105774"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022DQLUeufCXqo/xQEoYnsfypdDQHuGyuuhrJ0Nu8BQkU0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 25 Jan 2025 02:07:18 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Loja.Api/Imagens/mp2960.131_zoomtv2_7d207d31-5959-44cf-80cb-dbc6d9837879.l2zioie4sa.jpeg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\mp2960.131_zoomtv2_7d207d31-5959-44cf-80cb-dbc6d9837879.jpeg'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"l2zioie4sa"},{"Name":"integrity","Value":"sha256-DQLUeufCXqo/xQEoYnsfypdDQHuGyuuhrJ0Nu8BQkU0="},{"Name":"label","Value":"_content/Loja.Api/Imagens/mp2960.131_zoomtv2_7d207d31-5959-44cf-80cb-dbc6d9837879.jpeg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"105774"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022DQLUeufCXqo/xQEoYnsfypdDQHuGyuuhrJ0Nu8BQkU0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 25 Jan 2025 02:07:18 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-oLl1pDpEZJTmhGJyxKjyedXJMcXLv\u002BceGOwyKCqPb1I="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"55452"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022oLl1pDpEZJTmhGJyxKjyedXJMcXLv\u002BceGOwyKCqPb1I=\u0022"},{"Name":"Last-Modified","Value":"Mon, 27 Jan 2025 21:47:29 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>

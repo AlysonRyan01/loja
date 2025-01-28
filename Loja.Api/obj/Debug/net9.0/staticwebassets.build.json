@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YzHeod1jaIRBxrGeJ4LPm2GRjOwQ1Q+VJ4pZqOvcVWA=",
+  "Hash": "LtmJeNmmJqoNdqgqU7fnpQMHMAWOr8tqQb9QBqSgOBM=",
   "Source": "Loja.Api",
   "BasePath": "_content/Loja.Api",
   "Mode": "Default",
@@ -8,13 +8,118 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "Loja.Api/wwwroot",
+      "Name": "Loja.Api\\wwwroot",
       "Source": "Loja.Api",
-      "ContentRoot": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/",
+      "ContentRoot": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "Pattern": "**"
     }
   ],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": [
+    {
+      "Identity": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7.webp",
+      "SourceId": "Loja.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\",
+      "BasePath": "_content/Loja.Api",
+      "RelativePath": "Imagens/smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4rtvi3yhoj",
+      "Integrity": "oLl1pDpEZJTmhGJyxKjyedXJMcXLv+ceGOwyKCqPb1I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Imagens\\smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7.webp"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "Imagens/smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7.4rtvi3yhoj.webp",
+      "AssetFile": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "55452"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oLl1pDpEZJTmhGJyxKjyedXJMcXLv+ceGOwyKCqPb1I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 Jan 2025 21:47:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4rtvi3yhoj"
+        },
+        {
+          "Name": "label",
+          "Value": "Imagens/smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oLl1pDpEZJTmhGJyxKjyedXJMcXLv+ceGOwyKCqPb1I="
+        }
+      ]
+    },
+    {
+      "Route": "Imagens/smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7.webp",
+      "AssetFile": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "55452"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oLl1pDpEZJTmhGJyxKjyedXJMcXLv+ceGOwyKCqPb1I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 Jan 2025 21:47:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oLl1pDpEZJTmhGJyxKjyedXJMcXLv+ceGOwyKCqPb1I="
+        }
+      ]
+    }
+  ]
 }

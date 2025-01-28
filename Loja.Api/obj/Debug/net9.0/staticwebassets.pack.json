@@ -1,16 +1,8 @@
 {
   "Files": [
     {
-      "Id": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\1---FRONTAL-32S5135_73f2424d-9564-4784-88ee-683667f3532f.jpeg",
-      "PackagePath": "staticwebassets\\Imagens\\1---FRONTAL-32S5135_73f2424d-9564-4784-88ee-683667f3532f.jpeg"
-    },
-    {
-      "Id": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\1665092374210TV1_06111a30-7e59-44c1-a2e6-c91645160f65.jpeg",
-      "PackagePath": "staticwebassets\\Imagens\\1665092374210TV1_06111a30-7e59-44c1-a2e6-c91645160f65.jpeg"
-    },
-    {
-      "Id": "D:\\GitHubRepository\\loja\\Loja.Api\\wwwroot\\Imagens\\mp2960.131_zoomtv2_7d207d31-5959-44cf-80cb-dbc6d9837879.jpeg",
-      "PackagePath": "staticwebassets\\Imagens\\mp2960.131_zoomtv2_7d207d31-5959-44cf-80cb-dbc6d9837879.jpeg"
+      "Id": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7.webp",
+      "PackagePath": "staticwebassets\\Imagens\\smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7.webp"
     },
     {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.Loja.Api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

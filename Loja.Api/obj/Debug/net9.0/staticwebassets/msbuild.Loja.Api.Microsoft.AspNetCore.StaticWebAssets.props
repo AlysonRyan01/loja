@@ -1,58 +1,22 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\1---FRONTAL-32S5135_73f2424d-9564-4784-88ee-683667f3532f.jpeg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7.webp'))">
       <SourceType>Package</SourceType>
       <SourceId>Loja.Api</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/Loja.Api</BasePath>
-      <RelativePath>Imagens/1---FRONTAL-32S5135_73f2424d-9564-4784-88ee-683667f3532f.jpeg</RelativePath>
+      <RelativePath>Imagens/smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7.webp</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>5jcubahnln</Fingerprint>
-      <Integrity>8b2Cr1ucmR4WvBlL7cS9Bcwcp3Dds14TILCqJHBA1c0=</Integrity>
+      <Fingerprint>4rtvi3yhoj</Fingerprint>
+      <Integrity>oLl1pDpEZJTmhGJyxKjyedXJMcXLv+ceGOwyKCqPb1I=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\1---FRONTAL-32S5135_73f2424d-9564-4784-88ee-683667f3532f.jpeg'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\1665092374210TV1_06111a30-7e59-44c1-a2e6-c91645160f65.jpeg'))">
-      <SourceType>Package</SourceType>
-      <SourceId>Loja.Api</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Loja.Api</BasePath>
-      <RelativePath>Imagens/1665092374210TV1_06111a30-7e59-44c1-a2e6-c91645160f65.jpeg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>yo3q8e6xr5</Fingerprint>
-      <Integrity>MjXUQWfRWrY5zr7z+e9NTTTj3bRV1RA/vrINZrUDGs0=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\1665092374210TV1_06111a30-7e59-44c1-a2e6-c91645160f65.jpeg'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\mp2960.131_zoomtv2_7d207d31-5959-44cf-80cb-dbc6d9837879.jpeg'))">
-      <SourceType>Package</SourceType>
-      <SourceId>Loja.Api</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Loja.Api</BasePath>
-      <RelativePath>Imagens/mp2960.131_zoomtv2_7d207d31-5959-44cf-80cb-dbc6d9837879.jpeg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>l2zioie4sa</Fingerprint>
-      <Integrity>DQLUeufCXqo/xQEoYnsfypdDQHuGyuuhrJ0Nu8BQkU0=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\mp2960.131_zoomtv2_7d207d31-5959-44cf-80cb-dbc6d9837879.jpeg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7.webp'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>

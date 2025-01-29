@@ -1,0 +1,42 @@
+﻿.cabecalho {
+    background-color: white;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.campo-busca {
+    border-radius: 16px;
+    background-color: #f0f0f0; 
+    padding: 5px 16px;
+    box-shadow: none;
+    width: 40vw;
+}
+
+.campo-busca .mud-input-root {
+    padding-left: 10px;
+}
+
+.campo-busca .mud-input-adornment-start {
+    padding-right: 10px;
+}
+
+.campo-busca input {
+    padding: 8px 10px; 
+}
+
+.perfil
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+}
+
+.logo
+{
+    width: 20%;
+}

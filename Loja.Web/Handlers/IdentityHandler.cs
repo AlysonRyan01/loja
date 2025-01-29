@@ -17,7 +17,7 @@ public class IdentityHandler(IHttpClientFactory httpClientFactory) : IIdentityHa
         var result = await client.PostAsJsonAsync("v1/identity/login", request);
         return result.IsSuccessStatusCode 
             ? new Resposta<string>("Login realizado com sucesso!", 200, "Login realizado com sucesso!")
-            : new Resposta<string>(null, 400, "Não foi possível realizar o login");
+            : new Resposta<string>(null, 400, "E-mail ou senha incorretos!");
     }
 
     public async Task<Resposta<string>> RegisterAsync(RegisterRequest request)

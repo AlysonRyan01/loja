@@ -1,7 +1,7 @@
 @using MudBlazor.Utilities
 @inherits LayoutComponentBase
 
-<MudThemeProvider Theme="theme"/>
+<MudThemeProvider Theme="Configuration.theme"/>
 <MudSnackbarProvider/> 
 
 <MudLayout>
@@ -11,27 +11,3 @@
         </MudContainer>
     </MudMainContent>
 </MudLayout>
-
-@code
-{
-    private MudTheme theme = new()
-    {
-        Typography = new Typography
-        {
-            Default = new DefaultTypography
-            {
-                FontFamily = ["Open Sans", "sans-serif"]
-            }
-        },
-        PaletteLight = new PaletteLight
-        {
-            Primary = "#bf0603",
-            Secondary = "#FFFFFF",
-            Background = Colors.Gray.Lighten4,
-            AppbarBackground = "#bf0603",
-            AppbarText = Colors.Shades.Black,
-            TextPrimary = Colors.Shades.Black,
-            PrimaryContrastText = Colors.Shades.Black
-        }
-    };
-}

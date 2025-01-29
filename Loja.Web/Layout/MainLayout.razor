@@ -1,16 +1,42 @@
-﻿@inherits LayoutComponentBase
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
+﻿@inherits MainLayoutPage
+
+<MudThemeProvider Theme="Configuration.theme"/>
+<MudSnackbarProvider/>
+<MudDialogProvider/>
+
+<body>
+<header class="cabecalho">
+    <div class="logo">
+        <NavLink href="/" class="nav-link">
+            <img src="images/TVS%20ELETRÔNICA-Photoroom.png" alt="" width="150px">
+        </NavLink>
     </div>
 
-    <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
-        </div>
+    <div class="pesquisa">
+        <MudTextField @bind-Value="SearchTerm"
+                      Placeholder="Filtrar..."
+                      Adornment="Adornment.Start"
+                      AdornmentIcon="@Icons.Material.Filled.Search"
+                      Immediate="true" IconSize="Size.Medium" class="campo-busca">
+        </MudTextField>
+    </div>
 
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
-</div>
+    <div class="perfil">
+        <NavLink href="/perfil" class="nav-link">
+            <img src="images/vector-flat-illustration-grayscale-avatar-600nw-2264922221-Photoroom.png" alt="perfil" width="50px" />
+        </NavLink>
+        <NavLink href="/carrinho" class="nav-link">
+            <img src="images/shopping-cart.png" alt="carrinho" width="30px" />
+        </NavLink>
+    </div>
+
+</header>
+
+<main>
+    @Body
+</main>
+
+<footer>
+
+</footer>
+</body>

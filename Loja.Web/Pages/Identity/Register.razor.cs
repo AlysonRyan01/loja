@@ -20,7 +20,6 @@ public partial class RegisterPage : ComponentBase
     
     #region Properties
     public RegisterRequest request { get; set; } = new();
-    
     public bool IsBusy { get; set; } = false;
     #endregion
     
@@ -52,6 +51,7 @@ public partial class RegisterPage : ComponentBase
             if (result.IsSuccess)
             {
                 Snackbar.Add($"{result.Mensagem}", Severity.Success);
+                await Task.Delay(3000);
                 NavigationManager.NavigateTo("/entrar");
             }
             else

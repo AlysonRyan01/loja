@@ -1,0 +1,58 @@
+﻿@page "/entrar"
+@layout LoginLayout
+@inherits LoginPage
+
+<PageTitle>TVS - Entrar</PageTitle>
+
+<MudGrid Justify="Justify.Center" Class="d-flex align-content-center">
+    <MudItem xs="12" sm="12" md="10" lg="10" xl="11" xxl="10" Style="height: 80vh;">
+        <MudPaper Class="mud-width-full d-flex" Style="border-radius: 12px; overflow: hidden; min-width: 100%; min-height: 100%;" Elevation="12">
+            <MudItem xs="12" sm="7" Style="text-align: center;" Class="d-flex justify-center align-center flex-column pa-12">
+                <h1 style=" color: #bf0603; font-size: 3em">Entrar</h1>
+                <EditForm Model="request" OnValidSubmit="OnValidSubmitAsync" Style="width: 90%;">
+                    <DataAnnotationsValidator/>
+
+                    <MudTextField
+                        T="string"
+                        Label="E-mail"
+                        HelperText="Campo obrigatório"
+                        InputType="InputType.Email"
+                        For="@(() => request.Email)"
+                        @bind-Value="request.Email"
+                        Class="w-auto"/>
+
+                    <MudTextField
+                        T="string"
+                        Label="Senha"
+                        HelperText="Campo obrigatório"
+                        InputType="InputType.Password"
+                        For="@(() => request.Password)"
+                        @bind-Value="request.Password"
+                        Style="width: 100%;"/>
+
+                    <div class="d-flex mt-8">
+                        @if (IsBusy == true)
+                        {
+                            <MudProgressCircular Color="Color.Info" Indeterminate="true"/>
+                        }
+                        else
+                        {
+                            <MudButton
+                                ButtonType="ButtonType.Submit"
+                                Variant="Variant.Outlined"
+                                Color="Color.Primary"
+                                StartIcon="@Icons.Material.Outlined.Login" 
+                                Size="Size.Large">Entrar</MudButton>
+                        }
+                    </div>
+                </EditForm>
+            </MudItem>
+
+            <MudItem xs="12" sm="5" Style="background-color: #bf0603; text-align: center;" Class="d-flex justify-center align-center flex-column pa-8">
+                <h1 style=" color: white; font-size: 3em">Criar Conta</h1>
+                <p style="margin-bottom: 1em; color: lightgray; font-size: 1.2em">Não tem uma conta? Crie agora mesmo e aproveite todos os nossos benefícios!</p>
+                <MudButton Href="/cadastrar" Variant="Variant.Outlined" Color="Color.Secondary" Size="Size.Large">Cadastrar</MudButton>
+            </MudItem>
+        </MudPaper>
+    </MudItem>
+</MudGrid>

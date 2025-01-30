@@ -116,8 +116,8 @@ main {
 .produtos
 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
-    justify-content: center;
+    gap: 16px;
 }
 

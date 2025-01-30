@@ -1,16 +1,28 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAssetEndpoint Include="_content/Loja.Api/Imagens/smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7.4rtvi3yhoj.webp">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7.webp'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/Loja.Api/Imagens/1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.5jcubahnln.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"4rtvi3yhoj"},{"Name":"integrity","Value":"sha256-oLl1pDpEZJTmhGJyxKjyedXJMcXLv\u002BceGOwyKCqPb1I="},{"Name":"label","Value":"_content/Loja.Api/Imagens/smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7.webp"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"55452"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022oLl1pDpEZJTmhGJyxKjyedXJMcXLv\u002BceGOwyKCqPb1I=\u0022"},{"Name":"Last-Modified","Value":"Wed, 29 Jan 2025 20:25:28 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5jcubahnln"},{"Name":"integrity","Value":"sha256-8b2Cr1ucmR4WvBlL7cS9Bcwcp3Dds14TILCqJHBA1c0="},{"Name":"label","Value":"_content/Loja.Api/Imagens/1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"30888"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00228b2Cr1ucmR4WvBlL7cS9Bcwcp3Dds14TILCqJHBA1c0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 30 Jan 2025 03:25:17 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Loja.Api/Imagens/smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7.webp">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7.webp'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/Loja.Api/Imagens/1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-oLl1pDpEZJTmhGJyxKjyedXJMcXLv\u002BceGOwyKCqPb1I="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"55452"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022oLl1pDpEZJTmhGJyxKjyedXJMcXLv\u002BceGOwyKCqPb1I=\u0022"},{"Name":"Last-Modified","Value":"Wed, 29 Jan 2025 20:25:28 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8b2Cr1ucmR4WvBlL7cS9Bcwcp3Dds14TILCqJHBA1c0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"30888"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00228b2Cr1ucmR4WvBlL7cS9Bcwcp3Dds14TILCqJHBA1c0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 30 Jan 2025 03:25:17 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Loja.Api/Imagens/208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-iY1gljOve8VRwTjtTSaB0iuZPI0kWN27zDaVyDDEvOk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"76695"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022iY1gljOve8VRwTjtTSaB0iuZPI0kWN27zDaVyDDEvOk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 30 Jan 2025 03:25:17 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Loja.Api/Imagens/208201foto_70323120-89b5-4f67-8385-67c6916a06e7.tj4iqjy46o.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"tj4iqjy46o"},{"Name":"integrity","Value":"sha256-iY1gljOve8VRwTjtTSaB0iuZPI0kWN27zDaVyDDEvOk="},{"Name":"label","Value":"_content/Loja.Api/Imagens/208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"76695"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022iY1gljOve8VRwTjtTSaB0iuZPI0kWN27zDaVyDDEvOk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 30 Jan 2025 03:25:17 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>

@@ -101,6 +101,23 @@
 
 main {
     flex: 1;
-    min-height: 70vh; /* Mantém um espaço mínimo para evitar que o footer suba */
-    padding: 20px;
+    min-height: 70vh;
 }
+
+.banner {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%; 
+    height: auto;
+    display: block;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.produtos
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+}
+

@@ -10,7 +10,7 @@ namespace Dima.Web.Handlers;
 
 public class IdentityHandler(IHttpClientFactory httpClientFactory) : IIdentityHandler
 {
-    private readonly HttpClient client = httpClientFactory.CreateClient(Configuration.HttpClientName);
+    private readonly HttpClient client = httpClientFactory.CreateClient(WebConfiguration.HttpClientName);
     
     public async Task<Resposta<string>> LoginAsync(LoginRequest request)
     {

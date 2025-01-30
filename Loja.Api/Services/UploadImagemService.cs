@@ -23,17 +23,25 @@ public class ImagemService : IUploadImagemService
 
             foreach (var imagem in imagens)
             {
+                var extensaoValida = new[] { ".jpg", ".jpeg", ".png", ".gif", ".webp" };
+                var extensao = Path.GetExtension(imagem.FileName)?.ToLower();
+
+                if (!extensaoValida.Contains(extensao))
+                {
+                    throw new InvalidOperationException("Arquivo não é uma imagem válida.");
+                }
+                
                 var fileName = Path.GetFileNameWithoutExtension(imagem.FileName) + "_" + Guid.NewGuid().ToString() + Path.GetExtension(imagem.FileName);
             
                 var filePath = Path.Combine(_diretorioImagens, fileName);
-            
-                var imagemUrl = Path.Combine("/Imagens", fileName);
-            
+                
+                var imagemUrl = Path.Combine("/Imagens", fileName).Replace("\\", "/");
+                
                 await using (var stream = new FileStream(filePath, FileMode.Create))
                 {
                     await imagem.CopyToAsync(stream);
                 }
-            
+                
                 listaDeImagens.Add(new Imagem
                 {
                     Url = imagemUrl

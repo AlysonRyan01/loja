@@ -1,8 +1,12 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\LOJA.API\\wwwroot\\Imagens\\smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7.webp",
-      "PackagePath": "staticwebassets\\Imagens\\smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7.webp"
+      "Id": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg",
+      "PackagePath": "staticwebassets\\Imagens\\1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg"
+    },
+    {
+      "Id": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg",
+      "PackagePath": "staticwebassets\\Imagens\\208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg"
     },
     {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.Loja.Api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

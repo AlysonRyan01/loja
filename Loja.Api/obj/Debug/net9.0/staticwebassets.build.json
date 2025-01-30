@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "77GN5K62kRiF4PTJ7fXR274zl9V7ctVTN0emAsQ5rW0=",
+  "Hash": "SqgEXualIF7Yf2o5+bzrqnlaSeFKMrlzdfInlwULr/A=",
   "Source": "Loja.Api",
   "BasePath": "_content/Loja.Api",
   "Mode": "Default",
@@ -10,19 +10,19 @@
     {
       "Name": "Loja.Api\\wwwroot",
       "Source": "Loja.Api",
-      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\LOJA.API\\wwwroot\\",
+      "ContentRoot": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\LOJA.API\\wwwroot\\Imagens\\smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7.webp",
+      "Identity": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\LOJA.API\\wwwroot\\",
+      "ContentRoot": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
-      "RelativePath": "Imagens/smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7#[.{fingerprint}]?.webp",
+      "RelativePath": "Imagens/1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -31,17 +31,38 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "4rtvi3yhoj",
-      "Integrity": "oLl1pDpEZJTmhGJyxKjyedXJMcXLv+ceGOwyKCqPb1I=",
+      "Fingerprint": "5jcubahnln",
+      "Integrity": "8b2Cr1ucmR4WvBlL7cS9Bcwcp3Dds14TILCqJHBA1c0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Imagens\\smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7.webp"
+      "OriginalItemSpec": "wwwroot\\Imagens\\1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg"
+    },
+    {
+      "Identity": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg",
+      "SourceId": "Loja.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\",
+      "BasePath": "_content/Loja.Api",
+      "RelativePath": "Imagens/208201foto_70323120-89b5-4f67-8385-67c6916a06e7#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tj4iqjy46o",
+      "Integrity": "iY1gljOve8VRwTjtTSaB0iuZPI0kWN27zDaVyDDEvOk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Imagens\\208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg"
     }
   ],
   "Endpoints": [
     {
-      "Route": "Imagens/smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7.4rtvi3yhoj.webp",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\LOJA.API\\wwwroot\\Imagens\\smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7.webp",
+      "Route": "Imagens/1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.5jcubahnln.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -50,19 +71,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "55452"
+          "Value": "30888"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/webp"
+          "Value": "image/jpeg"
         },
         {
           "Name": "ETag",
-          "Value": "\"oLl1pDpEZJTmhGJyxKjyedXJMcXLv+ceGOwyKCqPb1I=\""
+          "Value": "\"8b2Cr1ucmR4WvBlL7cS9Bcwcp3Dds14TILCqJHBA1c0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 20:25:28 GMT"
+          "Value": "Thu, 30 Jan 2025 03:25:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -72,21 +93,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4rtvi3yhoj"
+          "Value": "5jcubahnln"
         },
         {
           "Name": "label",
-          "Value": "Imagens/smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7.webp"
+          "Value": "Imagens/1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-oLl1pDpEZJTmhGJyxKjyedXJMcXLv+ceGOwyKCqPb1I="
+          "Value": "sha256-8b2Cr1ucmR4WvBlL7cS9Bcwcp3Dds14TILCqJHBA1c0="
         }
       ]
     },
     {
-      "Route": "Imagens/smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7.webp",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\LOJA.API\\wwwroot\\Imagens\\smart-tv-lg-led-32-hd-webos-ia-lr60-162409492342_fc0b8e33-ce78-4f3a-b5af-790e2eb9f4b7.webp",
+      "Route": "Imagens/1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -95,19 +116,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "55452"
+          "Value": "30888"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/webp"
+          "Value": "image/jpeg"
         },
         {
           "Name": "ETag",
-          "Value": "\"oLl1pDpEZJTmhGJyxKjyedXJMcXLv+ceGOwyKCqPb1I=\""
+          "Value": "\"8b2Cr1ucmR4WvBlL7cS9Bcwcp3Dds14TILCqJHBA1c0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Jan 2025 20:25:28 GMT"
+          "Value": "Thu, 30 Jan 2025 03:25:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -117,7 +138,89 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-oLl1pDpEZJTmhGJyxKjyedXJMcXLv+ceGOwyKCqPb1I="
+          "Value": "sha256-8b2Cr1ucmR4WvBlL7cS9Bcwcp3Dds14TILCqJHBA1c0="
+        }
+      ]
+    },
+    {
+      "Route": "Imagens/208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "76695"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iY1gljOve8VRwTjtTSaB0iuZPI0kWN27zDaVyDDEvOk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 03:25:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iY1gljOve8VRwTjtTSaB0iuZPI0kWN27zDaVyDDEvOk="
+        }
+      ]
+    },
+    {
+      "Route": "Imagens/208201foto_70323120-89b5-4f67-8385-67c6916a06e7.tj4iqjy46o.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "76695"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iY1gljOve8VRwTjtTSaB0iuZPI0kWN27zDaVyDDEvOk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 03:25:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tj4iqjy46o"
+        },
+        {
+          "Name": "label",
+          "Value": "Imagens/208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iY1gljOve8VRwTjtTSaB0iuZPI0kWN27zDaVyDDEvOk="
         }
       ]
     }

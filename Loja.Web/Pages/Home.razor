@@ -1,3 +1,38 @@
 ﻿@page "/"
-
+@using Loja.Core.Models
+@inherits HomePage
 <PageTitle>TVS - Home</PageTitle>
+
+<img src="images/banner.png" alt="banner" class="banner"/>
+<div class="produtos">
+    @if (IsBusy)
+    {
+        <MudProgressCircular Color="Color.Info" Indeterminate="true"/>
+    }
+    else
+    {
+        foreach (var produto in Produtos)
+        {
+            <MudItem xs="12" sm="6" md="4" lg="4">
+                <MudCard>
+                    <MudCarousel Style="height: 50vh;" ShowArrows="true" EnableSwipeGesture="true" TData="Imagem" Autoplay="true" Interval="3000" Indicators="true">
+                        @foreach (var imagem in produto.Imagens)
+                        {
+                            var imagemUrl = $"{WebConfiguration.BackendUrl}{imagem.Url}";
+                            <MudCarouselItem Style="width: 100%">
+                                <MudCardMedia Style="display: flex; justify-self: center; width: 90%; height: 90%; object-fit: contain;" Image="@imagemUrl"/>
+                            </MudCarouselItem>
+                        }
+                    </MudCarousel>
+                    <MudCardContent>
+                        <h3>@produto.Titulo</h3>
+                        <p>R$ @produto.Preco.ToString("F2")</p>
+                        <MudButton Color="Color.Primary">
+                            Comprar
+                        </MudButton>
+                    </MudCardContent>
+                </MudCard>
+            </MudItem>
+        }
+    }
+</div>

@@ -8,7 +8,7 @@ namespace Dima.Web.Handlers;
 
 public class ProdutoHandler(IHttpClientFactory httpClientFactory) : IProdutoHandler
 {
-    private readonly HttpClient _httpClient = httpClientFactory.CreateClient(Configuration.HttpClientName);
+    private readonly HttpClient _httpClient = httpClientFactory.CreateClient(WebConfiguration.HttpClientName);
     
     public async Task<Resposta<Produto?>> CriarProdutoAsync(CriarProdutoRequisicao requisicao)
     {
@@ -34,6 +34,7 @@ public class ProdutoHandler(IHttpClientFactory httpClientFactory) : IProdutoHand
 
     public async Task<Resposta<List<Produto>?>> ObterTodosProdutos()
     {
-        throw new NotImplementedException();
+        return await _httpClient.GetFromJsonAsync<Resposta<List<Produto>?>>($"v1/produto/list")
+            ?? new Resposta<List<Produto>?>(null, 400, "Falha ao obter os produtos");
     }
 }

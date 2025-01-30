@@ -8,7 +8,7 @@ namespace Dima.Web.Security;
 public class CookieAuthenticationStateProvider(IHttpClientFactory clientFactory) : AuthenticationStateProvider, ICookieAuthenticationStateProvider
 {
     private bool isAuthenticated = false;
-    private readonly HttpClient httpClient = clientFactory.CreateClient(Configuration.HttpClientName);
+    private readonly HttpClient httpClient = clientFactory.CreateClient(WebConfiguration.HttpClientName);
     
     public async Task<bool> CheckAuthenticationAsync()
     {

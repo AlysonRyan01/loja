@@ -3,13 +3,14 @@ using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Dima.Web;
 using Dima.Web.Handlers;
 using Dima.Web.Security;
+using Loja.Core;
 using Loja.Core.Handlers;
 using Microsoft.AspNetCore.Components.Authorization;
 using MudBlazor.Services;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 
-Configuration.BackendUrl = builder.Configuration.GetValue<string>("BackendUrl") ?? string.Empty;
+WebConfiguration.BackendUrl = builder.Configuration.GetValue<string>("BackendUrl") ?? String.Empty;
 
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
@@ -21,13 +22,14 @@ builder.Services.AddAuthorizationCore();
 builder.Services.AddScoped<AuthenticationStateProvider, CookieAuthenticationStateProvider>();
 builder.Services.AddScoped(x => (ICookieAuthenticationStateProvider)x.GetRequiredService<AuthenticationStateProvider>());
 builder.Services.AddTransient<IIdentityHandler, IdentityHandler>();
+builder.Services.AddTransient<IProdutoHandler, ProdutoHandler>();
 
 builder.Services.AddMudServices();
 
-builder.Services.AddHttpClient(Configuration.HttpClientName,
+builder.Services.AddHttpClient(WebConfiguration.HttpClientName,
     client =>
     {
-        client.BaseAddress = new Uri(Configuration.BackendUrl);
+        client.BaseAddress = new Uri(WebConfiguration.BackendUrl);
     }).AddHttpMessageHandler<CookieHandler>();
 
 await builder.Build().RunAsync();

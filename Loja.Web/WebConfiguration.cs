@@ -1,13 +1,14 @@
-﻿using MudBlazor;
+﻿using Loja.Core;
+using MudBlazor;
 
 namespace Dima.Web;
 
-public static class Configuration
+public static class WebConfiguration
 {
     public const string HttpClientName = "loja";
 
-    public static string BackendUrl = string.Empty;
-    
+    public static string BackendUrl { get; set; } = string.Empty;
+
     public static MudTheme theme = new()
     {
         Typography = new Typography

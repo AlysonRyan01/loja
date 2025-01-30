@@ -12,6 +12,10 @@ using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
+Configuration.ConnectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? String.Empty;
+Configuration.BackendUrl = builder.Configuration.GetValue<string>("BackendUrl") ?? String.Empty;
+Configuration.FrontendUrl = builder.Configuration.GetValue<string>("FrontendUrl") ?? String.Empty;
+
 builder.Services.AddCors(options => options.AddPolicy(
     ApiConfiguration.CorsPolicyName,
     policy => policy
@@ -29,10 +33,6 @@ builder.Environment.ContentRootPath = Directory.GetCurrentDirectory();
 builder.Environment.WebRootPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
 
 builder.Services.AddControllers();
-
-Configuration.ConnectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? String.Empty;
-Configuration.BackendUrl = builder.Configuration.GetValue<string>("BackendUrl") ?? String.Empty;
-Configuration.FrontendUrl = builder.Configuration.GetValue<string>("FrontendUrl") ?? String.Empty;
 
 builder.Services.AddDbContext<LojaDataContext>(x =>
 {

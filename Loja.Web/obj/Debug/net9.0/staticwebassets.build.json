@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LBZ+1CNj5Xfm55GHwEhsDnxV3pXCOZtti9uB3uH8YYw=",
+  "Hash": "W4MLxWgWZ/MRxv6/GE5LhQmNgoYaMum6pyG/M0Zq3hk=",
   "Source": "Loja.Web",
   "BasePath": "/",
   "Mode": "Root",
@@ -94,8 +94,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "6ftuzd1i5h",
-      "Integrity": "ctdpSX0kHs1XngmKfs4JHhYdTjAkOcwxcJ2BA6kwH2k=",
+      "Fingerprint": "uvp8crctjs",
+      "Integrity": "9vKxscg/rzrEqH4QW6LMRM0OCDfIv4Q9X0X3E5Ow4eE=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\blazor.boot.json"
@@ -325,8 +325,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "4t2c3saqlk",
-      "Integrity": "yHMiQQ+NGjSlCA4XsSUbfVraj9k+wiDdT4ig1i5O3MA=",
+      "Fingerprint": "e4i8jqwyuy",
+      "Integrity": "Qtdxlnyu6jrmIxxe6rmF33y3bjuic4k85UIZCJxYj9w=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Core\\bin\\Debug\\net9.0\\Loja.Core.pdb"
@@ -346,8 +346,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "xkkggqkllr",
-      "Integrity": "z/trpYiSS5PnXBPV4fJ6qwuW34F6PdWHBrxQzVhBLgE=",
+      "Fingerprint": "kk4gvp251v",
+      "Integrity": "JF6CpaLJRJIIOuakpUZaNLKJJ5/spokWHtrHfCI8ung=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\webcil\\Loja.Core.wasm"
@@ -367,8 +367,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "0k50ualmte",
-      "Integrity": "IDIWAerhCENv5Ii26rmPylHGPmOFyI146C26W0bBt8U=",
+      "Fingerprint": "qah30abx6y",
+      "Integrity": "ri3JE3Z09pKJ7lLfwVmwzt5/BIdVKEJ9hAeTuUGUUwg=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\Loja.Web.pdb"
@@ -388,8 +388,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "tr99ymipds",
-      "Integrity": "uXNYt8jdvmlr5PETjHGkIWFVyDdb5walzMlENXKqYTA=",
+      "Fingerprint": "2jk33g2h8p",
+      "Integrity": "rg22d4oYJ0BT852xquasHU+C2T3b5clPBosyO+a7C3A=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\webcil\\Loja.Web.wasm"
@@ -5393,12 +5393,12 @@
       "OriginalItemSpec": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\1e0g8uz7jy-tr99ymipds.gz",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\1e0g8uz7jy-2jk33g2h8p.gz",
       "SourceId": "Loja.Web",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/Loja.Web#[.{fingerprint=tr99ymipds}]!.wasm.gz",
+      "RelativePath": "_framework/Loja.Web#[.{fingerprint=2jk33g2h8p}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -5407,8 +5407,8 @@
       "RelatedAsset": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Loja.Web.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "x8yhv1bxta",
-      "Integrity": "odri7yE9za45RmjbUAAN96nC7KkkqzlmBpYM5XgJqEY=",
+      "Fingerprint": "5m2wk2msah",
+      "Integrity": "PRHFSgzkkag5BxaIiREHdCHDZCRVvZuhYslnX6tr+mk=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Loja.Web.wasm"
@@ -7703,12 +7703,12 @@
       "OriginalItemSpec": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\bin\\Debug\\net9.0\\wwwroot\\_framework\\WindowsBase.wasm"
     },
     {
-      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\cxvo3qweu8-xkkggqkllr.gz",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\cxvo3qweu8-kk4gvp251v.gz",
       "SourceId": "Loja.Web",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/Loja.Core#[.{fingerprint=xkkggqkllr}]!.wasm.gz",
+      "RelativePath": "_framework/Loja.Core#[.{fingerprint=kk4gvp251v}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -7717,8 +7717,8 @@
       "RelatedAsset": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Loja.Core.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "j3e651a662",
-      "Integrity": "IYrm0WsopAjW69sziJ+Ify9mk3wS4JuAwpFebm0I5L4=",
+      "Fingerprint": "vz4wrs7gzj",
+      "Integrity": "SzwBF/VqmjQ4+6oEO8gdHwKtBrmGwNKWgtKtzPwaAlg=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Loja.Core.wasm"
@@ -7871,12 +7871,12 @@
       "OriginalItemSpec": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.wasm"
     },
     {
-      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\e5okugjl87-iwdk4mca8t.gz",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\e5okugjl87-fliuh2po4o.gz",
       "SourceId": "Loja.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "css/styles#[.{fingerprint=iwdk4mca8t}]?.css.gz",
+      "RelativePath": "css/styles#[.{fingerprint=fliuh2po4o}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -7885,8 +7885,8 @@
       "RelatedAsset": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\css\\styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "7awldunjru",
-      "Integrity": "ryvYhyHF4Tls4FtD7Ov0Byww4KV3WjftQfi+lD8Knok=",
+      "Fingerprint": "fwa5lbgmo6",
+      "Integrity": "kXiS1ER6aMjAZl54LqexSm4cAFpTMcvZQGXwiAz4Cl0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\css\\styles.css"
@@ -7934,7 +7934,7 @@
       "OriginalItemSpec": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.runtime.js.map"
     },
     {
-      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\eghiqoyv0t-6ftuzd1i5h.gz",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\eghiqoyv0t-uvp8crctjs.gz",
       "SourceId": "Loja.Web",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\",
@@ -7948,8 +7948,8 @@
       "RelatedAsset": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "rhuilramap",
-      "Integrity": "IfQ6xbi6dkWs1nJJy62CSbKgZRodlXEf9T0oxsSn1mE=",
+      "Fingerprint": "77tfou18k2",
+      "Integrity": "k6FOEnZnxi50eMpO5UiCQKT/lCSC4niOOgr+1LXd9f0=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -9257,12 +9257,12 @@
       "OriginalItemSpec": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.IO.wasm"
     },
     {
-      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\mn07kzjl7f-4t2c3saqlk.gz",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\mn07kzjl7f-e4i8jqwyuy.gz",
       "SourceId": "Loja.Web",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/Loja.Core#[.{fingerprint=4t2c3saqlk}]!.pdb.gz",
+      "RelativePath": "_framework/Loja.Core#[.{fingerprint=e4i8jqwyuy}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -9271,8 +9271,8 @@
       "RelatedAsset": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Loja.Core.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "v6xlpsey2l",
-      "Integrity": "R6TnWqT9RshgTdVG1V0Iy8pdYMfMYXH5HPaWOLHIdFE=",
+      "Fingerprint": "5kmmgr9vmx",
+      "Integrity": "Szh7ZQmwBKGJt8puZwzWmx3iE9eRqMJlrsebilEv4nI=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Loja.Core.pdb"
@@ -9740,12 +9740,12 @@
       "OriginalItemSpec": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\pzwqlo8ok0-0k50ualmte.gz",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\pzwqlo8ok0-qah30abx6y.gz",
       "SourceId": "Loja.Web",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/Loja.Web#[.{fingerprint=0k50ualmte}]!.pdb.gz",
+      "RelativePath": "_framework/Loja.Web#[.{fingerprint=qah30abx6y}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -9754,8 +9754,8 @@
       "RelatedAsset": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Loja.Web.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "4l12tptace",
-      "Integrity": "ePrVmW2VNruCR1UUDzWIt1Y6jmg7/K4fXnq51+l0sqU=",
+      "Fingerprint": "uo7s4mbqro",
+      "Integrity": "7uGnsIeXI8RaEmp6tEEuJvVVZdvephw7nsSzU+oxJ1w=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Loja.Web.pdb"
@@ -11287,8 +11287,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "iwdk4mca8t",
-      "Integrity": "nqCxwbPPt5rhW06hDXtBq+rN8X8wbeu4nmnozh+2mmg=",
+      "Fingerprint": "fliuh2po4o",
+      "Integrity": "o0IRc7QCYapm0sCNIlpriG3xJ8IKd9JIaJnrseHt4js=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\styles.css"
@@ -12907,11 +12907,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ctdpSX0kHs1XngmKfs4JHhYdTjAkOcwxcJ2BA6kwH2k=\""
+          "Value": "\"9vKxscg/rzrEqH4QW6LMRM0OCDfIv4Q9X0X3E5Ow4eE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 15:18:53 GMT"
+          "Value": "Thu, 30 Jan 2025 20:36:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12921,18 +12921,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ctdpSX0kHs1XngmKfs4JHhYdTjAkOcwxcJ2BA6kwH2k="
+          "Value": "sha256-9vKxscg/rzrEqH4QW6LMRM0OCDfIv4Q9X0X3E5Ow4eE="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\eghiqoyv0t-6ftuzd1i5h.gz",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\eghiqoyv0t-uvp8crctjs.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000068998827"
+          "Quality": "0.000069008350"
         }
       ],
       "ResponseHeaders": [
@@ -12942,15 +12942,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14492"
+          "Value": "14490"
         },
         {
           "Name": "ETag",
-          "Value": "\"IfQ6xbi6dkWs1nJJy62CSbKgZRodlXEf9T0oxsSn1mE=\""
+          "Value": "\"k6FOEnZnxi50eMpO5UiCQKT/lCSC4niOOgr+1LXd9f0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 15:17:21 GMT"
+          "Value": "Thu, 30 Jan 2025 20:35:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12970,19 +12970,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"ctdpSX0kHs1XngmKfs4JHhYdTjAkOcwxcJ2BA6kwH2k=\""
+          "Value": "W/\"9vKxscg/rzrEqH4QW6LMRM0OCDfIv4Q9X0X3E5Ow4eE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ctdpSX0kHs1XngmKfs4JHhYdTjAkOcwxcJ2BA6kwH2k="
+          "Value": "sha256-9vKxscg/rzrEqH4QW6LMRM0OCDfIv4Q9X0X3E5Ow4eE="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\eghiqoyv0t-6ftuzd1i5h.gz",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\eghiqoyv0t-uvp8crctjs.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12991,7 +12991,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14492"
+          "Value": "14490"
         },
         {
           "Name": "Content-Type",
@@ -12999,11 +12999,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"IfQ6xbi6dkWs1nJJy62CSbKgZRodlXEf9T0oxsSn1mE=\""
+          "Value": "\"k6FOEnZnxi50eMpO5UiCQKT/lCSC4niOOgr+1LXd9f0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 15:17:21 GMT"
+          "Value": "Thu, 30 Jan 2025 20:35:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13021,7 +13021,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-IfQ6xbi6dkWs1nJJy62CSbKgZRodlXEf9T0oxsSn1mE="
+          "Value": "sha256-k6FOEnZnxi50eMpO5UiCQKT/lCSC4niOOgr+1LXd9f0="
         }
       ]
     },
@@ -15845,7 +15845,7 @@
       ]
     },
     {
-      "Route": "_framework/Loja.Core.4t2c3saqlk.pdb",
+      "Route": "_framework/Loja.Core.e4i8jqwyuy.pdb",
       "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Loja.Core.pdb",
       "Selectors": [],
       "ResponseHeaders": [
@@ -15863,11 +15863,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"yHMiQQ+NGjSlCA4XsSUbfVraj9k+wiDdT4ig1i5O3MA=\""
+          "Value": "\"Qtdxlnyu6jrmIxxe6rmF33y3bjuic4k85UIZCJxYj9w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 13:49:36 GMT"
+          "Value": "Thu, 30 Jan 2025 16:05:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15877,7 +15877,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4t2c3saqlk"
+          "Value": "e4i8jqwyuy"
         },
         {
           "Name": "label",
@@ -15885,13 +15885,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-yHMiQQ+NGjSlCA4XsSUbfVraj9k+wiDdT4ig1i5O3MA="
+          "Value": "sha256-Qtdxlnyu6jrmIxxe6rmF33y3bjuic4k85UIZCJxYj9w="
         }
       ]
     },
     {
-      "Route": "_framework/Loja.Core.4t2c3saqlk.pdb",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\mn07kzjl7f-4t2c3saqlk.gz",
+      "Route": "_framework/Loja.Core.e4i8jqwyuy.pdb",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\mn07kzjl7f-e4i8jqwyuy.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -15910,11 +15910,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"R6TnWqT9RshgTdVG1V0Iy8pdYMfMYXH5HPaWOLHIdFE=\""
+          "Value": "\"Szh7ZQmwBKGJt8puZwzWmx3iE9eRqMJlrsebilEv4nI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 13:49:52 GMT"
+          "Value": "Thu, 30 Jan 2025 16:05:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15934,13 +15934,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"yHMiQQ+NGjSlCA4XsSUbfVraj9k+wiDdT4ig1i5O3MA=\""
+          "Value": "W/\"Qtdxlnyu6jrmIxxe6rmF33y3bjuic4k85UIZCJxYj9w=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4t2c3saqlk"
+          "Value": "e4i8jqwyuy"
         },
         {
           "Name": "label",
@@ -15948,13 +15948,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-yHMiQQ+NGjSlCA4XsSUbfVraj9k+wiDdT4ig1i5O3MA="
+          "Value": "sha256-Qtdxlnyu6jrmIxxe6rmF33y3bjuic4k85UIZCJxYj9w="
         }
       ]
     },
     {
-      "Route": "_framework/Loja.Core.4t2c3saqlk.pdb.gz",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\mn07kzjl7f-4t2c3saqlk.gz",
+      "Route": "_framework/Loja.Core.e4i8jqwyuy.pdb.gz",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\mn07kzjl7f-e4i8jqwyuy.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -15971,11 +15971,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"R6TnWqT9RshgTdVG1V0Iy8pdYMfMYXH5HPaWOLHIdFE=\""
+          "Value": "\"Szh7ZQmwBKGJt8puZwzWmx3iE9eRqMJlrsebilEv4nI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 13:49:52 GMT"
+          "Value": "Thu, 30 Jan 2025 16:05:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15993,7 +15993,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4t2c3saqlk"
+          "Value": "e4i8jqwyuy"
         },
         {
           "Name": "label",
@@ -16001,7 +16001,168 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-R6TnWqT9RshgTdVG1V0Iy8pdYMfMYXH5HPaWOLHIdFE="
+          "Value": "sha256-Szh7ZQmwBKGJt8puZwzWmx3iE9eRqMJlrsebilEv4nI="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Loja.Core.kk4gvp251v.wasm",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Loja.Core.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19733"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JF6CpaLJRJIIOuakpUZaNLKJJ5/spokWHtrHfCI8ung=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 16:05:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kk4gvp251v"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Loja.Core.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JF6CpaLJRJIIOuakpUZaNLKJJ5/spokWHtrHfCI8ung="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Loja.Core.kk4gvp251v.wasm",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\cxvo3qweu8-kk4gvp251v.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000127795527"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7824"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SzwBF/VqmjQ4+6oEO8gdHwKtBrmGwNKWgtKtzPwaAlg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 16:05:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"JF6CpaLJRJIIOuakpUZaNLKJJ5/spokWHtrHfCI8ung=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kk4gvp251v"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Loja.Core.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JF6CpaLJRJIIOuakpUZaNLKJJ5/spokWHtrHfCI8ung="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Loja.Core.kk4gvp251v.wasm.gz",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\cxvo3qweu8-kk4gvp251v.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7824"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SzwBF/VqmjQ4+6oEO8gdHwKtBrmGwNKWgtKtzPwaAlg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 16:05:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kk4gvp251v"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Loja.Core.wasm.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SzwBF/VqmjQ4+6oEO8gdHwKtBrmGwNKWgtKtzPwaAlg="
         }
       ]
     },
@@ -16024,11 +16185,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"yHMiQQ+NGjSlCA4XsSUbfVraj9k+wiDdT4ig1i5O3MA=\""
+          "Value": "\"Qtdxlnyu6jrmIxxe6rmF33y3bjuic4k85UIZCJxYj9w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 13:49:36 GMT"
+          "Value": "Thu, 30 Jan 2025 16:05:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16038,13 +16199,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-yHMiQQ+NGjSlCA4XsSUbfVraj9k+wiDdT4ig1i5O3MA="
+          "Value": "sha256-Qtdxlnyu6jrmIxxe6rmF33y3bjuic4k85UIZCJxYj9w="
         }
       ]
     },
     {
       "Route": "_framework/Loja.Core.pdb",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\mn07kzjl7f-4t2c3saqlk.gz",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\mn07kzjl7f-e4i8jqwyuy.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -16063,11 +16224,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"R6TnWqT9RshgTdVG1V0Iy8pdYMfMYXH5HPaWOLHIdFE=\""
+          "Value": "\"Szh7ZQmwBKGJt8puZwzWmx3iE9eRqMJlrsebilEv4nI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 13:49:52 GMT"
+          "Value": "Thu, 30 Jan 2025 16:05:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16087,19 +16248,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"yHMiQQ+NGjSlCA4XsSUbfVraj9k+wiDdT4ig1i5O3MA=\""
+          "Value": "W/\"Qtdxlnyu6jrmIxxe6rmF33y3bjuic4k85UIZCJxYj9w=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-yHMiQQ+NGjSlCA4XsSUbfVraj9k+wiDdT4ig1i5O3MA="
+          "Value": "sha256-Qtdxlnyu6jrmIxxe6rmF33y3bjuic4k85UIZCJxYj9w="
         }
       ]
     },
     {
       "Route": "_framework/Loja.Core.pdb.gz",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\mn07kzjl7f-4t2c3saqlk.gz",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\mn07kzjl7f-e4i8jqwyuy.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -16116,11 +16277,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"R6TnWqT9RshgTdVG1V0Iy8pdYMfMYXH5HPaWOLHIdFE=\""
+          "Value": "\"Szh7ZQmwBKGJt8puZwzWmx3iE9eRqMJlrsebilEv4nI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 13:49:52 GMT"
+          "Value": "Thu, 30 Jan 2025 16:05:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16138,7 +16299,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-R6TnWqT9RshgTdVG1V0Iy8pdYMfMYXH5HPaWOLHIdFE="
+          "Value": "sha256-Szh7ZQmwBKGJt8puZwzWmx3iE9eRqMJlrsebilEv4nI="
         }
       ]
     },
@@ -16161,11 +16322,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"z/trpYiSS5PnXBPV4fJ6qwuW34F6PdWHBrxQzVhBLgE=\""
+          "Value": "\"JF6CpaLJRJIIOuakpUZaNLKJJ5/spokWHtrHfCI8ung=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 13:49:51 GMT"
+          "Value": "Thu, 30 Jan 2025 16:05:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16175,18 +16336,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-z/trpYiSS5PnXBPV4fJ6qwuW34F6PdWHBrxQzVhBLgE="
+          "Value": "sha256-JF6CpaLJRJIIOuakpUZaNLKJJ5/spokWHtrHfCI8ung="
         }
       ]
     },
     {
       "Route": "_framework/Loja.Core.wasm",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\cxvo3qweu8-xkkggqkllr.gz",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\cxvo3qweu8-kk4gvp251v.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000127959053"
+          "Quality": "0.000127795527"
         }
       ],
       "ResponseHeaders": [
@@ -16196,15 +16357,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7814"
+          "Value": "7824"
         },
         {
           "Name": "ETag",
-          "Value": "\"IYrm0WsopAjW69sziJ+Ify9mk3wS4JuAwpFebm0I5L4=\""
+          "Value": "\"SzwBF/VqmjQ4+6oEO8gdHwKtBrmGwNKWgtKtzPwaAlg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 13:49:52 GMT"
+          "Value": "Thu, 30 Jan 2025 16:05:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16224,19 +16385,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"z/trpYiSS5PnXBPV4fJ6qwuW34F6PdWHBrxQzVhBLgE=\""
+          "Value": "W/\"JF6CpaLJRJIIOuakpUZaNLKJJ5/spokWHtrHfCI8ung=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-z/trpYiSS5PnXBPV4fJ6qwuW34F6PdWHBrxQzVhBLgE="
+          "Value": "sha256-JF6CpaLJRJIIOuakpUZaNLKJJ5/spokWHtrHfCI8ung="
         }
       ]
     },
     {
       "Route": "_framework/Loja.Core.wasm.gz",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\cxvo3qweu8-xkkggqkllr.gz",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\cxvo3qweu8-kk4gvp251v.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -16245,7 +16406,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7814"
+          "Value": "7824"
         },
         {
           "Name": "Content-Type",
@@ -16253,11 +16414,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"IYrm0WsopAjW69sziJ+Ify9mk3wS4JuAwpFebm0I5L4=\""
+          "Value": "\"SzwBF/VqmjQ4+6oEO8gdHwKtBrmGwNKWgtKtzPwaAlg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 13:49:52 GMT"
+          "Value": "Thu, 30 Jan 2025 16:05:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16275,471 +16436,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-IYrm0WsopAjW69sziJ+Ify9mk3wS4JuAwpFebm0I5L4="
+          "Value": "sha256-SzwBF/VqmjQ4+6oEO8gdHwKtBrmGwNKWgtKtzPwaAlg="
         }
       ]
     },
     {
-      "Route": "_framework/Loja.Core.xkkggqkllr.wasm",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Loja.Core.wasm",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "19733"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"z/trpYiSS5PnXBPV4fJ6qwuW34F6PdWHBrxQzVhBLgE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 13:49:51 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "xkkggqkllr"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/Loja.Core.wasm"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-z/trpYiSS5PnXBPV4fJ6qwuW34F6PdWHBrxQzVhBLgE="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/Loja.Core.xkkggqkllr.wasm",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\cxvo3qweu8-xkkggqkllr.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000127959053"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "7814"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"IYrm0WsopAjW69sziJ+Ify9mk3wS4JuAwpFebm0I5L4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 13:49:52 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"z/trpYiSS5PnXBPV4fJ6qwuW34F6PdWHBrxQzVhBLgE=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "xkkggqkllr"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/Loja.Core.wasm"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-z/trpYiSS5PnXBPV4fJ6qwuW34F6PdWHBrxQzVhBLgE="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/Loja.Core.xkkggqkllr.wasm.gz",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\cxvo3qweu8-xkkggqkllr.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "7814"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"IYrm0WsopAjW69sziJ+Ify9mk3wS4JuAwpFebm0I5L4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 13:49:52 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "xkkggqkllr"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/Loja.Core.wasm.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-IYrm0WsopAjW69sziJ+Ify9mk3wS4JuAwpFebm0I5L4="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/Loja.Web.0k50ualmte.pdb",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Loja.Web.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "41916"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"IDIWAerhCENv5Ii26rmPylHGPmOFyI146C26W0bBt8U=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 15:18:52 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "0k50ualmte"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/Loja.Web.pdb"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-IDIWAerhCENv5Ii26rmPylHGPmOFyI146C26W0bBt8U="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/Loja.Web.0k50ualmte.pdb",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\pzwqlo8ok0-0k50ualmte.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000033236946"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "30086"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ePrVmW2VNruCR1UUDzWIt1Y6jmg7/K4fXnq51+l0sqU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 15:18:53 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"IDIWAerhCENv5Ii26rmPylHGPmOFyI146C26W0bBt8U=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "0k50ualmte"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/Loja.Web.pdb"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-IDIWAerhCENv5Ii26rmPylHGPmOFyI146C26W0bBt8U="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/Loja.Web.0k50ualmte.pdb.gz",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\pzwqlo8ok0-0k50ualmte.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "30086"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ePrVmW2VNruCR1UUDzWIt1Y6jmg7/K4fXnq51+l0sqU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 15:18:53 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "0k50ualmte"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/Loja.Web.pdb.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-ePrVmW2VNruCR1UUDzWIt1Y6jmg7/K4fXnq51+l0sqU="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/Loja.Web.pdb",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Loja.Web.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "41916"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"IDIWAerhCENv5Ii26rmPylHGPmOFyI146C26W0bBt8U=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 15:18:52 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-IDIWAerhCENv5Ii26rmPylHGPmOFyI146C26W0bBt8U="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/Loja.Web.pdb",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\pzwqlo8ok0-0k50ualmte.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000033236946"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "30086"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ePrVmW2VNruCR1UUDzWIt1Y6jmg7/K4fXnq51+l0sqU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 15:18:53 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"IDIWAerhCENv5Ii26rmPylHGPmOFyI146C26W0bBt8U=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-IDIWAerhCENv5Ii26rmPylHGPmOFyI146C26W0bBt8U="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/Loja.Web.pdb.gz",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\pzwqlo8ok0-0k50ualmte.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "30086"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ePrVmW2VNruCR1UUDzWIt1Y6jmg7/K4fXnq51+l0sqU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 15:18:53 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ePrVmW2VNruCR1UUDzWIt1Y6jmg7/K4fXnq51+l0sqU="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/Loja.Web.tr99ymipds.wasm",
+      "Route": "_framework/Loja.Web.2jk33g2h8p.wasm",
       "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Loja.Web.wasm",
       "Selectors": [],
       "ResponseHeaders": [
@@ -16757,11 +16459,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"uXNYt8jdvmlr5PETjHGkIWFVyDdb5walzMlENXKqYTA=\""
+          "Value": "\"rg22d4oYJ0BT852xquasHU+C2T3b5clPBosyO+a7C3A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 15:18:52 GMT"
+          "Value": "Thu, 30 Jan 2025 20:35:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16771,7 +16473,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "tr99ymipds"
+          "Value": "2jk33g2h8p"
         },
         {
           "Name": "label",
@@ -16779,18 +16481,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-uXNYt8jdvmlr5PETjHGkIWFVyDdb5walzMlENXKqYTA="
+          "Value": "sha256-rg22d4oYJ0BT852xquasHU+C2T3b5clPBosyO+a7C3A="
         }
       ]
     },
     {
-      "Route": "_framework/Loja.Web.tr99ymipds.wasm",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\1e0g8uz7jy-tr99ymipds.gz",
+      "Route": "_framework/Loja.Web.2jk33g2h8p.wasm",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\1e0g8uz7jy-2jk33g2h8p.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000040228498"
+          "Quality": "0.000040032026"
         }
       ],
       "ResponseHeaders": [
@@ -16800,15 +16502,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "24857"
+          "Value": "24979"
         },
         {
           "Name": "ETag",
-          "Value": "\"odri7yE9za45RmjbUAAN96nC7KkkqzlmBpYM5XgJqEY=\""
+          "Value": "\"PRHFSgzkkag5BxaIiREHdCHDZCRVvZuhYslnX6tr+mk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 15:18:53 GMT"
+          "Value": "Thu, 30 Jan 2025 20:35:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16828,13 +16530,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"uXNYt8jdvmlr5PETjHGkIWFVyDdb5walzMlENXKqYTA=\""
+          "Value": "W/\"rg22d4oYJ0BT852xquasHU+C2T3b5clPBosyO+a7C3A=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "tr99ymipds"
+          "Value": "2jk33g2h8p"
         },
         {
           "Name": "label",
@@ -16842,13 +16544,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-uXNYt8jdvmlr5PETjHGkIWFVyDdb5walzMlENXKqYTA="
+          "Value": "sha256-rg22d4oYJ0BT852xquasHU+C2T3b5clPBosyO+a7C3A="
         }
       ]
     },
     {
-      "Route": "_framework/Loja.Web.tr99ymipds.wasm.gz",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\1e0g8uz7jy-tr99ymipds.gz",
+      "Route": "_framework/Loja.Web.2jk33g2h8p.wasm.gz",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\1e0g8uz7jy-2jk33g2h8p.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -16857,7 +16559,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "24857"
+          "Value": "24979"
         },
         {
           "Name": "Content-Type",
@@ -16865,11 +16567,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"odri7yE9za45RmjbUAAN96nC7KkkqzlmBpYM5XgJqEY=\""
+          "Value": "\"PRHFSgzkkag5BxaIiREHdCHDZCRVvZuhYslnX6tr+mk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 15:18:53 GMT"
+          "Value": "Thu, 30 Jan 2025 20:35:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16887,7 +16589,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "tr99ymipds"
+          "Value": "2jk33g2h8p"
         },
         {
           "Name": "label",
@@ -16895,7 +16597,305 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-odri7yE9za45RmjbUAAN96nC7KkkqzlmBpYM5XgJqEY="
+          "Value": "sha256-PRHFSgzkkag5BxaIiREHdCHDZCRVvZuhYslnX6tr+mk="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Loja.Web.pdb",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Loja.Web.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41928"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ri3JE3Z09pKJ7lLfwVmwzt5/BIdVKEJ9hAeTuUGUUwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 20:35:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ri3JE3Z09pKJ7lLfwVmwzt5/BIdVKEJ9hAeTuUGUUwg="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Loja.Web.pdb",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\pzwqlo8ok0-qah30abx6y.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000033223695"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30098"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7uGnsIeXI8RaEmp6tEEuJvVVZdvephw7nsSzU+oxJ1w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 20:35:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ri3JE3Z09pKJ7lLfwVmwzt5/BIdVKEJ9hAeTuUGUUwg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ri3JE3Z09pKJ7lLfwVmwzt5/BIdVKEJ9hAeTuUGUUwg="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Loja.Web.pdb.gz",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\pzwqlo8ok0-qah30abx6y.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30098"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7uGnsIeXI8RaEmp6tEEuJvVVZdvephw7nsSzU+oxJ1w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 20:35:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7uGnsIeXI8RaEmp6tEEuJvVVZdvephw7nsSzU+oxJ1w="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Loja.Web.qah30abx6y.pdb",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Loja.Web.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41928"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ri3JE3Z09pKJ7lLfwVmwzt5/BIdVKEJ9hAeTuUGUUwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 20:35:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qah30abx6y"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Loja.Web.pdb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ri3JE3Z09pKJ7lLfwVmwzt5/BIdVKEJ9hAeTuUGUUwg="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Loja.Web.qah30abx6y.pdb",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\pzwqlo8ok0-qah30abx6y.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000033223695"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30098"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7uGnsIeXI8RaEmp6tEEuJvVVZdvephw7nsSzU+oxJ1w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 20:35:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ri3JE3Z09pKJ7lLfwVmwzt5/BIdVKEJ9hAeTuUGUUwg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qah30abx6y"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Loja.Web.pdb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ri3JE3Z09pKJ7lLfwVmwzt5/BIdVKEJ9hAeTuUGUUwg="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Loja.Web.qah30abx6y.pdb.gz",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\pzwqlo8ok0-qah30abx6y.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30098"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7uGnsIeXI8RaEmp6tEEuJvVVZdvephw7nsSzU+oxJ1w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 20:35:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qah30abx6y"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Loja.Web.pdb.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7uGnsIeXI8RaEmp6tEEuJvVVZdvephw7nsSzU+oxJ1w="
         }
       ]
     },
@@ -16918,11 +16918,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"uXNYt8jdvmlr5PETjHGkIWFVyDdb5walzMlENXKqYTA=\""
+          "Value": "\"rg22d4oYJ0BT852xquasHU+C2T3b5clPBosyO+a7C3A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 15:18:52 GMT"
+          "Value": "Thu, 30 Jan 2025 20:35:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16932,18 +16932,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-uXNYt8jdvmlr5PETjHGkIWFVyDdb5walzMlENXKqYTA="
+          "Value": "sha256-rg22d4oYJ0BT852xquasHU+C2T3b5clPBosyO+a7C3A="
         }
       ]
     },
     {
       "Route": "_framework/Loja.Web.wasm",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\1e0g8uz7jy-tr99ymipds.gz",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\1e0g8uz7jy-2jk33g2h8p.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000040228498"
+          "Quality": "0.000040032026"
         }
       ],
       "ResponseHeaders": [
@@ -16953,15 +16953,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "24857"
+          "Value": "24979"
         },
         {
           "Name": "ETag",
-          "Value": "\"odri7yE9za45RmjbUAAN96nC7KkkqzlmBpYM5XgJqEY=\""
+          "Value": "\"PRHFSgzkkag5BxaIiREHdCHDZCRVvZuhYslnX6tr+mk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 15:18:53 GMT"
+          "Value": "Thu, 30 Jan 2025 20:35:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16981,19 +16981,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"uXNYt8jdvmlr5PETjHGkIWFVyDdb5walzMlENXKqYTA=\""
+          "Value": "W/\"rg22d4oYJ0BT852xquasHU+C2T3b5clPBosyO+a7C3A=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-uXNYt8jdvmlr5PETjHGkIWFVyDdb5walzMlENXKqYTA="
+          "Value": "sha256-rg22d4oYJ0BT852xquasHU+C2T3b5clPBosyO+a7C3A="
         }
       ]
     },
     {
       "Route": "_framework/Loja.Web.wasm.gz",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\1e0g8uz7jy-tr99ymipds.gz",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\1e0g8uz7jy-2jk33g2h8p.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -17002,7 +17002,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "24857"
+          "Value": "24979"
         },
         {
           "Name": "Content-Type",
@@ -17010,11 +17010,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"odri7yE9za45RmjbUAAN96nC7KkkqzlmBpYM5XgJqEY=\""
+          "Value": "\"PRHFSgzkkag5BxaIiREHdCHDZCRVvZuhYslnX6tr+mk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 15:18:53 GMT"
+          "Value": "Thu, 30 Jan 2025 20:35:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17032,7 +17032,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-odri7yE9za45RmjbUAAN96nC7KkkqzlmBpYM5XgJqEY="
+          "Value": "sha256-PRHFSgzkkag5BxaIiREHdCHDZCRVvZuhYslnX6tr+mk="
         }
       ]
     },
@@ -84684,12 +84684,12 @@
     },
     {
       "Route": "css/styles.css",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\e5okugjl87-iwdk4mca8t.gz",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\e5okugjl87-fliuh2po4o.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001291989664"
+          "Quality": "0.000920810313"
         }
       ],
       "ResponseHeaders": [
@@ -84699,15 +84699,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "773"
+          "Value": "1085"
         },
         {
           "Name": "ETag",
-          "Value": "\"ryvYhyHF4Tls4FtD7Ov0Byww4KV3WjftQfi+lD8Knok=\""
+          "Value": "\"kXiS1ER6aMjAZl54LqexSm4cAFpTMcvZQGXwiAz4Cl0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 14:47:43 GMT"
+          "Value": "Thu, 30 Jan 2025 20:36:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -84727,13 +84727,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"nqCxwbPPt5rhW06hDXtBq+rN8X8wbeu4nmnozh+2mmg=\""
+          "Value": "W/\"o0IRc7QCYapm0sCNIlpriG3xJ8IKd9JIaJnrseHt4js=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-nqCxwbPPt5rhW06hDXtBq+rN8X8wbeu4nmnozh+2mmg="
+          "Value": "sha256-o0IRc7QCYapm0sCNIlpriG3xJ8IKd9JIaJnrseHt4js="
         }
       ]
     },
@@ -84748,7 +84748,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2549"
+          "Value": "3898"
         },
         {
           "Name": "Content-Type",
@@ -84756,11 +84756,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"nqCxwbPPt5rhW06hDXtBq+rN8X8wbeu4nmnozh+2mmg=\""
+          "Value": "\"o0IRc7QCYapm0sCNIlpriG3xJ8IKd9JIaJnrseHt4js=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 14:47:43 GMT"
+          "Value": "Thu, 30 Jan 2025 20:36:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -84770,13 +84770,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-nqCxwbPPt5rhW06hDXtBq+rN8X8wbeu4nmnozh+2mmg="
+          "Value": "sha256-o0IRc7QCYapm0sCNIlpriG3xJ8IKd9JIaJnrseHt4js="
         }
       ]
     },
     {
       "Route": "css/styles.css.gz",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\e5okugjl87-iwdk4mca8t.gz",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\e5okugjl87-fliuh2po4o.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -84785,7 +84785,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "773"
+          "Value": "1085"
         },
         {
           "Name": "Content-Type",
@@ -84793,11 +84793,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ryvYhyHF4Tls4FtD7Ov0Byww4KV3WjftQfi+lD8Knok=\""
+          "Value": "\"kXiS1ER6aMjAZl54LqexSm4cAFpTMcvZQGXwiAz4Cl0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 14:47:43 GMT"
+          "Value": "Thu, 30 Jan 2025 20:36:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -84815,18 +84815,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ryvYhyHF4Tls4FtD7Ov0Byww4KV3WjftQfi+lD8Knok="
+          "Value": "sha256-kXiS1ER6aMjAZl54LqexSm4cAFpTMcvZQGXwiAz4Cl0="
         }
       ]
     },
     {
-      "Route": "css/styles.iwdk4mca8t.css",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\e5okugjl87-iwdk4mca8t.gz",
+      "Route": "css/styles.fliuh2po4o.css",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\e5okugjl87-fliuh2po4o.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001291989664"
+          "Quality": "0.000920810313"
         }
       ],
       "ResponseHeaders": [
@@ -84836,15 +84836,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "773"
+          "Value": "1085"
         },
         {
           "Name": "ETag",
-          "Value": "\"ryvYhyHF4Tls4FtD7Ov0Byww4KV3WjftQfi+lD8Knok=\""
+          "Value": "\"kXiS1ER6aMjAZl54LqexSm4cAFpTMcvZQGXwiAz4Cl0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 14:47:43 GMT"
+          "Value": "Thu, 30 Jan 2025 20:36:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -84864,13 +84864,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"nqCxwbPPt5rhW06hDXtBq+rN8X8wbeu4nmnozh+2mmg=\""
+          "Value": "W/\"o0IRc7QCYapm0sCNIlpriG3xJ8IKd9JIaJnrseHt4js=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "iwdk4mca8t"
+          "Value": "fliuh2po4o"
         },
         {
           "Name": "label",
@@ -84878,12 +84878,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-nqCxwbPPt5rhW06hDXtBq+rN8X8wbeu4nmnozh+2mmg="
+          "Value": "sha256-o0IRc7QCYapm0sCNIlpriG3xJ8IKd9JIaJnrseHt4js="
         }
       ]
     },
     {
-      "Route": "css/styles.iwdk4mca8t.css",
+      "Route": "css/styles.fliuh2po4o.css",
       "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\css\\styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -84893,7 +84893,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2549"
+          "Value": "3898"
         },
         {
           "Name": "Content-Type",
@@ -84901,11 +84901,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"nqCxwbPPt5rhW06hDXtBq+rN8X8wbeu4nmnozh+2mmg=\""
+          "Value": "\"o0IRc7QCYapm0sCNIlpriG3xJ8IKd9JIaJnrseHt4js=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 14:47:43 GMT"
+          "Value": "Thu, 30 Jan 2025 20:36:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -84915,7 +84915,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "iwdk4mca8t"
+          "Value": "fliuh2po4o"
         },
         {
           "Name": "label",
@@ -84923,13 +84923,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-nqCxwbPPt5rhW06hDXtBq+rN8X8wbeu4nmnozh+2mmg="
+          "Value": "sha256-o0IRc7QCYapm0sCNIlpriG3xJ8IKd9JIaJnrseHt4js="
         }
       ]
     },
     {
-      "Route": "css/styles.iwdk4mca8t.css.gz",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\e5okugjl87-iwdk4mca8t.gz",
+      "Route": "css/styles.fliuh2po4o.css.gz",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\Debug\\net9.0\\compressed\\e5okugjl87-fliuh2po4o.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -84938,7 +84938,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "773"
+          "Value": "1085"
         },
         {
           "Name": "Content-Type",
@@ -84946,11 +84946,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ryvYhyHF4Tls4FtD7Ov0Byww4KV3WjftQfi+lD8Knok=\""
+          "Value": "\"kXiS1ER6aMjAZl54LqexSm4cAFpTMcvZQGXwiAz4Cl0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 14:47:43 GMT"
+          "Value": "Thu, 30 Jan 2025 20:36:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -84968,7 +84968,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "iwdk4mca8t"
+          "Value": "fliuh2po4o"
         },
         {
           "Name": "label",
@@ -84976,7 +84976,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ryvYhyHF4Tls4FtD7Ov0Byww4KV3WjftQfi+lD8Knok="
+          "Value": "sha256-kXiS1ER6aMjAZl54LqexSm4cAFpTMcvZQGXwiAz4Cl0="
         }
       ]
     },

@@ -13,22 +13,30 @@
     {
         foreach (var produto in Produtos)
         {
-            <MudItem xs="12" sm="4" md="3" lg="3">
-                <MudCard Style="display: flex; flex-direction: column; height: 70vh; overflow: hidden;">
-                    <MudCarousel Style="flex-shrink: 0; width: 100%; height: 70%;" ShowArrows="true" EnableSwipeGesture="true" TData="Imagem" Autoplay="true" Interval="3000" Indicators="true">
+            <MudItem>
+                <MudCard>
+                    <MudCardContent>
+                        <h3>@produto.Titulo</h3>
+                    </MudCardContent>
+
+                    <MudCarousel ShowArrows="true" EnableSwipeGesture="true" TData="Imagem" Indicators="true">
                         @foreach (var imagem in produto.Imagens)
                         {
                             var imagemUrl = $"{WebConfiguration.BackendUrl}{imagem.Url}";
-                            <MudCarouselItem Style="padding: 1em;">
-                                <MudCardMedia Image="@imagemUrl" Style="display: flex; width: 100%; object-fit: cover;"/>
+                            <MudCarouselItem>
+                                <img src="@imagemUrl" alt="sla" width="80%"/>
                             </MudCarouselItem>
                         }
                     </MudCarousel>
-                    <MudCardContent Style="flex-grow: 1; overflow: auto;">
-                        <h3>@produto.Titulo</h3>
-                        <p>R$ @produto.Preco.ToString("F2")</p>
-                        <MudButton Color="Color.Primary">
-                            Comprar
+
+                    <MudCardContent Style="flex-grow: 1; text-align: start;">
+                        <p style="text-decoration: line-through; color: gray;">De R$ @produto.Preco.ToString("F2")</p>
+                        <p style="font-size: 1.2em; font-weight: bold; color: red;">Por R$ @produto.Preco.ToString("F2")</p>
+                        <p style="color: green;">No PIX (5% de desconto)</p>
+                        <p>Ou R$ @produto.Preco.ToString("F2") em até 12x s/ juros no cartão</p>
+
+                        <MudButton Color="Color.Primary" Variant="Variant.Filled" Style="margin-top: 10px;">
+                            Adicionar ao Carrinho
                         </MudButton>
                     </MudCardContent>
                 </MudCard>
@@ -36,3 +44,5 @@
         }
     }
 </div>
+
+

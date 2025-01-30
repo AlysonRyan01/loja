@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Loja.Web",
   "resources": {
-    "hash": "sha256-gBhL/cLNzBExdWsnVjhC/mpOrC4K3P+cY07t6BEpslM=",
+    "hash": "sha256-ky8xi4l6tg7LJr1FbKvspZFeLDvH4wCz7wv2D2+xREs=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Authentication.1jy2czmvcw.wasm": "Microsoft.AspNetCore.Authentication.wasm",
       "Microsoft.AspNetCore.Authentication.Abstractions.teru10q8m9.wasm": "Microsoft.AspNetCore.Authentication.Abstractions.wasm",
@@ -235,10 +235,10 @@
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "Loja.Core.xkkggqkllr.wasm": "Loja.Core.wasm",
-      "Loja.Core.4t2c3saqlk.pdb": "Loja.Core.pdb",
-      "Loja.Web.tr99ymipds.wasm": "Loja.Web.wasm",
-      "Loja.Web.0k50ualmte.pdb": "Loja.Web.pdb"
+      "Loja.Core.kk4gvp251v.wasm": "Loja.Core.wasm",
+      "Loja.Core.e4i8jqwyuy.pdb": "Loja.Core.pdb",
+      "Loja.Web.2jk33g2h8p.wasm": "Loja.Web.wasm",
+      "Loja.Web.qah30abx6y.pdb": "Loja.Web.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.hmanx9razn.js": "sha256-d7UNSArplVrX3arY2Kmhxp1wN79ng8hLqIBrkiQ9Gbo="
@@ -482,12 +482,12 @@
       "WindowsBase.ovqw333kan.wasm": "sha256-7LCr4nX9JSGuwzMr8Rk8TGvC6ApzQNxCDiMV/0I9JlI=",
       "mscorlib.l6md3pggqy.wasm": "sha256-jZgH0LixLeQKqaq33akQgDGhfE7vbXbHtvCId5HC0Yo=",
       "netstandard.lij9csiyuf.wasm": "sha256-DeeBl9s8G34N3IfYRQ+MoY807amodj8cvpuvUSNaWE4=",
-      "Loja.Core.xkkggqkllr.wasm": "sha256-z/trpYiSS5PnXBPV4fJ6qwuW34F6PdWHBrxQzVhBLgE=",
-      "Loja.Web.tr99ymipds.wasm": "sha256-uXNYt8jdvmlr5PETjHGkIWFVyDdb5walzMlENXKqYTA="
+      "Loja.Core.kk4gvp251v.wasm": "sha256-JF6CpaLJRJIIOuakpUZaNLKJJ5/spokWHtrHfCI8ung=",
+      "Loja.Web.2jk33g2h8p.wasm": "sha256-rg22d4oYJ0BT852xquasHU+C2T3b5clPBosyO+a7C3A="
     },
     "pdb": {
-      "Loja.Core.4t2c3saqlk.pdb": "sha256-yHMiQQ+NGjSlCA4XsSUbfVraj9k+wiDdT4ig1i5O3MA=",
-      "Loja.Web.0k50ualmte.pdb": "sha256-IDIWAerhCENv5Ii26rmPylHGPmOFyI146C26W0bBt8U="
+      "Loja.Core.e4i8jqwyuy.pdb": "sha256-Qtdxlnyu6jrmIxxe6rmF33y3bjuic4k85UIZCJxYj9w=",
+      "Loja.Web.qah30abx6y.pdb": "sha256-ri3JE3Z09pKJ7lLfwVmwzt5/BIdVKEJ9hAeTuUGUUwg="
     }
   },
   "cacheBootResources": true,

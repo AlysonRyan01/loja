@@ -105,8 +105,7 @@ main {
 }
 
 .banner {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 3rem;
     width: 100%; 
     height: auto;
     display: block;
@@ -116,42 +115,96 @@ main {
 .produtos
 {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 16px;
+    gap: 4rem;
+    margin-top: 4rem;
 }
 
-/*.mud-card
-{
+/* Definindo estilos para a .mud-card */
+.mud-card {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    max-height: 70vh;
-    height: 70vh;
-    overflow: hidden; 
+    width: 25vw;
+    min-width: 300px;
+    box-sizing: border-box;
+    height: 90vh;
 }
 
-.mud-card-content
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+/* Estilo do conteúdo dentro do cartão (MudCardContent) */
+.mud-card-content {
+    padding: 16px;
+    max-height: 20%;
+    overflow: hidden;
+    text-align: start;
+    word-wrap: break-word;
+}
+
+/* Estilos para o carrossel */
+.mud-carousel {
+    height: 40%;
     width: 100%;
 }
 
-.mud-carousel {
-    flex-grow: 1;
-    max-height: 50vh;
-}
-
-.mud-carousel .mud-carousel-item {
-    justify-content: center;
+.mud-carousel-item {
+    display: flex;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    box-sizing: border-box;
 }
 
-.mud-carousel img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
+
+/* Mudando o estilo da imagem dentro do carrossel */
+
+
+/* Estilos para celulares (até 600px) */
+@media screen and (max-width: 600px) {
+    /* Definindo estilos para a .mud-card */
+    .mud-card {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        box-sizing: border-box;
+        height: 80vh;
+    }
+
+    /* Estilo do conteúdo dentro do cartão (MudCardContent) */
+    .mud-card-content {
+        padding: 16px;
+        flex-grow: 1;
+        overflow: hidden;
+        text-align: start;
+        word-wrap: break-word;
+    }
+
+    /* Estilos para o carrossel */
+    .mud-carousel {
+        width: 100%;
+        height: 80%;
+        margin-bottom: 16px; /* Espaçamento entre o carrossel e o conteúdo */
+    }
+
+    .mud-carousel-item {
+        width: 100%;
+        height: 100%;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+
+    /* Mudando o estilo da imagem dentro do carrossel */
+    .mud-card-media {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
 }
 
+/* Estilos para tablets (entre 600px e 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    
+}

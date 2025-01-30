@@ -117,7 +117,41 @@ main {
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     gap: 16px;
+}
+
+/*.mud-card
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-height: 70vh;
+    height: 70vh;
+    overflow: hidden; 
+}
+
+.mud-card-content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.mud-carousel {
+    flex-grow: 1;
+    max-height: 50vh;
+}
+
+.mud-carousel .mud-carousel-item {
+    justify-content: center;
+    align-items: center;
+}
+
+.mud-carousel img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 

@@ -3741,8 +3741,6 @@ C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_f
 C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\dotnet.native.hmanx9razn.js
 C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\dotnet.native.p4lwlf2bu1.wasm
 C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\dotnet.runtime.o8gq1i8bk6.js
-C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\Loja.Core.tyboa253a4.pdb
-C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\Loja.Core.ch79hapjxt.wasm
 C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\Microsoft.AspNetCore.Authentication.Abstractions.teru10q8m9.wasm
 C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\Microsoft.AspNetCore.Authentication.Cookies.5hwk0bo7dn.wasm
 C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\Microsoft.AspNetCore.Authentication.Core.m4evlbueww.wasm
@@ -4074,7 +4072,6 @@ C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_f
 C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\Microsoft.AspNetCore.Http.Extensions.57zig84vjd.wasm.gz
 C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\System.Collections.Specialized.pf8o02gi88.wasm.gz
 C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\WindowsBase.ovqw333kan.wasm.gz
-C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\Loja.Core.ch79hapjxt.wasm.gz
 C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\System.Threading.nv6otxy934.wasm.gz
 C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\System.Runtime.Serialization.Primitives.3q7zsjzsco.wasm.gz
 C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\System.Globalization.Calendars.wyl6b2gjv4.wasm.gz
@@ -4135,7 +4132,6 @@ C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_f
 C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\System.Console.w0ay1b4srp.wasm.gz
 C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\System.ServiceProcess.4n5pile68t.wasm.gz
 C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\System.IO.a8lovankol.wasm.gz
-C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\Loja.Core.tyboa253a4.pdb.gz
 C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\Microsoft.JSInterop.gkumi7kxvo.wasm.gz
 C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\System.Collections.Immutable.9o9b1v73b4.wasm.gz
 C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\System.IO.FileSystem.AccessControl.gqo8i3yxtl.wasm.gz
@@ -4968,8 +4964,6 @@ C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\obj\Debug\net9.0\compressed
 C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\obj\Debug\net9.0\compressed\p8t72qsu06-tjcz0u77k5.gz
 C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\obj\Debug\net9.0\compressed\9ftuc0hapa-tptq2av103.gz
 C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\obj\Debug\net9.0\compressed\70z7r2anac-lfu7j35m59.gz
-C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\obj\Debug\net9.0\compressed\cxvo3qweu8-ch79hapjxt.gz
-C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\obj\Debug\net9.0\compressed\mn07kzjl7f-tyboa253a4.gz
 C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\obj\Debug\net9.0\staticwebassets.build.endpoints.json
@@ -4984,14 +4978,6 @@ C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\obj\Debug\net9.0\Loja.Web.d
 C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\obj\Debug\net9.0\refint\Loja.Web.dll
 C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\obj\Debug\net9.0\Loja.Web.pdb
 C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\obj\Debug\net9.0\ref\Loja.Web.dll
-C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\Loja.Web.5gvftv5usn.pdb
-C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\Loja.Web.x9qma427jc.wasm
-C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\Loja.Web.x9qma427jc.wasm.gz
-C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\Loja.Web.5gvftv5usn.pdb.gz
-C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\obj\Debug\net9.0\compressed\e5okugjl87-8k96gdyesx.gz
-C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\obj\Debug\net9.0\compressed\1e0g8uz7jy-x9qma427jc.gz
-C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\obj\Debug\net9.0\compressed\pzwqlo8ok0-5gvftv5usn.gz
-C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\obj\Debug\net9.0\compressed\eghiqoyv0t-jfbbpsmsb4.gz
 D:\GitHubRepository\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\Loja.Core.jy3pvb1kvu.pdb
 D:\GitHubRepository\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\Loja.Core.dhlqvatdoc.wasm
 D:\GitHubRepository\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\Loja.Core.dhlqvatdoc.wasm.gz
@@ -5006,3 +4992,17 @@ D:\GitHubRepository\loja\loja.web\obj\Debug\net9.0\compressed\e5okugjl87-i1mtroi
 D:\GitHubRepository\loja\loja.web\obj\Debug\net9.0\compressed\1e0g8uz7jy-du4isxs5bf.gz
 D:\GitHubRepository\loja\loja.web\obj\Debug\net9.0\compressed\pzwqlo8ok0-4fupn3i3ck.gz
 D:\GitHubRepository\loja\loja.web\obj\Debug\net9.0\compressed\eghiqoyv0t-n9zoyvcmnh.gz
+C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\Loja.Core.4t2c3saqlk.pdb
+C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\Loja.Core.xkkggqkllr.wasm
+C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\Loja.Core.xkkggqkllr.wasm.gz
+C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\Loja.Core.4t2c3saqlk.pdb.gz
+C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\obj\Debug\net9.0\compressed\cxvo3qweu8-xkkggqkllr.gz
+C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\obj\Debug\net9.0\compressed\mn07kzjl7f-4t2c3saqlk.gz
+C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\obj\Debug\net9.0\compressed\e5okugjl87-iwdk4mca8t.gz
+C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\Loja.Web.0k50ualmte.pdb
+C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\Loja.Web.tr99ymipds.wasm
+C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\Loja.Web.tr99ymipds.wasm.gz
+C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\bin\Debug\net9.0\wwwroot\_framework\Loja.Web.0k50ualmte.pdb.gz
+C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\obj\Debug\net9.0\compressed\1e0g8uz7jy-tr99ymipds.gz
+C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\obj\Debug\net9.0\compressed\pzwqlo8ok0-0k50ualmte.gz
+C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\obj\Debug\net9.0\compressed\eghiqoyv0t-6ftuzd1i5h.gz

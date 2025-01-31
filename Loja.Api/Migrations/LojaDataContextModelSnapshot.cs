@@ -180,12 +180,15 @@ namespace Loja.Api.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Name")
+                        .HasMaxLength(256)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("NormalizedName")
+                        .HasMaxLength(256)
                         .HasColumnType("TEXT");
 
                     b.Property<long?>("UserId")
@@ -193,9 +196,12 @@ namespace Loja.Api.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("NormalizedName")
+                        .IsUnique();
+
                     b.HasIndex("UserId");
 
-                    b.ToTable("Roles");
+                    b.ToTable("IdentityRole", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<long>", b =>

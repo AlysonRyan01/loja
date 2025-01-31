@@ -6,6 +6,7 @@ using Loja.Core.Models;
 using Loja.Core.Models.Identity;
 using Loja.Core.Requisicoes.Identity;
 using Loja.Core.Respostas;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 
 
@@ -15,13 +16,15 @@ public class IdentityHandler : IIdentityHandler
 {
     private readonly UserManager<User> _userManager;
     private readonly SignInManager<User> _signInManager;
+    private readonly RoleManager<IdentityRole<long>> _roleManager;
     private readonly LojaDataContext _context;
     
-    public IdentityHandler(UserManager<User> userManager, SignInManager<User> signInManager, LojaDataContext context)
+    public IdentityHandler(UserManager<User> userManager, SignInManager<User> signInManager, RoleManager<IdentityRole<long>> roleManager, LojaDataContext context)
     {
         _userManager = userManager;
         _signInManager = signInManager;
         _context = context;
+        _roleManager = roleManager;
     }
     
     public async Task<Resposta<string>> LoginAsync(LoginRequest request)
@@ -29,16 +32,15 @@ public class IdentityHandler : IIdentityHandler
         try
         {
             var user = await _userManager.FindByEmailAsync(request.Email);
-            if(user == null)
+            if (user == null)
+                return new Resposta<string>("Senha ou email incorretos", 401, "Senha ou email incorretos");
+
+            var isPasswordValid = await _userManager.CheckPasswordAsync(user, request.Password);
+            if (!isPasswordValid)
                 return new Resposta<string>("Senha ou email incorretos", 401, "Senha ou email incorretos");
             
-            var result = await _signInManager.PasswordSignInAsync(user, request.Password, false, false);
-            if(!result.Succeeded)
-                return new Resposta<string>("Senha ou email incorretos", 401, "Senha ou email incorretos");
-            
-            var claims = await _userManager.GetClaimsAsync(user);
-            var roles = await _userManager.GetRolesAsync(user);
-            
+            await _signInManager.SignInAsync(user, isPersistent: false);
+
             return new Resposta<string>("Login realizado com sucesso!", 200, "Login realizado com sucesso");
         }
         catch (Exception e)
@@ -53,6 +55,13 @@ public class IdentityHandler : IIdentityHandler
         
         try
         {
+            
+            var roleExists = await _roleManager.RoleExistsAsync("User");
+            if (!roleExists)
+            {
+                await _roleManager.CreateAsync(new IdentityRole<long> { Name = "User", NormalizedName = "USER" });
+            }
+            
             var user = new User
             {
                 Email = request.Email,
@@ -69,6 +78,8 @@ public class IdentityHandler : IIdentityHandler
             
             await _userManager.AddClaimAsync(user, new Claim(ClaimTypes.Email, request.Email));
             await _userManager.AddClaimAsync(user, new Claim(ClaimTypes.Name, request.Email));
+            await _userManager.AddClaimAsync(user, new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()));
+            
             await _userManager.AddToRoleAsync(user, "User");
 
             var carrinho = new Carrinho
@@ -130,7 +141,7 @@ public class IdentityHandler : IIdentityHandler
             var userInfo = new UserInfo
             {
                 Email = user.Email,
-                IsEmailConfirmed = user.EmailConfirmed
+                IsEmailConfirmed = user.EmailConfirmed,
             };
             
             return new Resposta<UserInfo>(userInfo, 200, "Usuario encontrado com sucesso");
@@ -163,6 +174,34 @@ public class IdentityHandler : IIdentityHandler
             
             return Task.FromResult(new Resposta<IEnumerable<RoleClaim>>(roles, 200, "Roles encontradas com sucesso!"));
 
+        }
+        catch
+        {
+            return Task.FromResult(new Resposta<IEnumerable<RoleClaim>>(null, 500, "Erro no servidor"));
+        }
+    }
+
+    public Task<Resposta<IEnumerable<RoleClaim>>> UserClaims(ClaimsPrincipal logedUser)
+    {
+        try
+        {
+            if (logedUser.Identity == null || !logedUser.Identity.IsAuthenticated)
+                return Task.FromResult(new Resposta<IEnumerable<RoleClaim>>(null, 401, "Usuario nao autenticado"));
+
+            var identity = (ClaimsIdentity)logedUser.Identity;
+
+            var allClaims = identity.Claims
+                .Select(x => new RoleClaim
+                {
+                    Issuer = x.Issuer,
+                    OriginalIssuer = x.OriginalIssuer,
+                    Type = x.Type,
+                    Value = x.Value,
+                    ValueType = x.ValueType
+                });
+
+            return Task.FromResult(
+                new Resposta<IEnumerable<RoleClaim>>(allClaims, 200, "Claims encontradas com sucesso!"));
         }
         catch
         {

@@ -37,13 +37,27 @@ public class IdentityHandler(IHttpClientFactory httpClientFactory) : IIdentityHa
             : new Resposta<string>(null, 400, "Não foi possível realizar o logout");
     }
 
-    public Task<Resposta<UserInfo>> UserInfo(ClaimsPrincipal logedUser)
+    public async Task<Resposta<UserInfo>> UserInfo(ClaimsPrincipal logedUser)
     {
-        throw new NotImplementedException();
+        var userName = logedUser.Identity?.Name;
+        return new Resposta<UserInfo>(new UserInfo { Email = userName ?? "" }, 200, "Informações do usuário recuperadas com sucesso.");
     }
 
     public Task<Resposta<IEnumerable<RoleClaim>>> UserRoles(ClaimsPrincipal logedUser)
     {
-        throw new NotImplementedException();
+        var roles = logedUser.FindAll(ClaimTypes.Role).Select(x => new RoleClaim { Value = x.Value });
+        return Task.FromResult(new Resposta<IEnumerable<RoleClaim>>(roles, 200, "Roles encontradas com sucesso!"));
+    }
+
+    public async Task<Resposta<IEnumerable<RoleClaim>>> UserClaims(ClaimsPrincipal logedUser)
+    {
+        var response = await client.GetFromJsonAsync<IEnumerable<RoleClaim>>("v1/identity/manage/claims");
+    
+        if (response != null)
+        {
+            return new Resposta<IEnumerable<RoleClaim>>(response, 200, "Claims recuperadas com sucesso.");
+        }
+    
+        return new Resposta<IEnumerable<RoleClaim>>(null, 400, "Erro ao recuperar as claims.");
     }
 }

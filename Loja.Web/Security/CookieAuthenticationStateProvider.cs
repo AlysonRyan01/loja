@@ -43,7 +43,7 @@ public class CookieAuthenticationStateProvider(IHttpClientFactory clientFactory)
     {
         try
         {
-            return await httpClient.GetFromJsonAsync<UserBlazor?>("v1/identity/manage/roles");
+            return await httpClient.GetFromJsonAsync<UserBlazor?>("v1/identity/manage/info");
         }
         catch
         {

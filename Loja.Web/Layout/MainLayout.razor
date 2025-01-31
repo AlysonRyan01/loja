@@ -31,7 +31,7 @@
                 <MudNavLink Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.AccountBox">
                     @if (_userLoggedIn)
                     {
-                        <h3>@_user.Identity?.Name</h3>
+                        <h3>@_userName</h3>
                     }
                     else
                     {

@@ -47,12 +47,6 @@ builder.Services.AddIdentityCore<User>()
     .AddSignInManager()
     .AddDefaultTokenProviders();
 
-
-builder.Services.Configure<IdentityOptions>(options =>
-{
-    options.ClaimsIdentity.UserNameClaimType = "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name";
-});
-
 builder.Services.AddAuthentication(IdentityConstants.ApplicationScheme)
     .AddIdentityCookies();
 

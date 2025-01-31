@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Dima.Web;
 using Dima.Web.Handlers;
 using Dima.Web.Security;
-using Loja.Core;
 using Loja.Core.Handlers;
 using Microsoft.AspNetCore.Components.Authorization;
 using MudBlazor.Services;

@@ -13,7 +13,7 @@ public class MainLayoutPage : LayoutComponentBase
     
     public bool _userLoggedIn = false;
 
-    public ClaimsPrincipal _user { get; set; } = null;
+    public string _userName { get; set; }
 
     public void ToggleEndDrawer()
     {
@@ -43,12 +43,11 @@ public class MainLayoutPage : LayoutComponentBase
             if (user.Identity != null && user.Identity.IsAuthenticated)
             {
                 _userLoggedIn = true;
-                _user = user;
+                _userName = user.Identity.Name ?? String.Empty;
             }
             else
             {
                 _userLoggedIn = false;
-                _user = null;
             }
 
             StateHasChanged();

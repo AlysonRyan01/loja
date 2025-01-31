@@ -36,6 +36,9 @@ public class IdentityHandler : IIdentityHandler
             if(!result.Succeeded)
                 return new Resposta<string>("Senha ou email incorretos", 401, "Senha ou email incorretos");
             
+            var claims = await _userManager.GetClaimsAsync(user);
+            var roles = await _userManager.GetRolesAsync(user);
+            
             return new Resposta<string>("Login realizado com sucesso!", 200, "Login realizado com sucesso");
         }
         catch (Exception e)
@@ -63,6 +66,10 @@ public class IdentityHandler : IIdentityHandler
                 await transaction.RollbackAsync();
                 return new Resposta<string>("Erro ao registrar usuário", 400, "Verifique os erros nos campos fornecidos.");
             }
+            
+            await _userManager.AddClaimAsync(user, new Claim(ClaimTypes.Email, request.Email));
+            await _userManager.AddClaimAsync(user, new Claim(ClaimTypes.Name, request.Email));
+            await _userManager.AddToRoleAsync(user, "User");
 
             var carrinho = new Carrinho
             {

@@ -38,11 +38,20 @@ builder.Services.AddDbContext<LojaDataContext>(x =>
 {
     x.UseSqlite(Configuration.ConnectionString);
 });
-        
+
+
+
 builder.Services.AddIdentityCore<User>()
     .AddRoles<IdentityRole<long>>()
     .AddEntityFrameworkStores<LojaDataContext>()
-    .AddApiEndpoints();
+    .AddSignInManager()
+    .AddDefaultTokenProviders();
+
+
+builder.Services.Configure<IdentityOptions>(options =>
+{
+    options.ClaimsIdentity.UserNameClaimType = "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name";
+});
 
 builder.Services.AddAuthentication(IdentityConstants.ApplicationScheme)
     .AddIdentityCookies();

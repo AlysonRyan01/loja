@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wycp3CFOqQb1ltm1svM7mp4vRkxiEBSEnDl8h4UvCpM=",
+  "Hash": "2qNceHMF5I9Eex5ukhtZ2iRtySVhbs3EBRTtZ8fs7vM=",
   "Source": "Loja.Api",
   "BasePath": "_content/Loja.Api",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Loja.Api\\wwwroot",
       "Source": "Loja.Api",
-      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\1_7eb270f4-bfd4-4211-84c1-c1d32780cdcb.jpeg",
+      "Identity": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\1_7eb270f4-bfd4-4211-84c1-c1d32780cdcb.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/1_7eb270f4-bfd4-4211-84c1-c1d32780cdcb#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -38,10 +38,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\1_7eb270f4-bfd4-4211-84c1-c1d32780cdcb.jpeg"
     },
     {
-      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg",
+      "Identity": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -59,10 +59,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg"
     },
     {
-      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\2_ad7f10de-6f83-437b-9021-d09a7179709b.jpeg",
+      "Identity": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\2_ad7f10de-6f83-437b-9021-d09a7179709b.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/2_ad7f10de-6f83-437b-9021-d09a7179709b#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -80,10 +80,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\2_ad7f10de-6f83-437b-9021-d09a7179709b.jpeg"
     },
     {
-      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg",
+      "Identity": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/208201foto_70323120-89b5-4f67-8385-67c6916a06e7#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -101,10 +101,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg"
     },
     {
-      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\3_6a7b9665-bc25-42b0-8436-0b8dc7456e8c.jpeg",
+      "Identity": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\3_6a7b9665-bc25-42b0-8436-0b8dc7456e8c.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/3_6a7b9665-bc25-42b0-8436-0b8dc7456e8c#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -122,10 +122,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\3_6a7b9665-bc25-42b0-8436-0b8dc7456e8c.jpeg"
     },
     {
-      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\4_464e5590-19e1-444b-b650-d116bd81fb8c.jpeg",
+      "Identity": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\4_464e5590-19e1-444b-b650-d116bd81fb8c.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/4_464e5590-19e1-444b-b650-d116bd81fb8c#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -143,10 +143,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\4_464e5590-19e1-444b-b650-d116bd81fb8c.jpeg"
     },
     {
-      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\5_15703933-e327-4d26-8a53-89ce012f0689.jpeg",
+      "Identity": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\5_15703933-e327-4d26-8a53-89ce012f0689.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/5_15703933-e327-4d26-8a53-89ce012f0689#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -164,10 +164,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\5_15703933-e327-4d26-8a53-89ce012f0689.jpeg"
     },
     {
-      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\6_8c96036d-1a3b-42cf-b014-144a1d3c9fa2.jpeg",
+      "Identity": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\6_8c96036d-1a3b-42cf-b014-144a1d3c9fa2.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/6_8c96036d-1a3b-42cf-b014-144a1d3c9fa2#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -185,10 +185,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\6_8c96036d-1a3b-42cf-b014-144a1d3c9fa2.jpeg"
     },
     {
-      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\7_e21f49b4-5f87-48ff-80af-d6bd34518b55.jpeg",
+      "Identity": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\7_e21f49b4-5f87-48ff-80af-d6bd34518b55.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/7_e21f49b4-5f87-48ff-80af-d6bd34518b55#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -206,10 +206,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\7_e21f49b4-5f87-48ff-80af-d6bd34518b55.jpeg"
     },
     {
-      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\8_ba2b5c3a-3f28-4329-9303-6160469dc892.jpeg",
+      "Identity": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\8_ba2b5c3a-3f28-4329-9303-6160469dc892.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/8_ba2b5c3a-3f28-4329-9303-6160469dc892#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -227,10 +227,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\8_ba2b5c3a-3f28-4329-9303-6160469dc892.jpeg"
     },
     {
-      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\9_a806cce2-40d4-4a24-b3e0-7fce1cbd7bf8.jpeg",
+      "Identity": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\9_a806cce2-40d4-4a24-b3e0-7fce1cbd7bf8.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/9_a806cce2-40d4-4a24-b3e0-7fce1cbd7bf8#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -251,7 +251,7 @@
   "Endpoints": [
     {
       "Route": "Imagens/1_7eb270f4-bfd4-4211-84c1-c1d32780cdcb.ctb77b5px1.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\1_7eb270f4-bfd4-4211-84c1-c1d32780cdcb.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\1_7eb270f4-bfd4-4211-84c1-c1d32780cdcb.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -272,7 +272,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 13:44:58 GMT"
+          "Value": "Thu, 30 Jan 2025 20:57:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -296,7 +296,7 @@
     },
     {
       "Route": "Imagens/1_7eb270f4-bfd4-4211-84c1-c1d32780cdcb.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\1_7eb270f4-bfd4-4211-84c1-c1d32780cdcb.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\1_7eb270f4-bfd4-4211-84c1-c1d32780cdcb.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -317,7 +317,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 13:44:58 GMT"
+          "Value": "Thu, 30 Jan 2025 20:57:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -333,7 +333,7 @@
     },
     {
       "Route": "Imagens/1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.5jcubahnln.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -354,7 +354,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 13:44:58 GMT"
+          "Value": "Thu, 30 Jan 2025 20:57:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -378,7 +378,7 @@
     },
     {
       "Route": "Imagens/1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -399,7 +399,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 13:44:58 GMT"
+          "Value": "Thu, 30 Jan 2025 20:57:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -415,7 +415,7 @@
     },
     {
       "Route": "Imagens/2_ad7f10de-6f83-437b-9021-d09a7179709b.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\2_ad7f10de-6f83-437b-9021-d09a7179709b.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\2_ad7f10de-6f83-437b-9021-d09a7179709b.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -436,7 +436,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 13:44:58 GMT"
+          "Value": "Thu, 30 Jan 2025 20:57:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -452,7 +452,7 @@
     },
     {
       "Route": "Imagens/2_ad7f10de-6f83-437b-9021-d09a7179709b.tg7vp68b0t.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\2_ad7f10de-6f83-437b-9021-d09a7179709b.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\2_ad7f10de-6f83-437b-9021-d09a7179709b.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -473,7 +473,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 13:44:58 GMT"
+          "Value": "Thu, 30 Jan 2025 20:57:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -497,7 +497,7 @@
     },
     {
       "Route": "Imagens/208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -518,7 +518,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 13:44:58 GMT"
+          "Value": "Thu, 30 Jan 2025 20:57:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -534,7 +534,7 @@
     },
     {
       "Route": "Imagens/208201foto_70323120-89b5-4f67-8385-67c6916a06e7.tj4iqjy46o.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -555,7 +555,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 13:44:58 GMT"
+          "Value": "Thu, 30 Jan 2025 20:57:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -579,7 +579,7 @@
     },
     {
       "Route": "Imagens/3_6a7b9665-bc25-42b0-8436-0b8dc7456e8c.4skda0n099.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\3_6a7b9665-bc25-42b0-8436-0b8dc7456e8c.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\3_6a7b9665-bc25-42b0-8436-0b8dc7456e8c.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -600,7 +600,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 13:44:58 GMT"
+          "Value": "Thu, 30 Jan 2025 20:57:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -624,7 +624,7 @@
     },
     {
       "Route": "Imagens/3_6a7b9665-bc25-42b0-8436-0b8dc7456e8c.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\3_6a7b9665-bc25-42b0-8436-0b8dc7456e8c.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\3_6a7b9665-bc25-42b0-8436-0b8dc7456e8c.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -645,7 +645,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 13:44:58 GMT"
+          "Value": "Thu, 30 Jan 2025 20:57:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -661,7 +661,7 @@
     },
     {
       "Route": "Imagens/4_464e5590-19e1-444b-b650-d116bd81fb8c.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\4_464e5590-19e1-444b-b650-d116bd81fb8c.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\4_464e5590-19e1-444b-b650-d116bd81fb8c.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -682,7 +682,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 13:44:58 GMT"
+          "Value": "Thu, 30 Jan 2025 20:57:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -698,7 +698,7 @@
     },
     {
       "Route": "Imagens/4_464e5590-19e1-444b-b650-d116bd81fb8c.ljsre08mhq.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\4_464e5590-19e1-444b-b650-d116bd81fb8c.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\4_464e5590-19e1-444b-b650-d116bd81fb8c.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -719,7 +719,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 13:44:58 GMT"
+          "Value": "Thu, 30 Jan 2025 20:57:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -743,7 +743,7 @@
     },
     {
       "Route": "Imagens/5_15703933-e327-4d26-8a53-89ce012f0689.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\5_15703933-e327-4d26-8a53-89ce012f0689.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\5_15703933-e327-4d26-8a53-89ce012f0689.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -764,7 +764,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 13:44:58 GMT"
+          "Value": "Thu, 30 Jan 2025 20:57:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -780,7 +780,7 @@
     },
     {
       "Route": "Imagens/5_15703933-e327-4d26-8a53-89ce012f0689.pp97xnipxl.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\5_15703933-e327-4d26-8a53-89ce012f0689.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\5_15703933-e327-4d26-8a53-89ce012f0689.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -801,7 +801,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 13:44:58 GMT"
+          "Value": "Thu, 30 Jan 2025 20:57:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -825,7 +825,7 @@
     },
     {
       "Route": "Imagens/6_8c96036d-1a3b-42cf-b014-144a1d3c9fa2.gu2dg270nd.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\6_8c96036d-1a3b-42cf-b014-144a1d3c9fa2.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\6_8c96036d-1a3b-42cf-b014-144a1d3c9fa2.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -846,7 +846,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 13:44:58 GMT"
+          "Value": "Thu, 30 Jan 2025 20:57:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -870,7 +870,7 @@
     },
     {
       "Route": "Imagens/6_8c96036d-1a3b-42cf-b014-144a1d3c9fa2.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\6_8c96036d-1a3b-42cf-b014-144a1d3c9fa2.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\6_8c96036d-1a3b-42cf-b014-144a1d3c9fa2.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -891,7 +891,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 13:44:58 GMT"
+          "Value": "Thu, 30 Jan 2025 20:57:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -907,7 +907,7 @@
     },
     {
       "Route": "Imagens/7_e21f49b4-5f87-48ff-80af-d6bd34518b55.46igoj0l74.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\7_e21f49b4-5f87-48ff-80af-d6bd34518b55.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\7_e21f49b4-5f87-48ff-80af-d6bd34518b55.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -928,7 +928,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 13:44:58 GMT"
+          "Value": "Thu, 30 Jan 2025 20:57:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -952,7 +952,7 @@
     },
     {
       "Route": "Imagens/7_e21f49b4-5f87-48ff-80af-d6bd34518b55.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\7_e21f49b4-5f87-48ff-80af-d6bd34518b55.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\7_e21f49b4-5f87-48ff-80af-d6bd34518b55.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -973,7 +973,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 13:44:58 GMT"
+          "Value": "Thu, 30 Jan 2025 20:57:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -989,7 +989,7 @@
     },
     {
       "Route": "Imagens/8_ba2b5c3a-3f28-4329-9303-6160469dc892.e6q80b1zvu.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\8_ba2b5c3a-3f28-4329-9303-6160469dc892.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\8_ba2b5c3a-3f28-4329-9303-6160469dc892.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1010,7 +1010,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 13:44:58 GMT"
+          "Value": "Thu, 30 Jan 2025 20:57:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1034,7 +1034,7 @@
     },
     {
       "Route": "Imagens/8_ba2b5c3a-3f28-4329-9303-6160469dc892.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\8_ba2b5c3a-3f28-4329-9303-6160469dc892.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\8_ba2b5c3a-3f28-4329-9303-6160469dc892.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1055,7 +1055,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 13:44:58 GMT"
+          "Value": "Thu, 30 Jan 2025 20:57:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1071,7 +1071,7 @@
     },
     {
       "Route": "Imagens/9_a806cce2-40d4-4a24-b3e0-7fce1cbd7bf8.e596uqbwzg.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\9_a806cce2-40d4-4a24-b3e0-7fce1cbd7bf8.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\9_a806cce2-40d4-4a24-b3e0-7fce1cbd7bf8.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1092,7 +1092,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 13:44:58 GMT"
+          "Value": "Thu, 30 Jan 2025 20:57:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1116,7 +1116,7 @@
     },
     {
       "Route": "Imagens/9_a806cce2-40d4-4a24-b3e0-7fce1cbd7bf8.jpeg",
-      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\wwwroot\\Imagens\\9_a806cce2-40d4-4a24-b3e0-7fce1cbd7bf8.jpeg",
+      "AssetFile": "D:\\GitHubRepository\\loja\\loja.api\\wwwroot\\Imagens\\9_a806cce2-40d4-4a24-b3e0-7fce1cbd7bf8.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1137,7 +1137,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 13:44:58 GMT"
+          "Value": "Thu, 30 Jan 2025 20:57:21 GMT"
         },
         {
           "Name": "Cache-Control",

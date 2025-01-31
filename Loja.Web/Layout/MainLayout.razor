@@ -8,7 +8,7 @@
 <header class="cabecalho">
     <div class="logo">
         <NavLink href="/" class="nav-link">
-            <img src="images/TVS%20ELETRÔNICA-Photoroom.png" alt="" width="150px">
+            <img class="logo" src="images/TVS%20ELETRÔNICA-Photoroom.png" alt="">
         </NavLink>
     </div>
 
@@ -21,14 +21,36 @@
         </MudTextField>
     </div>
 
-    <div class="perfil">
-        <NavLink href="/perfil" class="nav-link">
-            <img src="images/vector-flat-illustration-grayscale-avatar-600nw-2264922221-Photoroom.png" alt="perfil" width="50px" />
-        </NavLink>
-        <NavLink href="/carrinho" class="nav-link">
-            <img src="images/shopping-cart.png" alt="carrinho" width="30px" />
-        </NavLink>
-    </div>
+    <MudDrawerContainer Class="mud-height-full">
+        <MudDrawer @bind-Open="@_openEnd" Width="300px" Fixed="false" Anchor="Anchor.End" Elevation="0" Variant="@DrawerVariant.Persistent">
+            <MudDrawerHeader Style="display: flex; align-items: center; justify-content: start">
+                <MudButton StartIcon="@Icons.Material.Filled.Close" IconSize="Size.Large" Color="Color.Primary" Variant="Variant.Text" OnClick="@ToggleEndDrawer"/>
+                <MudText Typo="Typo.h6">Menu</MudText>
+            </MudDrawerHeader>
+            <MudNavMenu>
+                <MudNavLink Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.AccountBox">
+                    @if (_userLoggedIn)
+                    {
+                        <h3>@_user.Identity?.Name</h3>
+                    }
+                    else
+                    {
+                        <NavLink href="/entrar">Entrar</NavLink>
+                    }
+                </MudNavLink>
+                <MudNavLink Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.ShoppingCart">Orders</MudNavLink>
+                <MudNavLink Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.History">Order History</MudNavLink>
+            </MudNavMenu>
+        </MudDrawer>
+        <div class="d-flex justify-center align-center mud-height-full carrinho-hamburger" >
+            <MudButton Color="Color.Primary" Variant="Variant.Text" OnClick="@ToggleEndDrawer">
+                <img class="hamburger-imagem" src="images/icons8-cardápio-144.png" alt="menu" width="30px" />
+            </MudButton>
+            <NavLink href="/carrinho" class="nav-link">
+                <img class="carrinho-imagem" src="images/shopping-cart.png" alt="carrinho" width="40px" />
+            </NavLink>
+        </div>
+    </MudDrawerContainer>
 
 </header>
 

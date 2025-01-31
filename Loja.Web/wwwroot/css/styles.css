@@ -9,6 +9,11 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.logo
+{
+    width: 250px;
+}
+
 .campo-busca {
     border-radius: 16px;
     background-color: #f0f0f0; 
@@ -29,16 +34,11 @@
     padding: 8px 10px; 
 }
 
-.perfil
+.carrinho-hamburger
 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 20%;
-}
-
-.logo
-{
     width: 20%;
 }
 
@@ -128,13 +128,15 @@ main {
     width: 25vw;
     min-width: 300px;
     box-sizing: border-box;
-    height: 90vh;
+    min-height: 650px;
+    max-height: 700px;
 }
 
 /* Estilo do conteúdo dentro do cartão (MudCardContent) */
 .mud-card-content {
     padding: 16px;
-    max-height: 20%;
+    max-height: 150px;
+    min-height: 150px;
     overflow: hidden;
     text-align: start;
     word-wrap: break-word;
@@ -142,26 +144,53 @@ main {
 
 /* Estilos para o carrossel */
 .mud-carousel {
-    height: 40%;
-    width: 100%;
+    height: 250px;
 }
 
 .mud-carousel-item {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: auto;
+    min-width: 100%;
+    min-height: 100%;
     padding: 16px;
     box-sizing: border-box;
 }
 
 
-/* Mudando o estilo da imagem dentro do carrossel */
 
 
 /* Estilos para celulares (até 600px) */
 @media screen and (max-width: 600px) {
+    .carrinho-imagem
+    {
+        width: 35px;
+    }
+    
+    .hamburger-imagem
+    {
+        width: 35px;
+    }
+    
+    .logo{
+        width: 75px;
+    }
+    
+    .pesquisa {
+        width: 150px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .carrinho-hamburger
+    {
+        display: flex;
+        justify-content: space-between;
+        width: 25%;
+    }
+    
     /* Definindo estilos para a .mud-card */
     .mud-card {
         display: flex;
@@ -206,5 +235,22 @@ main {
 
 /* Estilos para tablets (entre 600px e 1024px) */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
+    .logo{
+        width: 150px;
+    }
     
+    .carrinho-imagem
+    {
+        width: 50px;
+    }
+
+    .mud-card {
+        display: flex;
+        flex-direction: column;
+        width: 40vw;
+        min-width: 300px;
+        box-sizing: border-box;
+        min-height: 650px;
+        max-height: 700px;
+    }
 }

@@ -16,6 +16,7 @@
             <MudItem>
                 <MudCard>
                     <MudCardContent>
+                        <h5 style="color: Red;">FRETE GRÁTIS / 6x s/juros</h5>
                         <h3>@produto.Titulo</h3>
                     </MudCardContent>
 
@@ -29,13 +30,13 @@
                         }
                     </MudCarousel>
 
-                    <MudCardContent Style="flex-grow: 1; text-align: start;">
+                    <MudCardContent  Style="text-align: start; min-height: 225px; max-height: 225px">
                         <p style="text-decoration: line-through; color: gray;">De R$ @produto.Preco.ToString("F2")</p>
                         <p style="font-size: 1.2em; font-weight: bold; color: red;">Por R$ @produto.Preco.ToString("F2")</p>
                         <p style="color: green;">No PIX (5% de desconto)</p>
                         <p>Ou R$ @produto.Preco.ToString("F2") em até 12x s/ juros no cartão</p>
 
-                        <MudButton Color="Color.Primary" Variant="Variant.Filled" Style="margin-top: 10px;">
+                        <MudButton Color="Color.Primary" Variant="Variant.Filled" Style="margin-top: 10px; color: white">
                             Adicionar ao Carrinho
                         </MudButton>
                     </MudCardContent>

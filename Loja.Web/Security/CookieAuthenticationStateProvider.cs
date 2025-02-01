@@ -43,7 +43,8 @@ public class CookieAuthenticationStateProvider(IHttpClientFactory clientFactory)
     {
         try
         {
-            return await httpClient.GetFromJsonAsync<UserBlazor?>("v1/identity/manage/info");
+            var user = await httpClient.GetFromJsonAsync<UserBlazor?>("v1/identity/manage/info");
+            return user;
         }
         catch
         {
@@ -55,7 +56,7 @@ public class CookieAuthenticationStateProvider(IHttpClientFactory clientFactory)
     {
         var claims = new List<Claim>
         {
-            new Claim(ClaimTypes.Name, user.Email),
+            new Claim(ClaimTypes.Name, user.Name),
             new Claim(ClaimTypes.Email, user.Email)
         };
         

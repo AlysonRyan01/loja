@@ -9,15 +9,15 @@ public class MainLayoutPage : LayoutComponentBase
 {
     #region properties
     
-    public bool _openEnd = false;
+    public bool _open = false;
     
     public bool _userLoggedIn = false;
 
-    public string _userName { get; set; }
+    public ClaimsPrincipal _user { get; set; }
 
-    public void ToggleEndDrawer()
+    public void ToggleDrawer()
     {
-        _openEnd = !_openEnd;
+        _open = !_open;
     } 
 
     public bool IsBusy { get; set; } = false;
@@ -43,7 +43,7 @@ public class MainLayoutPage : LayoutComponentBase
             if (user.Identity != null && user.Identity.IsAuthenticated)
             {
                 _userLoggedIn = true;
-                _userName = user.Identity.Name ?? String.Empty;
+                _user = user;
             }
             else
             {

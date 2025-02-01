@@ -1,12 +1,16 @@
 ﻿.cabecalho {
     background-color: white;
-    height: 10vh;
+    height: 13vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mud-drawer.mud-drawer-closing {
+    display: none !important;
 }
 
 .logo

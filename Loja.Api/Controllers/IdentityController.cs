@@ -71,7 +71,7 @@ public class IdentityController(IIdentityHandler handler, ILogger<ProdutoControl
         {
             var result = await handler.UserInfo(User);
             
-            return result.IsSuccess ? Ok(result) : BadRequest(result);
+            return result.IsSuccess ? Ok(result.Dados) : BadRequest(result.Dados);
         }
         catch (Exception e)
         {
@@ -87,7 +87,7 @@ public class IdentityController(IIdentityHandler handler, ILogger<ProdutoControl
         {
             var result = await handler.UserRoles(User);
             
-            return result.IsSuccess ? Ok(result) : BadRequest(result);
+            return result.IsSuccess ? Ok(result.Dados) : BadRequest(result.Dados);
         }
         catch (Exception e)
         {

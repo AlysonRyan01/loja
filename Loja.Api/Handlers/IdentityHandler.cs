@@ -64,8 +64,8 @@ public class IdentityHandler : IIdentityHandler
             
             var user = new User
             {
-                Email = request.Email,
-                UserName = request.Email,
+                UserName = request.Name,
+                Email = request.Email
             };
 
             var result = await _userManager.CreateAsync(user, request.Password);
@@ -77,7 +77,7 @@ public class IdentityHandler : IIdentityHandler
             }
             
             await _userManager.AddClaimAsync(user, new Claim(ClaimTypes.Email, request.Email));
-            await _userManager.AddClaimAsync(user, new Claim(ClaimTypes.Name, request.Email));
+            await _userManager.AddClaimAsync(user, new Claim(ClaimTypes.Name, request.Name));
             await _userManager.AddClaimAsync(user, new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()));
             
             await _userManager.AddToRoleAsync(user, "User");
@@ -140,6 +140,7 @@ public class IdentityHandler : IIdentityHandler
 
             var userInfo = new UserInfo
             {
+                Name = user.UserName,
                 Email = user.Email,
                 IsEmailConfirmed = user.EmailConfirmed,
             };
@@ -174,34 +175,6 @@ public class IdentityHandler : IIdentityHandler
             
             return Task.FromResult(new Resposta<IEnumerable<RoleClaim>>(roles, 200, "Roles encontradas com sucesso!"));
 
-        }
-        catch
-        {
-            return Task.FromResult(new Resposta<IEnumerable<RoleClaim>>(null, 500, "Erro no servidor"));
-        }
-    }
-
-    public Task<Resposta<IEnumerable<RoleClaim>>> UserClaims(ClaimsPrincipal logedUser)
-    {
-        try
-        {
-            if (logedUser.Identity == null || !logedUser.Identity.IsAuthenticated)
-                return Task.FromResult(new Resposta<IEnumerable<RoleClaim>>(null, 401, "Usuario nao autenticado"));
-
-            var identity = (ClaimsIdentity)logedUser.Identity;
-
-            var allClaims = identity.Claims
-                .Select(x => new RoleClaim
-                {
-                    Issuer = x.Issuer,
-                    OriginalIssuer = x.OriginalIssuer,
-                    Type = x.Type,
-                    Value = x.Value,
-                    ValueType = x.ValueType
-                });
-
-            return Task.FromResult(
-                new Resposta<IEnumerable<RoleClaim>>(allClaims, 200, "Claims encontradas com sucesso!"));
         }
         catch
         {

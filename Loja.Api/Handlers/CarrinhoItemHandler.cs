@@ -33,6 +33,11 @@ public class CarrinhoItemHandler(
             if (carrinho == null || produto == null)
                 return new Resposta<CarrinhoItem>(null, 401, "Produto ou carrinho invalidos.");
             
+            var carrinhoItens = await context
+                .CarrinhoItens
+                .AsNoTracking()
+                .Where(x => x.CarrinhoId == carrinho.Id).ToListAsync();
+            
             var carrinhoItem = new CarrinhoItem
             {
                 ProdutoId = produto.Id,
@@ -42,6 +47,9 @@ public class CarrinhoItemHandler(
             };
             
             carrinho.ValorTotal += carrinhoItem.PrecoTotal;
+
+            if (carrinhoItens.Any(x => x.ProdutoId == produto.Id))
+                return new Resposta<CarrinhoItem>(null, 400, "Você jã adicionou esse produto");
             
             await context.AddAsync(carrinhoItem);
             await context.SaveChangesAsync();
@@ -169,9 +177,6 @@ public class CarrinhoItemHandler(
                 .Include(x => x.Carrinho)
                 .Where(x => x.Carrinho.UserId == userId)
                 .ToListAsync();
-            
-            if(!carrinhoItens.Any())
-                return new Resposta<List<CarrinhoItem>?>(null, 404, "Nenhum carrinhoItem encontrado");
             
             foreach (var carrinhoItem in carrinhoItens)
             {

@@ -93,6 +93,7 @@ public partial class HomePage : ComponentBase
 
             if (_userLoggedIn == false)
             {
+                Snackbar.Add("Você precisa fazer login para continuar", Severity.Info);
                 NavigationManager.NavigateTo("/entrar");
                 return;
             }

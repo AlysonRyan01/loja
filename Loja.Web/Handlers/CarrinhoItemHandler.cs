@@ -23,9 +23,15 @@ public class CarrinhoItemHandler(IHttpClientFactory httpClientFactory) : ICarrin
         throw new NotImplementedException();
     }
 
-    public Task<Resposta<CarrinhoItem>> RemoverCarrinhoItemAsync(RemoverCarrinhoItemRequisicao requisicao, ClaimsPrincipal user)
+    public async Task<Resposta<CarrinhoItem>> RemoverCarrinhoItemAsync(RemoverCarrinhoItemRequisicao requisicao, ClaimsPrincipal user)
     {
-        throw new NotImplementedException();
+        var response = await _httpClient.DeleteAsync($"v1/carrinho-item/delete/{requisicao.Id}");
+
+        if (response.IsSuccessStatusCode)
+            return await response.Content.ReadFromJsonAsync<Resposta<CarrinhoItem>>() 
+                   ?? new Resposta<CarrinhoItem>(null, 400, "Erro desconhecido");
+        
+        return new Resposta<CarrinhoItem>(null, (int)response.StatusCode, "Falha ao remover o item");
     }
 
     public async Task<Resposta<List<CarrinhoItem>?>> ObterCarrinhoItemAsync(ClaimsPrincipal user)

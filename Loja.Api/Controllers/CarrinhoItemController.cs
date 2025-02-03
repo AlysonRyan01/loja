@@ -65,7 +65,7 @@ public class CarrinhoItemController(ICarrinhoItemHandler handler, ILogger<Carrin
             var requisicao = new RemoverCarrinhoItemRequisicao { Id = id };
             var result = await handler.RemoverCarrinhoItemAsync(requisicao, user);
 
-            return result.IsSuccess ? Ok(result) : Unauthorized(result);
+            return result.IsSuccess ? Ok(result) : StatusCode(500);
         }
         catch (Exception e)
         {

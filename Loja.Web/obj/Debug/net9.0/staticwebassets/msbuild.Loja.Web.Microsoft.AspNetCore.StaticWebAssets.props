@@ -48,8 +48,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>zt5x6j24te</Fingerprint>
-      <Integrity>x63XccpwguA1C450FcT1GULW42CAQ53lOY5ssaLwWWk=</Integrity>
+      <Fingerprint>cbz49qschr</Fingerprint>
+      <Integrity>OGND7n5XcX+TSbF9Ce1ZkXAq+HWRzluM3kitlM73iyQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\styles.css'))</OriginalItemSpec>
@@ -89,6 +89,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\icon-192.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\5073073-nenhum-item-no-carrinho-de-compras-.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Loja.Web</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>/</BasePath>
+      <RelativePath>images/5073073-nenhum-item-no-carrinho-de-compras-.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ceib69w200</Fingerprint>
+      <Integrity>5DswXht24d5TY0tjCqmCKCGqHL5mFfLArIk/amuoUZc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\5073073-nenhum-item-no-carrinho-de-compras-.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\Banner para loja de eletrônicos computador desconto preto e vermelho.png'))">
       <SourceType>Package</SourceType>
@@ -174,8 +192,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>j282e2wfxv</Fingerprint>
-      <Integrity>W2sSztHXcUJlOHbAGrCvamhorYZsAQ6CETesbIi0V44=</Integrity>
+      <Fingerprint>im9ti22dtr</Fingerprint>
+      <Integrity>+s9HmIGkgzdHE3eJ0w7UIeoBwxSIHfYYMByd/zB+XNk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\TVS ELETRÔNICA-Photoroom.png'))</OriginalItemSpec>

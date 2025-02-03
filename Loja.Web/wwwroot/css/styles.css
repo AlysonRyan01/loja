@@ -160,7 +160,21 @@ main {
     box-sizing: border-box;
 }
 
+.carrinho
+{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 5vw;
+}
 
+.custom-hr {
+    border: 0;
+    height: 0.1px;
+    background-color: lightgray; 
+    width: 100%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
 
 
 /* Estilos para celulares (até 600px) */

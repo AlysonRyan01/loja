@@ -36,7 +36,7 @@
                         <p style="color: green;">No PIX (5% de desconto)</p>
                         <p>Ou R$ @produto.Preco.ToString("F2") em até 12x s/ juros no cartão</p>
 
-                        <MudButton Color="Color.Primary" Variant="Variant.Filled" Style="margin-top: 10px; color: white">
+                        <MudButton OnClick="() => AdicionarAoCarrinho(produto.Id)" Color="Color.Primary" Variant="Variant.Filled" Style="margin-top: 10px; color: white">
                             Adicionar ao Carrinho
                         </MudButton>
                     </MudCardContent>

@@ -22,6 +22,7 @@ builder.Services.AddScoped<AuthenticationStateProvider, CookieAuthenticationStat
 builder.Services.AddScoped(x => (ICookieAuthenticationStateProvider)x.GetRequiredService<AuthenticationStateProvider>());
 builder.Services.AddTransient<IIdentityHandler, IdentityHandler>();
 builder.Services.AddTransient<IProdutoHandler, ProdutoHandler>();
+builder.Services.AddTransient<ICarrinhoItemHandler, CarrinhoItemHandler>();
 
 builder.Services.AddMudServices();
 

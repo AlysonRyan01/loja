@@ -21,7 +21,7 @@ public class CarrinhoItemController(ICarrinhoItemHandler handler, ILogger<Carrin
 
             var result = await handler.CriarCarrinhoItemAsync(requisicao, user);
 
-            return result.IsSuccess ? Ok(result) : Unauthorized(result);
+            return result.IsSuccess ? Ok(result) : BadRequest(result);
         }
         catch (Exception e)
         {

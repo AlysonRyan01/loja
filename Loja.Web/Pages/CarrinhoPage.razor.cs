@@ -16,6 +16,7 @@ public partial class CarrinhoComponent : ComponentBase
     public bool _userLoggedIn { get; set; } = false;
     public List<CarrinhoItem> CarrinhoItens { get; set; } = new();
     public Carrinho Carrinho { get; set; } = new();
+    public List<Produto> Produtos { get; set; } = new();
     public int QuantidadeProdutos { get; set; }
     public ClaimsPrincipal _user { get; set; }
 
@@ -25,6 +26,7 @@ public partial class CarrinhoComponent : ComponentBase
     
     [Inject] public ICarrinhoItemHandler CarrinhoItemHandler { get; set; } = null!;
     [Inject] public ICarrinhoHandler CarrinhoHandler { get; set; } = null!;
+    [Inject] public IProdutoHandler ProdutoHandler { get; set; } = null!;
     [Inject] public ICookieAuthenticationStateProvider AuthenticationState { get; set; } = null!;
     [Inject] public IDialogService DialogService { get; set; } = null!;
     [Inject] public ISnackbar Snackbar { get; set; } = null!;
@@ -33,6 +35,7 @@ public partial class CarrinhoComponent : ComponentBase
     #endregion
     
     #region overrides
+
     protected override async Task OnInitializedAsync()
     {
         IsBusy = true;
@@ -53,40 +56,22 @@ public partial class CarrinhoComponent : ComponentBase
 
             StateHasChanged();
 
-        }
-        catch
-        {
-            Snackbar.Add("Erro no authenticacao", Severity.Error);
-        }
-        
-        try
-        {
             if (_userLoggedIn == false)
                 return;
-            
-            var result = await CarrinhoItemHandler.ObterCarrinhoItemAsync(_user);
-            if (result.IsSuccess)
-                CarrinhoItens = result.Dados ?? [];
+
+            var carrinhoItemResult = await CarrinhoItemHandler.ObterCarrinhoItemAsync(_user);
+            if (carrinhoItemResult.IsSuccess)
+                CarrinhoItens = carrinhoItemResult.Dados ?? [];
             else
             {
                 Snackbar.Add("Nenhum produto encontrado!", Severity.Error);
             }
-        }
-        catch (Exception e)
-        {
-            Snackbar.Add($"Erro ao carregar a página:{e.Message}", Severity.Error);
-        }
 
-        try
-        {
-            if (_userLoggedIn == false)
-                return;
-            
-            var result = await CarrinhoHandler.ObterCarrinhoPorUserAsync(_user);
-            if (result.IsSuccess)
+            var carrinhoResult = await CarrinhoHandler.ObterCarrinhoPorUserAsync(_user);
+            if (carrinhoResult.IsSuccess)
             {
-                if(result.Dados != null)
-                    Carrinho = result.Dados;
+                if (carrinhoResult.Dados != null)
+                    Carrinho = carrinhoResult.Dados;
                 else
                 {
                     Snackbar.Add("Erro ao carregar o carrinho", Severity.Error);
@@ -101,38 +86,63 @@ public partial class CarrinhoComponent : ComponentBase
             {
                 QuantidadeProdutos += itens.Quantidade;
             }
-            
-            
+
+            var produtoResult = await ProdutoHandler.ObterTodosProdutos();
+            if(produtoResult.IsSuccess)
+                Produtos = produtoResult.Dados ?? new();
+            else
+            {
+                Snackbar.Add("Nenhum produto encontrado!", Severity.Error);
+            }
         }
-        catch (Exception e)
+        catch
         {
-            Snackbar.Add(e.Message, Severity.Error);
+            Snackbar.Add("Erro no authenticacao", Severity.Error);
+        }
+        finally
+        {
+            IsBusy = false;
         }
     }
+
     #endregion
     
     private async Task AtualizarCarrinhoItem()
     {
-        var result = await CarrinhoItemHandler.ObterCarrinhoItemAsync(_user);
-        if (result.IsSuccess)
+        try
         {
-            CarrinhoItens = result.Dados ?? [];
+            var result = await CarrinhoItemHandler.ObterCarrinhoItemAsync(_user);
+            if (result.IsSuccess)
+            {
+                CarrinhoItens = result.Dados ?? [];
+            }
+        }
+        catch
+        {
+            Snackbar.Add("Erro ao atualizar os itens do carrinho", Severity.Error);
         }
     }
     
     private async Task AtualizarCarrinho()
     {
-        QuantidadeProdutos = 0;
-        var result = await CarrinhoHandler.ObterCarrinhoPorUserAsync(_user);
-        if (result.IsSuccess)
+        try
         {
-            if(result.Dados != null)
-                Carrinho = result.Dados;
-            
-            foreach (var itens in Carrinho.CarrinhoItens)
+            QuantidadeProdutos = 0;
+            var result = await CarrinhoHandler.ObterCarrinhoPorUserAsync(_user);
+            if (result.IsSuccess)
             {
-                QuantidadeProdutos += 1;
+                if(result.Dados != null)
+                    Carrinho = result.Dados;
+            
+                foreach (var itens in Carrinho.CarrinhoItens)
+                {
+                    QuantidadeProdutos += 1;
+                }
             }
+        }
+        catch
+        {
+            Snackbar.Add("Erro ao atualizar o carrinho", Severity.Error);
         }
     }
 
@@ -158,10 +168,9 @@ public partial class CarrinhoComponent : ComponentBase
             }
 
         }
-        catch (Exception e)
+        catch
         {
-            Console.WriteLine(e);
-            throw;
+            Snackbar.Add("Erro ao remover o produto", Severity.Error);
         }
     }
 }

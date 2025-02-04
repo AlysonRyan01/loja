@@ -49,7 +49,7 @@ public class CarrinhoItemHandler(
             carrinho.ValorTotal += carrinhoItem.PrecoTotal;
 
             if (carrinhoItens.Any(x => x.ProdutoId == produto.Id))
-                return new Resposta<CarrinhoItem>(null, 400, "Você jã adicionou esse produto");
+                return new Resposta<CarrinhoItem>(null, 500, "Você já adicionou esse produto ao carrinho");
             
             await context.AddAsync(carrinhoItem);
             await context.SaveChangesAsync();

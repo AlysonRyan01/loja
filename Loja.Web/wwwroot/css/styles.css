@@ -9,9 +9,223 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.carrinho-vazio
+.carrinho-vazio-mudpaper
+{
+    width: 30vw;
+    border-radius: 20px;
+}
+
+.carrinho-vazio-titulo
+{
+    justify-self: center;
+    padding: 20px;
+    color: gray;
+}
+
+.carrinho-vazio-img
 {
     width: 100%;
+}
+
+.div-principal-carrinho
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.mudpaper-carrinho
+{
+    width: 40vw;
+    min-height: 40vh;
+    margin-right: 5vw;
+    margin-bottom: 5vh;
+    
+}
+
+.produto-titulo
+{
+    padding: 1vw;
+    text-align: start;
+    justify-content: start;
+}
+
+.carrossel-produto-imagens
+{
+    height: 25vh;
+}
+
+.img-carrossel-produto
+{
+    width: 30%;
+}
+
+.mudcard-produto-info
+{
+    text-align: start;
+}
+
+.produto-preco-antigo
+{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.produto-preco-novo
+{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black;
+}
+
+.botao-excluir-carrinho
+{
+    margin-top: 10px;
+    color: white;
+}
+
+.div-resumo-compra
+{
+    width: 25vw;
+}
+
+.resumo-compra-mudpaper
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+.resumo-compra-titulo
+{
+    padding: 20px;
+}
+
+.div-resumo-compra-quantidade-valor
+{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.div-resumo-compra-frete-valor
+{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.div-resumo-compra-valortotal
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.botao-continuar-resumo-compra
+{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: white;
+    width: 90%;
+    align-self: center;
+}
+
+.div-principal-recomendacoes
+{
+    width: 100%;
+    height: 700px;
+    background-color: #E0E0E0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carrossel-principal-recomendacoes
+{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    padding: 50px
+}
+
+.carrossel-item-principal-recomendacoes
+{
+    display: flex;
+    justify-content: space-evenly
+}
+
+.mudcard-carrossel-item
+{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    min-height: 500px;
+    max-height: 550px;
+    box-sizing: border-box;
+    min-width: 250px;
+}
+
+.mudcard-produto-titulo-recomendacoes
+{
+    max-height: 100px;
+    min-height: 100px;
+    overflow: hidden;
+    text-align: start;
+    word-wrap: break-word;
+}
+
+.produto-titulo-recomendacoes
+{
+    text-align: start;
+    justify-content: start;
+}
+
+.carrossel-secundario-recomendacoes
+{
+    height: 250px;
+}
+
+.carrossel-item-secundario-recomendacoes
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    min-height: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.img-carrossel-produto-recomendacoes
+{
+    width: 40%;
+}
+
+.mudcardcontent-produto-info-recomendacoes
+{
+    max-height: 100px;
+    min-height: 100px;
+    overflow: hidden;
+    text-align: start;
+    word-wrap: break-word;
+}
+
+.produto-preco-antigo-recomendacoes
+{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.produto-preco-novo-recomendacoes
+{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black;
 }
 
 .mud-drawer.mud-drawer-closing {
@@ -130,7 +344,7 @@ main {
 }
 
 /* Definindo estilos para a .mud-card */
-.mud-card {
+.mudcard-principal-home {
     display: flex;
     flex-direction: column;
     width: 25vw;
@@ -141,7 +355,7 @@ main {
 }
 
 /* Estilo do conteúdo dentro do cartão (MudCardContent) */
-.mud-card-content {
+.mudcard-content {
     padding: 16px;
     max-height: 150px;
     min-height: 150px;
@@ -151,7 +365,7 @@ main {
 }
 
 /* Estilos para o carrossel */
-.mud-carousel {
+.carrossel-home {
     height: 250px;
 }
 
@@ -252,6 +466,26 @@ main {
         max-width: 100%;
         height: auto;
         margin: 0 auto;
+    }
+    
+    .div-resumo-compra
+    {
+        display: none;
+    }
+    
+    .mudcard-produto-info
+    {
+        display: flex;
+        flex-direction: column;
+        height: 10vh;
+    }
+    
+    .mudpaper-carrinho
+    {
+        margin-right: 0;
+        margin-bottom: 10vh;
+        width: 100vw;
+        height: 40vh;
     }
 }
 

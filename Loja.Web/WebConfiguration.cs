@@ -22,7 +22,7 @@ public static class WebConfiguration
         {
             Primary = "#bf0603",
             Secondary = "#FFFFFF",
-            Tertiary = "#FFFFFF",
+            Tertiary = "#3483FA",
             Background = Colors.Gray.Lighten4,
             AppbarBackground = "#FFFFFF",
             AppbarText = Colors.Shades.Black,

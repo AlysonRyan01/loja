@@ -16,7 +16,7 @@
             <MudItem>
                 <MudCard class="mudcard-principal-home">
                     <MudCardContent class="mudcardcontent-principal-home">
-                        <h5 style="color: Red;">FRETE GRÁTIS / 6x s/juros</h5>
+                        <h5 class="frete-info">FRETE GRÁTIS / 6x s/juros</h5>
                         <h3>@produto.Titulo</h3>
                     </MudCardContent>
 
@@ -24,24 +24,24 @@
                         @foreach (var imagem in produto.Imagens)
                         {
                             var imagemUrl = $"{WebConfiguration.BackendUrl}{imagem.Url}";
-                            <MudCarouselItem>
+                            <MudCarouselItem class="carrossel-item-home">
                                 <img src="@imagemUrl" alt="sla" width="80%"/>
                             </MudCarouselItem>
                         }
                     </MudCarousel>
 
-                    <MudCardContent  Style="text-align: start; min-height: 225px; max-height: 225px">
-                        <p style="text-decoration: line-through; color: gray;">De R$ @produto.Preco.ToString("F2")</p>
-                        <p style="font-size: 1.2em; font-weight: bold; color: red;">Por R$ @produto.Preco.ToString("F2")</p>
-                        <p style="color: green;">No PIX (5% de desconto)</p>
-                        <p>Ou R$ @produto.Preco.ToString("F2") em até 12x s/ juros no cartão</p>
+                    <MudCardContent  Class="mudcardcontent-info-home">
+                        <p class="produto-preco-antigo">De R$ @produto.Preco.ToString("F2")</p>
+                        <p class="produto-preco-novo">Por R$ @produto.Preco.ToString("F2")</p>
+                        <p class="desconto-pix">No PIX (5% de desconto)</p>
+                        <p>Ou R$ @produto.Preco.ToString("F2") em até 6x s/ juros no cartão</p>
 
-                        <div style="width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; margin-top: 20px;">
-                            <MudButton Color="Color.Primary" Variant="Variant.Filled" Style="margin-top: 10px; color: white; width: 80%;">
+                        <div class="div-mudbuttons-comprar-carrinho">
+                            <MudButton Color="Color.Primary" Variant="Variant.Filled" Class="mudbutton-comprar" Style="color: white;">
                                 COMPRAR
                             </MudButton>
 
-                            <MudButton OnClick="() => AdicionarAoCarrinho(produto.Id)" Color="Color.Primary" Variant="Variant.Outlined" Style="margin-top: 10px; width: 80%;">
+                            <MudButton OnClick="() => AdicionarAoCarrinho(produto.Id)" Color="Color.Primary" Variant="Variant.Outlined" Class="mudbutton-carrinho">
                                 Adicionar ao Carrinho
                             </MudButton>
                         </div>

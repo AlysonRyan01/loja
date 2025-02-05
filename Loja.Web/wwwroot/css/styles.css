@@ -1,13 +1,263 @@
-﻿.cabecalho {
+﻿/*MAIN LAYOUT CSS*/
+.cabecalho {
     background-color: white;
-    height: 13vh;
+    height: 120px;
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+.logo
+{
+    width: 250px;
+}
+
+.campo-busca {
+    border-radius: 16px;
+    background-color: #f0f0f0;
+    padding: 5px 16px;
+    box-shadow: none;
+    max-width: 40vw;
+}
+
+.hamburger-itens
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.mud-drawer-header
+{
+    display: flex;
+    align-items: center;
+    justify-content: start
+}
+
+.carrinho-hamburger
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hamburger-imagem
+{
+    width: 40px;
+}
+
+.carrinho-imagem
+{
+    width: 40px;
+}
+
+.mud-drawer.mud-drawer-closing {
+    display: none !important;
+}
+
+.campo-busca .mud-input-root {
+    padding-left: 10px;
+}
+
+.campo-busca .mud-input-adornment-start {
+    padding-right: 10px;
+}
+
+.campo-busca input {
+    padding: 8px 10px;
+}
+
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-logo h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 8px 0;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #ffcc00;
+}
+
+.footer-social .social-icons a img {
+    width: 30px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.footer-social .social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    background-color: #111;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+
+main {
+    flex: 1;
+    min-height: 70vh;
+}
+
+.banner {
+    margin-top: 3rem;
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.mudcard-content {
+    padding: 16px;
+    max-height: 150px;
+    min-height: 150px;
+    overflow: hidden;
+    text-align: start;
+    word-wrap: break-word;
+}
+
+.carrinho
+{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 5vw;
+}
+
+.custom-hr {
+    border: 0;
+    height: 0.1px;
+    background-color: lightgray;
+    width: 100%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/*FIM MAIN LAYOUT*/
+
+/*HOME PAGE CSS*/
+
+.produtos
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin-top: 4rem;
+}
+
+.mudcard-principal-home {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    min-width: 300px;
+    box-sizing: border-box;
+    min-height: 650px;
+    max-height: 800px;
+}
+
+.mudcardcontent-principal-home
+{
+    display: flex;
+    flex-direction: column;
+    wrap-option: wrap;
+    text-align: start;
+    min-height: 130px;
+    max-height: 200px
+}
+
+.mudcardcontent-info-home
+{
+    display: flex;
+    flex-direction: column;
+    wrap-option: wrap;
+    text-align: start;
+    min-height: 250px;
+    max-height: 250px
+}
+
+.frete-info
+{
+    color: red;
+}
+
+.carrossel-home {
+    height: 250px;
+}
+
+.carrossel-item-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    min-height: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.desconto-pix
+{
+    color: green;
+}
+
+.div-mudbuttons-comprar-carrinho
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.mudbutton-comprar
+{
+    margin-top: 10px;
+    color: white;
+    width: 80%;
+}
+
+.mudbutton-carrinho
+{
+    margin-top: 10px;
+    width: 80%;
+}
+
+/*FIM HOME PAGE CSS*/
+
+/*CARRINHO PAGE CSS*/
 
 .carrinho-vazio-mudpaper
 {
@@ -39,7 +289,7 @@
     min-height: 40vh;
     margin-right: 5vw;
     margin-bottom: 5vh;
-    
+
 }
 
 .produto-titulo
@@ -94,6 +344,8 @@
     flex-direction: column;
     flex-wrap: wrap;
     overflow: auto;
+    width: 20vw;
+    height: 30vh;
 }
 
 .resumo-compra-titulo
@@ -131,7 +383,7 @@
     margin-top: 10px;
     margin-bottom: 20px;
     color: white;
-    width: 90%;
+    width: 60%;
     align-self: center;
 }
 
@@ -143,14 +395,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.titulo-recomendacoes
+{
+    padding: 50px;
 }
 
 .carrossel-principal-recomendacoes
 {
     width: 100%;
-    height: 500px;
+    height: 600px;
     display: flex;
-    padding: 50px
 }
 
 .carrossel-item-principal-recomendacoes
@@ -221,214 +479,150 @@
     color: gray;
 }
 
-.produto-preco-novo-recomendacoes
-{
+.produto-preco-novo-recomendacoes {
     font-size: 1.2em;
     font-weight: bold;
     color: black;
 }
 
-.mud-drawer.mud-drawer-closing {
-    display: none !important;
-}
-
-.logo
-{
-    width: 250px;
-}
-
-.campo-busca {
-    border-radius: 16px;
-    background-color: #f0f0f0; 
-    padding: 5px 16px;
-    box-shadow: none;
-    width: 40vw;
-}
-
-.campo-busca .mud-input-root {
-    padding-left: 10px;
-}
-
-.campo-busca .mud-input-adornment-start {
-    padding-right: 10px;
-}
-
-.campo-busca input {
-    padding: 8px 10px; 
-}
-
-.carrinho-hamburger
-{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.footer {
-    background-color: #222;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.footer-logo h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-}
-
-.footer-links ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-links ul li {
-    margin: 8px 0;
-}
-
-.footer-links ul li a {
-    color: white;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.footer-links ul li a:hover {
-    color: #ffcc00;
-}
-
-.footer-social .social-icons a img {
-    width: 30px;
-    margin: 0 10px;
-    transition: 0.3s;
-}
-
-.footer-social .social-icons a img:hover {
-    transform: scale(1.2);
-}
-
-.footer-bottom {
-    background-color: #111;
-    padding: 10px 0;
-    font-size: 0.9rem;
-}
-
-main {
-    flex: 1;
-    min-height: 70vh;
-}
-
-.banner {
-    margin-top: 3rem;
-    width: 100%; 
-    height: auto;
-    display: block;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.produtos
-{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 4rem;
-    margin-top: 4rem;
-}
-
-/* Definindo estilos para a .mud-card */
-.mudcard-principal-home {
-    display: flex;
-    flex-direction: column;
-    width: 25vw;
-    min-width: 300px;
-    box-sizing: border-box;
-    min-height: 650px;
-    max-height: 700px;
-}
-
-/* Estilo do conteúdo dentro do cartão (MudCardContent) */
-.mudcard-content {
-    padding: 16px;
-    max-height: 150px;
-    min-height: 150px;
-    overflow: hidden;
-    text-align: start;
-    word-wrap: break-word;
-}
-
-/* Estilos para o carrossel */
-.carrossel-home {
-    height: 250px;
-}
-
-.mud-carousel-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 100%;
-    min-height: 100%;
-    padding: 16px;
-    box-sizing: border-box;
-}
-
-.carrinho
-{
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    padding: 5vw;
-}
-
-.custom-hr {
-    border: 0;
-    height: 0.1px;
-    background-color: lightgray; 
-    width: 100%;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-}
+/*FIM CARRINHO PAGE CSS*/
 
 
 /* Estilos para celulares (até 600px) */
 @media screen and (max-width: 600px) {
     .carrinho-imagem
     {
-        width: 35px;
+        width: 30px;
     }
     
     .hamburger-imagem
     {
-        width: 35px;
+        width: 30px;
     }
     
     .logo{
-        width: 75px;
-    }
-    
-    .pesquisa {
-        width: 150px;
-        height: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        width: 80px;
+        margin-right: 20px;
     }
     
     .carrinho-hamburger
     {
         display: flex;
-        justify-content: space-between;
-        width: 25%;
+        justify-content: space-around;
     }
     
     /* Definindo estilos para a .mud-card */
     .mud-card {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        box-sizing: border-box;
+        height: 80vh;
+    }
+
+    /* Estilo do conteúdo dentro do cartão (MudCardContent) */
+    .mud-card-content {
+        padding: 16px;
+        flex-grow: 1;
+        overflow: hidden;
+        text-align: start;
+        word-wrap: break-word;
+    }
+    
+    .mud-carousel {
+        width: 100%;
+        height: 80%;
+        margin-bottom: 16px; 
+    }
+
+    .mud-carousel-item {
+        width: 100%;
+        height: 100%;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+    
+    .mud-card-media {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    .mudcard-produto-info
+    {
+        display: flex;
+        flex-direction: column;
+        height: 20vh;
+        margin-bottom: 0;
+    }
+    
+    .botao-excluir-carrinho
+    {
+        display: flex;
+        width: 50%;
+    }
+    
+    .mudpaper-carrinho
+    {
+        margin-right: 0;
+        margin-bottom: 0;
+        width: 100vw;
+        height: 40vh;
+    }
+    
+    .carrinho
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+    }
+
+    .div-resumo-compra
+    {
+        margin-top: 10px;
+        border-radius: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        color: white;
+        position: sticky;
+        bottom: 0;
+        box-shadow: 0px -10px 15px rgba(0, 0, 0, 0.3);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .resumo-compra-mudpaper
+    {
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Estilos para tablets (entre 600px e 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .logo{
+        width: 150px;
+    }
+    
+    .carrinho-imagem
+    {
+        width: 50px;
+    }
+
+    .carrinho-hamburger
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /* Definindo estilos para a .mud-card */
+    .mud-card {
+        margin-top: 20px;
         display: flex;
         flex-direction: column;
         width: 100vw;
@@ -445,11 +639,10 @@ main {
         word-wrap: break-word;
     }
 
-    /* Estilos para o carrossel */
     .mud-carousel {
         width: 100%;
         height: 80%;
-        margin-bottom: 16px; /* Espaçamento entre o carrossel e o conteúdo */
+        margin-bottom: 16px;
     }
 
     .mud-carousel-item {
@@ -459,54 +652,64 @@ main {
         box-sizing: border-box;
     }
 
-
-    /* Mudando o estilo da imagem dentro do carrossel */
     .mud-card-media {
         display: block;
         max-width: 100%;
         height: auto;
         margin: 0 auto;
     }
-    
-    .div-resumo-compra
-    {
-        display: none;
-    }
-    
+
     .mudcard-produto-info
     {
         display: flex;
         flex-direction: column;
-        height: 10vh;
+        height: 20vh;
+        margin-bottom: 0;
     }
-    
+
+    .botao-excluir-carrinho
+    {
+        display: flex;
+        width: 50%;
+    }
+
     .mudpaper-carrinho
     {
         margin-right: 0;
-        margin-bottom: 10vh;
+        margin-bottom: 0;
         width: 100vw;
         height: 40vh;
     }
-}
 
-/* Estilos para tablets (entre 600px e 1024px) */
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-    .logo{
-        width: 150px;
-    }
-    
-    .carrinho-imagem
+    .carrinho
     {
-        width: 50px;
-    }
-
-    .mud-card {
         display: flex;
         flex-direction: column;
-        width: 40vw;
-        min-width: 300px;
-        box-sizing: border-box;
-        min-height: 650px;
-        max-height: 700px;
+        padding: 0;
+        width: 100%;
     }
+
+    .div-resumo-compra
+    {
+        margin-top: 30px;
+        border-radius: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        color: white;
+        position: sticky;
+        bottom: 0;
+        box-shadow: 0px -10px 15px rgba(0, 0, 0, 0.3);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .resumo-compra-mudpaper
+    {
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+    }
+    
+    
 }

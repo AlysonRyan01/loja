@@ -1,5 +1,6 @@
 ﻿using System.Security.Claims;
 using Dima.Web.Security;
+using Dima.Web.Services;
 using Loja.Core.Handlers;
 using Loja.Core.Models;
 using Loja.Core.Requisicoes.CarrinhoItens;
@@ -10,18 +11,18 @@ namespace Dima.Web.Pages;
 
 public partial class HomePage : ComponentBase
 {
+    
     #region properties
-
+    
     public bool IsBusy { get; set; } = false;
     public bool _userLoggedIn { get; set; } = false;
-    public List<Produto> Produtos { get; set; } = new();
     public ClaimsPrincipal _user { get; set; }
 
     #endregion
     
     #region dependencies
-
-    [Inject] public IProdutoHandler ProdutoHandler { get; set; } = null!;
+    
+    [Inject] public SearchService SearchService { get; set; }
     [Inject] public ICarrinhoItemHandler CarrinhoItemHandler { get; set; } = null!;
     [Inject] public ICookieAuthenticationStateProvider AuthenticationState { get; set; } = null!;
     [Inject] public IDialogService DialogService { get; set; } = null!;
@@ -37,17 +38,17 @@ public partial class HomePage : ComponentBase
         IsBusy = true;
         try
         {
-            var result = await ProdutoHandler.ObterTodosProdutos();
+            var result = await SearchService.CarregarProdutos();
             if (result.IsSuccess)
-                Produtos = result.Dados ?? [];
-            else
             {
-                Snackbar.Add("Nenhum produto encontrado!", Severity.Error);
+                SearchService.FiltrarProdutos();
             }
+
+            SearchService.OnSearchChanged += AtualizarPagina;
         }
         catch (Exception e)
         {
-            Snackbar.Add($"Erro ao carregar a página:{e.Message}", Severity.Error);
+            Snackbar.Add($"Erro ao carregar a página: {e.Message}", Severity.Error);
         }
         finally
         {
@@ -110,5 +111,15 @@ public partial class HomePage : ComponentBase
         {
             Snackbar.Add("Erro ao adicionar o produto ao carrinho", Severity.Error);
         }
+    }
+    
+    private void AtualizarPagina()
+    {
+        StateHasChanged();
+    }
+
+    public void Dispose()
+    {
+        SearchService.OnSearchChanged -= AtualizarPagina;
     }
 }

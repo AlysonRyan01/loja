@@ -41,6 +41,14 @@ public partial class CarrinhoComponent : ComponentBase
         IsBusy = true;
         try
         {
+            var produtoResult = await ProdutoHandler.ObterTodosProdutos();
+            if(produtoResult.IsSuccess)
+                Produtos = produtoResult.Dados ?? new();
+            else
+            {
+                Snackbar.Add("Nenhum produto encontrado!", Severity.Error);
+            }
+            
             var result = await AuthenticationState.GetAuthenticationStateAsync();
             var user = result.User;
 
@@ -86,18 +94,10 @@ public partial class CarrinhoComponent : ComponentBase
             {
                 QuantidadeProdutos += itens.Quantidade;
             }
-
-            var produtoResult = await ProdutoHandler.ObterTodosProdutos();
-            if(produtoResult.IsSuccess)
-                Produtos = produtoResult.Dados ?? new();
-            else
-            {
-                Snackbar.Add("Nenhum produto encontrado!", Severity.Error);
-            }
         }
         catch
         {
-            Snackbar.Add("Erro no authenticacao", Severity.Error);
+            Snackbar.Add("Erro na aplicação", Severity.Error);
         }
         finally
         {

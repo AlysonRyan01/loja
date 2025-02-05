@@ -1,4 +1,5 @@
-﻿@inherits MainLayoutPage
+﻿@using Dima.Web.Services
+@inherits MainLayoutPage
 
 <MudThemeProvider Theme="WebConfiguration.theme"/>
 <MudSnackbarProvider />
@@ -8,13 +9,15 @@
     <NavLink href="/" class="nav-link">
         <img class="logo" src="images/TVS%20ELETRÔNICA-Photoroom.png" alt="">
     </NavLink>
-    
-    <MudTextField @bind-Value="SearchTerm"
+
+    <MudTextField T="string"
+                  @bind-Value="SearchService.SearchTerm"
                   Placeholder="Filtrar..."
                   Adornment="Adornment.Start"
                   AdornmentIcon="@Icons.Material.Filled.Search"
-                  Immediate="true" IconSize="Size.Medium" class="campo-busca">
-    </MudTextField>
+                  Immediate="true"
+                  IconSize="Size.Medium"
+                  class="campo-busca" />
     
     <div class="hamburger-itens">
         <MudButton Style="margin-right: 3vw" Color="Color.Primary" Variant="Variant.Text" OnClick="@ToggleDrawer">

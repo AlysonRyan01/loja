@@ -1,5 +1,6 @@
 ﻿using System.Security.Claims;
 using Dima.Web.Security;
+using Dima.Web.Services;
 using Microsoft.AspNetCore.Components;
 using MudBlazor;
 
@@ -7,6 +8,7 @@ namespace Dima.Web.Layout;
 
 public class MainLayoutPage : LayoutComponentBase
 {
+    
     #region properties
     
     public bool _open = false;
@@ -21,7 +23,8 @@ public class MainLayoutPage : LayoutComponentBase
     } 
 
     public bool IsBusy { get; set; } = false;
-    public string SearchTerm { get; set; } = String.Empty;
+    
+    public string SearchTerm { get; set; } = string.Empty;
 
     #endregion
 
@@ -29,6 +32,8 @@ public class MainLayoutPage : LayoutComponentBase
 
     [Inject] public ICookieAuthenticationStateProvider AuthenticationState { get; set; } = null!;
     [Inject] public ISnackbar Snackbar { get; set; } = null!;
+    [Inject] public NavigationManager NavigationManager { get; set; } = null!;
+    [Inject] public SearchService SearchService { get; set; } = null!;
 
     #endregion
     
@@ -49,7 +54,7 @@ public class MainLayoutPage : LayoutComponentBase
             {
                 _userLoggedIn = false;
             }
-
+            
             StateHasChanged();
 
         }
@@ -59,6 +64,4 @@ public class MainLayoutPage : LayoutComponentBase
         }
     }
     #endregion
-    
-    
 }

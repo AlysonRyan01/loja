@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Dima.Web;
 using Dima.Web.Handlers;
 using Dima.Web.Security;
+using Dima.Web.Services;
 using Loja.Core.Handlers;
 using Microsoft.AspNetCore.Components.Authorization;
 using MudBlazor.Services;
@@ -25,6 +26,8 @@ builder.Services.AddTransient<IIdentityHandler, IdentityHandler>();
 builder.Services.AddTransient<IProdutoHandler, ProdutoHandler>();
 builder.Services.AddTransient<ICarrinhoItemHandler, CarrinhoItemHandler>();
 builder.Services.AddTransient<ICarrinhoHandler, CarrinhoHandler>();
+
+builder.Services.AddSingleton<SearchService>();
 
 builder.Services.AddMudServices(config =>
 {

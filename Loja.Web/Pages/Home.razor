@@ -11,7 +11,7 @@
     }
     else
     {
-        foreach (var produto in Produtos)
+        foreach (var produto in SearchService.ProdutosFiltrados)
         {
             <MudItem>
                 <MudCard class="mudcard-principal-home">
@@ -25,7 +25,7 @@
                         {
                             var imagemUrl = $"{WebConfiguration.BackendUrl}{imagem.Url}";
                             <MudCarouselItem class="carrossel-item-home">
-                                <img src="@imagemUrl" alt="sla" width="80%"/>
+                                <img class="img-produto-carrossel-home" src="@imagemUrl" alt="sla"/>
                             </MudCarouselItem>
                         }
                     </MudCarousel>

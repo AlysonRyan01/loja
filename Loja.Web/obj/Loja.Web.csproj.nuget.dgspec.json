@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHubRepository\\loja\\LOJA.WEB\\Loja.Web.csproj": {}
+    "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\Loja.Web.csproj": {}
   },
   "projects": {
-    "D:\\GitHubRepository\\loja\\Loja.Core\\Loja.Core.csproj": {
+    "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Core\\Loja.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHubRepository\\loja\\Loja.Core\\Loja.Core.csproj",
+        "projectUniqueName": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Core\\Loja.Core.csproj",
         "projectName": "Loja.Core",
-        "projectPath": "D:\\GitHubRepository\\loja\\Loja.Core\\Loja.Core.csproj",
-        "packagesPath": "C:\\Users\\alyso\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHubRepository\\loja\\Loja.Core\\obj\\",
+        "projectPath": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Core\\Loja.Core.csproj",
+        "packagesPath": "C:\\Users\\TVS'PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\alyso\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\TVS'PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -43,7 +43,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         },
         "SdkAnalysisLevel": "9.0.100"
       },
@@ -80,24 +80,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\GitHubRepository\\loja\\LOJA.WEB\\Loja.Web.csproj": {
+    "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\Loja.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHubRepository\\loja\\LOJA.WEB\\Loja.Web.csproj",
+        "projectUniqueName": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\Loja.Web.csproj",
         "projectName": "Loja.Web",
-        "projectPath": "D:\\GitHubRepository\\loja\\LOJA.WEB\\Loja.Web.csproj",
-        "packagesPath": "C:\\Users\\alyso\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHubRepository\\loja\\LOJA.WEB\\obj\\",
+        "projectPath": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\Loja.Web.csproj",
+        "packagesPath": "C:\\Users\\TVS'PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\alyso\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\TVS'PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -113,8 +113,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\GitHubRepository\\loja\\Loja.Core\\Loja.Core.csproj": {
-                "projectPath": "D:\\GitHubRepository\\loja\\Loja.Core\\Loja.Core.csproj"
+              "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Core\\Loja.Core.csproj": {
+                "projectPath": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Core\\Loja.Core.csproj"
               }
             }
           }
@@ -127,7 +127,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         },
         "SdkAnalysisLevel": "9.0.100"
       },
@@ -161,7 +161,7 @@
             "Microsoft.NET.Sdk.WebAssembly.Pack": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.1, )",
+              "version": "[9.0.0, )",
               "autoReferenced": true
             },
             "MudBlazor": {
@@ -182,8 +182,8 @@
           "warn": true,
           "downloadDependencies": [
             {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[9.0.1, 9.0.1]"
+              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
+              "version": "[9.0.0, 9.0.0]"
             }
           ],
           "frameworkReferences": {
@@ -191,7 +191,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

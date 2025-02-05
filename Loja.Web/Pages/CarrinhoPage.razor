@@ -72,7 +72,7 @@
 </div>
 <div class="div-principal-recomendacoes">
     <h2 class="titulo-recomendacoes">Recomendações para você</h2>
-    <MudCarousel Class="carrossel-principal-recomendacoes" TData="Produto" ShowArrows="true" EnableSwipeGesture="true" Indicators="true" AutoPlay="false" ActiveIndex="0">
+    <MudCarousel Class="carrossel-principal-recomendacoes" TData="Produto" ShowArrows="true" EnableSwipeGesture="true" Indicators="true">
         @foreach (var grupo in Produtos.Chunk(4))
         {
             <MudCarouselItem Class="carrossel-item-principal-recomendacoes">
@@ -84,7 +84,7 @@
                                 <h4 class="produto-titulo-recomendacoes">@itens.Descricao</h4>
                             </MudCardContent>
                             <hr class="custom-hr">
-                            <MudCarousel Class="carrossel-secundario-recomendacoes" ShowArrows="true" EnableSwipeGesture="true" TData="Imagem" Indicators="true">
+                            <MudCarousel Class="carrossel-secundario-recomendacoes" ShowArrows="false" EnableSwipeGesture="true" TData="Imagem" Indicators="true">
                                 @foreach (var imagem in itens.Imagens)
                                 {
                                     var imagemUrl = $"{WebConfiguration.BackendUrl}{imagem.Url}";

@@ -24,12 +24,14 @@ public class ProdutoHandler(IHttpClientFactory httpClientFactory) : IProdutoHand
 
     public async Task<Resposta<Produto?>> RemoverProdutoAsync(RemoverProdutoRequisicao requisicao)
     {
-        throw new NotImplementedException();
+        return await _httpClient.DeleteFromJsonAsync<Resposta<Produto?>>($"v1/produto/{requisicao.Id}")
+               ?? new Resposta<Produto?>(null, 400, "Falha ao remover o produto");
     }
 
     public async Task<Resposta<Produto?>> ObterProdutoPorIdAsync(ObterProdutoPorIdRequisicao requisicao)
     {
-        throw new NotImplementedException();
+        return await _httpClient.GetFromJsonAsync<Resposta<Produto?>>($"v1/produto/{requisicao.Id}")
+               ?? new Resposta<Produto?>(null, 400, "Falha ao obter o produto");
     }
 
     public async Task<Resposta<List<Produto>?>> ObterTodosProdutos()

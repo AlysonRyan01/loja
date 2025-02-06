@@ -105,3 +105,38 @@
         }
     </MudCarousel>
 </div>
+<div class="div-principal-recomendacoes-celular">
+    <h2 class="titulo-recomendacoes">Recomendações para você</h2>
+    <MudCarousel Class="carrossel-principal-recomendacoes" TData="Produto" ShowArrows="true" EnableSwipeGesture="true" Indicators="true">
+        @foreach (var grupo in Produtos.Chunk(1))
+        {
+            <MudCarouselItem Class="carrossel-item-principal-recomendacoes">
+                @foreach (var itens in grupo)
+                {
+                    <MudItem>
+                        <MudCard Class="mudcard-carrossel-item">
+                            <MudCardContent Class="mudcard-produto-titulo-recomendacoes">
+                                <h4 class="produto-titulo-recomendacoes">@itens.Descricao</h4>
+                            </MudCardContent>
+                            <hr class="custom-hr">
+                            <MudCarousel Class="carrossel-secundario-recomendacoes" ShowArrows="false" EnableSwipeGesture="true" TData="Imagem" Indicators="true">
+                                @foreach (var imagem in itens.Imagens)
+                                {
+                                    var imagemUrl = $"{WebConfiguration.BackendUrl}{imagem.Url}";
+                                    <MudCarouselItem Class="carrossel-item-secundario-recomendacoes">
+                                        <img class="img-carrossel-produto-recomendacoes" src="@imagemUrl" alt="sla"/>
+                                    </MudCarouselItem>
+                                }
+                            </MudCarousel>
+                            <hr class="custom-hr">
+                            <MudCardContent Class="mudcardcontent-produto-info-recomendacoes">
+                                <p class="produto-preco-antigo-recomendacoes">De R$ @itens.Preco.ToString("F2")</p>
+                                <p class="produto-preco-novo-recomendacoes">Por R$ @itens.Preco.ToString("F2")</p>
+                            </MudCardContent>
+                        </MudCard>
+                    </MudItem>
+                }
+            </MudCarouselItem>
+        }
+    </MudCarousel>
+</div>

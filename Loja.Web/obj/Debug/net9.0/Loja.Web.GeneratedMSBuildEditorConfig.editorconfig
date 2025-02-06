@@ -16,49 +16,53 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = Dima.Web
 build_property.RootNamespace = Dima.Web
-build_property.ProjectDir = /Users/alysonryanullirsch/Documents/APIs/loja/Loja.Web/
+build_property.ProjectDir = C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/alysonryanullirsch/Documents/APIs/loja/Loja.Web
+build_property.MSBuildProjectDirectory = C:\Users\TVS'PC\Documents\MeusProjetos\loja\loja.web
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Web/App.razor]
+[C:/Users/TVS'PC/Documents/MeusProjetos/loja/loja.web/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Web/Components/NavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9OYXZNZW51LnJhem9y
+[C:/Users/TVS'PC/Documents/MeusProjetos/loja/loja.web/Components/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xOYXZNZW51LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Web/Layout/LoginLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L0xvZ2luTGF5b3V0LnJhem9y
+[C:/Users/TVS'PC/Documents/MeusProjetos/loja/loja.web/Layout/LoginLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XExvZ2luTGF5b3V0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Web/Layout/MainLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L01haW5MYXlvdXQucmF6b3I=
+[C:/Users/TVS'PC/Documents/MeusProjetos/loja/loja.web/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Web/Pages/CarrinhoPage.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2FycmluaG9QYWdlLnJhem9y
+[C:/Users/TVS'PC/Documents/MeusProjetos/loja/loja.web/Pages/CarrinhoPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FycmluaG9QYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Web/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSG9tZS5yYXpvcg==
+[C:/Users/TVS'PC/Documents/MeusProjetos/loja/loja.web/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Web/Pages/Identity/Login.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSWRlbnRpdHkvTG9naW4ucmF6b3I=
+[C:/Users/TVS'PC/Documents/MeusProjetos/loja/loja.web/Pages/Identity/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSWRlbnRpdHlcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Web/Pages/Identity/Register.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSWRlbnRpdHkvUmVnaXN0ZXIucmF6b3I=
+[C:/Users/TVS'PC/Documents/MeusProjetos/loja/loja.web/Pages/Identity/Register.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSWRlbnRpdHlcUmVnaXN0ZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Web/_Imports.razor]
+[C:/Users/TVS'PC/Documents/MeusProjetos/loja/loja.web/Pages/ProdutoPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHV0b1BhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/TVS'PC/Documents/MeusProjetos/loja/loja.web/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

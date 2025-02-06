@@ -78,4 +78,10 @@ public class MainLayoutPage : LayoutComponentBase
     {
         SearchService.SearchTerm = SearchTerm;
     }
+
+    public void LimparCampoPesquisa()
+    {
+        SearchTerm = string.Empty;
+        SearchService.SearchTerm = SearchTerm;
+    }
 }

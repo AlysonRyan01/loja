@@ -6,7 +6,7 @@
 <MudDialogProvider/>
 
 <header class="cabecalho">
-    <NavLink href="/" class="nav-link">
+    <NavLink @onclick="LimparCampoPesquisa" href="/" class="nav-link">
         <img class="logo" src="images/TVS%20ELETRÔNICA-Photoroom.png" alt="">
     </NavLink>
 
@@ -37,7 +37,7 @@
 </header>
 
 <MudDrawerContainer Class="mud-height-full">
-    <MudDrawer @bind-Open="@_open" Style="@(_open ? "" : "display: none;")" Width="300px" Fixed="true" Anchor="Anchor.End" Elevation="1" Variant="DrawerVariant.Temporary" ClipMode="DrawerClipMode.Never" OverlayAutoClose="true">
+    <MudDrawer Class="muddrawer-total" @bind-Open="@_open" Style="@(_open ? "" : "display: none;")" Width="300px" Fixed="true" Anchor="Anchor.End" Elevation="1" Variant="DrawerVariant.Temporary" ClipMode="DrawerClipMode.Never" OverlayAutoClose="true">
         <MudDrawerHeader class="mud-drawer-header">
             <MudButton StartIcon="@Icons.Material.Filled.Close" IconSize="Size.Large" Color="Color.Primary" Variant="Variant.Text" OnClick="@ToggleDrawer"/>
             <MudText Typo="Typo.h6">Menu</MudText>

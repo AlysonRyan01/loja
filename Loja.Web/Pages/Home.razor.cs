@@ -2,7 +2,6 @@
 using Dima.Web.Security;
 using Dima.Web.Services;
 using Loja.Core.Handlers;
-using Loja.Core.Models;
 using Loja.Core.Requisicoes.CarrinhoItens;
 using Microsoft.AspNetCore.Components;
 using MudBlazor;

@@ -1,0 +1,36 @@
+﻿@page "/produto/{id:long}"
+@inherits ProdutoPageCode
+
+@if (IsBusy)
+{
+    <MudProgressCircular Color="Color.Info" Indeterminate="true"/>
+}
+else
+{
+    <div style="display: flex; justify-content: space-between; align-items: start; width: 95vw; padding: 20px;" class="div-principal-produto">
+        <div style="display: flex; align-items: start; width: 45vw; height: 70vh; ;background-color: #0a3622" class="div-produto-fotos">
+            <div style="display: flex; flex-direction: column; width: 80px; height: 70vh; background-color: #0dcaf0" class="coluna-fotos">
+                @foreach (var imagem in Produto.Imagens)
+                {
+                    var imagemUrl = $"{WebConfiguration.BackendUrl}{imagem.Url}";
+                    <MudCard Style="display: flex; margin-bottom: 20px; border-radius: 0; justify-content: center; align-items: center; width: 80%">
+                        <img class="img-produto-carrossel-home" src="@imagemUrl" alt="sla" width="50px"/>
+                    </MudCard>
+                }
+            </div>
+        
+            <div style="display: flex; align-items: center; width: 90%; height: 90%; background-color: #2b2f32" class="foto-principal">
+            
+            </div>
+        </div>
+    
+        <div style="display: flex; flex-direction: column; justify-content: start; align-items: start; width: 30vw; height: 700px; background-color: #2c0b0e" class="div-produto-descricao">
+        
+        </div>
+    
+        <div style="display: flex; flex-direction: column; width: 20vw; height: 700px; background-color: #6f42c1" class="div-produto-valor">
+        
+        </div>
+    </div>
+}
+

@@ -43,8 +43,7 @@ public partial class HomePage : ComponentBase
             {
                 SearchService.FiltrarProdutos();
             }
-
-            SearchService.OnSearchChanged += AtualizarPagina;
+            
         }
         catch (Exception e)
         {
@@ -77,6 +76,13 @@ public partial class HomePage : ComponentBase
         {
             Snackbar.Add("Erro no authenticacao", Severity.Error);
         }
+    }
+    
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        
+        SearchService.OnSearchChanged += AtualizarPagina;
+        
     }
     
 
@@ -112,14 +118,14 @@ public partial class HomePage : ComponentBase
             Snackbar.Add("Erro ao adicionar o produto ao carrinho", Severity.Error);
         }
     }
-    
-    private void AtualizarPagina()
+
+    public void AtualizarPagina()
     {
         StateHasChanged();
     }
 
     public void Dispose()
     {
-        SearchService.OnSearchChanged -= AtualizarPagina;
+        SearchService.OnSearchChanged -= StateHasChanged;
     }
 }

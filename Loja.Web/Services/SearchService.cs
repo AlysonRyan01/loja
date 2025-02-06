@@ -24,6 +24,7 @@ public class SearchService
             if (_searchTerm != value)
             {
                 _searchTerm = value;
+                FiltrarProdutos();
                 OnSearchChanged?.Invoke();
             }
         }

@@ -2,6 +2,7 @@
 using Dima.Web.Security;
 using Dima.Web.Services;
 using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Web;
 using MudBlazor;
 
 namespace Dima.Web.Layout;
@@ -24,7 +25,7 @@ public class MainLayoutPage : LayoutComponentBase
 
     public bool IsBusy { get; set; } = false;
     
-    public string SearchTerm { get; set; } = string.Empty;
+    public string SearchTerm { get; set; }
 
     #endregion
 
@@ -64,4 +65,17 @@ public class MainLayoutPage : LayoutComponentBase
         }
     }
     #endregion
+    
+    public void HandleKeyPress(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+        {
+            SearchService.SearchTerm = SearchTerm;
+        }
+    }
+
+    public void HandleMouseClick()
+    {
+        SearchService.SearchTerm = SearchTerm;
+    }
 }

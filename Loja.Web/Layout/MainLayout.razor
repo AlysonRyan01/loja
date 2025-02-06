@@ -10,14 +10,21 @@
         <img class="logo" src="images/TVS%20ELETRÔNICA-Photoroom.png" alt="">
     </NavLink>
 
-    <MudTextField T="string"
-                  @bind-Value="SearchService.SearchTerm"
-                  Placeholder="Filtrar..."
-                  Adornment="Adornment.Start"
-                  AdornmentIcon="@Icons.Material.Filled.Search"
-                  Immediate="true"
-                  IconSize="Size.Medium"
-                  class="campo-busca" />
+    <div style="display: flex; justify-content: center; align-items: center">
+        <MudTextField T="string"
+                      @bind-Value="SearchTerm"
+                      Immediate="true"
+                      Placeholder="Pesquisar..."
+                      Variant="Variant.Filled"
+                      Margin="Margin.Dense"
+                      @onkeypress="HandleKeyPress"
+                      Class="campo-busca">
+        </MudTextField>
+
+        <MudButton @onclick="HandleMouseClick" Class="btn-lupa">
+            <MudIcon Icon="@Icons.Material.Filled.Search" Color="Color.Secondary" />
+        </MudButton>
+    </div>
     
     <div class="hamburger-itens">
         <MudButton Style="margin-right: 3vw" Color="Color.Primary" Variant="Variant.Text" OnClick="@ToggleDrawer">

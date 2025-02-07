@@ -4,6 +4,7 @@ using Loja.Core.Handlers;
 using Loja.Core.Models;
 using Loja.Core.Requisicoes.Produtos;
 using Microsoft.AspNetCore.Components;
+using Microsoft.JSInterop;
 using MudBlazor;
 
 namespace Dima.Web.Pages;
@@ -17,10 +18,12 @@ public partial class ProdutoPageCode : ComponentBase
     public Produto Produto { get; set; }
     public bool _userLoggedIn { get; set; } = false;
     public ClaimsPrincipal _user { get; set; }
+    public string ImagemPrincipal { get; set; } = string.Empty;
     
     #endregion
     
     #region dependencies
+    [Inject] public IJSRuntime JSRuntime { get; set; } = null!;
     [Inject] public IProdutoHandler handler { get; set; } = null!;
     [Inject] public NavigationManager NavigationManager { get; set; } = null!;
     [Inject] public ISnackbar Snackbar { get; set; } = null!;
@@ -66,6 +69,7 @@ public partial class ProdutoPageCode : ComponentBase
             if (result.IsSuccess)
             {
                 Produto = result.Dados;
+                ImagemPrincipal = $"{WebConfiguration.BackendUrl}{Produto.Imagens.First().Url}";
             }
             else
             {
@@ -83,5 +87,10 @@ public partial class ProdutoPageCode : ComponentBase
     }
 
     #endregion
+    
+    public async Task ChangeMainImage(string imageUrl)
+    {
+        await JSRuntime.InvokeVoidAsync("changeMainImage", imageUrl);
+    }
     
 }

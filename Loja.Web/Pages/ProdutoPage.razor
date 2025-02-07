@@ -8,24 +8,47 @@
 else
 {
     <div style="display: flex; justify-content: space-between; align-items: start; width: 95vw; padding: 20px;" class="div-principal-produto">
-        <div style="display: flex; align-items: start; width: 45vw; height: 70vh; ;background-color: #0a3622" class="div-produto-fotos">
-            <div style="display: flex; flex-direction: column; width: 80px; height: 70vh; background-color: #0dcaf0" class="coluna-fotos">
+        <div style="display: flex; align-items: start; width: 45vw; height: 70vh;" class="div-produto-fotos">
+            <div style="display: flex; flex-direction: column; width: 80px; height: 70vh;" class="coluna-fotos">
                 @foreach (var imagem in Produto.Imagens)
                 {
                     var imagemUrl = $"{WebConfiguration.BackendUrl}{imagem.Url}";
-                    <MudCard Style="display: flex; margin-bottom: 20px; border-radius: 0; justify-content: center; align-items: center; width: 80%">
+                    <MudCard Style="display: flex; padding: 10px; margin-bottom: 20px; border-radius: 10px; justify-content: center; align-items: center; width: 80%" 
+                             @onmouseover="() => ChangeMainImage(imagemUrl)">
                         <img class="img-produto-carrossel-home" src="@imagemUrl" alt="sla" width="50px"/>
                     </MudCard>
                 }
             </div>
-        
+
             <div style="display: flex; align-items: center; width: 90%; height: 90%; background-color: #2b2f32" class="foto-principal">
-            
+                <img id="mainImage" src="@ImagemPrincipal" alt="Imagem principal" style="width: 100%; height: 100%; object-fit: cover;"/>
             </div>
         </div>
     
-        <div style="display: flex; flex-direction: column; justify-content: start; align-items: start; width: 30vw; height: 700px; background-color: #2c0b0e" class="div-produto-descricao">
-        
+        <div style="display: flex; flex-direction: column; justify-content: start; align-items: start; width: 30vw; height: 700px; border: 1px solid black; background-color: white;" class="div-produto-descricao">
+            <div style="padding: 10px" class="titulo-produto">
+                <h2 style="margin-bottom: 5vh;">@Produto.Titulo</h2>
+            </div>
+            <hr class="custom-hr">
+            <div style="padding: 10px; margin-bottom: 3vh;" class="valor-produto">
+                <p style="font-size: 1.5em; font-weight: bold;" class="produto-preco-novo">R$ @Produto.Preco.ToString("F2")</p>
+                <p class="desconto-pix">à vista (5% off)</p>
+            </div>
+            <div style="display: flex; justify-content: start; align-items: center; padding: 10px">
+                <section style="display: flex; flex-direction: column; align-items: center; text-align: center; max-width: 20%" class="pagamento-seguranca">
+                    <img src="images/icon-payments-and-security._CB643514857_.png" width="35px" style="margin-bottom: 10px"/>
+                    <NavLink href="/"><p style="color: #2162A1; font-size: 0.9em">Pagamentos e Segurança</p></NavLink>
+                </section>
+                <section style="display: flex; flex-direction: column; align-items: center; text-align: center; max-width: 20%" class="envio">
+                    <img src="images/icon-amazon-delivered._CB406595335_.png" width="35px" style="margin-bottom: 10px"/>
+                    <NavLink href="/"><p style="color: #2162A1; font-size: 0.9em">Informações do envio</p></NavLink>
+                </section>
+                <section style="display: flex; flex-direction: column; align-items: center; text-align: center; max-width: 20%" class="pagamento-seguranca">
+                    <img src="images/icon-returns._CB406595335_.png" width="35px" style="margin-bottom: 10px"/>
+                    <NavLink href="/"><p style="color: #2162A1; font-size: 0.9em">Política de devolução</p></NavLink>
+                </section>
+            </div>
+            <hr class="custom-hr">
         </div>
     
         <div style="display: flex; flex-direction: column; width: 20vw; height: 700px; background-color: #6f42c1" class="div-produto-valor">

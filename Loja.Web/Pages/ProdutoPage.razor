@@ -1,4 +1,5 @@
 ﻿@page "/produto/{id:long}"
+@using Loja.Core.Models
 @inherits ProdutoPageCode
 
 @if (IsBusy)
@@ -25,7 +26,7 @@ else
             </div>
         </div>
     
-        <div style="display: flex; flex-direction: column; justify-content: start; align-items: start; width: 30vw; height: 700px; border: 1px solid black; background-color: white;" class="div-produto-descricao">
+        <div style="display: flex; flex-direction: column; justify-content: start; align-items: start; width: 30vw; min-height: 700px; height: auto; background-color: white;" class="div-produto-descricao">
             <div style="padding: 10px" class="titulo-produto">
                 <h2 style="margin-bottom: 5vh;">@Produto.Titulo</h2>
             </div>
@@ -49,11 +50,88 @@ else
                 </section>
             </div>
             <hr class="custom-hr">
+            <div style="display: flex; flex-direction: column; align-items: start; justify-content: start; padding: 10px;" class="descricao-produto">
+                <h3 style="margin-bottom: 25px;">Informacões sobre o produto:</h3>
+                <ul style="margin-left: 15px;">
+                    <li style="margin-bottom: 15px;"><strong>Marca: </strong>...</li>
+                    <li style="margin-bottom: 15px;"><strong>Modelo: </strong>...</li>
+                    <li style="margin-bottom: 15px;"><strong>Serie: </strong>...</li>
+                    <li style="margin-bottom: 15px;"><strong>Tamanho: </strong>...</li>
+                    <li style="margin-bottom: 15px;"><strong>Informações adicionais: </strong>...</li>
+                </ul>
+            </div>
         </div>
     
-        <div style="display: flex; flex-direction: column; width: 20vw; height: 700px; background-color: #6f42c1" class="div-produto-valor">
-        
+        <div style="display: flex; flex-direction: column; width: 20vw; height: 700px; align-items: start; justify-content: start; padding: 15px; border: 1px solid lightgray; background-color: white; border-radius: 10px; margin-left: 15px; margin-bottom: 20px;" class="div-produto-valor">
+            <h2 style="margin-bottom: 20px;">R$ @Produto.Preco.ToString("F2")</h2>
+            <h2 style="margin-bottom: 20px;" class="desconto-pix">Em estoque</h2>
+            <h2 style="margin-bottom: 20px;">Entrega: GRÁTIS</h2>
+            <div style="display: flex; flex-direction: column; width: 90%;">
+                <span style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                    <p style="color: gray">Vendido por:</p>
+                    <p>TVS Eletrônica</p>
+                </span>
+                <span style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                    <p style="color: gray">Enviado por:</p>
+                    <p>Correios</p>
+                </span>
+                <span style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                    <p style="color: gray">Devolução:</p>
+                    <p>Elegível</p>
+                </span>
+                <span style="display: flex; justify-content: space-between; align-items: center;">
+                    <p style="color: gray">Pagamento:</p>
+                    <p>Transação segura</p>
+                </span>
+            </div>
+            <div class="div-mudbuttons-comprar-carrinho">
+                <MudButton Color="Color.Primary" Variant="Variant.Filled" Class="mudbutton-comprar-produto" Style="color: white; margin-bottom: 15px;">
+                    COMPRAR
+                </MudButton>
+
+                <MudButton OnClick="() => AdicionarAoCarrinho(Produto.Id)" Color="Color.Primary" Variant="Variant.Outlined" Class="mudbutton-carrinho-produto">
+                    Adicionar ao Carrinho
+                </MudButton>
+            </div>
         </div>
     </div>
+    
+    <div class="div-principal-recomendacoes">
+    <h2 class="titulo-recomendacoes">Recomendações para você</h2>
+    <MudCarousel Class="carrossel-principal-recomendacoes" TData="Produto" ShowArrows="true" EnableSwipeGesture="true" Indicators="true">
+        @foreach (var grupo in Produtos.Chunk(4))
+        {
+            <MudCarouselItem Class="carrossel-item-principal-recomendacoes">
+                @foreach (var itens in grupo)
+                {
+                    <NavLink href="@($"/produto/{itens.Id}")">
+                        <MudItem>
+                            <MudCard Class="mudcard-carrossel-item">
+                                <MudCardContent Class="mudcard-produto-titulo-recomendacoes">
+                                    <h4 class="produto-titulo-recomendacoes">@itens.Descricao</h4>
+                                </MudCardContent>
+                                <hr class="custom-hr">
+                                <MudCarousel Class="carrossel-secundario-recomendacoes" ShowArrows="false" EnableSwipeGesture="true" TData="Imagem" Indicators="true">
+                                    @foreach (var imagem in itens.Imagens)
+                                    {
+                                        var imagemUrl = $"{WebConfiguration.BackendUrl}{imagem.Url}";
+                                        <MudCarouselItem Class="carrossel-item-secundario-recomendacoes">
+                                            <img class="img-carrossel-produto-recomendacoes" src="@imagemUrl" alt="sla"/>
+                                        </MudCarouselItem>
+                                    }
+                                </MudCarousel>
+                                <hr class="custom-hr">
+                                <MudCardContent Class="mudcardcontent-produto-info-recomendacoes">
+                                    <p class="produto-preco-antigo-recomendacoes">De R$ @itens.Preco.ToString("F2")</p>
+                                    <p class="produto-preco-novo-recomendacoes">Por R$ @itens.Preco.ToString("F2")</p>
+                                </MudCardContent>
+                            </MudCard>
+                        </MudItem>
+                    </NavLink>
+                }
+            </MudCarouselItem>
+        }
+    </MudCarousel>
+</div>
 }
 

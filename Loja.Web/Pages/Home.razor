@@ -15,10 +15,12 @@
         {
             <MudItem>
                 <MudCard class="mudcard-principal-home">
-                    <MudCardContent class="mudcardcontent-principal-home">
-                        <h5 class="frete-info">FRETE GRÁTIS / 6x s/juros</h5>
-                        <h3>@produto.Titulo</h3>
-                    </MudCardContent>
+                    <NavLink href="@($"/produto/{produto.Id}")">
+                        <MudCardContent class="mudcardcontent-principal-home">
+                            <h5 class="frete-info">FRETE GRÁTIS / 6x s/juros</h5>
+                            <h3>@produto.Titulo</h3>
+                        </MudCardContent>
+                    </NavLink>
 
                     <MudCarousel class="carrossel-home" ShowArrows="true" EnableSwipeGesture="true" TData="Imagem" Indicators="true">
                         @foreach (var imagem in produto.Imagens)

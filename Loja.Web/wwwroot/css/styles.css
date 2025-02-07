@@ -510,6 +510,29 @@ main {
 
 /*FIM CARRINHO PAGE CSS*/
 
+/*PRODUTO PAGE CSS*/
+.mudbutton-comprar-produto
+{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 0.9em;
+}
+
+.mudbutton-carrinho-produto
+{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 0.9em;
+}
+/*FIM PRODUTO PAGE CSS*/
 
 /* Estilos para celulares (até 600px) */
 @media screen and (max-width: 600px) {

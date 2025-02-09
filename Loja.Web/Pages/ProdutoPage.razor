@@ -2,136 +2,138 @@
 @using Loja.Core.Models
 @inherits ProdutoPageCode
 
-@if (IsBusy)
-{
-    <MudProgressCircular Color="Color.Info" Indeterminate="true"/>
-}
-else
-{
-    <div style="display: flex; justify-content: space-between; align-items: start; width: 95vw; padding: 20px;" class="div-principal-produto">
-        <div style="display: flex; align-items: start; width: 45vw; height: 70vh;" class="div-produto-fotos">
-            <div style="display: flex; flex-direction: column; width: 80px; height: 70vh;" class="coluna-fotos">
-                @foreach (var imagem in Produto.Imagens)
-                {
-                    var imagemUrl = $"{WebConfiguration.BackendUrl}{imagem.Url}";
-                    <MudCard Style="display: flex; padding: 10px; margin-bottom: 20px; border-radius: 10px; justify-content: center; align-items: center; width: 80%" 
-                             @onmouseover="() => ChangeMainImage(imagemUrl)">
-                        <img class="img-produto-carrossel-home" src="@imagemUrl" alt="sla" width="50px"/>
-                    </MudCard>
-                }
+<div style="background-color: white;">
+    @if (IsBusy)
+    {
+        <MudProgressCircular Color="Color.Info" Indeterminate="true"/>
+    }
+    else
+    {
+        <div style="display: flex; justify-content: space-between; align-items: start; width: 95vw; padding: 20px;" class="div-principal-produto">
+            <div style="display: flex; align-items: start; width: 45vw; height: 70vh;" class="div-produto-fotos">
+                <div style="display: flex; flex-direction: column; width: 90px;" class="coluna-fotos">
+                    @foreach (var imagem in Produto.Imagens)
+                    {
+                        var imagemUrl = $"{WebConfiguration.BackendUrl}{imagem.Url}";
+                        <MudCard Style="display: flex; padding: 10px; margin-bottom: 20px; border-radius: 10px; justify-content: center; align-items: center; width: 80%"
+                                 @onmouseover="() => ChangeMainImage(imagemUrl)">
+                            <img class="img-produto-carrossel-home" src="@imagemUrl" alt="sla" width="50px"/>
+                        </MudCard>
+                    }
+                </div>
+
+                <div style="display: flex; align-items: center; max-width: 90%; height: 90%;" class="foto-principal">
+                    <img id="mainImage" src="@ImagemPrincipal" alt="Imagem principal" style="max-width: 100%; max-height: 100%; object-fit: cover;"/>
+                </div>
             </div>
 
-            <div style="display: flex; align-items: center; width: 90%; height: 90%; background-color: #2b2f32" class="foto-principal">
-                <img id="mainImage" src="@ImagemPrincipal" alt="Imagem principal" style="width: 100%; height: 100%; object-fit: cover;"/>
+            <div style="display: flex; flex-direction: column; justify-content: start; align-items: start; width: 30vw; min-height: 700px; height: auto; background-color: white;" class="div-produto-descricao">
+                <div style="padding: 10px" class="titulo-produto">
+                    <h2 style="margin-bottom: 5vh;">@Produto.Titulo</h2>
+                </div>
+                <hr class="custom-hr">
+                <div style="padding: 10px; margin-bottom: 3vh;" class="valor-produto">
+                    <p style="font-size: 1.5em; font-weight: bold;" class="produto-preco-novo">R$ @Produto.Preco.ToString("F2")</p>
+                    <p class="desconto-pix">à vista (5% off)</p>
+                </div>
+                <div style="display: flex; justify-content: start; align-items: center; padding: 10px">
+                    <section style="display: flex; flex-direction: column; align-items: center; text-align: center; max-width: 20%" class="pagamento-seguranca">
+                        <img src="images/icon-payments-and-security._CB643514857_.png" width="35px" style="margin-bottom: 10px"/>
+                        <NavLink href="/"><p style="color: #2162A1; font-size: 0.9em">Pagamentos e Segurança</p></NavLink>
+                    </section>
+                    <section style="display: flex; flex-direction: column; align-items: center; text-align: center; max-width: 20%" class="envio">
+                        <img src="images/icon-amazon-delivered._CB406595335_.png" width="35px" style="margin-bottom: 10px"/>
+                        <NavLink href="/"><p style="color: #2162A1; font-size: 0.9em">Informações do envio</p></NavLink>
+                    </section>
+                    <section style="display: flex; flex-direction: column; align-items: center; text-align: center; max-width: 20%" class="pagamento-seguranca">
+                        <img src="images/icon-returns._CB406595335_.png" width="35px" style="margin-bottom: 10px"/>
+                        <NavLink href="/"><p style="color: #2162A1; font-size: 0.9em">Política de devolução</p></NavLink>
+                    </section>
+                </div>
+                <hr class="custom-hr">
+                <div style="display: flex; flex-direction: column; align-items: start; justify-content: start; padding: 10px;" class="descricao-produto">
+                    <h3 style="margin-bottom: 25px;">Informacões sobre o produto:</h3>
+                    <ul style="margin-left: 15px;">
+                        <li style="margin-bottom: 15px;"><strong>Marca: </strong>...</li>
+                        <li style="margin-bottom: 15px;"><strong>Modelo: </strong>...</li>
+                        <li style="margin-bottom: 15px;"><strong>Serie: </strong>...</li>
+                        <li style="margin-bottom: 15px;"><strong>Tamanho: </strong>...</li>
+                        <li style="margin-bottom: 15px;"><strong>Informações adicionais: </strong>...</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    
-        <div style="display: flex; flex-direction: column; justify-content: start; align-items: start; width: 30vw; min-height: 700px; height: auto; background-color: white;" class="div-produto-descricao">
-            <div style="padding: 10px" class="titulo-produto">
-                <h2 style="margin-bottom: 5vh;">@Produto.Titulo</h2>
-            </div>
-            <hr class="custom-hr">
-            <div style="padding: 10px; margin-bottom: 3vh;" class="valor-produto">
-                <p style="font-size: 1.5em; font-weight: bold;" class="produto-preco-novo">R$ @Produto.Preco.ToString("F2")</p>
-                <p class="desconto-pix">à vista (5% off)</p>
-            </div>
-            <div style="display: flex; justify-content: start; align-items: center; padding: 10px">
-                <section style="display: flex; flex-direction: column; align-items: center; text-align: center; max-width: 20%" class="pagamento-seguranca">
-                    <img src="images/icon-payments-and-security._CB643514857_.png" width="35px" style="margin-bottom: 10px"/>
-                    <NavLink href="/"><p style="color: #2162A1; font-size: 0.9em">Pagamentos e Segurança</p></NavLink>
-                </section>
-                <section style="display: flex; flex-direction: column; align-items: center; text-align: center; max-width: 20%" class="envio">
-                    <img src="images/icon-amazon-delivered._CB406595335_.png" width="35px" style="margin-bottom: 10px"/>
-                    <NavLink href="/"><p style="color: #2162A1; font-size: 0.9em">Informações do envio</p></NavLink>
-                </section>
-                <section style="display: flex; flex-direction: column; align-items: center; text-align: center; max-width: 20%" class="pagamento-seguranca">
-                    <img src="images/icon-returns._CB406595335_.png" width="35px" style="margin-bottom: 10px"/>
-                    <NavLink href="/"><p style="color: #2162A1; font-size: 0.9em">Política de devolução</p></NavLink>
-                </section>
-            </div>
-            <hr class="custom-hr">
-            <div style="display: flex; flex-direction: column; align-items: start; justify-content: start; padding: 10px;" class="descricao-produto">
-                <h3 style="margin-bottom: 25px;">Informacões sobre o produto:</h3>
-                <ul style="margin-left: 15px;">
-                    <li style="margin-bottom: 15px;"><strong>Marca: </strong>...</li>
-                    <li style="margin-bottom: 15px;"><strong>Modelo: </strong>...</li>
-                    <li style="margin-bottom: 15px;"><strong>Serie: </strong>...</li>
-                    <li style="margin-bottom: 15px;"><strong>Tamanho: </strong>...</li>
-                    <li style="margin-bottom: 15px;"><strong>Informações adicionais: </strong>...</li>
-                </ul>
-            </div>
-        </div>
-    
-        <div style="display: flex; flex-direction: column; width: 20vw; height: 700px; align-items: start; justify-content: start; padding: 15px; border: 1px solid lightgray; background-color: white; border-radius: 10px; margin-left: 15px; margin-bottom: 20px;" class="div-produto-valor">
-            <h2 style="margin-bottom: 20px;">R$ @Produto.Preco.ToString("F2")</h2>
-            <h2 style="margin-bottom: 20px;" class="desconto-pix">Em estoque</h2>
-            <h2 style="margin-bottom: 20px;">Entrega: GRÁTIS</h2>
-            <div style="display: flex; flex-direction: column; width: 90%;">
+
+            <div style="display: flex; flex-direction: column; width: 20vw; height: 700px; align-items: start; justify-content: start; padding: 15px; border: 1px solid lightgray; background-color: white; border-radius: 10px; margin-left: 15px; margin-bottom: 20px;" class="div-produto-valor">
+                <h2 style="margin-bottom: 20px;">R$ @Produto.Preco.ToString("F2")</h2>
+                <h2 style="margin-bottom: 20px;" class="desconto-pix">Em estoque</h2>
+                <h2 style="margin-bottom: 20px;">Entrega: GRÁTIS</h2>
+                <div style="display: flex; flex-direction: column; width: 90%;">
                 <span style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
                     <p style="color: gray">Vendido por:</p>
                     <p>TVS Eletrônica</p>
                 </span>
-                <span style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                    <span style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
                     <p style="color: gray">Enviado por:</p>
                     <p>Correios</p>
                 </span>
-                <span style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                    <span style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
                     <p style="color: gray">Devolução:</p>
                     <p>Elegível</p>
                 </span>
-                <span style="display: flex; justify-content: space-between; align-items: center;">
+                    <span style="display: flex; justify-content: space-between; align-items: center;">
                     <p style="color: gray">Pagamento:</p>
                     <p>Transação segura</p>
                 </span>
-            </div>
-            <div class="div-mudbuttons-comprar-carrinho">
-                <MudButton Color="Color.Primary" Variant="Variant.Filled" Class="mudbutton-comprar-produto" Style="color: white; margin-bottom: 15px;">
-                    COMPRAR
-                </MudButton>
+                </div>
+                <div class="div-mudbuttons-comprar-carrinho">
+                    <MudButton Color="Color.Primary" Variant="Variant.Filled" Class="mudbutton-comprar-produto" Style="color: white; margin-bottom: 15px;">
+                        COMPRAR
+                    </MudButton>
 
-                <MudButton OnClick="() => AdicionarAoCarrinho(Produto.Id)" Color="Color.Primary" Variant="Variant.Outlined" Class="mudbutton-carrinho-produto">
-                    Adicionar ao Carrinho
-                </MudButton>
+                    <MudButton OnClick="() => AdicionarAoCarrinho(Produto.Id)" Color="Color.Primary" Variant="Variant.Outlined" Class="mudbutton-carrinho-produto">
+                        Adicionar ao Carrinho
+                    </MudButton>
+                </div>
             </div>
         </div>
-    </div>
-    
-    <div class="div-principal-recomendacoes">
-    <h2 class="titulo-recomendacoes">Recomendações para você</h2>
-    <MudCarousel Class="carrossel-principal-recomendacoes" TData="Produto" ShowArrows="true" EnableSwipeGesture="true" Indicators="true">
-        @foreach (var grupo in Produtos.Chunk(4))
-        {
-            <MudCarouselItem Class="carrossel-item-principal-recomendacoes">
-                @foreach (var itens in grupo)
+
+        <div class="div-principal-recomendacoes">
+            <h2 class="titulo-recomendacoes">Recomendações para você</h2>
+            <MudCarousel Class="carrossel-principal-recomendacoes" TData="Produto" ShowArrows="true" EnableSwipeGesture="true" Indicators="true">
+                @foreach (var grupo in Produtos.Chunk(4))
                 {
-                    <NavLink href="@($"/produto/{itens.Id}")">
-                        <MudItem>
-                            <MudCard Class="mudcard-carrossel-item">
-                                <MudCardContent Class="mudcard-produto-titulo-recomendacoes">
-                                    <h4 class="produto-titulo-recomendacoes">@itens.Descricao</h4>
-                                </MudCardContent>
-                                <hr class="custom-hr">
-                                <MudCarousel Class="carrossel-secundario-recomendacoes" ShowArrows="false" EnableSwipeGesture="true" TData="Imagem" Indicators="true">
-                                    @foreach (var imagem in itens.Imagens)
-                                    {
-                                        var imagemUrl = $"{WebConfiguration.BackendUrl}{imagem.Url}";
-                                        <MudCarouselItem Class="carrossel-item-secundario-recomendacoes">
-                                            <img class="img-carrossel-produto-recomendacoes" src="@imagemUrl" alt="sla"/>
-                                        </MudCarouselItem>
-                                    }
-                                </MudCarousel>
-                                <hr class="custom-hr">
-                                <MudCardContent Class="mudcardcontent-produto-info-recomendacoes">
-                                    <p class="produto-preco-antigo-recomendacoes">De R$ @itens.Preco.ToString("F2")</p>
-                                    <p class="produto-preco-novo-recomendacoes">Por R$ @itens.Preco.ToString("F2")</p>
-                                </MudCardContent>
-                            </MudCard>
-                        </MudItem>
-                    </NavLink>
+                    <MudCarouselItem Class="carrossel-item-principal-recomendacoes">
+                        @foreach (var itens in grupo)
+                        {
+                            <NavLink href="@($"/produto/{itens.Id}")">
+                                <MudItem>
+                                    <MudCard Class="mudcard-carrossel-item">
+                                        <MudCardContent Class="mudcard-produto-titulo-recomendacoes">
+                                            <h4 class="produto-titulo-recomendacoes">@itens.Descricao</h4>
+                                        </MudCardContent>
+                                        <hr class="custom-hr">
+                                        <MudCarousel Class="carrossel-secundario-recomendacoes" ShowArrows="false" EnableSwipeGesture="true" TData="Imagem" Indicators="true">
+                                            @foreach (var imagem in itens.Imagens)
+                                            {
+                                                var imagemUrl = $"{WebConfiguration.BackendUrl}{imagem.Url}";
+                                                <MudCarouselItem Class="carrossel-item-secundario-recomendacoes">
+                                                    <img class="img-carrossel-produto-recomendacoes" src="@imagemUrl" alt="sla"/>
+                                                </MudCarouselItem>
+                                            }
+                                        </MudCarousel>
+                                        <hr class="custom-hr">
+                                        <MudCardContent Class="mudcardcontent-produto-info-recomendacoes">
+                                            <p class="produto-preco-antigo-recomendacoes">De R$ @itens.Preco.ToString("F2")</p>
+                                            <p class="produto-preco-novo-recomendacoes">Por R$ @itens.Preco.ToString("F2")</p>
+                                        </MudCardContent>
+                                    </MudCard>
+                                </MudItem>
+                            </NavLink>
+                        }
+                    </MudCarouselItem>
                 }
-            </MudCarouselItem>
-        }
-    </MudCarousel>
+            </MudCarousel>
+        </div>
+    }
 </div>
-}
 

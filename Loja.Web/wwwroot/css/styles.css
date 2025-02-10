@@ -532,6 +532,232 @@ main {
     color: white;
     font-size: 0.9em;
 }
+
+.div-background-produto-page
+{
+    background-color: white;
+}
+
+.div-principal-produto-page
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 95vw;
+    padding: 20px;
+}
+
+.div-produto-fotos
+{
+    display: flex;
+    align-items: start;
+    width: 45vw;
+    height: 70vh;
+}
+
+.coluna-fotos
+{
+    display: flex;
+    flex-direction: column;
+    width: 90px;
+}
+
+.mudcard-coluna-fotos
+{
+    display: flex;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 80%
+}
+
+.foto-principal-produto-page
+{
+    display: flex;
+    align-items: center;
+    max-width: 90%;
+    height: 90%;
+}
+
+.imagem-produto-page
+{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.div-produto-descricao
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 30vw;
+    min-height: 700px;
+    height: auto;
+    background-color: white;
+}
+
+.titulo-produto-page
+{
+    padding: 10px;
+}
+
+.titulo-produto-h2
+{
+    margin-bottom: 5vh;
+}
+
+.valor-produto-page
+{
+    padding: 10px;
+    margin-bottom: 3vh;
+}
+
+.valor-produto-page-p
+{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.icons-produto-page
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.pagamento-seguranca
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 20%;
+}
+
+.icon-pagamento-seguranca
+{
+    width: 35px;
+    margin-bottom: 10px;
+}
+
+.descricao-icon-pagamento
+{
+    color: #2162A1;
+    font-size: 0.9em;
+}
+
+.envio
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 20%;
+}
+
+.icon-envio
+{
+    width: 35px;
+    margin-bottom: 10px;
+}
+
+.descricao-icon-envio
+{
+    color: #2162A1;
+    font-size: 0.9em;
+}
+
+.devolucao
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 20%;
+}
+
+.icon-devolucao
+{
+    width: 35px;
+    margin-bottom: 10px;
+}
+
+.descricao-icon-devolucao
+{
+    color: #2162A1;
+    font-size: 0.9em;
+}
+
+.descricao-produto
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 10px;
+}
+
+.titulo-informacoes-produto
+{
+    margin-bottom: 25px;
+}
+
+.lista-principal-informacoes
+{
+    margin-left: 15px;
+}
+
+.item-lista-produto
+{
+    margin-bottom: 15px;
+}
+
+.div-produto-valor
+{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 700px;
+    align-items: start;
+    justify-content: start;
+    padding: 15px;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+.div-produto-itens
+{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.itens-produto-info-valor
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.produto-itens-p
+{
+    color: gray;
+}
+
+.div-principal-produto-page-celular
+{
+    display: none;
+}
+
 /*FIM PRODUTO PAGE CSS*/
 
 /* Estilos para celulares (até 600px) */
@@ -670,6 +896,43 @@ main {
         display: flex;
         flex-direction: column;
     }
+    
+    .div-principal-produto-page
+    {
+        display: none;
+    }
+    
+    .div-principal-produto-page-celular
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 3vw;
+        align-items: center;
+    }
+    
+    .titulo-produto-page-celular
+    {
+        width: 100%;
+    }
+    
+    .produto-titulo-celular
+    {
+        width: 100%;
+        text-align: start;
+    }
+    
+    .carrossel-produto-imagens-produto
+    {
+        height: 30vh;
+        width: 100vw;
+    }
+    
+    .img-carrossel-produto-page
+    {
+        max-width: 100%;
+    }
+    
 }
 
 /* Estilos para tablets (entre 600px e 1024px) */

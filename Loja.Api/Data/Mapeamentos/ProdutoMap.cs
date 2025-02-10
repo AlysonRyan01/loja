@@ -22,6 +22,31 @@ public class ProdutoMap : IEntityTypeConfiguration<Produto>
             .HasColumnType("NVARCHAR")
             .HasMaxLength(500);
         
+        builder.Property(x => x.Marca)
+            .IsRequired()
+            .HasColumnType("NVARCHAR")
+            .HasMaxLength(50);
+        
+        builder.Property(x => x.Modelo)
+            .IsRequired()
+            .HasColumnType("NVARCHAR")
+            .HasMaxLength(50);
+        
+        builder.Property(x => x.Serie)
+            .IsRequired()
+            .HasColumnType("NVARCHAR")
+            .HasMaxLength(30);
+        
+        builder.Property(x => x.Tamanho)
+            .IsRequired()
+            .HasColumnType("NVARCHAR")
+            .HasMaxLength(10);
+        
+        builder.Property(x => x.Garantia)
+            .IsRequired()
+            .HasColumnType("NVARCHAR")
+            .HasMaxLength(10);
+        
         builder.Property(x => x.Preco)
             .IsRequired()
             .HasColumnType("DECIMAL(18,2)");

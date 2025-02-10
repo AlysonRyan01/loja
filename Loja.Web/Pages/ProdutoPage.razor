@@ -95,7 +95,97 @@
                 </div>
             </div>
         </div>
+        
+        <div class="div-principal-produto-page-celular">
+            <div class="titulo-produto-page-celular">
+                <p class="produto-titulo-celular">@Produto.Titulo</p>
+            </div>
+            <div class="div-carrossel-produto">
+                <MudCarousel Class="carrossel-produto-imagens-produto" ShowArrows="false" EnableSwipeGesture="true" TData="Imagem" Indicators="true">
+                    @foreach (var imagem in Produto.Imagens)
+                    {
+                        var imagemUrl = $"{WebConfiguration.BackendUrl}{imagem.Url}";
+                        <MudCarouselItem Class="carrossel-item-home">
+                            <img class="img-carrossel-produto-page" src="@imagemUrl" alt="sla"/>
+                        </MudCarouselItem>
+                    }
+                </MudCarousel>
+            </div>
+            <div class="produto-infos">
+                <p style="color: red;">Oferta</p>
+                <h2 style="margin-bottom: 1vh;">R$ @Produto.Preco.ToString("F2")</h2>
+                <h2 style="margin-bottom: 1vh;" class="desconto-pix">Em estoque</h2>
+                <h2 style="margin-bottom: 1vh;">Entrega: <span style="color: red;">GRÁTIS</span></h2>
+                <div class="icons-produto-page">
+                    <section class="pagamento-seguranca">
+                        <img class="icon-pagamento-seguranca" src="images/icon-payments-and-security._CB643514857_.png"/>
+                        <NavLink href="/"><p class="descricao-icon-pagamento">Pagamentos e Segurança</p></NavLink>
+                    </section>
+                    <section class="envio">
+                        <img class="icon-envio" src="images/icon-amazon-delivered._CB406595335_.png"/>
+                        <NavLink href="/"><p class="descricao-icon-envio">Informações do envio</p></NavLink>
+                    </section>
+                    <section class="devolucao">
+                        <img class="icon-devolucao" src="images/icon-returns._CB406595335_.png"/>
+                        <NavLink href="/"><p class="descricao-icon-devolucao">Política de devolução</p></NavLink>
+                    </section>
+                </div>
+                <div class="div-mudbuttons-comprar-carrinho-celular">
+                    <MudButton Color="Color.Primary" Variant="Variant.Filled" Class="mudbutton-comprar-produto-celular" Style="color: white; margin-bottom: 15px;">
+                        COMPRAR
+                    </MudButton>
 
+                    <MudButton OnClick="() => AdicionarAoCarrinho(Produto.Id)" Color="Color.Primary" Variant="Variant.Outlined" Class="mudbutton-carrinho-produto-celular">
+                        Adicionar ao Carrinho
+                    </MudButton>
+                </div>
+                <div style="margin-top: 2vh;" class="descricao-produto">
+                    <h3 class="titulo-informacoes-produto">Informacões sobre o produto:</h3>
+                    <ul class="lista-principal-informacoes">
+                        <li class="item-lista-produto"><strong>Marca: </strong>...</li>
+                        <li class="item-lista-produto"><strong>Modelo: </strong>...</li>
+                        <li class="item-lista-produto"><strong>Serie: </strong>...</li>
+                        <li class="item-lista-produto"><strong>Tamanho: </strong>...</li>
+                        <li class="item-lista-produto"><strong>Informações adicionais: </strong>...</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="div-principal-recomendacoes-celular">
+            <h2 class="titulo-recomendacoes">Recomendações para você</h2>
+            <MudCarousel Class="carrossel-principal-recomendacoes" TData="Produto" ShowArrows="true" EnableSwipeGesture="true" Indicators="true">
+                @foreach (var grupo in Produtos.Chunk(1))
+                {
+                    <MudCarouselItem Class="carrossel-item-principal-recomendacoes">
+                        @foreach (var itens in grupo)
+                        {
+                            <MudItem>
+                                <MudCard Class="mudcard-carrossel-item">
+                                    <MudCardContent Class="mudcard-produto-titulo-recomendacoes">
+                                        <h4 class="produto-titulo-recomendacoes">@itens.Descricao</h4>
+                                    </MudCardContent>
+                                    <hr class="custom-hr">
+                                    <MudCarousel Class="carrossel-secundario-recomendacoes" ShowArrows="false" EnableSwipeGesture="true" TData="Imagem" Indicators="true">
+                                        @foreach (var imagem in itens.Imagens)
+                                        {
+                                            var imagemUrl = $"{WebConfiguration.BackendUrl}{imagem.Url}";
+                                            <MudCarouselItem Class="carrossel-item-secundario-recomendacoes">
+                                                <img class="img-carrossel-produto-recomendacoes" src="@imagemUrl" alt="sla"/>
+                                            </MudCarouselItem>
+                                        }
+                                    </MudCarousel>
+                                    <hr class="custom-hr">
+                                    <MudCardContent Class="mudcardcontent-produto-info-recomendacoes">
+                                        <p class="produto-preco-antigo-recomendacoes">De R$ @itens.Preco.ToString("F2")</p>
+                                        <p class="produto-preco-novo-recomendacoes">Por R$ @itens.Preco.ToString("F2")</p>
+                                    </MudCardContent>
+                                </MudCard>
+                            </MudItem>
+                        }
+                    </MudCarouselItem>
+                }
+            </MudCarousel>
+        </div>
         <div class="div-principal-recomendacoes">
             <h2 class="titulo-recomendacoes">Recomendações para você</h2>
             <MudCarousel Class="carrossel-principal-recomendacoes" TData="Produto" ShowArrows="true" EnableSwipeGesture="true" Indicators="true">
@@ -132,23 +222,6 @@
                     </MudCarouselItem>
                 }
             </MudCarousel>
-        </div>
-        
-        <div class="div-principal-produto-page-celular">
-            <div class="titulo-produto-page-celular">
-                <p class="produto-titulo-celular">@Produto.Titulo</p>
-            </div>
-            <div class="div-carrossel-produto">
-                <MudCarousel Class="carrossel-produto-imagens-produto" ShowArrows="false" EnableSwipeGesture="true" TData="Imagem" Indicators="true">
-                    @foreach (var imagem in Produto.Imagens)
-                    {
-                        var imagemUrl = $"{WebConfiguration.BackendUrl}{imagem.Url}";
-                        <MudCarouselItem Class="carrossel-item-home">
-                            <img class="img-carrossel-produto-page" src="@imagemUrl" alt="sla"/>
-                        </MudCarouselItem>
-                    }
-                </MudCarousel>
-            </div>
         </div>
     }
 </div>

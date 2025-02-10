@@ -24,6 +24,11 @@ public class ProdutoHandler(
             {
                 Titulo = requisicao.Titulo,
                 Descricao = requisicao.Descricao,
+                Marca = requisicao.Marca,
+                Modelo = requisicao.Modelo,
+                Serie = requisicao.Serie,
+                Tamanho = requisicao.Tamanho,
+                Garantia = requisicao.Garantia,
                 Preco = requisicao.Preco,
                 Imagens = imagens
             };
@@ -76,6 +81,11 @@ public class ProdutoHandler(
             }
             
             produto.Titulo = requisicao.Titulo;
+            produto.Marca = requisicao.Marca;
+            produto.Modelo = requisicao.Modelo;
+            produto.Serie = requisicao.Serie;
+            produto.Tamanho = requisicao.Tamanho;
+            produto.Garantia = requisicao.Garantia;
             produto.Descricao = requisicao.Descricao;
             produto.Preco = requisicao.Preco;
 

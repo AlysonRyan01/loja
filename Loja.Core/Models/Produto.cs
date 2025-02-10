@@ -4,6 +4,11 @@ public class Produto
 {
     public long Id { get; set; }
     public string Titulo { get; set; }
+    public string Marca { get; set; }
+    public string Modelo { get; set; }
+    public string Serie { get; set; }
+    public string Tamanho { get; set; }
+    public string Garantia { get; set; }
     public string Descricao { get; set; }
     public decimal Preco { get; set; }
     public List<Imagem> Imagens { get; set; }

@@ -37,16 +37,3 @@ C:/Users/TVS'PC/Documents/MeusProjetos/loja/Loja.Core/obj/Debug/net9.0/Loja.Core
 C:/Users/TVS'PC/Documents/MeusProjetos/loja/Loja.Core/obj/Debug/net9.0/refint/Loja.Core.dll
 C:/Users/TVS'PC/Documents/MeusProjetos/loja/Loja.Core/obj/Debug/net9.0/Loja.Core.pdb
 C:/Users/TVS'PC/Documents/MeusProjetos/loja/Loja.Core/obj/Debug/net9.0/ref/Loja.Core.dll
-D:\GitHubRepository\loja\Loja.Core\bin\Debug\net9.0\Loja.Core.deps.json
-D:\GitHubRepository\loja\Loja.Core\bin\Debug\net9.0\Loja.Core.dll
-D:\GitHubRepository\loja\Loja.Core\bin\Debug\net9.0\Loja.Core.pdb
-D:\GitHubRepository\loja\Loja.Core\obj\Debug\net9.0\Loja.Core.csproj.AssemblyReference.cache
-D:\GitHubRepository\loja\Loja.Core\obj\Debug\net9.0\Loja.Core.GeneratedMSBuildEditorConfig.editorconfig
-D:\GitHubRepository\loja\Loja.Core\obj\Debug\net9.0\Loja.Core.AssemblyInfoInputs.cache
-D:\GitHubRepository\loja\Loja.Core\obj\Debug\net9.0\Loja.Core.AssemblyInfo.cs
-D:\GitHubRepository\loja\Loja.Core\obj\Debug\net9.0\Loja.Core.csproj.CoreCompileInputs.cache
-D:\GitHubRepository\loja\Loja.Core\obj\Debug\net9.0\Loja.Core.sourcelink.json
-D:\GitHubRepository\loja\Loja.Core\obj\Debug\net9.0\Loja.Core.dll
-D:\GitHubRepository\loja\Loja.Core\obj\Debug\net9.0\refint\Loja.Core.dll
-D:\GitHubRepository\loja\Loja.Core\obj\Debug\net9.0\Loja.Core.pdb
-D:\GitHubRepository\loja\Loja.Core\obj\Debug\net9.0\ref\Loja.Core.dll

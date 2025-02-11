@@ -15,7 +15,9 @@ public partial class ProdutoPageCode : ComponentBase
 {
     #region Properties
 
-    public bool _visible;
+    public bool _visiblePayment;
+    public bool _visibleShipping;
+    public bool _visibleReturnPolicy;
     public readonly DialogOptions _dialogOptions = new() { FullWidth = true };
     public bool exibirImagemTelaCheia = false;
     public ElementReference imgRef;
@@ -186,7 +188,15 @@ public partial class ProdutoPageCode : ComponentBase
         exibirImagemTelaCheia = false;
     }
     
-    public void OpenDialog() => _visible = true;
+    public void OpenPaymentDialog() => _visiblePayment = true;
     
-    public void Submit() => _visible = false;
+    public void SubmitPayment() => _visiblePayment = false;
+    
+    public void OpenShippingDialog() => _visibleShipping = true;
+    
+    public void SubmitShipping() => _visibleShipping = false;
+    
+    public void OpenReturnPolicyDialog() => _visibleReturnPolicy= true;
+    
+    public void SubmitReturnPolicy() => _visibleReturnPolicy = false;
 }

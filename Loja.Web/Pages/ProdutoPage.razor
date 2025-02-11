@@ -43,15 +43,15 @@
                 <div class="icons-produto-page">
                     <section class="pagamento-seguranca">
                         <img class="icon-pagamento-seguranca" src="images/icon-payments-and-security._CB643514857_.png"/>
-                        <Button @onclick="OpenDialog" class="descricao-icon-pagamento">Pagamentos e Segurança</Button>
+                        <Button @onclick="OpenPaymentDialog" class="descricao-icon-pagamento">Pagamentos e Segurança</Button>
                     </section>
                     <section class="envio">
                         <img class="icon-envio" src="images/icon-amazon-delivered._CB406595335_.png"/>
-                        <NavLink href="/"><p class="descricao-icon-envio">Informações do envio</p></NavLink>
+                        <Button @onclick="OpenShippingDialog"><p class="descricao-icon-envio">Informações do envio</p></Button>
                     </section>
                     <section class="devolucao">
                         <img class="icon-devolucao" src="images/icon-returns._CB406595335_.png"/>
-                        <NavLink href="/"><p class="descricao-icon-devolucao">Política de devolução</p></NavLink>
+                        <Button @onclick="OpenReturnPolicyDialog"><p class="descricao-icon-devolucao">Política de devolução</p></Button>
                     </section>
                 </div>
                 <hr class="custom-hr">
@@ -125,15 +125,15 @@
                 <div class="icons-produto-page">
                     <section class="pagamento-seguranca">
                         <img class="icon-pagamento-seguranca" src="images/icon-payments-and-security._CB643514857_.png"/>
-                        <NavLink><p class="descricao-icon-pagamento">Pagamentos e Segurança</p></NavLink>
+                        <Button @onclick="OpenPaymentDialog" class="descricao-icon-pagamento">Pagamentos e Segurança</Button>
                     </section>
                     <section class="envio">
                         <img class="icon-envio" src="images/icon-amazon-delivered._CB406595335_.png"/>
-                        <NavLink href="/"><p class="descricao-icon-envio">Informações do envio</p></NavLink>
+                        <Button @onclick="OpenShippingDialog"><p class="descricao-icon-envio">Informações do envio</p></Button>
                     </section>
                     <section class="devolucao">
                         <img class="icon-devolucao" src="images/icon-returns._CB406595335_.png"/>
-                        <NavLink href="/"><p class="descricao-icon-devolucao">Política de devolução</p></NavLink>
+                        <Button @onclick="OpenReturnPolicyDialog"><p class="descricao-icon-devolucao">Política de devolução</p></Button>
                     </section>
                 </div>
                 <div class="div-mudbuttons-comprar-carrinho-celular">
@@ -236,9 +236,9 @@
                 <img class="imagem-tela-cheia" src="@ImagemPrincipal" alt="Imagem em Tela Cheia" />
             </div>
         }
-        <MudDialog @bind-Visible="_visible" Options="_dialogOptions">
+        <MudDialog @bind-Visible="_visiblePayment" Options="_dialogOptions">
             <DialogContent>
-                <h3>Pagamentos e Segurança</h3>
+                <h3 style="margin-bottom: 20px;">Pagamentos e Segurança</h3>
                 <p><strong>Cartão de crédito</strong><br />
                     A TVS Eletrônica aceita todos os principais cartões de crédito: Visa, Mastercard, Elo e American Express.</p>
 
@@ -253,7 +253,33 @@
                     Nosso sistema de segurança de pagamento criptografa suas informações durante a compra.</p>
             </DialogContent>
             <DialogActions>
-                <MudButton OnClick="Submit" Variant="Variant.Filled" Color="Color.Primary" Class="px-10" Style="color: white;">Fechar</MudButton>
+                <MudButton OnClick="SubmitPayment" Variant="Variant.Filled" Color="Color.Primary" Class="px-10" Style="color: white;">Fechar</MudButton>
+            </DialogActions>
+        </MudDialog>
+        
+        <MudDialog @bind-Visible="_visibleShipping" Options="_dialogOptions">
+            <DialogContent>
+                <h3 style="margin-bottom: 20px;">Informações sobre o envio</h3>
+                Os produtos adquiridos em nossa loja são enviados com segurança pelos Correios.
+                O prazo de entrega pode variar conforme a localização do destinatário e o tipo de serviço escolhido.
+                Assim que seu pedido for postado, você receberá um código de rastreamento para acompanhar a entrega em tempo real pelo site dos Correios.
+                Em caso de dúvidas, entre em contato com nosso suporte.
+            </DialogContent>
+            <DialogActions>
+                <MudButton OnClick="SubmitShipping" Variant="Variant.Filled" Color="Color.Primary" Class="px-10" Style="color: white;">Fechar</MudButton>
+            </DialogActions>
+        </MudDialog>
+        
+        <MudDialog @bind-Visible="_visibleReturnPolicy" Options="_dialogOptions">
+            <DialogContent>
+                <h3 style="margin-bottom: 20px;">Informações sobre a política de devolução</h3>
+                Nossa loja oferece um período de devolução de até 7 dias a partir da data de recebimento do pedido.
+                Para devolver um produto, ele deve estar em sua embalagem original, sem sinais de uso e acompanhado da nota fiscal. Após a solicitação, forneceremos um código de postagem para envio gratuito pelos Correios.
+                O reembolso será processado após a análise do item devolvido.
+                Para mais informações, entre em contato com nosso suporte.
+            </DialogContent>
+            <DialogActions>
+                <MudButton OnClick="SubmitReturnPolicy" Variant="Variant.Filled" Color="Color.Primary" Class="px-10" Style="color: white;">Fechar</MudButton>
             </DialogActions>
         </MudDialog>
     }

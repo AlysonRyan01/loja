@@ -5,6 +5,7 @@ using Loja.Core.Models;
 using Loja.Core.Requisicoes.CarrinhoItens;
 using Loja.Core.Requisicoes.Produtos;
 using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Web;
 using Microsoft.JSInterop;
 using MudBlazor;
 
@@ -14,6 +15,10 @@ public partial class ProdutoPageCode : ComponentBase
 {
     #region Properties
 
+    public bool _visible;
+    public readonly DialogOptions _dialogOptions = new() { FullWidth = true };
+    public bool exibirImagemTelaCheia = false;
+    public ElementReference imgRef;
     public bool IsBusy { get; set; } = false;
     [Parameter]public long id { get; set; }
     public Produto Produto { get; set; }
@@ -165,4 +170,23 @@ public partial class ProdutoPageCode : ComponentBase
             Snackbar.Add("Erro ao adicionar o produto ao carrinho", Severity.Error);
         }
     }
+    
+    public async Task AplicarZoom(MouseEventArgs e)
+    {
+        await JSRuntime.InvokeVoidAsync("aplicarZoomImagem", imgRef, e);
+    }
+    
+    public void MostrarImagemTelaCheia()
+    {
+        exibirImagemTelaCheia = true;
+    }
+
+    public void FecharImagemTelaCheia()
+    {
+        exibirImagemTelaCheia = false;
+    }
+    
+    public void OpenDialog() => _visible = true;
+    
+    public void Submit() => _visible = false;
 }

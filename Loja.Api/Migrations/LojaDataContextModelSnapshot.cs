@@ -160,8 +160,33 @@ namespace Loja.Api.Migrations
                         .HasMaxLength(500)
                         .HasColumnType("NVARCHAR");
 
+                    b.Property<string>("Garantia")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("NVARCHAR");
+
+                    b.Property<string>("Marca")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("NVARCHAR");
+
+                    b.Property<string>("Modelo")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("NVARCHAR");
+
                     b.Property<decimal>("Preco")
                         .HasColumnType("DECIMAL(18,2)");
+
+                    b.Property<string>("Serie")
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("NVARCHAR");
+
+                    b.Property<string>("Tamanho")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("NVARCHAR");
 
                     b.Property<string>("Titulo")
                         .IsRequired()

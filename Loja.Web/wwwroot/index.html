@@ -38,6 +38,20 @@
             document.getElementById('mainImage').src = imageUrl;
         }
     </script>
+    <script>
+        window.aplicarZoomImagem = (element, event) => {
+            if (!element) return;
+
+            let rect = element.getBoundingClientRect();
+            let x = ((event.clientX - rect.left) / rect.width) * 100;
+            let y = ((event.clientY - rect.top) / rect.height) * 100;
+
+            element.style.setProperty("--x", x + "%");
+            element.style.setProperty("--y", y + "%");
+        };
+
+    </script>
+
 </body>
 
 </html>

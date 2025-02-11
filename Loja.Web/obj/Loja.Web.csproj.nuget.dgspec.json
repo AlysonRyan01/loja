@@ -1,26 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Web/Loja.Web.csproj": {}
+    "D:\\GitHubRepository\\loja\\loja.web\\Loja.Web.csproj": {}
   },
   "projects": {
-    "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Core/Loja.Core.csproj": {
+    "D:\\GitHubRepository\\loja\\Loja.Core\\Loja.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Core/Loja.Core.csproj",
+        "projectUniqueName": "D:\\GitHubRepository\\loja\\Loja.Core\\Loja.Core.csproj",
         "projectName": "Loja.Core",
-        "projectPath": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Core/Loja.Core.csproj",
-        "packagesPath": "/Users/alysonryanullirsch/.nuget/packages/",
-        "outputPath": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Core/obj/",
+        "projectPath": "D:\\GitHubRepository\\loja\\Loja.Core\\Loja.Core.csproj",
+        "packagesPath": "C:\\Users\\alyso\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHubRepository\\loja\\Loja.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/alysonryanullirsch/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\alyso\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -37,7 +43,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
         "SdkAnalysisLevel": "9.0.100"
       },
@@ -74,35 +80,41 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Web/Loja.Web.csproj": {
+    "D:\\GitHubRepository\\loja\\loja.web\\Loja.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Web/Loja.Web.csproj",
+        "projectUniqueName": "D:\\GitHubRepository\\loja\\loja.web\\Loja.Web.csproj",
         "projectName": "Loja.Web",
-        "projectPath": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Web/Loja.Web.csproj",
-        "packagesPath": "/Users/alysonryanullirsch/.nuget/packages/",
-        "outputPath": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Web/obj/",
+        "projectPath": "D:\\GitHubRepository\\loja\\loja.web\\Loja.Web.csproj",
+        "packagesPath": "C:\\Users\\alyso\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHubRepository\\loja\\loja.web\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/alysonryanullirsch/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\alyso\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Core/Loja.Core.csproj": {
-                "projectPath": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Core/Loja.Core.csproj"
+              "D:\\GitHubRepository\\loja\\Loja.Core\\Loja.Core.csproj": {
+                "projectPath": "D:\\GitHubRepository\\loja\\Loja.Core\\Loja.Core.csproj"
               }
             }
           }
@@ -115,7 +127,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
         "SdkAnalysisLevel": "9.0.100"
       },
@@ -179,7 +191,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

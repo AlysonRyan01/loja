@@ -22,7 +22,12 @@
                 </div>
 
                 <div class="foto-principal-produto-page">
-                    <img class="imagem-produto-page" id="mainImage" src="@ImagemPrincipal" alt="Imagem principal"/>
+                    <img class="imagem-produto-page"
+                         id="mainImage"
+                         src="@ImagemPrincipal"
+                         alt="Imagem principal"
+                         @onmousemove="AplicarZoom"
+                         @ref="imgRef" />
                 </div>
             </div>
 
@@ -38,7 +43,7 @@
                 <div class="icons-produto-page">
                     <section class="pagamento-seguranca">
                         <img class="icon-pagamento-seguranca" src="images/icon-payments-and-security._CB643514857_.png"/>
-                        <NavLink href="/"><p class="descricao-icon-pagamento">Pagamentos e Segurança</p></NavLink>
+                        <Button @onclick="OpenDialog" class="descricao-icon-pagamento">Pagamentos e Segurança</Button>
                     </section>
                     <section class="envio">
                         <img class="icon-envio" src="images/icon-amazon-delivered._CB406595335_.png"/>
@@ -53,11 +58,12 @@
                 <div class="descricao-produto">
                     <h3 class="titulo-informacoes-produto">Informacões sobre o produto:</h3>
                     <ul class="lista-principal-informacoes">
-                        <li class="item-lista-produto"><strong>Marca: </strong>...</li>
-                        <li class="item-lista-produto"><strong>Modelo: </strong>...</li>
-                        <li class="item-lista-produto"><strong>Serie: </strong>...</li>
-                        <li class="item-lista-produto"><strong>Tamanho: </strong>...</li>
-                        <li class="item-lista-produto"><strong>Informações adicionais: </strong>...</li>
+                        <li class="item-lista-produto"><strong>Marca: </strong>@Produto.Marca</li>
+                        <li class="item-lista-produto"><strong>Modelo: </strong>@Produto.Modelo</li>
+                        <li class="item-lista-produto"><strong>Serie: </strong>@Produto.Serie</li>
+                        <li class="item-lista-produto"><strong>Tamanho: </strong>@Produto.Tamanho</li>
+                        <li class="item-lista-produto"><strong>Garantia: </strong>@Produto.Garantia</li>
+                        <li class="item-lista-produto"><strong>Informações adicionais: </strong>@Produto.Descricao</li>
                     </ul>
                 </div>
             </div>
@@ -106,7 +112,7 @@
                     {
                         var imagemUrl = $"{WebConfiguration.BackendUrl}{imagem.Url}";
                         <MudCarouselItem Class="carrossel-item-home">
-                            <img class="img-carrossel-produto-page" src="@imagemUrl" alt="sla"/>
+                            <img @onclick="MostrarImagemTelaCheia" class="img-carrossel-produto-page" src="@imagemUrl" alt="sla"/>
                         </MudCarouselItem>
                     }
                 </MudCarousel>
@@ -119,7 +125,7 @@
                 <div class="icons-produto-page">
                     <section class="pagamento-seguranca">
                         <img class="icon-pagamento-seguranca" src="images/icon-payments-and-security._CB643514857_.png"/>
-                        <NavLink href="/"><p class="descricao-icon-pagamento">Pagamentos e Segurança</p></NavLink>
+                        <NavLink><p class="descricao-icon-pagamento">Pagamentos e Segurança</p></NavLink>
                     </section>
                     <section class="envio">
                         <img class="icon-envio" src="images/icon-amazon-delivered._CB406595335_.png"/>
@@ -142,11 +148,12 @@
                 <div style="margin-top: 2vh;" class="descricao-produto">
                     <h3 class="titulo-informacoes-produto">Informacões sobre o produto:</h3>
                     <ul class="lista-principal-informacoes">
-                        <li class="item-lista-produto"><strong>Marca: </strong>...</li>
-                        <li class="item-lista-produto"><strong>Modelo: </strong>...</li>
-                        <li class="item-lista-produto"><strong>Serie: </strong>...</li>
-                        <li class="item-lista-produto"><strong>Tamanho: </strong>...</li>
-                        <li class="item-lista-produto"><strong>Informações adicionais: </strong>...</li>
+                        <li class="item-lista-produto"><strong>Marca: </strong>@Produto.Marca</li>
+                        <li class="item-lista-produto"><strong>Modelo: </strong>@Produto.Modelo</li>
+                        <li class="item-lista-produto"><strong>Serie: </strong>@Produto.Serie</li>
+                        <li class="item-lista-produto"><strong>Tamanho: </strong>@Produto.Tamanho</li>
+                        <li class="item-lista-produto"><strong>Garantia: </strong>@Produto.Garantia</li>
+                        <li class="item-lista-produto"><strong>Informações adicionais: </strong>@Produto.Descricao</li>
                     </ul>
                 </div>
             </div>
@@ -162,7 +169,7 @@
                             <MudItem>
                                 <MudCard Class="mudcard-carrossel-item">
                                     <MudCardContent Class="mudcard-produto-titulo-recomendacoes">
-                                        <h4 class="produto-titulo-recomendacoes">@itens.Descricao</h4>
+                                        <h4 class="produto-titulo-recomendacoes">@itens.Titulo</h4>
                                     </MudCardContent>
                                     <hr class="custom-hr">
                                     <MudCarousel Class="carrossel-secundario-recomendacoes" ShowArrows="false" EnableSwipeGesture="true" TData="Imagem" Indicators="true">
@@ -198,7 +205,7 @@
                                 <MudItem>
                                     <MudCard Class="mudcard-carrossel-item">
                                         <MudCardContent Class="mudcard-produto-titulo-recomendacoes">
-                                            <h4 class="produto-titulo-recomendacoes">@itens.Descricao</h4>
+                                            <h4 class="produto-titulo-recomendacoes">@itens.Titulo</h4>
                                         </MudCardContent>
                                         <hr class="custom-hr">
                                         <MudCarousel Class="carrossel-secundario-recomendacoes" ShowArrows="false" EnableSwipeGesture="true" TData="Imagem" Indicators="true">
@@ -223,6 +230,32 @@
                 }
             </MudCarousel>
         </div>
+        @if (exibirImagemTelaCheia)
+        {
+            <div class="modal-tela-cheia" @onclick="FecharImagemTelaCheia">
+                <img class="imagem-tela-cheia" src="@ImagemPrincipal" alt="Imagem em Tela Cheia" />
+            </div>
+        }
+        <MudDialog @bind-Visible="_visible" Options="_dialogOptions">
+            <DialogContent>
+                <h3>Pagamentos e Segurança</h3>
+                <p><strong>Cartão de crédito</strong><br />
+                    A TVS Eletrônica aceita todos os principais cartões de crédito: Visa, Mastercard, Elo e American Express.</p>
+
+                <p><strong>Pix</strong><br />
+                    Pagamentos em tempo real, disponível a qualquer dia ou hora. O pagamento via Pix deverá ser feito em até 30 minutos após a finalização do pedido.</p>
+
+                <p><strong>Boleto bancário</strong><br />
+                    Vencimento em 1 dia útil. A data de entrega será alterada devido ao tempo de processamento do Boleto.</p>
+
+                <p><strong>Sua compra é segura</strong><br />
+                    Trabalhamos constantemente para proteger a sua segurança e privacidade. 
+                    Nosso sistema de segurança de pagamento criptografa suas informações durante a compra.</p>
+            </DialogContent>
+            <DialogActions>
+                <MudButton OnClick="Submit" Variant="Variant.Filled" Color="Color.Primary" Class="px-10" Style="color: white;">Fechar</MudButton>
+            </DialogActions>
+        </MudDialog>
     }
 </div>
 

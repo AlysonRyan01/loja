@@ -19,6 +19,8 @@ public class LojaDataContext(DbContextOptions<LojaDataContext> options) : Identi
     public DbSet<Produto> Produtos { get; set; } = null!;
     public DbSet<CarrinhoItem> CarrinhoItens { get; set; } = null!;
     public DbSet<Imagem> Imagens { get; set; } = null!;
+    public DbSet<PedidoItem> PedidoItens { get; set; } = null!;
+    public DbSet<Pedido> Pedidos { get; set; } = null!;
     
     protected override void OnModelCreating(ModelBuilder builder)
     {

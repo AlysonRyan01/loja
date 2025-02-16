@@ -200,7 +200,12 @@ public class ProdutoHandler(
     {
         try
         {
-            var produtos = await context.Produtos.Include(x => x.Imagens).AsNoTracking().ToListAsync();
+            var produtos = await context
+                .Produtos
+                .Include(x => x.Imagens)
+                .AsNoTracking()
+                .Where(x => x.IsActive == true)
+                .ToListAsync();
 
             if (!produtos.Any())
                 return new Resposta<List<Produto>?>(null, 404, "Nenhum produto encontrado");

@@ -988,13 +988,13 @@
           }
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.0": {
+      "Microsoft.NET.ILLink.Tasks/9.0.2": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
-      "Microsoft.NET.Sdk.WebAssembly.Pack/9.0.1": {
+      "Microsoft.NET.Sdk.WebAssembly.Pack/9.0.2": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.Sdk.WebAssembly.Pack.props": {},
@@ -2179,13 +2179,13 @@
           }
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.0": {
+      "Microsoft.NET.ILLink.Tasks/9.0.2": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
-      "Microsoft.NET.Sdk.WebAssembly.Pack/9.0.1": {
+      "Microsoft.NET.Sdk.WebAssembly.Pack/9.0.2": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.Sdk.WebAssembly.Pack.props": {},
@@ -3685,10 +3685,10 @@
         "microsoft.net.http.headers.nuspec"
       ]
     },
-    "Microsoft.NET.ILLink.Tasks/9.0.0": {
-      "sha512": "zAwp213evC3UkimtVXRb+Dlgc/40QG145nmZDtp2LO9zJJMfrp+i/87BnXN7tRXEA4liyzdFkjqG1HE8/RPb4A==",
+    "Microsoft.NET.ILLink.Tasks/9.0.2": {
+      "sha512": "+KFnCLVPicEq99ko0tq+ycTvNLXHw0tImmTZjPloB/DOFLPT56KLfk5aS7wbgXRPzYhXTTBYLGaABea5mke77w==",
       "type": "package",
-      "path": "microsoft.net.illink.tasks/9.0.0",
+      "path": "microsoft.net.illink.tasks/9.0.2",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -3702,7 +3702,7 @@
         "build/Microsoft.NET.ILLink.Analyzers.props",
         "build/Microsoft.NET.ILLink.Tasks.props",
         "build/Microsoft.NET.ILLink.targets",
-        "microsoft.net.illink.tasks.9.0.0.nupkg.sha512",
+        "microsoft.net.illink.tasks.9.0.2.nupkg.sha512",
         "microsoft.net.illink.tasks.nuspec",
         "tools/net472/ILLink.Tasks.dll",
         "tools/net472/ILLink.Tasks.dll.config",
@@ -3736,10 +3736,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.NET.Sdk.WebAssembly.Pack/9.0.1": {
-      "sha512": "/+0fpalaBrtXNnoso2oIMi3W30+bDWe8lrXkRj6qKMKsTpDfJboxuVn+E9XDpuk2zTBqjd6ZDStD6F9KYMj7cQ==",
+    "Microsoft.NET.Sdk.WebAssembly.Pack/9.0.2": {
+      "sha512": "svOs6YArbcpL06ZWj+b4hNVlJC5m37ydSgS+1XJWJzQu5fdT7ToEOaik1yiNo9AD357PBEiUJWTlrIcwdF8IeA==",
       "type": "package",
-      "path": "microsoft.net.sdk.webassembly.pack/9.0.1",
+      "path": "microsoft.net.sdk.webassembly.pack/9.0.2",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -3770,7 +3770,7 @@
         "build/Microsoft.NET.Sdk.WebAssembly.Pack.targets",
         "build/Wasm.web.config",
         "build/browser.runtimeconfig.template.json",
-        "microsoft.net.sdk.webassembly.pack.9.0.1.nupkg.sha512",
+        "microsoft.net.sdk.webassembly.pack.9.0.2.nupkg.sha512",
         "microsoft.net.sdk.webassembly.pack.nuspec",
         "tools/net472/Microsoft.NET.Sdk.WebAssembly.Pack.Tasks.dll",
         "tools/net472/Microsoft.NET.WebAssembly.Webcil.dll",
@@ -4093,40 +4093,38 @@
       "Microsoft.AspNetCore.Components.WebAssembly.Authentication >= 9.0.1",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 9.0.0",
       "Microsoft.Extensions.Http >= 9.0.1",
-      "Microsoft.NET.ILLink.Tasks >= 9.0.0",
-      "Microsoft.NET.Sdk.WebAssembly.Pack >= 9.0.1",
+      "Microsoft.NET.ILLink.Tasks >= 9.0.2",
+      "Microsoft.NET.Sdk.WebAssembly.Pack >= 9.0.2",
       "MudBlazor >= 8.0.0"
     ]
   },
   "packageFolders": {
-    "/Users/alysonryanullirsch/.nuget/packages/": {}
+    "C:\\Users\\alyso\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Web/Loja.Web.csproj",
+      "projectUniqueName": "C:\\Projetos\\loja\\Loja.Web\\Loja.Web.csproj",
       "projectName": "Loja.Web",
-      "projectPath": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Web/Loja.Web.csproj",
-      "packagesPath": "/Users/alysonryanullirsch/.nuget/packages/",
-      "outputPath": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Web/obj/",
+      "projectPath": "C:\\Projetos\\loja\\Loja.Web\\Loja.Web.csproj",
+      "packagesPath": "C:\\Users\\alyso\\.nuget\\packages\\",
+      "outputPath": "C:\\Projetos\\loja\\Loja.Web\\obj\\",
       "projectStyle": "PackageReference",
-      "UsingMicrosoftNETSdk": false,
       "configFilePaths": [
-        "/Users/alysonryanullirsch/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\alyso\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Core/Loja.Core.csproj": {
-              "projectPath": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Core/Loja.Core.csproj"
+            "C:\\Projetos\\loja\\Loja.Core\\Loja.Core.csproj": {
+              "projectPath": "C:\\Projetos\\loja\\Loja.Core\\Loja.Core.csproj"
             }
           }
         }
@@ -4139,8 +4137,9 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
-      }
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net9.0": {
@@ -4166,13 +4165,13 @@
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[9.0.0, )",
+            "version": "[9.0.2, )",
             "autoReferenced": true
           },
           "Microsoft.NET.Sdk.WebAssembly.Pack": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[9.0.1, )",
+            "version": "[9.0.2, )",
             "autoReferenced": true
           },
           "MudBlazor": {
@@ -4193,8 +4192,8 @@
         "warn": true,
         "downloadDependencies": [
           {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[9.0.1, 9.0.1]"
+            "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
+            "version": "[9.0.2, 9.0.2]"
           }
         ],
         "frameworkReferences": {
@@ -4202,7 +4201,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

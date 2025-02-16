@@ -28,7 +28,7 @@ public class CarrinhoItemMap : IEntityTypeConfiguration<CarrinhoItem>
         
         builder.Property(x => x.PrecoTotal)
             .IsRequired() 
-            .HasColumnType("DECIMAL(18,2)");
+            .HasColumnType("MONEY");
         
         
     }

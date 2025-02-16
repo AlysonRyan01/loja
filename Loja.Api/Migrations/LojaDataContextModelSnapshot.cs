@@ -27,7 +27,7 @@ namespace Loja.Api.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<decimal>("ValorTotal")
-                        .HasColumnType("DECIMAL(18,2)");
+                        .HasColumnType("MONEY");
 
                     b.HasKey("Id");
 
@@ -47,7 +47,7 @@ namespace Loja.Api.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<decimal>("PrecoTotal")
-                        .HasColumnType("DECIMAL(18,2)");
+                        .HasColumnType("MONEY");
 
                     b.Property<long>("ProdutoId")
                         .HasColumnType("INTEGER");
@@ -176,10 +176,9 @@ namespace Loja.Api.Migrations
                     b.Property<int>("Status")
                         .HasColumnType("SMALLINT");
 
-                    b.Property<string>("UserId")
-                        .IsRequired()
+                    b.Property<long>("UserId")
                         .HasMaxLength(160)
-                        .HasColumnType("VARCHAR");
+                        .HasColumnType("INT");
 
                     b.HasKey("Id");
 
@@ -233,7 +232,7 @@ namespace Loja.Api.Migrations
                         .HasColumnType("NVARCHAR");
 
                     b.Property<bool>("IsActive")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("BIT");
 
                     b.Property<string>("Marca")
                         .IsRequired()
@@ -246,7 +245,7 @@ namespace Loja.Api.Migrations
                         .HasColumnType("NVARCHAR");
 
                     b.Property<decimal>("Preco")
-                        .HasColumnType("DECIMAL(18,2)");
+                        .HasColumnType("MONEY");
 
                     b.Property<string>("Serie")
                         .IsRequired()
@@ -254,8 +253,8 @@ namespace Loja.Api.Migrations
                         .HasColumnType("NVARCHAR");
 
                     b.Property<string>("Slug")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
+                        .HasMaxLength(80)
+                        .HasColumnType("VARCHAR");
 
                     b.Property<string>("Tamanho")
                         .IsRequired()

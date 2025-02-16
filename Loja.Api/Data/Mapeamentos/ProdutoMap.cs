@@ -48,7 +48,18 @@ public class ProdutoMap : IEntityTypeConfiguration<Produto>
             .HasMaxLength(10);
         
         builder.Property(x => x.Preco)
-            .IsRequired()
-            .HasColumnType("DECIMAL(18,2)");
+            .IsRequired(true)
+            .HasColumnType("MONEY");
+        
+        builder.Property(x => x.IsActive)
+            .IsRequired(true)
+            .HasColumnType("BIT");
+        
+        builder.Property(x => x.Slug)
+            .IsRequired(false)
+            .HasColumnType("VARCHAR")
+            .HasMaxLength(80);
+        
+        
     }
 }

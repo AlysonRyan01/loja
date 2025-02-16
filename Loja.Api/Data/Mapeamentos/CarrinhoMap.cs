@@ -19,7 +19,7 @@ public class CarrinhoMap : IEntityTypeConfiguration<Carrinho>
         
         builder.Property(x => x.ValorTotal)
             .IsRequired()
-            .HasColumnType("DECIMAL(18,2)");
+            .HasColumnType("MONEY");
         
         builder.Property(x => x.UserId)
             .IsRequired();

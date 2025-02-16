@@ -40,7 +40,7 @@ public class PedidoMap : IEntityTypeConfiguration<Pedido>
         
         builder.Property(x => x.UserId)
             .IsRequired(true)
-            .HasColumnType("VARCHAR")
+            .HasColumnType("INT")
             .HasMaxLength(160);
 
         builder.Ignore(x => x.ValorTotal);

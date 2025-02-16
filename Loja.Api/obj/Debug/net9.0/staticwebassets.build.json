@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "opqaSPLUgbsFau1vw1iPeGj5voD0TVwIpwWgPJwoAkE=",
+  "Hash": "OnhdxP895st/2K8HHppyMwItML8bge+8grjPdk3Wzkw=",
   "Source": "Loja.Api",
   "BasePath": "_content/Loja.Api",
   "Mode": "Default",
@@ -8,19 +8,19 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "Loja.Api/wwwroot",
+      "Name": "Loja.Api\\wwwroot",
       "Source": "Loja.Api",
-      "ContentRoot": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/",
+      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/1_7eb270f4-bfd4-4211-84c1-c1d32780cdcb.jpeg",
+      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\1_7eb270f4-bfd4-4211-84c1-c1d32780cdcb.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/",
+      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/1_7eb270f4-bfd4-4211-84c1-c1d32780cdcb#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -35,13 +35,13 @@
       "Integrity": "cMWtt1D6hjqGq7ahWZRDssjP9G/Yt0X3RvvpryruuoU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Imagens/1_7eb270f4-bfd4-4211-84c1-c1d32780cdcb.jpeg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\1_7eb270f4-bfd4-4211-84c1-c1d32780cdcb.jpeg"
     },
     {
-      "Identity": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg",
+      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/",
+      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -56,13 +56,13 @@
       "Integrity": "8b2Cr1ucmR4WvBlL7cS9Bcwcp3Dds14TILCqJHBA1c0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Imagens/1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg"
     },
     {
-      "Identity": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/2_ad7f10de-6f83-437b-9021-d09a7179709b.jpeg",
+      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\2_ad7f10de-6f83-437b-9021-d09a7179709b.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/",
+      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/2_ad7f10de-6f83-437b-9021-d09a7179709b#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -77,13 +77,13 @@
       "Integrity": "jQjg9fHtWMtVQuHgkC1dcnLxxrm2VD/Lz9oMUs6PWV0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Imagens/2_ad7f10de-6f83-437b-9021-d09a7179709b.jpeg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\2_ad7f10de-6f83-437b-9021-d09a7179709b.jpeg"
     },
     {
-      "Identity": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg",
+      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/",
+      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/208201foto_70323120-89b5-4f67-8385-67c6916a06e7#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -98,13 +98,13 @@
       "Integrity": "iY1gljOve8VRwTjtTSaB0iuZPI0kWN27zDaVyDDEvOk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Imagens/208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg"
     },
     {
-      "Identity": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/3_6a7b9665-bc25-42b0-8436-0b8dc7456e8c.jpeg",
+      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\3_6a7b9665-bc25-42b0-8436-0b8dc7456e8c.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/",
+      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/3_6a7b9665-bc25-42b0-8436-0b8dc7456e8c#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -119,13 +119,13 @@
       "Integrity": "dGSRnE4elgE7SifQKMSvp1L3dtalF0K7g/9hdgeXWXQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Imagens/3_6a7b9665-bc25-42b0-8436-0b8dc7456e8c.jpeg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\3_6a7b9665-bc25-42b0-8436-0b8dc7456e8c.jpeg"
     },
     {
-      "Identity": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/4_464e5590-19e1-444b-b650-d116bd81fb8c.jpeg",
+      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\4_464e5590-19e1-444b-b650-d116bd81fb8c.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/",
+      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/4_464e5590-19e1-444b-b650-d116bd81fb8c#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -140,13 +140,13 @@
       "Integrity": "v2hqthYwEWDhmbfHu2FodRP9rdYuSCT605+k6wybIx8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Imagens/4_464e5590-19e1-444b-b650-d116bd81fb8c.jpeg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\4_464e5590-19e1-444b-b650-d116bd81fb8c.jpeg"
     },
     {
-      "Identity": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/5_15703933-e327-4d26-8a53-89ce012f0689.jpeg",
+      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\5_15703933-e327-4d26-8a53-89ce012f0689.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/",
+      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/5_15703933-e327-4d26-8a53-89ce012f0689#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -161,13 +161,13 @@
       "Integrity": "E/YPMfsCpPSra17DmvsjlLyrfYlc/htK7bdmvPx0WFc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Imagens/5_15703933-e327-4d26-8a53-89ce012f0689.jpeg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\5_15703933-e327-4d26-8a53-89ce012f0689.jpeg"
     },
     {
-      "Identity": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/6_8c96036d-1a3b-42cf-b014-144a1d3c9fa2.jpeg",
+      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\6_8c96036d-1a3b-42cf-b014-144a1d3c9fa2.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/",
+      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/6_8c96036d-1a3b-42cf-b014-144a1d3c9fa2#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -182,13 +182,13 @@
       "Integrity": "WOgiNAAi0CydfLb9EKp+D+6n9tYLWmGi4UkZPBJBYSs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Imagens/6_8c96036d-1a3b-42cf-b014-144a1d3c9fa2.jpeg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\6_8c96036d-1a3b-42cf-b014-144a1d3c9fa2.jpeg"
     },
     {
-      "Identity": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/7_e21f49b4-5f87-48ff-80af-d6bd34518b55.jpeg",
+      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\7_e21f49b4-5f87-48ff-80af-d6bd34518b55.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/",
+      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/7_e21f49b4-5f87-48ff-80af-d6bd34518b55#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -203,13 +203,13 @@
       "Integrity": "/EP/chmI2ygzClCsMHawNDTejF1Di3usxJf4X79k79o=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Imagens/7_e21f49b4-5f87-48ff-80af-d6bd34518b55.jpeg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\7_e21f49b4-5f87-48ff-80af-d6bd34518b55.jpeg"
     },
     {
-      "Identity": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/8_ba2b5c3a-3f28-4329-9303-6160469dc892.jpeg",
+      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\8_ba2b5c3a-3f28-4329-9303-6160469dc892.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/",
+      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/8_ba2b5c3a-3f28-4329-9303-6160469dc892#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -224,13 +224,13 @@
       "Integrity": "hhJ0DGIIHiVBEJEHn+F+AawHPomRQAmGsL47l2R02FI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Imagens/8_ba2b5c3a-3f28-4329-9303-6160469dc892.jpeg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\8_ba2b5c3a-3f28-4329-9303-6160469dc892.jpeg"
     },
     {
-      "Identity": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/9_a806cce2-40d4-4a24-b3e0-7fce1cbd7bf8.jpeg",
+      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\9_a806cce2-40d4-4a24-b3e0-7fce1cbd7bf8.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/",
+      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/9_a806cce2-40d4-4a24-b3e0-7fce1cbd7bf8#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -245,13 +245,13 @@
       "Integrity": "Llbl0CW6utPo/N1Y0J/6ZfKM76bDS2FrdM3M+aN2OYM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Imagens/9_a806cce2-40d4-4a24-b3e0-7fce1cbd7bf8.jpeg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\9_a806cce2-40d4-4a24-b3e0-7fce1cbd7bf8.jpeg"
     },
     {
-      "Identity": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/tv-imagem-1-Photoroom_d45797ea-65aa-4804-9ec0-f3b981d3416f.png",
+      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\tv-imagem-1-Photoroom_d45797ea-65aa-4804-9ec0-f3b981d3416f.png",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/",
+      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/tv-imagem-1-Photoroom_d45797ea-65aa-4804-9ec0-f3b981d3416f#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -266,13 +266,13 @@
       "Integrity": "NDCu5LP7REXftm+pkIcSWMZ9FkrjEB8uYDxETotJALc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Imagens/tv-imagem-1-Photoroom_d45797ea-65aa-4804-9ec0-f3b981d3416f.png"
+      "OriginalItemSpec": "wwwroot\\Imagens\\tv-imagem-1-Photoroom_d45797ea-65aa-4804-9ec0-f3b981d3416f.png"
     },
     {
-      "Identity": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/tv-imagem-2-Photoroom_287ba327-c608-491d-a10c-9146c67c717b.png",
+      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\tv-imagem-2-Photoroom_287ba327-c608-491d-a10c-9146c67c717b.png",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/",
+      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/tv-imagem-2-Photoroom_287ba327-c608-491d-a10c-9146c67c717b#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -287,13 +287,13 @@
       "Integrity": "qPhpleiYDbzJ/Jsqol3xXFFJE9NlcnAiNfUQX5nEado=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Imagens/tv-imagem-2-Photoroom_287ba327-c608-491d-a10c-9146c67c717b.png"
+      "OriginalItemSpec": "wwwroot\\Imagens\\tv-imagem-2-Photoroom_287ba327-c608-491d-a10c-9146c67c717b.png"
     },
     {
-      "Identity": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/tv-imagem-3-Photoroom_b64ef106-7f10-4884-b4a9-b51e59b28a95.png",
+      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\tv-imagem-3-Photoroom_b64ef106-7f10-4884-b4a9-b51e59b28a95.png",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/",
+      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/tv-imagem-3-Photoroom_b64ef106-7f10-4884-b4a9-b51e59b28a95#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -308,13 +308,13 @@
       "Integrity": "z+rfcLVmJKm5pSKgdTzzbzT8IU3fe0mgSn4tuK6LgRI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Imagens/tv-imagem-3-Photoroom_b64ef106-7f10-4884-b4a9-b51e59b28a95.png"
+      "OriginalItemSpec": "wwwroot\\Imagens\\tv-imagem-3-Photoroom_b64ef106-7f10-4884-b4a9-b51e59b28a95.png"
     }
   ],
   "Endpoints": [
     {
       "Route": "Imagens/1_7eb270f4-bfd4-4211-84c1-c1d32780cdcb.ctb77b5px1.jpeg",
-      "AssetFile": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/1_7eb270f4-bfd4-4211-84c1-c1d32780cdcb.jpeg",
+      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\1_7eb270f4-bfd4-4211-84c1-c1d32780cdcb.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -335,7 +335,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Feb 2025 04:12:51 GMT"
+          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -359,7 +359,7 @@
     },
     {
       "Route": "Imagens/1_7eb270f4-bfd4-4211-84c1-c1d32780cdcb.jpeg",
-      "AssetFile": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/1_7eb270f4-bfd4-4211-84c1-c1d32780cdcb.jpeg",
+      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\1_7eb270f4-bfd4-4211-84c1-c1d32780cdcb.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -380,7 +380,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Feb 2025 04:12:51 GMT"
+          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -396,7 +396,7 @@
     },
     {
       "Route": "Imagens/1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.5jcubahnln.jpeg",
-      "AssetFile": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg",
+      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -417,7 +417,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Feb 2025 04:12:51 GMT"
+          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -441,7 +441,7 @@
     },
     {
       "Route": "Imagens/1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg",
-      "AssetFile": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg",
+      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -462,7 +462,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Feb 2025 04:12:51 GMT"
+          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -478,7 +478,7 @@
     },
     {
       "Route": "Imagens/2_ad7f10de-6f83-437b-9021-d09a7179709b.jpeg",
-      "AssetFile": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/2_ad7f10de-6f83-437b-9021-d09a7179709b.jpeg",
+      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\2_ad7f10de-6f83-437b-9021-d09a7179709b.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -499,7 +499,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Feb 2025 04:12:51 GMT"
+          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -515,7 +515,7 @@
     },
     {
       "Route": "Imagens/2_ad7f10de-6f83-437b-9021-d09a7179709b.tg7vp68b0t.jpeg",
-      "AssetFile": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/2_ad7f10de-6f83-437b-9021-d09a7179709b.jpeg",
+      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\2_ad7f10de-6f83-437b-9021-d09a7179709b.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -536,7 +536,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Feb 2025 04:12:51 GMT"
+          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -560,7 +560,7 @@
     },
     {
       "Route": "Imagens/208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg",
-      "AssetFile": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg",
+      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -581,7 +581,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Feb 2025 04:12:51 GMT"
+          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -597,7 +597,7 @@
     },
     {
       "Route": "Imagens/208201foto_70323120-89b5-4f67-8385-67c6916a06e7.tj4iqjy46o.jpeg",
-      "AssetFile": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg",
+      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -618,7 +618,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Feb 2025 04:12:51 GMT"
+          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -642,7 +642,7 @@
     },
     {
       "Route": "Imagens/3_6a7b9665-bc25-42b0-8436-0b8dc7456e8c.4skda0n099.jpeg",
-      "AssetFile": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/3_6a7b9665-bc25-42b0-8436-0b8dc7456e8c.jpeg",
+      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\3_6a7b9665-bc25-42b0-8436-0b8dc7456e8c.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -663,7 +663,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Feb 2025 04:12:51 GMT"
+          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -687,7 +687,7 @@
     },
     {
       "Route": "Imagens/3_6a7b9665-bc25-42b0-8436-0b8dc7456e8c.jpeg",
-      "AssetFile": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/3_6a7b9665-bc25-42b0-8436-0b8dc7456e8c.jpeg",
+      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\3_6a7b9665-bc25-42b0-8436-0b8dc7456e8c.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -708,7 +708,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Feb 2025 04:12:51 GMT"
+          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -724,7 +724,7 @@
     },
     {
       "Route": "Imagens/4_464e5590-19e1-444b-b650-d116bd81fb8c.jpeg",
-      "AssetFile": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/4_464e5590-19e1-444b-b650-d116bd81fb8c.jpeg",
+      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\4_464e5590-19e1-444b-b650-d116bd81fb8c.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -745,7 +745,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Feb 2025 04:12:51 GMT"
+          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -761,7 +761,7 @@
     },
     {
       "Route": "Imagens/4_464e5590-19e1-444b-b650-d116bd81fb8c.ljsre08mhq.jpeg",
-      "AssetFile": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/4_464e5590-19e1-444b-b650-d116bd81fb8c.jpeg",
+      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\4_464e5590-19e1-444b-b650-d116bd81fb8c.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -782,7 +782,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Feb 2025 04:12:51 GMT"
+          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -806,7 +806,7 @@
     },
     {
       "Route": "Imagens/5_15703933-e327-4d26-8a53-89ce012f0689.jpeg",
-      "AssetFile": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/5_15703933-e327-4d26-8a53-89ce012f0689.jpeg",
+      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\5_15703933-e327-4d26-8a53-89ce012f0689.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -827,7 +827,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Feb 2025 04:12:51 GMT"
+          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -843,7 +843,7 @@
     },
     {
       "Route": "Imagens/5_15703933-e327-4d26-8a53-89ce012f0689.pp97xnipxl.jpeg",
-      "AssetFile": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/5_15703933-e327-4d26-8a53-89ce012f0689.jpeg",
+      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\5_15703933-e327-4d26-8a53-89ce012f0689.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -864,7 +864,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Feb 2025 04:12:51 GMT"
+          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -888,7 +888,7 @@
     },
     {
       "Route": "Imagens/6_8c96036d-1a3b-42cf-b014-144a1d3c9fa2.gu2dg270nd.jpeg",
-      "AssetFile": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/6_8c96036d-1a3b-42cf-b014-144a1d3c9fa2.jpeg",
+      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\6_8c96036d-1a3b-42cf-b014-144a1d3c9fa2.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -909,7 +909,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Feb 2025 04:12:51 GMT"
+          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -933,7 +933,7 @@
     },
     {
       "Route": "Imagens/6_8c96036d-1a3b-42cf-b014-144a1d3c9fa2.jpeg",
-      "AssetFile": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/6_8c96036d-1a3b-42cf-b014-144a1d3c9fa2.jpeg",
+      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\6_8c96036d-1a3b-42cf-b014-144a1d3c9fa2.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -954,7 +954,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Feb 2025 04:12:51 GMT"
+          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -970,7 +970,7 @@
     },
     {
       "Route": "Imagens/7_e21f49b4-5f87-48ff-80af-d6bd34518b55.46igoj0l74.jpeg",
-      "AssetFile": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/7_e21f49b4-5f87-48ff-80af-d6bd34518b55.jpeg",
+      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\7_e21f49b4-5f87-48ff-80af-d6bd34518b55.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -991,7 +991,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Feb 2025 04:12:51 GMT"
+          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1015,7 +1015,7 @@
     },
     {
       "Route": "Imagens/7_e21f49b4-5f87-48ff-80af-d6bd34518b55.jpeg",
-      "AssetFile": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/7_e21f49b4-5f87-48ff-80af-d6bd34518b55.jpeg",
+      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\7_e21f49b4-5f87-48ff-80af-d6bd34518b55.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1036,7 +1036,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Feb 2025 04:12:51 GMT"
+          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1052,7 +1052,7 @@
     },
     {
       "Route": "Imagens/8_ba2b5c3a-3f28-4329-9303-6160469dc892.e6q80b1zvu.jpeg",
-      "AssetFile": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/8_ba2b5c3a-3f28-4329-9303-6160469dc892.jpeg",
+      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\8_ba2b5c3a-3f28-4329-9303-6160469dc892.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1073,7 +1073,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Feb 2025 04:12:51 GMT"
+          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1097,7 +1097,7 @@
     },
     {
       "Route": "Imagens/8_ba2b5c3a-3f28-4329-9303-6160469dc892.jpeg",
-      "AssetFile": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/8_ba2b5c3a-3f28-4329-9303-6160469dc892.jpeg",
+      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\8_ba2b5c3a-3f28-4329-9303-6160469dc892.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1118,7 +1118,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Feb 2025 04:12:51 GMT"
+          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1134,7 +1134,7 @@
     },
     {
       "Route": "Imagens/9_a806cce2-40d4-4a24-b3e0-7fce1cbd7bf8.e596uqbwzg.jpeg",
-      "AssetFile": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/9_a806cce2-40d4-4a24-b3e0-7fce1cbd7bf8.jpeg",
+      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\9_a806cce2-40d4-4a24-b3e0-7fce1cbd7bf8.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1155,7 +1155,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Feb 2025 04:12:51 GMT"
+          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1179,7 +1179,7 @@
     },
     {
       "Route": "Imagens/9_a806cce2-40d4-4a24-b3e0-7fce1cbd7bf8.jpeg",
-      "AssetFile": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/9_a806cce2-40d4-4a24-b3e0-7fce1cbd7bf8.jpeg",
+      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\9_a806cce2-40d4-4a24-b3e0-7fce1cbd7bf8.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1200,7 +1200,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Feb 2025 04:12:51 GMT"
+          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1216,7 +1216,7 @@
     },
     {
       "Route": "Imagens/tv-imagem-1-Photoroom_d45797ea-65aa-4804-9ec0-f3b981d3416f.890mhloipn.png",
-      "AssetFile": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/tv-imagem-1-Photoroom_d45797ea-65aa-4804-9ec0-f3b981d3416f.png",
+      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\tv-imagem-1-Photoroom_d45797ea-65aa-4804-9ec0-f3b981d3416f.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1237,7 +1237,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Feb 2025 02:47:35 GMT"
+          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1261,7 +1261,7 @@
     },
     {
       "Route": "Imagens/tv-imagem-1-Photoroom_d45797ea-65aa-4804-9ec0-f3b981d3416f.png",
-      "AssetFile": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/tv-imagem-1-Photoroom_d45797ea-65aa-4804-9ec0-f3b981d3416f.png",
+      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\tv-imagem-1-Photoroom_d45797ea-65aa-4804-9ec0-f3b981d3416f.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1282,7 +1282,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Feb 2025 02:47:35 GMT"
+          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1298,7 +1298,7 @@
     },
     {
       "Route": "Imagens/tv-imagem-2-Photoroom_287ba327-c608-491d-a10c-9146c67c717b.cv3rjiobe6.png",
-      "AssetFile": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/tv-imagem-2-Photoroom_287ba327-c608-491d-a10c-9146c67c717b.png",
+      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\tv-imagem-2-Photoroom_287ba327-c608-491d-a10c-9146c67c717b.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1319,7 +1319,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Feb 2025 02:47:35 GMT"
+          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1343,7 +1343,7 @@
     },
     {
       "Route": "Imagens/tv-imagem-2-Photoroom_287ba327-c608-491d-a10c-9146c67c717b.png",
-      "AssetFile": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/tv-imagem-2-Photoroom_287ba327-c608-491d-a10c-9146c67c717b.png",
+      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\tv-imagem-2-Photoroom_287ba327-c608-491d-a10c-9146c67c717b.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1364,7 +1364,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Feb 2025 02:47:35 GMT"
+          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1380,7 +1380,7 @@
     },
     {
       "Route": "Imagens/tv-imagem-3-Photoroom_b64ef106-7f10-4884-b4a9-b51e59b28a95.ddt2g9sya4.png",
-      "AssetFile": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/tv-imagem-3-Photoroom_b64ef106-7f10-4884-b4a9-b51e59b28a95.png",
+      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\tv-imagem-3-Photoroom_b64ef106-7f10-4884-b4a9-b51e59b28a95.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1401,7 +1401,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Feb 2025 02:47:35 GMT"
+          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1425,7 +1425,7 @@
     },
     {
       "Route": "Imagens/tv-imagem-3-Photoroom_b64ef106-7f10-4884-b4a9-b51e59b28a95.png",
-      "AssetFile": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Api/wwwroot/Imagens/tv-imagem-3-Photoroom_b64ef106-7f10-4884-b4a9-b51e59b28a95.png",
+      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\tv-imagem-3-Photoroom_b64ef106-7f10-4884-b4a9-b51e59b28a95.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1446,7 +1446,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Feb 2025 02:47:35 GMT"
+          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
         },
         {
           "Name": "Cache-Control",

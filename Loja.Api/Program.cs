@@ -82,6 +82,7 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddTransient<IProdutoHandler, ProdutoHandler>();
 builder.Services.AddTransient<IIdentityHandler, IdentityHandler>();
 builder.Services.AddTransient<IUploadImagemService, ImagemService>();
+builder.Services.AddTransient<IPedidoItemService, PedidoItemService>();
 builder.Services.AddTransient<ICarrinhoItemHandler, CarrinhoItemHandler>();
 builder.Services.AddTransient<ICarrinhoHandler, CarrinhoHandler>();
 

@@ -1,3 +1,5 @@
+using System.Text.Json;
+using System.Text.Json.Serialization;
 using Loja.Api;
 using Loja.Api.Data;
 using Loja.Api.Handlers;
@@ -52,6 +54,14 @@ builder.Services.AddAuthentication(IdentityConstants.ApplicationScheme)
 
 builder.Services.AddAuthorization();
 
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
+        options.JsonSerializerOptions.WriteIndented = true; 
+        options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase; 
+    });
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -81,10 +91,12 @@ builder.Services.AddSwaggerGen(c =>
 
 builder.Services.AddTransient<IProdutoHandler, ProdutoHandler>();
 builder.Services.AddTransient<IIdentityHandler, IdentityHandler>();
-builder.Services.AddTransient<IUploadImagemService, ImagemService>();
-builder.Services.AddTransient<IPedidoItemService, PedidoItemService>();
 builder.Services.AddTransient<ICarrinhoItemHandler, CarrinhoItemHandler>();
 builder.Services.AddTransient<ICarrinhoHandler, CarrinhoHandler>();
+builder.Services.AddTransient<IPedidoHandler, PedidoHandler>();
+
+builder.Services.AddTransient<IUploadImagemService, ImagemService>();
+builder.Services.AddTransient<IPedidoItemService, PedidoItemService>();
 
 var app = builder.Build();
 

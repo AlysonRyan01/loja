@@ -30,7 +30,8 @@ public class ProdutoHandler(
                 Tamanho = requisicao.Tamanho,
                 Garantia = requisicao.Garantia,
                 Preco = requisicao.Preco,
-                Imagens = imagens
+                Imagens = imagens,
+                IsActive = requisicao.IsActive
             };
 
             foreach (var imagem in produto.Imagens)
@@ -65,11 +66,6 @@ public class ProdutoHandler(
                 .Include(x => x.Imagens)
                 .FirstOrDefaultAsync(p => p.Id == requisicao.Id);
             
-            var carrinhoItens = await context.CarrinhoItens
-                .AsNoTracking()
-                .Where(x => x.ProdutoId == requisicao.Id)
-                .ToListAsync();
-
             if (produto == null)
                 return new Resposta<Produto?>(null, 404, "Produto não encontrado");
             
@@ -88,17 +84,9 @@ public class ProdutoHandler(
             produto.Garantia = requisicao.Garantia;
             produto.Descricao = requisicao.Descricao;
             produto.Preco = requisicao.Preco;
+            produto.IsActive = requisicao.IsActive;
 
             context.Produtos.Update(produto);
-
-            if (carrinhoItens.Any())
-            {
-                foreach (var carrinhoItem in carrinhoItens)
-                {
-                    carrinhoItem.PrecoTotal = produto.Preco * carrinhoItem.Quantidade;
-                }
-                context.CarrinhoItens.UpdateRange(carrinhoItens);
-            }
             
             await context.SaveChangesAsync();
             await transaction.CommitAsync();
@@ -133,6 +121,8 @@ public class ProdutoHandler(
             
             if (produto == null)
                 return new Resposta<Produto?>(null, 404, "Produto não encontrado");
+            
+            produto.IsActive = false;
 
             var carrinhoItens = await context.CarrinhoItens
                 .AsNoTracking()

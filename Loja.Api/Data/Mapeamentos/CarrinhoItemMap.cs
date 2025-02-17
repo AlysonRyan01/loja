@@ -25,11 +25,9 @@ public class CarrinhoItemMap : IEntityTypeConfiguration<CarrinhoItem>
             .WithMany() 
             .HasForeignKey(x => x.ProdutoId)
             .OnDelete(DeleteBehavior.Restrict);
-        
-        builder.Property(x => x.PrecoTotal)
-            .IsRequired() 
-            .HasColumnType("MONEY");
-        
-        
+
+        builder.Ignore(x => x.PrecoTotal);
+
+
     }
 }

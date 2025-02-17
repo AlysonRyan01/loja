@@ -19,7 +19,7 @@ public class PedidoItemMap : IEntityTypeConfiguration<PedidoItem>
 
         builder.Property(x => x.PrecoUnitario)
             .IsRequired()
-            .HasColumnType("DECIMAL(18,2)");
+            .HasColumnType("MONEY");
 
         builder.Property(x => x.Quantidade)
             .IsRequired();

@@ -41,4 +41,7 @@ public class AtualizarProdutoRequisicao
 
     [MinLength(1, ErrorMessage = "O produto deve ter pelo menos uma imagem.")]
     public List<IFormFile> Imagens { get; set; } = new();
+    
+    [Required(ErrorMessage = "Informe se o produto está ativo")]
+    public bool IsActive { get; set; } = true;
 }

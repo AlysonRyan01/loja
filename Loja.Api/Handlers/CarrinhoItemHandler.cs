@@ -16,7 +16,10 @@ public class CarrinhoItemHandler(
     {
         try
         {
-            var produto = await context.Produtos.Include(x => x.Imagens).FirstOrDefaultAsync(x => x.Id == requisicao.ProdutoId);
+            var produto = await context
+                .Produtos
+                .Include(x => x.Imagens)
+                .FirstOrDefaultAsync(x => x.Id == requisicao.ProdutoId);
             
             var userIdClaim = user.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             
@@ -38,18 +41,17 @@ public class CarrinhoItemHandler(
                 .AsNoTracking()
                 .Where(x => x.CarrinhoId == carrinho.Id).ToListAsync();
             
+            if (carrinhoItens.Any(x => x.ProdutoId == produto.Id))
+                return new Resposta<CarrinhoItem>(null, 500, "Você já adicionou esse produto ao carrinho");
+            
             var carrinhoItem = new CarrinhoItem
             {
                 ProdutoId = produto.Id,
+                NomeProduto = produto.Titulo,
                 CarrinhoId = carrinho.Id,
                 Quantidade = requisicao.Quantidade,
-                PrecoTotal = produto.Preco * requisicao.Quantidade,
+                PrecoUnitario = produto.Preco
             };
-            
-            carrinho.ValorTotal += carrinhoItem.PrecoTotal;
-
-            if (carrinhoItens.Any(x => x.ProdutoId == produto.Id))
-                return new Resposta<CarrinhoItem>(null, 500, "Você já adicionou esse produto ao carrinho");
             
             await context.AddAsync(carrinhoItem);
             await context.SaveChangesAsync();
@@ -73,13 +75,13 @@ public class CarrinhoItemHandler(
         try
         {
             var userIdClaim = user.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-            
+
             if (string.IsNullOrEmpty(userIdClaim))
                 return new Resposta<CarrinhoItem>(null, 401, "Usuário não autenticado");
-            
+
             if (!long.TryParse(userIdClaim, out long userId))
                 return new Resposta<CarrinhoItem>(null, 400, "ID de usuário inválido");
-            
+
             var carrinhoItem = await context.CarrinhoItens
                 .Include(x => x.Produto)
                 .Include(x => x.Carrinho)
@@ -87,17 +89,10 @@ public class CarrinhoItemHandler(
 
             if (carrinhoItem?.Carrinho == null)
                 return new Resposta<CarrinhoItem>(null, 404, "Produto ou carrinho inválido.");
-
-            var carrinho = carrinhoItem.Carrinho;
             
-            var diferencaQuantidade = requisicao.Quantidade - carrinhoItem.Quantidade;
             carrinhoItem.Quantidade = requisicao.Quantidade;
-            carrinhoItem.PrecoTotal += carrinhoItem.Produto.Preco * diferencaQuantidade;
-
-            carrinho.ValorTotal += carrinhoItem.Produto.Preco * diferencaQuantidade;
-
+            
             context.CarrinhoItens.Update(carrinhoItem);
-            context.Carrinhos.Update(carrinho);
             await context.SaveChangesAsync();
 
             return new Resposta<CarrinhoItem>(carrinhoItem, 200, "CarrinhoItem atualizado com sucesso.");
@@ -137,12 +132,7 @@ public class CarrinhoItemHandler(
             if (carrinhoItem?.Carrinho == null)
                 return new Resposta<CarrinhoItem>(null, 404, "Carrinho inválido.");
 
-            var carrinho = carrinhoItem.Carrinho;
-            
-            carrinho.ValorTotal -= carrinhoItem.PrecoTotal;
-
             context.CarrinhoItens.Remove(carrinhoItem);
-            context.Carrinhos.Update(carrinho);
             await context.SaveChangesAsync();
             
             return new Resposta<CarrinhoItem>(carrinhoItem, 200, "CarrinhoItem removido com sucesso.");
@@ -177,13 +167,6 @@ public class CarrinhoItemHandler(
                 .Include(x => x.Carrinho)
                 .Where(x => x.Carrinho.UserId == userId)
                 .ToListAsync();
-            
-            foreach (var carrinhoItem in carrinhoItens)
-            {
-                carrinhoItem.PrecoTotal = carrinhoItem.Produto.Preco * carrinhoItem.Quantidade;
-            }
-            context.CarrinhoItens.UpdateRange(carrinhoItens);
-            await context.SaveChangesAsync();
             
             return new Resposta<List<CarrinhoItem>?>(carrinhoItens, 200, "CarrinhoItem(s) obtido(s) com sucesso");
         }

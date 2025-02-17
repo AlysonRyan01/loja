@@ -26,9 +26,6 @@ namespace Loja.Api.Migrations
                     b.Property<long>("UserId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<decimal>("ValorTotal")
-                        .HasColumnType("MONEY");
-
                     b.HasKey("Id");
 
                     b.HasIndex("UserId")
@@ -46,8 +43,12 @@ namespace Loja.Api.Migrations
                     b.Property<long>("CarrinhoId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<decimal>("PrecoTotal")
-                        .HasColumnType("MONEY");
+                    b.Property<string>("NomeProduto")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("PrecoUnitario")
+                        .HasColumnType("TEXT");
 
                     b.Property<long>("ProdutoId")
                         .HasColumnType("INTEGER");
@@ -200,7 +201,7 @@ namespace Loja.Api.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<decimal>("PrecoUnitario")
-                        .HasColumnType("DECIMAL(18,2)");
+                        .HasColumnType("MONEY");
 
                     b.Property<long>("ProdutoId")
                         .HasColumnType("INTEGER");

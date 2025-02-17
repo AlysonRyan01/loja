@@ -40,4 +40,7 @@ public class CriarProdutoRequisicao
 
     [MinLength(1, ErrorMessage = "O produto deve ter pelo menos uma imagem.")]
     public List<IFormFile> Imagens { get; set; } = null!;
+    
+    [Required(ErrorMessage = "Informe se o produto está ativo")]
+    public bool IsActive { get; set; } = true;
 }

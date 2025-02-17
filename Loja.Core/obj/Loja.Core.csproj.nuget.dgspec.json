@@ -1,25 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\loja\\Loja.Core\\Loja.Core.csproj": {}
+    "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Core/Loja.Core.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\loja\\Loja.Core\\Loja.Core.csproj": {
+    "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Core/Loja.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\loja\\Loja.Core\\Loja.Core.csproj",
+        "projectUniqueName": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Core/Loja.Core.csproj",
         "projectName": "Loja.Core",
-        "projectPath": "C:\\Projetos\\loja\\Loja.Core\\Loja.Core.csproj",
-        "packagesPath": "C:\\Users\\alyso\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\loja\\Loja.Core\\obj\\",
+        "projectPath": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Core/Loja.Core.csproj",
+        "packagesPath": "/Users/alysonryanullirsch/.nuget/packages/",
+        "outputPath": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\alyso\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/alysonryanullirsch/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -36,9 +37,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -73,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

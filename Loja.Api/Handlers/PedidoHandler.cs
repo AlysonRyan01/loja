@@ -1,5 +1,4 @@
-﻿using System.Data.Common;
-using Loja.Api.Data;
+﻿using Loja.Api.Data;
 using Loja.Core.Enums;
 using Loja.Core.Handlers;
 using Loja.Core.Models;
@@ -7,6 +6,7 @@ using Loja.Core.Requisicoes.Pedidos;
 using Loja.Core.Respostas;
 using Loja.Core.Services;
 using Microsoft.EntityFrameworkCore;
+using Exception = System.Exception;
 
 namespace Loja.Api.Handlers;
 
@@ -131,18 +131,149 @@ public class PedidoHandler(
         }
     }
 
-    public Task<Resposta<Pedido?>> PagarPedidoAsync(PagarPedidoRequisicao request)
+    public async Task<Resposta<Pedido?>> PagarPedidoAsync(PagarPedidoRequisicao request)
     {
-        throw new NotImplementedException();
+        Pedido? pedido;
+        try
+        {
+            pedido = await context
+                .Pedidos
+                .FirstOrDefaultAsync(x => x.Id == request.Id && x.UserId == request.UserId);
+            
+            if (pedido == null)
+                return new Resposta<Pedido?>(null, 404, "Pedido não encontrado");
+
+            switch (pedido.Status)
+            {
+                case EStatusDoPedido.Cancelado:
+                    return new Resposta<Pedido?>(pedido, 400, "O pedido já foi cancelado e não pode ser pago.");
+                
+                case EStatusDoPedido.Pago:
+                    return new Resposta<Pedido?>(pedido, 400, "O pedido já está pago.");
+                
+                case EStatusDoPedido.Reembolso:
+                    return new Resposta<Pedido?>(pedido, 400, "Esse pedido já foi reembolsado.");
+                
+                case EStatusDoPedido.AguardandoPagamento:
+                    break;
+                
+                default:
+                    return new Resposta<Pedido?>(pedido, 400, "Não foi possível pagar o pedido.");
+            }
+            
+            //codigo do stripe
+            
+            pedido.Status = EStatusDoPedido.Pago;
+            pedido.ExternalReference = request.ExternalReference;
+            pedido.AtualizadoEm = DateTime.Now;
+
+            try
+            {
+                context.Pedidos.Update(pedido);
+                await context.SaveChangesAsync();
+            }
+            catch
+            {
+                return new Resposta<Pedido?>(pedido, 500, "Falha ao tentar pagar o pedido.");
+            }
+
+            return new Resposta<Pedido?>(pedido, 200, $"Pedido {pedido.Numero} pago com sucesso.");
+        }
+        catch
+        {
+            return new Resposta<Pedido?>(null, 500, "Falha ao consultar o pedido");
+        }
     }
 
-    public Task<Resposta<Pedido?>> ReembolsarPedidoAsync(ReembolsarPedidoRequisicao request)
+    public async Task<Resposta<Pedido?>> ReembolsarPedidoAsync(ReembolsarPedidoRequisicao request)
     {
-        throw new NotImplementedException();
+        Pedido? pedido;
+        try
+        {
+            pedido = await context
+                .Pedidos
+                .FirstOrDefaultAsync(x => x.Id == request.Id && x.UserId == request.UserId);
+            
+            if (pedido == null)
+                return new Resposta<Pedido?>(null, 404, "Pedido não encontrado");
+            
+            switch (pedido.Status)
+            {
+                case EStatusDoPedido.Cancelado:
+                    return new Resposta<Pedido?>(pedido, 400, "O pedido já foi cancelado e não pode ser estornado.");
+                
+                case EStatusDoPedido.Pago:
+                    break;
+                
+                case EStatusDoPedido.Reembolso:
+                    return new Resposta<Pedido?>(pedido, 400, "Esse pedido já foi reembolsado.");
+                
+                case EStatusDoPedido.AguardandoPagamento:
+                    return new Resposta<Pedido?>(pedido, 400, "Esse pedido não foi pago e não pode ser reembolsado.");
+                
+                default:
+                    return new Resposta<Pedido?>(pedido, 400, "Não foi possível reembolsar o pedido.");
+            }
+            
+            pedido.Status = EStatusDoPedido.Reembolso;
+            pedido.AtualizadoEm = DateTime.Now;
+
+            try
+            {
+                context.Pedidos.Update(pedido);
+                await context.SaveChangesAsync();
+            }
+            catch
+            {
+                return new Resposta<Pedido?>(pedido, 400, "Falha ao reembolsar o pagamento.");
+            }
+            
+            return new Resposta<Pedido?>(pedido, 200, $"Pedido {pedido.Numero} estornado com sucesso.");
+        }
+        catch
+        {
+            return new Resposta<Pedido?>(null, 500, "Não foi possível recuperar o pedido.");
+        }
     }
 
-    public Task<Resposta<List<Pedido>?>> ObterTodosOsPedidosAsync(ObterTodosOsPedidoRequisicao request)
+    public async Task<Resposta<List<Pedido>?>> ObterTodosOsPedidosAsync(ObterTodosOsPedidoRequisicao request)
     {
-        throw new NotImplementedException();
+        try
+        {
+            var query = context
+                .Pedidos
+                .AsNoTracking()
+                .Include(x => x.Itens)
+                .Where(x => x.UserId == request.UserId)
+                .OrderByDescending(x => x.CriadoEm);
+            
+            var pedidos = await query.ToListAsync();
+            
+            return new Resposta<List<Pedido>?>(pedidos, 200, "Pedidos obtidos com sucesso.");
+        }
+        catch
+        {
+            return new Resposta<List<Pedido>?>(null, 500, "Não foi possível obter seus pedidos.");
+        }
+    }
+
+    public async Task<Resposta<Pedido?>> ObterPedidoPeloNumeroAsync(ObterPedidoPeloNumeroRequisicao request)
+    {
+        try
+        {
+            var pedido = await context
+                .Pedidos
+                .Include(x => x.Itens)
+                .FirstOrDefaultAsync(x => x.UserId == request.UserId && x.Numero == request.Numero);
+            
+            if (pedido == null)
+                return new Resposta<Pedido?>(null, 404, "Pedido não encontrado");
+            
+            return new Resposta<Pedido?>(pedido, 200, "Pedido obtido com sucesso");
+        }
+        catch
+        {
+            return new Resposta<Pedido?>(null, 500, "Não foi possível obter o pedido");
+        }
     }
 }

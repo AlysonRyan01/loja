@@ -16,10 +16,8 @@ public class CarrinhoMap : IEntityTypeConfiguration<Carrinho>
             .WithOne(x => x.Carrinho)
             .HasForeignKey(x => x.CarrinhoId) 
             .OnDelete(DeleteBehavior.Cascade);
-        
-        builder.Property(x => x.ValorTotal)
-            .IsRequired()
-            .HasColumnType("MONEY");
+
+        builder.Ignore(x => x.ValorTotal);
         
         builder.Property(x => x.UserId)
             .IsRequired();

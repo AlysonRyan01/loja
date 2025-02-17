@@ -11,4 +11,5 @@ public interface IPedidoHandler
     Task<Resposta<Pedido?>> PagarPedidoAsync(PagarPedidoRequisicao request);
     Task<Resposta<Pedido?>> ReembolsarPedidoAsync(ReembolsarPedidoRequisicao request);
     Task<Resposta<List<Pedido>?>> ObterTodosOsPedidosAsync(ObterTodosOsPedidoRequisicao request);
+    Task<Resposta<Pedido?>> ObterPedidoPeloNumeroAsync(ObterPedidoPeloNumeroRequisicao request);
 }

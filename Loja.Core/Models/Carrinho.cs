@@ -11,5 +11,5 @@ public class Carrinho
     
     public List<CarrinhoItem> CarrinhoItens { get; set; }
     
-    public decimal ValorTotal { get; set; }
+    public decimal ValorTotal => CarrinhoItens.Sum(item => item.PrecoTotal);
 }

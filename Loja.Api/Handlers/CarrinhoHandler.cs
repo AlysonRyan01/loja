@@ -25,20 +25,11 @@ public class CarrinhoHandler(
             
             var carrinho = await context.Carrinhos
                 .Include(x => x.CarrinhoItens)
+                    .ThenInclude(x => x.Produto)
                 .FirstOrDefaultAsync(x => x.UserId == userId);
             
             if(carrinho == null)
                 return new Resposta<Carrinho>(null, 401, "Carrinho nao encontrado");
-
-            decimal valorTotalCarrinho = 0;
-
-            foreach (var item in carrinho.CarrinhoItens)
-                valorTotalCarrinho += item.PrecoTotal;
-            
-            carrinho.ValorTotal = valorTotalCarrinho;
-            
-            context.Carrinhos.Update(carrinho);
-            await context.SaveChangesAsync();
             
             return new Resposta<Carrinho>(carrinho, 200, "Carrinho obtido com sucesso");
         }

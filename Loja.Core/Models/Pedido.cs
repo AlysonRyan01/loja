@@ -18,7 +18,7 @@ public class Pedido
 
     public List<PedidoItem> Itens { get; set; }
     
-    public long UserId { get; set; }
+    public string UserId { get; set; }
     
     public decimal ValorTotal => Itens?.Sum(item => item.PrecoTotal) ?? 0;
 }

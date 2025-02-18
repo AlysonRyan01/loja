@@ -6,7 +6,6 @@ using Loja.Core.Requisicoes.Pedidos;
 using Loja.Core.Respostas;
 using Loja.Core.Services;
 using Microsoft.EntityFrameworkCore;
-using Exception = System.Exception;
 
 namespace Loja.Api.Handlers;
 
@@ -138,6 +137,7 @@ public class PedidoHandler(
         {
             pedido = await context
                 .Pedidos
+                .Include(x => x.Itens)
                 .FirstOrDefaultAsync(x => x.Id == request.Id && x.UserId == request.UserId);
             
             if (pedido == null)
@@ -192,6 +192,7 @@ public class PedidoHandler(
         {
             pedido = await context
                 .Pedidos
+                .Include(x => x.Itens)
                 .FirstOrDefaultAsync(x => x.Id == request.Id && x.UserId == request.UserId);
             
             if (pedido == null)

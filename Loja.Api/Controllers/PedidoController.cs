@@ -1,3 +1,4 @@
+using System.Security.Claims;
 using Loja.Core.Handlers;
 using Loja.Core.Models;
 using Loja.Core.Requisicoes.Pedidos;
@@ -18,6 +19,10 @@ public class PedidoController(IPedidoHandler handler) : ControllerBase
             if (!ModelState.IsValid)
                 return BadRequest(new Resposta<string>(null, 400, "Erro de validação nos dados fornecidos"));
             
+            var user = HttpContext.User;
+
+            request.UserId = user.FindFirst(ClaimTypes.NameIdentifier)!.Value;
+            
             var result = await handler.CriarPedidoAsync(request);
             
             return result.IsSuccess ? Ok(result) : StatusCode(500, result);
@@ -36,7 +41,7 @@ public class PedidoController(IPedidoHandler handler) : ControllerBase
         }
     }
 
-    [HttpPut("v1/pedido/pagar/{id:long}")]
+    [HttpPost("v1/pedido/pagar/{id:long}")]
     public async Task<IActionResult> PagarAsync(long id, PagarPedidoRequisicao request)
     {
         try
@@ -44,6 +49,9 @@ public class PedidoController(IPedidoHandler handler) : ControllerBase
             if (!ModelState.IsValid)
                 return BadRequest(new Resposta<string>(null, 400, "Erro de validação nos dados fornecidos"));
             
+            var user = HttpContext.User;
+
+            request.UserId = user.FindFirst(ClaimTypes.NameIdentifier)!.Value;
             request.Id = id;
             
             var result = await handler.PagarPedidoAsync(request);
@@ -64,7 +72,7 @@ public class PedidoController(IPedidoHandler handler) : ControllerBase
         }
     }
      
-    [HttpPut("v1/pedido/cancelar/{id:long}")]
+    [HttpPost("v1/pedido/cancelar/{id:long}")]
     public async Task<IActionResult> CancelarPedidoAsync(long id, PedidoCanceladoRequisicao request)
     {
         try
@@ -72,7 +80,10 @@ public class PedidoController(IPedidoHandler handler) : ControllerBase
             if (!ModelState.IsValid)
                 return BadRequest(new Resposta<string>(null, 400, "Erro de validação nos dados fornecidos"));
             
+            var user = HttpContext.User;
+            
             request.Id = id;
+            request.UserId = user.FindFirst(ClaimTypes.NameIdentifier)!.Value;
             
             var result = await handler.CancelarPedidoAsync(request);
             
@@ -92,7 +103,7 @@ public class PedidoController(IPedidoHandler handler) : ControllerBase
         }
     }
     
-    [HttpPut("v1/pedido/reembolsar/{id:long}")]
+    [HttpPost("v1/pedido/reembolsar/{id:long}")]
     public async Task<IActionResult> ReembolsarPedidoAsync(long id, ReembolsarPedidoRequisicao request)
     {
         try
@@ -100,6 +111,9 @@ public class PedidoController(IPedidoHandler handler) : ControllerBase
             if (!ModelState.IsValid)
                 return BadRequest(new Resposta<string>(null, 400, "Erro de validação nos dados fornecidos"));
             
+            var user = HttpContext.User;
+            
+            request.UserId = user.FindFirst(ClaimTypes.NameIdentifier)!.Value;
             request.Id = id;
             
             var result = await handler.ReembolsarPedidoAsync(request);
@@ -121,12 +135,19 @@ public class PedidoController(IPedidoHandler handler) : ControllerBase
     }
     
     [HttpGet("v1/pedido/obter")]
-    public async Task<IActionResult> ObterTodosOsPedidosAsync(ObterTodosOsPedidoRequisicao request)
+    public async Task<IActionResult> ObterTodosOsPedidosAsync()
     {
         try
         {
             if (!ModelState.IsValid)
                 return BadRequest(new Resposta<string>(null, 400, "Erro de validação nos dados fornecidos"));
+            
+            var user = HttpContext.User;
+
+            var request = new ObterTodosOsPedidoRequisicao
+            {
+                UserId = user.FindFirst(ClaimTypes.NameIdentifier)!.Value
+            };
             
             var result = await handler.ObterTodosOsPedidosAsync(request);
             
@@ -146,18 +167,20 @@ public class PedidoController(IPedidoHandler handler) : ControllerBase
         }
     }
     
-    [HttpGet("v1/pedido/{numero}/{userId:long}")]
-    public async Task<IActionResult> ObterPedidoPeloNumero(string numero, long userId)
+    [HttpGet("v1/pedido/{numero}/")]
+    public async Task<IActionResult> ObterPedidoPeloNumero(string numero)
     {
         try
         {
             if (!ModelState.IsValid)
                 return BadRequest(new Resposta<string>(null, 400, "Erro de validação nos dados fornecidos"));
+            
+            var user = HttpContext.User;
 
             var request = new ObterPedidoPeloNumeroRequisicao
             {
                 Numero = numero,
-                UserId = userId
+                UserId = user.FindFirst(ClaimTypes.NameIdentifier)!.Value
             };
             
             var result = await handler.ObterPedidoPeloNumeroAsync(request);

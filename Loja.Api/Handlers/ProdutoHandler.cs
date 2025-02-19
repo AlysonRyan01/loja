@@ -160,14 +160,14 @@ public class ProdutoHandler(
         }
     }
 
-    public async Task<Resposta<Produto?>> ObterProdutoPorIdAsync(ObterProdutoPorIdRequisicao requisicao)
+    public async Task<Resposta<Produto?>> ObterProdutoPorSlugAsync(ObterProdutoPorSlugRequisicao requisicao)
     {
         try
         {
             var produto = await context
                 .Produtos
                 .Include(x => x.Imagens)
-                .FirstOrDefaultAsync(p => p.Id == requisicao.Id);
+                .FirstOrDefaultAsync(p => p.Slug == requisicao.Slug);
             
             if(produto == null)
                 return new Resposta<Produto?>(null, 404, "Produto nao encontrado");

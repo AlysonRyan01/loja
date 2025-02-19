@@ -23,6 +23,11 @@ namespace Loja.Api.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("Slug")
+                        .IsRequired()
+                        .HasMaxLength(80)
+                        .HasColumnType("NVARCHAR");
+
                     b.Property<long>("UserId")
                         .HasColumnType("INTEGER");
 
@@ -177,7 +182,8 @@ namespace Loja.Api.Migrations
                     b.Property<int>("Status")
                         .HasColumnType("SMALLINT");
 
-                    b.Property<long>("UserId")
+                    b.Property<string>("UserId")
+                        .IsRequired()
                         .HasMaxLength(160)
                         .HasColumnType("INT");
 
@@ -254,8 +260,9 @@ namespace Loja.Api.Migrations
                         .HasColumnType("NVARCHAR");
 
                     b.Property<string>("Slug")
+                        .IsRequired()
                         .HasMaxLength(80)
-                        .HasColumnType("VARCHAR");
+                        .HasColumnType("NVARCHAR");
 
                     b.Property<string>("Tamanho")
                         .IsRequired()

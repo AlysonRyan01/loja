@@ -8,6 +8,8 @@ public class Carrinho
     
     public long UserId { get; set; }
     public User User { get; set; } = null!;
+
+    public string Slug { get; set; } = Guid.NewGuid().ToString("N")[..8];
     
     public List<CarrinhoItem> CarrinhoItens { get; set; }
     

@@ -28,9 +28,9 @@ public class ProdutoHandler(IHttpClientFactory httpClientFactory) : IProdutoHand
                ?? new Resposta<Produto?>(null, 400, "Falha ao remover o produto");
     }
 
-    public async Task<Resposta<Produto?>> ObterProdutoPorIdAsync(ObterProdutoPorIdRequisicao requisicao)
+    public async Task<Resposta<Produto?>> ObterProdutoPorSlugAsync(ObterProdutoPorSlugRequisicao requisicao)
     {
-        return await _httpClient.GetFromJsonAsync<Resposta<Produto?>>($"v1/produto/{requisicao.Id}")
+        return await _httpClient.GetFromJsonAsync<Resposta<Produto?>>($"v1/produto/{requisicao.Slug}")
                ?? new Resposta<Produto?>(null, 400, "Falha ao obter o produto");
     }
 

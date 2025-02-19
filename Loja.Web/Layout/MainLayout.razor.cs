@@ -1,6 +1,8 @@
 ﻿using System.Security.Claims;
 using Dima.Web.Security;
 using Dima.Web.Services;
+using Loja.Core.Handlers;
+using Loja.Core.Models;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using MudBlazor;
@@ -18,10 +20,12 @@ public class MainLayoutPage : LayoutComponentBase
 
     public ClaimsPrincipal _user { get; set; }
 
+    public string Username { get; set; } = "null";
+
     public void ToggleDrawer()
     {
         _open = !_open;
-    } 
+    }
 
     public bool IsBusy { get; set; } = false;
     
@@ -35,12 +39,14 @@ public class MainLayoutPage : LayoutComponentBase
     [Inject] public ISnackbar Snackbar { get; set; } = null!;
     [Inject] public NavigationManager NavigationManager { get; set; } = null!;
     [Inject] public SearchService SearchService { get; set; } = null!;
+    [Inject] public ICarrinhoHandler CarrinhoHandler { get; set; } = null!;
 
     #endregion
     
     #region Overrides
     protected override async Task OnInitializedAsync()
     {
+        IsBusy = true;
         try
         {
             var result = await AuthenticationState.GetAuthenticationStateAsync();
@@ -50,18 +56,22 @@ public class MainLayoutPage : LayoutComponentBase
             {
                 _userLoggedIn = true;
                 _user = user;
+                Username = user.Identity.Name ?? string.Empty;
             }
             else
             {
                 _userLoggedIn = false;
             }
-            
-            StateHasChanged();
 
+            StateHasChanged();
         }
         catch
         {
             Snackbar.Add("Erro no authenticacao", Severity.Error);
+        }
+        finally
+        {
+            IsBusy = false;
         }
     }
     #endregion

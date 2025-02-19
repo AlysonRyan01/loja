@@ -30,7 +30,7 @@
         <MudButton Style="margin-right: 3vw" Color="Color.Primary" Variant="Variant.Text" OnClick="@ToggleDrawer">
             <img class="hamburger-imagem" src="images/icons8-cardápio-144.png" alt="menu"/>
         </MudButton>
-        <NavLink href="/carrinho" class="nav-link">
+        <NavLink href="@($"/carrinho/{Username}")" class="nav-link">
             <img class="carrinho-imagem" src="images/shopping-cart.png" alt="carrinho"/>
         </NavLink>
     </div>

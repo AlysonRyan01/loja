@@ -2,8 +2,8 @@
 
 namespace Loja.Core.Requisicoes.Produtos;
 
-public class ObterProdutoPorIdRequisicao
+public class ObterProdutoPorSlugRequisicao
 {
     [Required(ErrorMessage = "Id do produto deve ser informado")]
-    public long Id { get; set; }
+    public string Slug { get; set; }
 }

@@ -6,7 +6,7 @@ using Loja.Core.Requisicoes.CarrinhoItens;
 using Microsoft.AspNetCore.Components;
 using MudBlazor;
 
-namespace Dima.Web.Pages;
+namespace Dima.Web.Pages.CarrinhoPages;
 
 public partial class CarrinhoComponent : ComponentBase
 {
@@ -15,6 +15,7 @@ public partial class CarrinhoComponent : ComponentBase
     public bool IsBusy { get; set; } = false;
     public bool _userLoggedIn { get; set; } = false;
     public List<CarrinhoItem> CarrinhoItens { get; set; } = new();
+    [Parameter] public string Slug { get; set; }
     public Carrinho Carrinho { get; set; } = new();
     public List<Produto> Produtos { get; set; } = new();
     public int QuantidadeProdutos { get; set; }

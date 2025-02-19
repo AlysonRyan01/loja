@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Components.Web;
 using Microsoft.JSInterop;
 using MudBlazor;
 
-namespace Dima.Web.Pages;
+namespace Dima.Web.Pages.ProdutoPages;
 
 public partial class ProdutoPageCode : ComponentBase
 {
@@ -22,7 +22,7 @@ public partial class ProdutoPageCode : ComponentBase
     public bool exibirImagemTelaCheia = false;
     public ElementReference imgRef;
     public bool IsBusy { get; set; } = false;
-    [Parameter]public long id { get; set; }
+    [Parameter]public string slug { get; set; }
     public Produto Produto { get; set; }
     public List<Produto> Produtos { get; set; }
     public bool _userLoggedIn { get; set; } = false;
@@ -70,12 +70,12 @@ public partial class ProdutoPageCode : ComponentBase
 
         try
         {
-            var requisicao = new ObterProdutoPorIdRequisicao
+            var requisicao = new ObterProdutoPorSlugRequisicao
             {
-                Id = id
+                Slug = slug
             };
 
-            var result = await handler.ObterProdutoPorIdAsync(requisicao);
+            var result = await handler.ObterProdutoPorSlugAsync(requisicao);
             if (result.IsSuccess)
             {
                 Produto = result.Dados;
@@ -113,12 +113,12 @@ public partial class ProdutoPageCode : ComponentBase
     {
         try
         {
-            var requisicao = new ObterProdutoPorIdRequisicao
+            var requisicao = new ObterProdutoPorSlugRequisicao
             {
-                Id = id
+                Slug = slug
             };
 
-            var result = await handler.ObterProdutoPorIdAsync(requisicao);
+            var result = await handler.ObterProdutoPorSlugAsync(requisicao);
             if (result.IsSuccess)
             {
                 Produto = result.Dados;

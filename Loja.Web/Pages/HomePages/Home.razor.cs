@@ -6,7 +6,7 @@ using Loja.Core.Requisicoes.CarrinhoItens;
 using Microsoft.AspNetCore.Components;
 using MudBlazor;
 
-namespace Dima.Web.Pages;
+namespace Dima.Web.Pages.HomePages;
 
 public partial class HomePage : ComponentBase
 {

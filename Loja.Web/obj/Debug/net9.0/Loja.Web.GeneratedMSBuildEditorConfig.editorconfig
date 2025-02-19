@@ -16,53 +16,63 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = Dima.Web
 build_property.RootNamespace = Dima.Web
-build_property.ProjectDir = C:\Projetos\loja\loja.web\
+build_property.ProjectDir = C:\Users\TVS'PC\Documents\MeusProjetos\loja\LOJA.WEB\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Projetos\loja\loja.web
+build_property.MSBuildProjectDirectory = C:\Users\TVS'PC\Documents\MeusProjetos\loja\LOJA.WEB
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Projetos/loja/loja.web/App.razor]
+[C:/Users/TVS'PC/Documents/MeusProjetos/loja/LOJA.WEB/Pages/CarrinhoPages/CarrinhoPage.razor]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FycmluaG9QYWdlc1xDYXJyaW5ob1BhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/TVS'PC/Documents/MeusProjetos/loja/LOJA.WEB/Pages/HomePages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVBhZ2VzXEhvbWUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/TVS'PC/Documents/MeusProjetos/loja/LOJA.WEB/Pages/ProdutoPages/ProdutoPage.razor]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHV0b1BhZ2VzXFByb2R1dG9QYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/TVS'PC/Documents/MeusProjetos/loja/LOJA.WEB/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/loja/loja.web/Components/NavMenu.razor]
+[C:/Users/TVS'PC/Documents/MeusProjetos/loja/LOJA.WEB/Components/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xOYXZNZW51LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/loja/loja.web/Layout/LoginLayout.razor]
+[C:/Users/TVS'PC/Documents/MeusProjetos/loja/LOJA.WEB/Layout/LoginLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XExvZ2luTGF5b3V0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/loja/loja.web/Layout/MainLayout.razor]
+[C:/Users/TVS'PC/Documents/MeusProjetos/loja/LOJA.WEB/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/loja/loja.web/Pages/CarrinhoPage.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FycmluaG9QYWdlLnJhem9y
+[C:/Users/TVS'PC/Documents/MeusProjetos/loja/LOJA.WEB/Pages/CheckoutPages/Checkout.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hlY2tvdXRQYWdlc1xDaGVja291dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/loja/loja.web/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Projetos/loja/loja.web/Pages/Identity/Login.razor]
+[C:/Users/TVS'PC/Documents/MeusProjetos/loja/LOJA.WEB/Pages/Identity/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSWRlbnRpdHlcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/loja/loja.web/Pages/Identity/Register.razor]
+[C:/Users/TVS'PC/Documents/MeusProjetos/loja/LOJA.WEB/Pages/Identity/Register.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSWRlbnRpdHlcUmVnaXN0ZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/loja/loja.web/Pages/ProdutoPage.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHV0b1BhZ2UucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Projetos/loja/loja.web/_Imports.razor]
+[C:/Users/TVS'PC/Documents/MeusProjetos/loja/LOJA.WEB/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

@@ -26,6 +26,11 @@ public class CarrinhoMap : IEntityTypeConfiguration<Carrinho>
             .WithOne()
             .HasForeignKey<Carrinho>(x => x.UserId)
             .OnDelete(DeleteBehavior.Cascade);
+        
+        builder.Property(x => x.Slug)
+            .IsRequired()
+            .HasColumnType("NVARCHAR")
+            .HasMaxLength(80);
 
     }
 }

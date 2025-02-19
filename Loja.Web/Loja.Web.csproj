@@ -23,4 +23,10 @@
     <ProjectReference Include="..\Loja.Core\Loja.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <AdditionalFiles Include="Pages\CarrinhoPages\CarrinhoPage.razor" />
+    <AdditionalFiles Include="Pages\HomePages\Home.razor" />
+    <AdditionalFiles Include="Pages\ProdutoPages\ProdutoPage.razor" />
+  </ItemGroup>
+
 </Project>

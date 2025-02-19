@@ -110,20 +110,20 @@ public class ProdutoController(IProdutoHandler produtoHandler, ILogger<ProdutoCo
         }
     }
     
-    [HttpGet("v1/produto/{id:long}")]
-    public async Task<IActionResult> GetById(long id)
+    [HttpGet("v1/produto/{slug}")]
+    public async Task<IActionResult> GetById(string slug)
     {
         try
         {
             if (!ModelState.IsValid)
                 return BadRequest(new Resposta<dynamic>(null, 400, "Erro de validação nos dados fornecidos"));
             
-            var requisicao = new ObterProdutoPorIdRequisicao
+            var requisicao = new ObterProdutoPorSlugRequisicao
             {
-                Id = id
+                Slug = slug
             };
             
-            var result = await produtoHandler.ObterProdutoPorIdAsync(requisicao);
+            var result = await produtoHandler.ObterProdutoPorSlugAsync(requisicao);
 
             return result.IsSuccess
                 ? Ok(result)

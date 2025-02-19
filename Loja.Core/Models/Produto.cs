@@ -4,7 +4,7 @@ public class Produto
 {
     public long Id { get; set; }
     public string Titulo { get; set; }
-    public string Slug { get; set; }
+    public string Slug { get; set; } = Guid.NewGuid().ToString("N")[..8];
     public string Marca { get; set; }
     public string Modelo { get; set; }
     public string Serie { get; set; }

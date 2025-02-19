@@ -56,10 +56,8 @@ public class ProdutoMap : IEntityTypeConfiguration<Produto>
             .HasColumnType("BIT");
         
         builder.Property(x => x.Slug)
-            .IsRequired(false)
-            .HasColumnType("VARCHAR")
+            .IsRequired()
+            .HasColumnType("NVARCHAR")
             .HasMaxLength(80);
-        
-        
     }
 }

@@ -39,9 +39,18 @@
                         <p>Ou R$ @produto.Preco.ToString("F2") em até 6x s/ juros no cartão</p>
 
                         <div class="div-mudbuttons-comprar-carrinho">
-                            <MudButton Color="Color.Primary" Variant="Variant.Filled" Class="mudbutton-comprar" Style="color: white;">
-                                COMPRAR
-                            </MudButton>
+                            @if (_userLoggedIn)
+                            {
+                                <MudButton href="@($"/checkout/produto-{produto.Slug}")" Color="Color.Primary" Variant="Variant.Filled" Class="mudbutton-comprar" Style="color: white;">
+                                    COMPRAR
+                                </MudButton>
+                            }
+                            else
+                            {
+                                <MudButton href="/entrar" Color="Color.Primary" Variant="Variant.Filled" Class="mudbutton-comprar" Style="color: white;">
+                                    COMPRAR
+                                </MudButton>
+                            }
 
                             <MudButton OnClick="() => AdicionarAoCarrinho(produto.Id)" Color="Color.Primary" Variant="Variant.Outlined" Class="mudbutton-carrinho">
                                 Adicionar ao Carrinho

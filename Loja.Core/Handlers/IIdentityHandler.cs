@@ -10,6 +10,6 @@ public interface IIdentityHandler
     Task<Resposta<string>> LoginAsync(LoginRequest request);
     Task<Resposta<string>> RegisterAsync(RegisterRequest request);
     Task<Resposta<string>> LogoutAsync();
-    Task<Resposta<UserInfo>> UserInfo(ClaimsPrincipal logedUser);
+    Task<Resposta<UserInfo>> UserInfo(ClaimsPrincipal user);
     Task<Resposta<IEnumerable<RoleClaim>>> UserRoles(ClaimsPrincipal logedUser);
 }

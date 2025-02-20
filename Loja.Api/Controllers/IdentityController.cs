@@ -69,9 +69,11 @@ public class IdentityController(IIdentityHandler handler, ILogger<ProdutoControl
     {
         try
         {
-            var result = await handler.UserInfo(User);
+            var user = HttpContext.User;
             
-            return result.IsSuccess ? Ok(result.Dados) : BadRequest(result.Dados);
+            var result = await handler.UserInfo(user);
+            
+            return result.IsSuccess ? Ok(result) : BadRequest(result);
         }
         catch (Exception e)
         {

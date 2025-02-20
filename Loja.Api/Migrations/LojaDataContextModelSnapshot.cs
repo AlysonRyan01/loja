@@ -70,6 +70,53 @@ namespace Loja.Api.Migrations
                     b.ToTable("CarrinhoItem", (string)null);
                 });
 
+            modelBuilder.Entity("Loja.Core.Models.Endereco", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("CEP")
+                        .HasMaxLength(20)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Cidade")
+                        .HasMaxLength(100)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Estado")
+                        .HasMaxLength(50)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Numero")
+                        .HasMaxLength(10)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Pais")
+                        .HasMaxLength(50)
+                        .HasColumnType("TEXT");
+
+                    b.Property<long?>("PedidoId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Rua")
+                        .HasMaxLength(200)
+                        .HasColumnType("TEXT");
+
+                    b.Property<long>("UserId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PedidoId")
+                        .IsUnique();
+
+                    b.HasIndex("UserId")
+                        .IsUnique();
+
+                    b.ToTable("Enderecos", (string)null);
+                });
+
             modelBuilder.Entity("Loja.Core.Models.Identity.User", b =>
                 {
                     b.Property<long>("Id")
@@ -444,6 +491,24 @@ namespace Loja.Api.Migrations
                     b.Navigation("Produto");
                 });
 
+            modelBuilder.Entity("Loja.Core.Models.Endereco", b =>
+                {
+                    b.HasOne("Loja.Core.Models.Pedido", "Pedido")
+                        .WithOne("Endereco")
+                        .HasForeignKey("Loja.Core.Models.Endereco", "PedidoId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("Loja.Core.Models.Identity.User", "User")
+                        .WithOne("Endereco")
+                        .HasForeignKey("Loja.Core.Models.Endereco", "UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Pedido");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Loja.Core.Models.Imagem", b =>
                 {
                     b.HasOne("Loja.Core.Models.Produto", "Produto")
@@ -516,11 +581,16 @@ namespace Loja.Api.Migrations
 
             modelBuilder.Entity("Loja.Core.Models.Identity.User", b =>
                 {
+                    b.Navigation("Endereco");
+
                     b.Navigation("Roles");
                 });
 
             modelBuilder.Entity("Loja.Core.Models.Pedido", b =>
                 {
+                    b.Navigation("Endereco")
+                        .IsRequired();
+
                     b.Navigation("Itens");
                 });
 

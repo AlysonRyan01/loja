@@ -4,6 +4,7 @@ using Loja.Api.Data;
 using Loja.Core.Handlers;
 using Loja.Core.Models;
 using Loja.Core.Models.Identity;
+using Loja.Core.Requisicoes.Endereco;
 using Loja.Core.Requisicoes.Identity;
 using Loja.Core.Respostas;
 using Microsoft.AspNetCore.Authentication;
@@ -18,13 +19,15 @@ public class IdentityHandler : IIdentityHandler
     private readonly SignInManager<User> _signInManager;
     private readonly RoleManager<IdentityRole<long>> _roleManager;
     private readonly LojaDataContext _context;
+    private readonly IEnderecoHandler _enderecoHandler;
     
-    public IdentityHandler(UserManager<User> userManager, SignInManager<User> signInManager, RoleManager<IdentityRole<long>> roleManager, LojaDataContext context)
+    public IdentityHandler(UserManager<User> userManager, SignInManager<User> signInManager, RoleManager<IdentityRole<long>> roleManager, LojaDataContext context, IEnderecoHandler enderecoHandler)
     {
         _userManager = userManager;
         _signInManager = signInManager;
         _context = context;
         _roleManager = roleManager;
+        _enderecoHandler = enderecoHandler;
     }
     
     public async Task<Resposta<string>> LoginAsync(LoginRequest request)
@@ -96,6 +99,20 @@ public class IdentityHandler : IIdentityHandler
                 return new Resposta<string>("Erro ao criar carrinho", 400, "Erro ao associar carrinho ao usuário.");
             }
 
+            var endereco = new Endereco
+            {
+                UserId = user.Id
+            };
+            
+            _context.Enderecos.Add(endereco);
+            var enderecoResult = await _context.SaveChangesAsync();
+
+            if (enderecoResult == 0)
+            {
+                await transaction.RollbackAsync();
+                return new Resposta<string>("Erro ao criar o endereco", 400, "Erro ao associar endereco ao usuário.");
+            }
+            
             await transaction.CommitAsync();
             return new Resposta<string>("Usuário registrado com sucesso", 200, "Usuário registrado com sucesso");
         }
@@ -124,25 +141,30 @@ public class IdentityHandler : IIdentityHandler
         }
     }
 
-    public async Task<Resposta<UserInfo>> UserInfo(ClaimsPrincipal logedUser)
+    public async Task<Resposta<UserInfo>> UserInfo(ClaimsPrincipal user)
     {
         try
         {
-            var userId = logedUser.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            var userId = user.FindFirst(ClaimTypes.NameIdentifier).Value;
             
-            if(string.IsNullOrEmpty(userId))
-                return new Resposta<UserInfo>(null, 401, "Usuario nao autenticado");
+            var enderecoResult = await _enderecoHandler.ObterEnderecoPorUserId(new ObterEnderecoPorUserIdRequisicao
+            {
+                UserId = userId
+            });
             
-            var user = await _userManager.FindByIdAsync(userId);
+            var userInfos = await _userManager.FindByIdAsync(userId);
             
-            if(user == null || user.Email == null)
+            if(userInfos == null || userInfos.Email == null)
                 return new Resposta<UserInfo>(null, 404, "Usuario nao encontrado");
 
             var userInfo = new UserInfo
             {
-                Name = user.UserName,
-                Email = user.Email,
-                IsEmailConfirmed = user.EmailConfirmed,
+                Id = userInfos.Id.ToString(),
+                Name = userInfos.UserName,
+                Email = userInfos.Email,
+                IsEmailConfirmed = userInfos.EmailConfirmed,
+                Endereco = enderecoResult.Dados,
+                PhoneNumber = userInfos.PhoneNumber
             };
             
             return new Resposta<UserInfo>(userInfo, 200, "Usuario encontrado com sucesso");

@@ -20,5 +20,7 @@ public class Pedido
     
     public string UserId { get; set; }
     
+    public Endereco Endereco { get; set; } = new();
+    
     public decimal ValorTotal => Itens?.Sum(item => item.PrecoTotal) ?? 0;
 }

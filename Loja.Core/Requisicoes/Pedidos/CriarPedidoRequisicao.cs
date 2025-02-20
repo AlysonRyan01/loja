@@ -6,4 +6,5 @@ public class CriarPedidoRequisicao : RequisicaoBase
 {
     public long CarrinhoId { get; set; }
     public long ProdutoId { get; set; }
+    public Models.Endereco Endereco { get; set; }
 }

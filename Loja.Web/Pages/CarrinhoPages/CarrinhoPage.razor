@@ -63,7 +63,7 @@ else
                         <h2>Total:</h2>
                         <h2>R$ @Carrinho.ValorTotal.ToString("F2")</h2>
                     </div>
-                    <MudButton Style="color: white;" class="botao-continuar-resumo-compra" Color="Color.Tertiary" Variant="Variant.Filled">
+                    <MudButton href="@($"/checkout/carrinho-{Carrinho.Slug}")" Style="color: white;" class="botao-continuar-resumo-compra" Color="Color.Tertiary" Variant="Variant.Filled">
                         Continuar a compra
                     </MudButton>
                 </MudPaper>

@@ -1,6 +1,7 @@
 ﻿using System.Net.Http.Json;
 using System.Security.Claims;
 using Loja.Core.Models.Identity;
+using Loja.Core.Respostas;
 using Microsoft.AspNetCore.Components.Authorization;
 
 namespace Dima.Web.Security;
@@ -39,12 +40,12 @@ public class CookieAuthenticationStateProvider(IHttpClientFactory clientFactory)
         NotifyAuthenticationStateChanged(GetAuthenticationStateAsync());
     }
 
-    private async Task<UserBlazor?> GetUserAsync()
+    private async Task<UserInfo?> GetUserAsync()
     {
         try
         {
-            var user = await httpClient.GetFromJsonAsync<UserBlazor?>("v1/identity/manage/info");
-            return user;
+            var user = await httpClient.GetFromJsonAsync<Resposta<UserInfo?>>("v1/identity/manage/info");
+            return user.Dados;
         }
         catch
         {
@@ -52,10 +53,11 @@ public class CookieAuthenticationStateProvider(IHttpClientFactory clientFactory)
         }
     }
 
-    private async Task<List<Claim>> GetClaimsAsync(UserBlazor? user)
+    private async Task<List<Claim>> GetClaimsAsync(UserInfo? user)
     {
         var claims = new List<Claim>
         {
+            new Claim(ClaimTypes.NameIdentifier, user.Id),
             new Claim(ClaimTypes.Name, user.Name),
             new Claim(ClaimTypes.Email, user.Email)
         };
@@ -63,7 +65,8 @@ public class CookieAuthenticationStateProvider(IHttpClientFactory clientFactory)
         claims.AddRange(
             user.Claims.Where(x =>
                 x.Key != ClaimTypes.Name &&
-                x.Key != ClaimTypes.Email)
+                x.Key != ClaimTypes.Email && 
+                x.Key != ClaimTypes.NameIdentifier)
                 .Select(x => new Claim(x.Key, x.Value)));
 
         RoleClaim[]? roles;

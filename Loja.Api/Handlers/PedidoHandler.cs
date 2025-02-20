@@ -2,9 +2,11 @@
 using Loja.Core.Enums;
 using Loja.Core.Handlers;
 using Loja.Core.Models;
+using Loja.Core.Models.Identity;
 using Loja.Core.Requisicoes.Pedidos;
 using Loja.Core.Respostas;
 using Loja.Core.Services;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace Loja.Api.Handlers;
@@ -12,7 +14,8 @@ namespace Loja.Api.Handlers;
 public class PedidoHandler(
     LojaDataContext context,
     IPedidoItemService pedidoItemService,
-    ILogger<ProdutoHandler> logger) : IPedidoHandler
+    ILogger<ProdutoHandler> logger,
+    UserManager<User> userManager) : IPedidoHandler
 {
     public async Task<Resposta<Pedido?>> CancelarPedidoAsync(PedidoCanceladoRequisicao request)
     {
@@ -71,11 +74,24 @@ public class PedidoHandler(
 
         try
         {
+            var user = await userManager.FindByIdAsync(request.UserId);
+            
+            if (user == null)
+            {
+                return new Resposta<Pedido?>(null, 404, "Usuario não encontrado.");
+            }
+            
+            if (user.Endereco == null)
+            {
+                user.Endereco = request.Endereco;
+            }
+            
             var pedido = new Pedido
             {
                 Status = EStatusDoPedido.AguardandoPagamento,
                 UserId = request.UserId,
-                Itens = new List<PedidoItem>()
+                Itens = new List<PedidoItem>(),
+                Endereco = request.Endereco,
             };
 
             await context.Pedidos.AddAsync(pedido);

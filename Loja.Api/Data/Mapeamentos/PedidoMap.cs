@@ -49,5 +49,10 @@ public class PedidoMap : IEntityTypeConfiguration<Pedido>
             .WithOne(x => x.Pedido)
             .HasForeignKey(x => x.PedidoId)
             .OnDelete(DeleteBehavior.Cascade);
+        
+        builder.HasOne(p => p.Endereco)
+            .WithOne(e => e.Pedido) 
+            .HasForeignKey<Endereco>(e => e.PedidoId)
+            .OnDelete(DeleteBehavior.Cascade); 
     }
 }

@@ -1,4 +1,9 @@
 ﻿/*MAIN LAYOUT CSS*/
+
+.div-para-esconder
+{
+    display: none;
+}
 .cabecalho {
     background-color: white;
     height: 120px;
@@ -504,6 +509,33 @@ main {
     display: none;
 }
 
+.div-principal-checkout
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.div-userinfo-endereco-pagamento
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 50%;
+    margin-top: 40px;
+    margin-right: 10px;
+}
+
+.div-produtoinfo
+{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-top: 40px;
+}
+
 /*FIM CARRINHO PAGE CSS*/
 
 /*PRODUTO PAGE CSS*/
@@ -798,6 +830,11 @@ main {
 
 /* Estilos para celulares (até 600px) */
 @media screen and (max-width: 600px) {
+    .div-para-esconder
+    {
+        display: none;
+    }
+    
     .cabecalho
     {
         padding: 5vw;
@@ -1017,6 +1054,11 @@ main {
 
 /* Estilos para tablets (entre 600px e 1024px) */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
+    .div-para-esconder
+    {
+        display: none;
+    }
+    
     .logo{
         width: 150px;
     }

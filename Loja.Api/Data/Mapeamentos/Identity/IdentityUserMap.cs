@@ -1,4 +1,5 @@
-﻿using Loja.Core.Models.Identity;
+﻿using Loja.Core.Models;
+using Loja.Core.Models.Identity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
@@ -26,5 +27,10 @@ public class IdentityUserMap : IEntityTypeConfiguration<User>
         builder.HasMany<IdentityUserLogin<long>>().WithOne().HasForeignKey(ul => ul.UserId).IsRequired();
         builder.HasMany<IdentityUserToken<long>>().WithOne().HasForeignKey(ut => ut.UserId).IsRequired();
         builder.HasMany<IdentityUserRole<long>>().WithOne().HasForeignKey(ur => ur.UserId).IsRequired();
+        
+        builder.HasOne(u => u.Endereco)
+            .WithOne(e => e.User)
+            .HasForeignKey<Endereco>(e => e.UserId)
+            .OnDelete(DeleteBehavior.Cascade);
     }
 }

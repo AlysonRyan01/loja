@@ -513,7 +513,7 @@ main {
 {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     width: 100%;
 }
 
@@ -523,17 +523,98 @@ main {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    width: 50%;
-    margin-top: 40px;
+    width: 35%;
+    margin-top: 50px;
     margin-right: 10px;
+    margin-bottom: 50px;
 }
 
 .div-produtoinfo
 {
     display: flex;
     flex-direction: column;
+    align-items: start;
+    justify-content: center;
     width: 25%;
-    margin-top: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.section-userinfo
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.h2-userinfo
+{
+    margin-bottom: 10px;
+}
+
+.section-endereco
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-pagamento
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-produtos-carrinho
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+}
+
+.img-produto-checkout
+{
+    width: 100px;
+}
+
+.h2-produtos-checkout
+{
+    padding: 10px;
+}
+
+.titulo-produto-checkout
+{
+    max-width: 50%;
+    text-align: start;
+    font-size: 0.7rem;
+}
+
+.preco-produto-checkout
+{
+    align-self: start;
 }
 
 /*FIM CARRINHO PAGE CSS*/

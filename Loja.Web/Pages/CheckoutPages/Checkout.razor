@@ -13,11 +13,53 @@ else
 {
     <div class="div-principal-checkout">
         <div class="div-userinfo-endereco-pagamento">
-            
+            <section class="section-userinfo">
+                <h2 class="h2-userinfo">Informações pessoais</h2>
+                <MudTextField Margin="Margin.Dense" Variant="Variant.Outlined" Label="Nome" @bind-Value="UserInfo.Name" FullWidth />
+                <MudTextField Margin="Margin.Dense" Variant="Variant.Outlined" Label="Email" @bind-Value="UserInfo.Email" FullWidth />
+            </section>
+            <section class="section-endereco">
+                <h2 class="h2-userinfo">Endereço de entrega</h2>
+                <div style="display: flex; width: 100%">
+                    <MudTextField Style="margin-right: 10px;" Margin="Margin.Dense" Variant="Variant.Outlined" Label="Rua" @bind-Value="Endereco.Rua" FullWidth />
+                    <MudTextField Style="width: 90px;" Margin="Margin.Dense" Variant="Variant.Outlined" Label="Número" @bind-Value="Endereco.Numero" />
+                </div>
+                <MudTextField Margin="Margin.Dense" Variant="Variant.Outlined" Label="Cidade" @bind-Value="Endereco.Cidade" FullWidth />
+                <MudTextField Margin="Margin.Dense" Variant="Variant.Outlined" Label="Estado" @bind-Value="Endereco.Estado" FullWidth />
+                <MudTextField Style="width: 200px;" Margin="Margin.Dense" Variant="Variant.Outlined" Label="CEP" @bind-Value="Endereco.CEP" FullWidth />
+            </section>
+            <section class="section-pagamento">
+                <h2 class="h2-userinfo">Pagamento</h2>
+                <MudTextField Mask="@(new PatternMask("0000 0000 0000 0000"))" Label="Número do Cartão" @bind-Value="Cartao.Numero" FullWidth />
+                <MudTextField Label="Nome no Cartão" @bind-Value="Cartao.Nome" FullWidth />
+                <div style="display: flex; width: 100%">
+                    <MudTextField Mask="@(new DateMask("MM/YY", 'Y', 'M'))" Style="width: 50%" Label="Data de Expiração" @bind-Value="Cartao.Expiracao" />
+                    <MudTextField Mask="@(new PatternMask("000"))" Style="width: 50%" Label="CVV" @bind-Value="Cartao.CVV" />
+                </div>
+            </section>
         </div>
 
         <div class="div-produtoinfo">
-            
+            <h2 class="h2-produtos-checkout">Produtos:</h2>
+            @if (Slug.StartsWith("carrinho-"))
+            {
+                foreach (var item in carrinho.CarrinhoItens)
+                {
+                    <section class="section-produtos-carrinho">
+                        @if (item.Produto.Imagens?.FirstOrDefault() is { } primeiraImagem)
+                        {
+                            var imagemUrl = $"{WebConfiguration.BackendUrl}{primeiraImagem.Url}";
+                            <img class="img-produto-checkout" src="@imagemUrl" alt="Imagem do produto"/>
+                        }
+                        <p class="titulo-produto-checkout">@item.Produto.Titulo</p>
+                        <p class="preco-produto-checkout">@item.Produto.Preco.ToString("C")</p>
+                    </section>
+                }
+            }
+            else if ((Slug.StartsWith("produto-")))
+            {
+                
+            }
         </div>
     </div>
     

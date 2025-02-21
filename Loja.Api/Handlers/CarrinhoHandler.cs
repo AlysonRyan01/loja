@@ -26,6 +26,7 @@ public class CarrinhoHandler(
             var carrinho = await context.Carrinhos
                 .Include(x => x.CarrinhoItens)
                     .ThenInclude(x => x.Produto)
+                        .ThenInclude(x => x.Imagens)
                 .FirstOrDefaultAsync(x => x.UserId == userId);
             
             if(carrinho == null)

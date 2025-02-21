@@ -1706,25 +1706,24 @@
     ]
   },
   "packageFolders": {
-    "/Users/alysonryanullirsch/.nuget/packages/": {}
+    "C:\\Users\\alyso\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Core/Loja.Core.csproj",
+      "projectUniqueName": "C:\\Projetos\\loja\\Loja.Core\\Loja.Core.csproj",
       "projectName": "Loja.Core",
-      "projectPath": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Core/Loja.Core.csproj",
-      "packagesPath": "/Users/alysonryanullirsch/.nuget/packages/",
-      "outputPath": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Core/obj/",
+      "projectPath": "C:\\Projetos\\loja\\Loja.Core\\Loja.Core.csproj",
+      "packagesPath": "C:\\Users\\alyso\\.nuget\\packages\\",
+      "outputPath": "C:\\Projetos\\loja\\Loja.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/alysonryanullirsch/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\alyso\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1741,9 +1740,9 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
+        "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net9.0": {
@@ -1778,7 +1777,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

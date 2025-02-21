@@ -1,5 +1,6 @@
 ﻿using System.Security.Claims;
 using Loja.Core.Models.Identity;
+using Loja.Core.Requisicoes.Endereco;
 using Loja.Core.Requisicoes.Identity;
 using Loja.Core.Respostas;
 
@@ -12,4 +13,6 @@ public interface IIdentityHandler
     Task<Resposta<string>> LogoutAsync();
     Task<Resposta<UserInfo>> UserInfo(ClaimsPrincipal user);
     Task<Resposta<IEnumerable<RoleClaim>>> UserRoles(ClaimsPrincipal logedUser);
+    Task<Resposta<User>> UserInfoValidation(UserInfoValidationRequest request);
+    Task<Resposta<User>> UserAdressValidation(AtualizarEnderecoRequisicao request);
 }

@@ -2,7 +2,9 @@
 using System.Security.Claims;
 using System.Text;
 using Loja.Core.Handlers;
+using Loja.Core.Models;
 using Loja.Core.Models.Identity;
+using Loja.Core.Requisicoes.Endereco;
 using Loja.Core.Requisicoes.Identity;
 using Loja.Core.Respostas;
 
@@ -45,6 +47,34 @@ public class IdentityHandler(IHttpClientFactory httpClientFactory) : IIdentityHa
     {
         var roles = logedUser.FindAll(ClaimTypes.Role).Select(x => new RoleClaim { Value = x.Value });
         return Task.FromResult(new Resposta<IEnumerable<RoleClaim>>(roles, 200, "Roles encontradas com sucesso!"));
+    }
+
+    public async Task<Resposta<User>> UserInfoValidation(UserInfoValidationRequest request)
+    {
+        var response = await client.PutAsJsonAsync("v1/identity/manage/update", request);
+
+        if (!response.IsSuccessStatusCode)
+        {
+            var result = await response.Content.ReadFromJsonAsync<Resposta<User>>();
+            return new Resposta<User>(null, (int)response.StatusCode, result?.Mensagem);
+        }
+
+        return await response.Content.ReadFromJsonAsync<Resposta<User>>()
+               ?? new Resposta<User>(null, 400, "Falha ao atualizar o usuario");
+    }
+
+    public async Task<Resposta<User>> UserAdressValidation(AtualizarEnderecoRequisicao request)
+    {
+        var response = await client.PutAsJsonAsync("v1/identity/manage/update/adress", request);
+
+        if (!response.IsSuccessStatusCode)
+        {
+            var result = await response.Content.ReadFromJsonAsync<Resposta<User>>();
+            return new Resposta<User>(null, (int)response.StatusCode, result?.Mensagem);
+        }
+
+        return await response.Content.ReadFromJsonAsync<Resposta<User>>()
+               ?? new Resposta<User>(null, 400, "Falha ao atualizar o endereco");
     }
 
     public async Task<Resposta<IEnumerable<RoleClaim>>> UserClaims(ClaimsPrincipal logedUser)

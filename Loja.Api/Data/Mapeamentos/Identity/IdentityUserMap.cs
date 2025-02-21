@@ -16,6 +16,8 @@ public class IdentityUserMap : IEntityTypeConfiguration<User>
         builder.HasIndex(u => u.NormalizedUserName).IsUnique();
         builder.HasIndex(u => u.NormalizedEmail).IsUnique();
 
+        builder.Property(u => u.FullName).HasMaxLength(180)
+            .IsRequired();
         builder.Property(u => u.Email).HasMaxLength(180);
         builder.Property(u => u.NormalizedEmail).HasMaxLength(180);
         builder.Property(u => u.UserName).HasMaxLength(180);

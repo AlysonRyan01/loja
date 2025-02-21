@@ -5,8 +5,8 @@ namespace Loja.Core.Requisicoes.Identity;
 public class RegisterRequest
 {
     [Required (ErrorMessage = "O Nome deve ser informado")]
-    [StringLength(30, MinimumLength = 3)]
-    public string Name { get; set; } = string.Empty;
+    [StringLength(50, MinimumLength = 3)]
+    public string FullName { get; set; } = string.Empty;
     
     [Required]
     [EmailAddress]

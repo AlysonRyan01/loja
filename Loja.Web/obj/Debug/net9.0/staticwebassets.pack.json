@@ -1,251 +1,251 @@
 {
   "Files": [
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.webassembly.js",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\appsettings.json",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\appsettings.json",
       "PackagePath": "staticwebassets\\appsettings.json"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\css\\app.css",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\css\\styles.css",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\css\\styles.css",
       "PackagePath": "staticwebassets\\css\\styles.css"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\icon-192.png",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\images\\5073073-nenhum-item-no-carrinho-de-compras-.jpg",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\images\\5073073-nenhum-item-no-carrinho-de-compras-.jpg",
       "PackagePath": "staticwebassets\\images\\5073073-nenhum-item-no-carrinho-de-compras-.jpg"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\images\\Banner para loja de eletrônicos computador desconto preto e vermelho.png",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\images\\Banner para loja de eletrônicos computador desconto preto e vermelho.png",
       "PackagePath": "staticwebassets\\images\\Banner para loja de eletrônicos computador desconto preto e vermelho.png"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\images\\TVS ELETRÔNICA-Photoroom.png",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\images\\TVS ELETRÔNICA-Photoroom.png",
       "PackagePath": "staticwebassets\\images\\TVS ELETRÔNICA-Photoroom.png"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\images\\banner.png",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\images\\banner.png",
       "PackagePath": "staticwebassets\\images\\banner.png"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\images\\icon-amazon-delivered._CB406595335_.png",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\images\\icon-amazon-delivered._CB406595335_.png",
       "PackagePath": "staticwebassets\\images\\icon-amazon-delivered._CB406595335_.png"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\images\\icon-payments-and-security._CB643514857_.png",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\images\\icon-payments-and-security._CB643514857_.png",
       "PackagePath": "staticwebassets\\images\\icon-payments-and-security._CB643514857_.png"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\images\\icon-returns._CB406595335_.png",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\images\\icon-returns._CB406595335_.png",
       "PackagePath": "staticwebassets\\images\\icon-returns._CB406595335_.png"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\images\\icons8-cardápio-144.png",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\images\\icons8-cardápio-144.png",
       "PackagePath": "staticwebassets\\images\\icons8-cardápio-144.png"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\images\\shopping-cart.png",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\images\\shopping-cart.png",
       "PackagePath": "staticwebassets\\images\\shopping-cart.png"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\images\\site-seguro-preto.png",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\images\\site-seguro-preto.png",
       "PackagePath": "staticwebassets\\images\\site-seguro-preto.png"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\images\\vector-flat-illustration-grayscale-avatar-600nw-2264922221-Photoroom.png",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\images\\vector-flat-illustration-grayscale-avatar-600nw-2264922221-Photoroom.png",
       "PackagePath": "staticwebassets\\images\\vector-flat-illustration-grayscale-avatar-600nw-2264922221-Photoroom.png"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\index.html",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {

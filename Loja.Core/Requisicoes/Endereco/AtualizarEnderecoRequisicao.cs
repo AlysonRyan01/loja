@@ -11,6 +11,10 @@ public class AtualizarEnderecoRequisicao
     [Required(ErrorMessage = "O Número é obrigatório.")]
     [StringLength(10, ErrorMessage = "O Número deve ter no máximo 10 caracteres.")]
     public string Numero { get; set; }
+    
+    [Required(ErrorMessage = "O bairro é obrigatório.")]
+    [StringLength(50, ErrorMessage = "O bairro deve ter no máximo 50 caracteres.")]
+    public string Bairro { get; set; }
 
     [Required(ErrorMessage = "A Cidade é obrigatória.")]
     [StringLength(50, ErrorMessage = "A Cidade deve ter no máximo 50 caracteres.")]
@@ -29,8 +33,7 @@ public class AtualizarEnderecoRequisicao
     public string Pais { get; set; }
 
     [Required(ErrorMessage = "O UserId é obrigatório.")]
-    [Range(1, long.MaxValue, ErrorMessage = "O UserId deve ser um número válido.")]
-    public long UserId { get; set; }
+    public string UserId { get; set; }
 
     public long? PedidoId { get; set; }
 }

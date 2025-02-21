@@ -15,6 +15,10 @@ public class EnderecoMap : IEntityTypeConfiguration<Endereco>
         builder.Property(e => e.Rua)
             .IsRequired(false)
             .HasMaxLength(200);
+        
+        builder.Property(e => e.Bairro)
+            .IsRequired(false)
+            .HasMaxLength(200);
 
         builder.Property(e => e.Numero)
             .IsRequired(false)

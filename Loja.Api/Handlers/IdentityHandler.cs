@@ -1,4 +1,5 @@
-﻿using System.Data.Common;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Data.Common;
 using System.Security.Claims;
 using Loja.Api.Data;
 using Loja.Core.Handlers;
@@ -67,8 +68,9 @@ public class IdentityHandler : IIdentityHandler
             
             var user = new User
             {
-                UserName = request.Name,
-                Email = request.Email
+                FullName = request.FullName,
+                UserName = request.FullName.Replace(" ", ""),
+                Email = request.Email,
             };
 
             var result = await _userManager.CreateAsync(user, request.Password);
@@ -80,7 +82,7 @@ public class IdentityHandler : IIdentityHandler
             }
             
             await _userManager.AddClaimAsync(user, new Claim(ClaimTypes.Email, request.Email));
-            await _userManager.AddClaimAsync(user, new Claim(ClaimTypes.Name, request.Name));
+            await _userManager.AddClaimAsync(user, new Claim(ClaimTypes.Name, request.FullName.Replace(" ", "")));
             await _userManager.AddClaimAsync(user, new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()));
             
             await _userManager.AddToRoleAsync(user, "User");
@@ -161,6 +163,7 @@ public class IdentityHandler : IIdentityHandler
             {
                 Id = userInfos.Id.ToString(),
                 Name = userInfos.UserName,
+                FullName = userInfos.FullName,
                 Email = userInfos.Email,
                 IsEmailConfirmed = userInfos.EmailConfirmed,
                 Endereco = enderecoResult.Dados,
@@ -201,6 +204,79 @@ public class IdentityHandler : IIdentityHandler
         catch
         {
             return Task.FromResult(new Resposta<IEnumerable<RoleClaim>>(null, 500, "Erro no servidor"));
+        }
+    }
+    
+    public async Task<Resposta<User>> UserInfoValidation(UserInfoValidationRequest request)
+    {
+        try
+        {
+            var user = await _userManager.FindByIdAsync(request.UserId);
+            
+            if (user == null)
+                return new Resposta<User>(null, 404, "Usuario nao encontrado");
+            
+            if (string.IsNullOrWhiteSpace(request.FullName))
+                return new Resposta<User>(null, 400, "Nome completo não pode estar vazio");
+
+            if (string.IsNullOrWhiteSpace(request.Email) || !new EmailAddressAttribute().IsValid(request.Email))
+                return new Resposta<User>(null, 400, "E-mail inválido");
+            
+            user.Email = request.Email;
+            user.UserName = request.FullName.Replace(" ", "");
+            user.FullName = request.FullName;
+            user.PhoneNumber = request.PhoneNumber;
+            
+            var result = await _userManager.UpdateAsync(user);
+
+            if (!result.Succeeded)
+            {
+                var errors = string.Join(", ", result.Errors.Select(e => e.Description));
+                return new Resposta<User>(null, 400, $"Falha ao atualizar usuário: {errors}");
+            }
+            
+            await _context.SaveChangesAsync();
+
+            return new Resposta<User>(user, 200, "Usuário validado e atualizado com sucesso!");
+        }
+        catch
+        {
+            return new Resposta<User>(null, 500, "Erro no servidor");
+        }
+    }
+
+    public async Task<Resposta<User>> UserAdressValidation(AtualizarEnderecoRequisicao request)
+    {
+        try
+        {
+            var user = await _userManager.FindByIdAsync(request.UserId);
+
+            if (user == null)
+                return new Resposta<User>(null, 404, "Usuario nao encontrado");
+
+            user.Endereco.Rua = request.Rua;
+            user.Endereco.Numero = request.Numero;
+            user.Endereco.Bairro = request.Bairro;
+            user.Endereco.Cidade = request.Cidade;
+            user.Endereco.Estado = request.Estado;
+            user.Endereco.CEP = request.CEP;
+
+
+            var result = await _userManager.UpdateAsync(user);
+
+            if (!result.Succeeded)
+            {
+                var errors = string.Join(", ", result.Errors.Select(e => e.Description));
+                return new Resposta<User>(null, 400, $"Falha ao atualizar usuário: {errors}");
+            }
+
+            await _context.SaveChangesAsync();
+
+            return new Resposta<User>(user, 200, "Usuário validado e atualizado com sucesso!");
+        }
+        catch
+        {
+            return new Resposta<User>(null, 500, "Erro no servidor");
         }
     }
 }

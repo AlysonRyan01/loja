@@ -300,8 +300,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>r0es5coxd4</Fingerprint>
-      <Integrity>BTUPNaRqjpqMzWIbdXPth4/iRspE7I+b4o86Yn9ZwkY=</Integrity>
+      <Fingerprint>eeqpcjx9aw</Fingerprint>
+      <Integrity>5lkbfj+k1e5zi4cHh7amwnn72omJJpE6GQrl6uddT+s=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</OriginalItemSpec>

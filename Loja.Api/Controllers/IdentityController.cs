@@ -1,4 +1,5 @@
 ﻿using Loja.Core.Handlers;
+using Loja.Core.Requisicoes.Endereco;
 using Loja.Core.Requisicoes.Identity;
 using Loja.Core.Respostas;
 using Microsoft.AspNetCore.Mvc;
@@ -97,4 +98,35 @@ public class IdentityController(IIdentityHandler handler, ILogger<ProdutoControl
             return BadRequest(new Resposta<string>("Erro ao obter as roles.", 401, e.Message));
         }
     }
+
+    [HttpPut("v1/identity/manage/update")]
+    public async Task<IActionResult> UpdateUser(UserInfoValidationRequest request)
+    {
+        try
+        {
+            var result = await handler.UserInfoValidation(request);
+            
+            return result.IsSuccess ? Ok(result) : BadRequest(result);
+        }
+        catch (Exception e)
+        {
+            return BadRequest(new Resposta<string>("Erro ao atualizar o usuario.", 500, e.Message));
+        }
+    }
+    
+    [HttpPut("v1/identity/manage/update/adress")]
+    public async Task<IActionResult> UpdateUserAdress(AtualizarEnderecoRequisicao request)
+    {
+        try
+        {
+            var result = await handler.UserAdressValidation(request);
+            
+            return result.IsSuccess ? Ok(result) : BadRequest(result);
+        }
+        catch (Exception e)
+        {
+            return BadRequest(new Resposta<string>("Erro ao atualizar o endereco.", 500, e.Message));
+        }
+    }
+    
 }

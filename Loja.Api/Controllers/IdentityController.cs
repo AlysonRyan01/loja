@@ -114,7 +114,7 @@ public class IdentityController(IIdentityHandler handler, ILogger<ProdutoControl
         }
     }
     
-    [HttpPut("v1/identity/manage/update/adress")]
+    [HttpPut("v1/identity/manage/address")]
     public async Task<IActionResult> UpdateUserAdress(AtualizarEnderecoRequisicao request)
     {
         try

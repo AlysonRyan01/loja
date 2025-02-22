@@ -18,7 +18,7 @@ public partial class CheckoutPage : ComponentBase
     public MudForm UserInfoForm;
     public MudForm UserAdressForm;
     public bool UserInfoIsValid { get; set; } = false;
-    public bool UserAdressIsValid { get; set; } = false;
+    public bool UserAddressIsValid { get; set; } = false;
     [Parameter] public string Slug { get; set; } = String.Empty;
     public bool _userLoggedIn { get; set; }
     public ClaimsPrincipal _user { get; set; }
@@ -190,7 +190,7 @@ public partial class CheckoutPage : ComponentBase
 
             if (result.IsSuccess)
             {
-                UserAdressIsValid = true;
+                UserAddressIsValid = true;
                 StateHasChanged();
                 Snackbar.Add("Endereço validado com sucesso!", Severity.Success);
                 await ScrollToPagamento();

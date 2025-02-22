@@ -25,7 +25,8 @@ public class AtualizarEnderecoRequisicao
     public string Estado { get; set; }
 
     [Required(ErrorMessage = "O CEP é obrigatório.")]
-    [RegularExpression(@"^\d{5}-\d{3}$", ErrorMessage = "O CEP deve estar no formato 00000-000.")]
+    [StringLength(8, MinimumLength = 8, ErrorMessage = "O CEP deve ter exatamente 8 caracteres.")]
+    [RegularExpression("^[0-9]{8}$", ErrorMessage = "O CEP deve conter apenas números.")]
     public string CEP { get; set; }
 
     [Required(ErrorMessage = "O País é obrigatório.")]

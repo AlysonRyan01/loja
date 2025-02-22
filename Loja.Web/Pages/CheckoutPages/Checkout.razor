@@ -17,13 +17,13 @@ else
             <section class="section-userinfo">
                 <h2 class="h2-userinfo">Informações pessoais</h2>
                 <MudForm Model="UserInfo" @ref="UserInfoForm">
-                    <MudTextField Label="Nome" @bind-Value="UserInfo.FullName" FullWidth Required="true"
+                    <MudTextField Margin="Margin.Dense" Variant="Variant.Outlined" Label="Nome" @bind-Value="UserInfo.FullName" FullWidth Required="true"
                                   RequiredError="O nome é obrigatório" />
 
-                    <MudTextField Label="Email" @bind-Value="UserInfo.Email" FullWidth
+                    <MudTextField Margin="Margin.Dense" Variant="Variant.Outlined" Label="Email" @bind-Value="UserInfo.Email" FullWidth
                                   Validation="@(new EmailAddressAttribute().IsValid)" />
 
-                    <MudTextField Label="Telefone"
+                    <MudTextField Margin="Margin.Dense" Variant="Variant.Outlined" Label="Telefone"
                                   FullWidth
                                   Validation="ValidatePhone"
                                   Mask="@(new PatternMask("(00) 00000-0000"))" @bind-Value="UserInfo.PhoneNumber"/>
@@ -91,19 +91,22 @@ else
                             @bind-Value="Endereco.CEP"
                             FullWidth
                             Required="true"
+                            Mask="@(new PatternMask("00000-000"))"
                             RequiredError="O campo CEP é obrigatório"
-                            Validation="ValidateCEP" />
+                            Validation="ValidateCEP"/>
 
-                        <MudButton OnClick="UserAdressValidation" Disabled="@UserAdressIsValid" Color="Color.Primary">Validar</MudButton>
+                        <MudButton OnClick="UserAdressValidation" Disabled="@UserAddressIsValid" Color="Color.Primary">Validar</MudButton>
                     </MudForm>
                 </section>
             }
-            @if (UserInfoIsValid)
+            @if (UserInfoIsValid && UserAddressIsValid)
             {
                 <section class="section-pagamento" @ref="PagamentoSection">
                     <h2 class="h2-userinfo">Pagamento</h2>
-                    <MudTextField Mask="@(new PatternMask("0000 0000 0000 0000"))" Label="Número do Cartão" @bind-Value="Cartao.Numero" FullWidth />
+                    <p style="font-size: 1.2rem">Valor total: @carrinho.ValorTotal.ToString("C")</p>
                     <MudTextField Label="Nome no Cartão" @bind-Value="Cartao.Nome" FullWidth />
+                    <MudTextField Mask="@(new PatternMask("000.000.000-00"))" Label="CPF" @bind-Value="Cartao.CPF" FullWidth />
+                    <MudTextField Mask="@(new PatternMask("0000 0000 0000 0000"))" Label="Número do Cartão" @bind-Value="Cartao.Numero" FullWidth />
                     <div style="display: flex; width: 100%">
                         <MudTextField Mask="@(new DateMask("MM/YY", 'Y', 'M'))" Style="width: 50%" Label="Data de Expiração" @bind-Value="Cartao.Expiracao" />
                         <MudTextField Mask="@(new PatternMask("000"))" Style="width: 50%" Label="CVV" @bind-Value="Cartao.CVV" />
@@ -113,7 +116,7 @@ else
         </div>
 
         <div class="div-produtoinfo">
-            <h2 class="h2-produtos-checkout">Produtos:</h2>
+            <h2 class="h2-produtos-checkout">Produtos:  <span style="font-weight: lighter; font-size: 1.2rem; color: gray;">@carrinho.CarrinhoItens.Count</span></h2>
             @if (Slug.StartsWith("carrinho-"))
             {
                 foreach (var item in carrinho.CarrinhoItens)

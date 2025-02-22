@@ -1,4 +1,5 @@
 ﻿using System.Security.Claims;
+using Loja.Core.Models;
 using Loja.Core.Models.Identity;
 using Loja.Core.Requisicoes.Endereco;
 using Loja.Core.Requisicoes.Identity;
@@ -14,5 +15,5 @@ public interface IIdentityHandler
     Task<Resposta<UserInfo>> UserInfo(ClaimsPrincipal user);
     Task<Resposta<IEnumerable<RoleClaim>>> UserRoles(ClaimsPrincipal logedUser);
     Task<Resposta<User>> UserInfoValidation(UserInfoValidationRequest request);
-    Task<Resposta<User>> UserAdressValidation(AtualizarEnderecoRequisicao request);
+    Task<Resposta<Endereco>> UserAdressValidation(AtualizarEnderecoRequisicao request);
 }

@@ -10,6 +10,7 @@ using Loja.Core.Requisicoes.Identity;
 using Loja.Core.Respostas;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace Loja.Api.Handlers;
@@ -245,38 +246,30 @@ public class IdentityHandler : IIdentityHandler
         }
     }
 
-    public async Task<Resposta<User>> UserAdressValidation(AtualizarEnderecoRequisicao request)
+    public async Task<Resposta<Endereco>> UserAdressValidation(AtualizarEnderecoRequisicao request)
     {
         try
         {
-            var user = await _userManager.FindByIdAsync(request.UserId);
+            var endereco = await _context.Enderecos.FirstOrDefaultAsync(x => x.UserId.ToString() == request.UserId);
 
-            if (user == null)
-                return new Resposta<User>(null, 404, "Usuario nao encontrado");
+            if (endereco == null)
+                return new Resposta<Endereco>(null, 404, "Endereco nao encontrado");
 
-            user.Endereco.Rua = request.Rua;
-            user.Endereco.Numero = request.Numero;
-            user.Endereco.Bairro = request.Bairro;
-            user.Endereco.Cidade = request.Cidade;
-            user.Endereco.Estado = request.Estado;
-            user.Endereco.CEP = request.CEP;
+            endereco.Rua = request.Rua;
+            endereco.Numero = request.Numero;
+            endereco.Bairro = request.Bairro;
+            endereco.Cidade = request.Cidade;
+            endereco.Estado = request.Estado;
+            endereco.CEP = request.CEP;
 
-
-            var result = await _userManager.UpdateAsync(user);
-
-            if (!result.Succeeded)
-            {
-                var errors = string.Join(", ", result.Errors.Select(e => e.Description));
-                return new Resposta<User>(null, 400, $"Falha ao atualizar usuário: {errors}");
-            }
-
+            _context.Enderecos.Update(endereco);
             await _context.SaveChangesAsync();
 
-            return new Resposta<User>(user, 200, "Usuário validado e atualizado com sucesso!");
+            return new Resposta<Endereco>(endereco, 200, "Usuário validado e atualizado com sucesso!");
         }
         catch
         {
-            return new Resposta<User>(null, 500, "Erro no servidor");
+            return new Resposta<Endereco>(null, 500, "Erro no servidor");
         }
     }
 }

@@ -63,18 +63,18 @@ public class IdentityHandler(IHttpClientFactory httpClientFactory) : IIdentityHa
                ?? new Resposta<User>(null, 400, "Falha ao atualizar o usuario");
     }
 
-    public async Task<Resposta<User>> UserAdressValidation(AtualizarEnderecoRequisicao request)
+    public async Task<Resposta<Endereco>> UserAdressValidation(AtualizarEnderecoRequisicao request)
     {
-        var response = await client.PutAsJsonAsync("v1/identity/manage/update/adress", request);
+        var response = await client.PutAsJsonAsync("v1/identity/manage/address", request);
 
         if (!response.IsSuccessStatusCode)
         {
             var result = await response.Content.ReadFromJsonAsync<Resposta<User>>();
-            return new Resposta<User>(null, (int)response.StatusCode, result?.Mensagem);
+            return new Resposta<Endereco>(null, (int)response.StatusCode, result?.Mensagem);
         }
 
-        return await response.Content.ReadFromJsonAsync<Resposta<User>>()
-               ?? new Resposta<User>(null, 400, "Falha ao atualizar o endereco");
+        return await response.Content.ReadFromJsonAsync<Resposta<Endereco>>()
+               ?? new Resposta<Endereco>(null, 400, "Falha ao atualizar o endereco");
     }
 
     public async Task<Resposta<IEnumerable<RoleClaim>>> UserClaims(ClaimsPrincipal logedUser)

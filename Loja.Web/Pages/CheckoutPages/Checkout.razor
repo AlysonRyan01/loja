@@ -116,7 +116,7 @@ else
         </div>
 
         <div class="div-produtoinfo">
-            <h2 class="h2-produtos-checkout">Produtos:  <span style="font-weight: lighter; font-size: 1.2rem; color: gray;">@carrinho.CarrinhoItens.Count</span></h2>
+            <h2 class="h2-produtos-checkout">Produtos:  <span style="font-weight: lighter; font-size: 1.2rem;">@carrinho.CarrinhoItens.Count</span></h2>
             @if (Slug.StartsWith("carrinho-"))
             {
                 foreach (var item in carrinho.CarrinhoItens)

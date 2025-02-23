@@ -5,25 +5,23 @@
 <MudSnackbarProvider />
 <MudDialogProvider/>
 
+<div class="scrolling-container">
+    <div class="scrolling-text-container">
+        <p class="scrolling-text">Frete grátis, devolução em 30 dias ou garantia de reembolso.</p>
+        <p class="scrolling-text">Frete grátis, devolução em 30 dias ou garantia de reembolso.</p>
+        <p class="scrolling-text">Frete grátis, devolução em 30 dias ou garantia de reembolso.</p>
+    </div>
+</div>
+
 <header class="cabecalho">
     <NavLink @onclick="LimparCampoPesquisa" href="/" class="nav-link">
         <img class="logo" src="images/TVS%20ELETRÔNICA-Photoroom.png" alt="">
     </NavLink>
 
-    <div style="display: flex; justify-content: center; align-items: center">
-        <MudTextField T="string"
-                      @bind-Value="SearchTerm"
-                      Immediate="true"
-                      Placeholder="Pesquisar..."
-                      Variant="Variant.Filled"
-                      Margin="Margin.Dense"
-                      @onkeypress="HandleKeyPress"
-                      Class="campo-busca">
-        </MudTextField>
-
-        <MudButton @onclick="HandleMouseClick" Class="btn-lupa">
-            <MudIcon Icon="@Icons.Material.Filled.Search" Color="Color.Secondary" />
-        </MudButton>
+    <div style="display: flex; justify-content: space-between; align-items: center; width: 20%;">
+        <NavLink class="nav-link links" href="/" Match="NavLinkMatch.All">Início</NavLink>
+        <NavLink class="nav-link links" href="/loja" Match="NavLinkMatch.All">Loja</NavLink>
+        <NavLink class="nav-link links" href="/contato" Match="NavLinkMatch.All">Contato</NavLink>
     </div>
     
     <div class="hamburger-itens">

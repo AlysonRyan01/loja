@@ -29,7 +29,7 @@ else
                         <MudCarousel Class="carrossel-produto-imagens" ShowArrows="true" EnableSwipeGesture="true" TData="Imagem" Indicators="true">
                             @foreach (var imagem in Itens.Produto.Imagens)
                             {
-                                var imagemUrl = $"{WebConfiguration.BackendUrl}{imagem.Url}";
+                                var imagemUrl = $"{WebConfiguration.BackendUrl}{imagem.Url}"; 
                                 <MudCarouselItem Class="carrossel-item-home">
                                     <img class="img-carrossel-produto" src="@imagemUrl" alt="sla"/>
                                 </MudCarouselItem>

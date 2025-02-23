@@ -33,10 +33,8 @@ build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FycmluaG9QYWdlc1xDYXJyaW5o
 build_metadata.AdditionalFiles.CssScope = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/loja/loja.web/Pages/HomePages/Home.razor]
+[C:/Projetos/loja/loja.web/Pages/LojaPages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = 
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVBhZ2VzXEhvbWUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Projetos/loja/loja.web/Pages/ProdutoPages/ProdutoPage.razor]
@@ -69,12 +67,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hlY2tvdXRQYWdlc1xDaGVja291dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Projetos/loja/loja.web/Pages/HomePages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVBhZ2VzXEhvbWUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Projetos/loja/loja.web/Pages/Identity/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSWRlbnRpdHlcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Projetos/loja/loja.web/Pages/Identity/Register.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSWRlbnRpdHlcUmVnaXN0ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projetos/loja/loja.web/Pages/LojaPages/Loja.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9qYVBhZ2VzXExvamEucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Projetos/loja/loja.web/_Imports.razor]

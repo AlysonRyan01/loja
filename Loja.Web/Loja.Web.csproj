@@ -25,7 +25,7 @@
 
   <ItemGroup>
     <AdditionalFiles Include="Pages\CarrinhoPages\CarrinhoPage.razor" />
-    <AdditionalFiles Include="Pages\HomePages\Home.razor" />
+    <AdditionalFiles Include="Pages\LojaPages\Home.razor" />
     <AdditionalFiles Include="Pages\ProdutoPages\ProdutoPage.razor" />
   </ItemGroup>
 

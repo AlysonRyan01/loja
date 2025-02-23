@@ -33,12 +33,24 @@
       "PackagePath": "staticwebassets\\images\\Banner para loja de eletrônicos computador desconto preto e vermelho.png"
     },
     {
+      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\images\\TV-Photoroom.png",
+      "PackagePath": "staticwebassets\\images\\TV-Photoroom.png"
+    },
+    {
       "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\images\\TVS ELETRÔNICA-Photoroom.png",
       "PackagePath": "staticwebassets\\images\\TVS ELETRÔNICA-Photoroom.png"
     },
     {
+      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\images\\TVeditada.PNG",
+      "PackagePath": "staticwebassets\\images\\TVeditada.PNG"
+    },
+    {
       "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\images\\banner.png",
       "PackagePath": "staticwebassets\\images\\banner.png"
+    },
+    {
+      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\images\\c825-series.png",
+      "PackagePath": "staticwebassets\\images\\c825-series.png"
     },
     {
       "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\images\\icon-amazon-delivered._CB406595335_.png",
@@ -55,6 +67,14 @@
     {
       "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\images\\icons8-cardápio-144.png",
       "PackagePath": "staticwebassets\\images\\icons8-cardápio-144.png"
+    },
+    {
+      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\images\\img05.jpg",
+      "PackagePath": "staticwebassets\\images\\img05.jpg"
+    },
+    {
+      "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\images\\img05edited.JPG",
+      "PackagePath": "staticwebassets\\images\\img05edited.JPG"
     },
     {
       "Id": "C:\\Projetos\\loja\\loja.web\\wwwroot\\images\\shopping-cart.png",

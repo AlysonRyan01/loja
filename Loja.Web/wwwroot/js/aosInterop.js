@@ -1,0 +1,3 @@
+﻿window.initAOS = () => {
+    AOS.init();
+};

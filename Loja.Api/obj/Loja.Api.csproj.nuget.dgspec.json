@@ -1,33 +1,40 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\loja\\loja.api\\Loja.Api.csproj": {}
+    "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\Loja.Api.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\loja\\loja.api\\Loja.Api.csproj": {
+    "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\Loja.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\loja\\loja.api\\Loja.Api.csproj",
+        "projectUniqueName": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\Loja.Api.csproj",
         "projectName": "Loja.Api",
-        "projectPath": "C:\\Projetos\\loja\\loja.api\\Loja.Api.csproj",
-        "packagesPath": "C:\\Users\\alyso\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\loja\\loja.api\\obj\\",
+        "projectPath": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\Loja.Api.csproj",
+        "packagesPath": "C:\\Users\\TVS'PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.api\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\alyso\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\TVS'PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Projetos\\loja\\Loja.Core\\Loja.Core.csproj": {
-                "projectPath": "C:\\Projetos\\loja\\Loja.Core\\Loja.Core.csproj"
+              "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Core\\Loja.Core.csproj": {
+                "projectPath": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Core\\Loja.Core.csproj"
               }
             }
           }
@@ -40,9 +47,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -110,26 +117,33 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Projetos\\loja\\Loja.Core\\Loja.Core.csproj": {
+    "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Core\\Loja.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\loja\\Loja.Core\\Loja.Core.csproj",
+        "projectUniqueName": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Core\\Loja.Core.csproj",
         "projectName": "Loja.Core",
-        "projectPath": "C:\\Projetos\\loja\\Loja.Core\\Loja.Core.csproj",
-        "packagesPath": "C:\\Users\\alyso\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\loja\\Loja.Core\\obj\\",
+        "projectPath": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Core\\Loja.Core.csproj",
+        "packagesPath": "C:\\Users\\TVS'PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\alyso\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\TVS'PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -146,9 +160,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -183,7 +197,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

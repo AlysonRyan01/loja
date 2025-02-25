@@ -3,7 +3,7 @@
 @inherits HomePage
 
 <div class="background-home-page">
-    <div style="display: flex; flex-direction: column; width: 500px; margin-left: 85px;">
+    <div style="display: flex; flex-direction: column; width: 500px; margin-left: 10vw; margin-right: 30px;">
         <section style="margin-bottom: 5px;"><p class="aproveite-background">APROVEITE JÁ</p></section>
         <section style="margin-bottom: 20px;">
             <h1 class="titulo-background">TVs Usadas com Qualidade e Preço Baixo!</h1></section>
@@ -14,11 +14,34 @@
             <span class="comprar-agora">COMPRAR AGORA</span> <MudIcon Icon="@Icons.Material.Filled.ArrowRight" class="ml-2" />
         </MudButton>
     </div>
-    <img src="images/TVeditada.PNG" style="width: 40%;"/>
+    <img src="images/tv-image-4k.webp" style="width: 40%;"/>
 </div>
 
+<div class="nosso-foco">
+    <h1 data-aos="fade-up" data-aos-duration="1000" class="sobre-titulo">NOSSO FOCO</h1>
+    <section class="nosso-foco-banners">
+        <div data-aos="fade-up" data-aos-duration="1000" class="nosso-foco-banner">
+            <img src="images/ferramenta-image.png" style="width: 200px;"/>
+            <h2 class="nosso-foco-titulo">Assistência Técnica Especializada</h2>
+            <p class="nosso-foco-texto">Somos autorizados Philco e Britânia, oferecendo reparos com peças originais e técnicos qualificados.</p>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000" class="nosso-foco-banner">
+            <img src="images/pngtree-electronics-tv-illustration-image_1430590-Photoroom.png" style="width: 200px"/>
+            <h2 class="nosso-foco-titulo">Venda de Televisores Confiáveis</h2>
+            <p class="nosso-foco-texto">Trabalhamos com produtos revisados e garantimos qualidade em cada venda. Produtos com garantia de 1 ano.</p>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000" class="nosso-foco-banner">
+            <img src="images/istockphoto-1286244940-612x612-removebg-preview.png" style="width: 200px"/>
+            <h2 class="nosso-foco-titulo">Rapidez e Eficiência</h2>
+            <p class="nosso-foco-texto">Realizamos orçamentos ágeis e entregamos soluções e produtos no menor tempo possível.</p>
+        </div>
+    </section>
+</div>
+
+<hr class="custom-hr-home"/>
+
 <div class="sobre">
-    <section class="section-texto-sobre">
+    <section data-aos="fade-up" data-aos-duration="1000" class="section-texto-sobre">
         <h1 class="sobre-titulo">SOBRE NÓS</h1>
         <p class="sobre-subtitulo">Qualidade e Confiança em Assistência Técnica e Venda de Televisores há Mais de 30 Anos</p>
         <p class="paragrafo-sobre">A TVS ELETRÔNICA está há mais de 30 anos oferecendo excelência no conserto e venda de televisores. Localizada em Campo Largo, Paraná, somos referência em assistência técnica especializada, garantindo qualidade e confiabilidade para nossos clientes.</p>
@@ -29,7 +52,7 @@
 
         <p><strong>📍 Campo Largo, Paraná</strong> | <strong>🔧 Mais de 30 anos de experiência</strong></p>
     </section>
-    <section class="section-metas-sobre">
+    <section data-aos="fade-up" data-aos-duration="1000" class="section-metas-sobre">
         <h1 class="metas-titulo">CONQUISTAS</h1>
         <ul class="metas-lista">
             <li><MudIcon Icon="@Icons.Material.Filled.ArrowForward" Color="Color.Secondary" />Mais de 1.000 vendas realizadas</li>
@@ -37,6 +60,35 @@
             <li><MudIcon Icon="@Icons.Material.Filled.ArrowForward" Color="Color.Secondary"/>Mais de 30.000 consertos concluídos</li>
             <li><MudIcon Icon="@Icons.Material.Filled.ArrowForward" Color="Color.Secondary" />Empresa autorizada Philco</li>
         </ul>
+    </section>
+</div>
+
+<hr class="custom-hr-home"/>
+
+<div class="entre-em-contato">
+    <section data-aos="fade-up" data-aos-duration="1000" class="entre-em-contato-informacoes">
+        <h1 class="contato-titulo">ENTRE EM CONTATO</h1>
+        <h2 class="contato-subtitulo">📩 Fale Conosco - Estamos Aqui Para Ajudar!</h2>
+        <p class="contato-texto">Tem alguma dúvida, precisa de um orçamento ou quer saber mais sobre nossos serviços? Entre em contato conosco pelo e-mail e teremos o prazer de atendê-lo.</p>
+        <p class="contato-email">📧<span style="font-weight: bolder">E-mail:</span> tvseletronica@tvseletronica.com.br</p>
+        <p class="contato-telefone">📞<span style="font-weight: bolder">Fone:</span> (41) 3292-3047</p>
+        <p class="contato-texto">Nossa equipe está pronta para oferecer o melhor atendimento e solucionar suas dúvidas o mais rápido possível! 🚀</p>
+    </section>
+    
+    <section data-aos="fade-up" data-aos-duration="1000" class="entre-em-contato-formulario">
+        <MudForm Model="contato" Valid="valid" Style="width: 100%">
+            <MudTextField FullWidth="true" Label="Nome" @bind-Value="contato.Nome" Required="true" RequiredError="O nome é obrigatório." Variant="Variant.Outlined" />
+
+            <MudTextField FullWidth="true" Label="E-mail" @bind-Value="contato.Email" Required="true" RequiredError="O e-mail é obrigatório."
+                          Variant="Variant.Outlined" Type="email" />
+
+            <MudTextField Style="height: 200px;" FullWidth="true" Label="Mensagem" @bind-Value="contato.Mensagem" Required="true" RequiredError="A mensagem é obrigatória."
+                          Variant="Variant.Outlined" Multiline="true" Rows="4" />
+
+            <MudButton Style="width: 200px;" OnClick="EnviarFormulario" Disabled="valid" Color="Color.Primary" Variant="Variant.Filled" Class="mt-3">
+                <span style="color: white">Enviar Mensagem</span>
+            </MudButton>
+        </MudForm>
     </section>
 </div>
 

@@ -5,7 +5,101 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 60px 170px;
+    padding: 0 10vw;;
+}
+
+.nosso-foco
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 10vw;
+    margin-bottom: 40px;
+    margin-top: 80px;
+}
+
+.nosso-foco-banners
+{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.nosso-foco-banner
+{
+    display: flex;
+    margin: 0 90px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 15vw;
+    min-width: 200px;
+    height: 500px;
+    border: 0.5px solid lightgray;
+    border-radius: 10px;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(-45deg, #E01010, #bf0603);
+}
+
+.scrollsection
+{
+    
+}
+
+.entre-em-contato
+{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10vw;
+    margin-bottom: 180px;
+}
+
+.entre-em-contato-informacoes
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 45%;
+    min-width: 400px;
+}
+
+.entre-em-contato-formulario
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 50%;
+    min-width: 400px;
+}
+
+.nosso-foco-titulo
+{
+    font-family: "Allerta", serif;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    margin: 0 15px 20px 15px;
+}
+
+.nosso-foco-texto
+{
+    font-family: "Open Sans", serif;
+    color: white;
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 0 20px;
+    font-weight: 500;
 }
 
 .section-texto-sobre
@@ -65,7 +159,7 @@
     font-size: 2.2rem;
     font-weight: bolder;
     font-style: normal;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
 }
 
 .sobre-subtitulo
@@ -87,6 +181,58 @@
 .paragrafo-sobre
 {
     margin-bottom: 20px;
+    font-family: "Open Sans", serif;
+    font-weight: 600;
+}
+
+.contato-titulo
+{
+    font-family: "Allerta", serif;
+    color: #bf0603;
+    font-size: 2.2rem;
+    font-weight: bolder;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+.contato-subtitulo
+{
+    font-family: "Open Sans", serif;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+.contato-texto
+{
+    font-family: "Open Sans", serif;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+.contato-email
+{
+    font-family: "Open Sans", serif;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+.contato-telefone
+{
+    font-family: "Open Sans", serif;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 20px;
 }
 
 .background-home-page
@@ -95,7 +241,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: linear-gradient(-45deg, #F3F2EE, #F3F2EE);
+    background-image: url('../images/banner2.png');
+    background-size: cover; /* Faz a imagem cobrir todo o elemento */
+    background-position: center; /* Posiciona a imagem no centro */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
     width: 100%;
     min-height: 85vh;
     margin-bottom: 30px;
@@ -107,6 +256,7 @@
     font-weight: 600;
     font-style: normal;
     font-size: 3rem;
+    color: #bf0603;
 }
 
 .texto-background
@@ -114,7 +264,7 @@
     font-family: "Allerta", serif;
     font-weight: 400;
     font-style: normal;
-    color: slategray;
+    color: black;
 }
 
 .aproveite-background
@@ -204,6 +354,7 @@
     background-color: white;
     height: 10vh;
     min-height: 80px;
+    max-height: 200px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -369,6 +520,17 @@ main {
     height: 0.1px;
     background-color: lightgray;
     width: 100%;
+}
+
+.custom-hr-home {
+    align-self: center;
+    justify-self: center;
+    border: 0;
+    height: 0.1px;
+    background-color: lightgray;
+    width: 30%;
+    margin-top: 180px;
+    margin-bottom: 180px;
 }
 
 .btn-lupa

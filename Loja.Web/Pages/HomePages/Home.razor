@@ -1,8 +1,13 @@
 ﻿@page "/"
-@using global::Loja.Core.Models
 @inherits HomePage
 
-<div class="background-home-page">
+@if (IsBusy == true)
+{
+    
+}
+else
+{
+    <div class="background-home-page">
     <div style="display: flex; flex-direction: column; width: 500px; margin-left: 10vw; margin-right: 30px;">
         <section style="margin-bottom: 5px;"><p class="aproveite-background">APROVEITE JÁ</p></section>
         <section style="margin-bottom: 20px;">
@@ -92,3 +97,4 @@
     </section>
 </div>
 
+}

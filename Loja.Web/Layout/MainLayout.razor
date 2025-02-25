@@ -1,9 +1,11 @@
 ﻿@using Dima.Web.Services
+@using Loja.Core.Models.Identity
 @inherits MainLayoutPage
 
 <MudThemeProvider Theme="WebConfiguration.theme"/>
 <MudSnackbarProvider />
 <MudDialogProvider/>
+<MudPopoverProvider />
 
 <div class="scrolling-container">
     <div class="scrolling-text-container">
@@ -18,7 +20,7 @@
         <img class="logo" src="images/TVS%20ELETRÔNICA-Photoroom.png" alt="">
     </NavLink>
 
-    <div style="display: flex; justify-content: space-between; align-items: center; width: 20%; min-width: 270px;">
+    <div class="links-cabecalho">
         <NavLink class="nav-link links" href="/" Match="NavLinkMatch.All">Início</NavLink>
         <NavLink class="nav-link links" href="/loja" Match="NavLinkMatch.All">Loja</NavLink>
         <NavLink class="nav-link links" href="/blog" Match="NavLinkMatch.All">Blog</NavLink>
@@ -26,12 +28,69 @@
     </div>
     
     <div class="hamburger-itens">
-        <MudButton Style="margin-right: 3vw" Color="Color.Primary" Variant="Variant.Text" OnClick="@ToggleDrawer">
+        <MudButton Class="mud-button-menu" Color="Color.Primary" Variant="Variant.Text" OnClick="@ToggleDrawer">
             <img class="hamburger-imagem" src="images/icons8-cardápio-144.png" alt="menu"/>
         </MudButton>
-        <NavLink href="@($"/carrinho/{Username}")" class="nav-link">
-            <img class="carrinho-imagem" src="images/shopping-cart.png" alt="carrinho"/>
-        </NavLink>
+        
+        <div class="entrar-cadastrar">
+            @if (_userLoggedIn == false)
+            {
+                <section class="menu-entrar-cadastrar">
+                    <p><a href="/entrar" class="entrar-cadastrar-texto">Entrar</a> /</p>
+                    <a href="/cadastrar" class="entrar-cadastrar-texto">Cadastrar</a>
+                </section>
+            }
+            else
+            {
+                <MudMenu Style="display: flex; align-self: end; align-items: end;" ActivationEvent="@MouseEvent.MouseOver" AnchorOrigin="Origin.BottomCenter" TransformOrigin="Origin.TopCenter">
+                    <ActivatorContent>
+                        <div class="profile-div" style="cursor: pointer;">
+
+                            <section class="profile-section">
+                                <MudAvatar Color="Color.Primary" Size="Size.Small" Style="color: white;">
+                                    @Username[0].ToString().ToUpper()
+                                </MudAvatar>
+                                <p class="profile-name-text">@Username.Split(' ')[0]</p>
+                            </section>
+
+                            <MudIcon Icon="@Icons.Material.Filled.ArrowDropDown" />
+                        </div>
+                    </ActivatorContent>
+                    <ChildContent>
+                        <MudMenuItem Style="width: 300px;" Label="Meu Perfil" />
+                        <MudMenuItem Style="width: 300px;" Label="Carrinho" />
+                        <MudMenuItem Style="width: 300px;" Label="Pedidos" />
+                        <MudMenuItem Style="width: 300px;" Label="Sair" />
+                    </ChildContent>
+                </MudMenu>
+
+            }
+        </div>
+        
+        <a href="/carrinho" class="shopping-cart-div">
+            <section class="shopping-cart-background">
+                @if (carrinho.UserId != 0)
+                {
+                    <p class="quantidade-carrinho">@carrinho.CarrinhoItens.Count</p>
+                }
+                else
+                {
+                    <p class="quantidade-carrinho">0</p>
+                }
+            </section>
+            <section class="shopping-cart-valortotal">
+                @if (carrinho.UserId != 0)
+                {
+                    <p class="valor-carrinho">@carrinho.ValorTotal.ToString("C")</p>
+                }
+                else
+                {
+                    <p class="valor-carrinho">R$0.00</p>
+                }
+                <hr class="custom-hr-carrinho"/>
+                <p class="valor-carrinho">Carrinho</p>
+            </section>
+        </a>
     </div>
 </header>
 

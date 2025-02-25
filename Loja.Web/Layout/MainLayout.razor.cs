@@ -31,6 +31,10 @@ public class MainLayoutPage : LayoutComponentBase
     
     public string SearchTerm { get; set; }
 
+    public Carrinho carrinho { get; set; } = new Carrinho();
+    
+    public MudMenu menu;
+
     #endregion
 
     #region dependencies
@@ -40,6 +44,7 @@ public class MainLayoutPage : LayoutComponentBase
     [Inject] public NavigationManager NavigationManager { get; set; } = null!;
     [Inject] public SearchService SearchService { get; set; } = null!;
     [Inject] public ICarrinhoHandler CarrinhoHandler { get; set; } = null!;
+    [Inject] public IIdentityHandler IdentityHandler { get; set; } = null!;
 
     #endregion
     
@@ -56,7 +61,17 @@ public class MainLayoutPage : LayoutComponentBase
             {
                 _userLoggedIn = true;
                 _user = user;
-                Username = user.Identity.Name ?? string.Empty;
+                
+                var identityResult = await IdentityHandler.UserInfo(user);
+                if (identityResult.IsSuccess)
+                {
+                    Username = identityResult.Dados.FullName;
+                }
+                
+                var carrinhoResult = await CarrinhoHandler.ObterCarrinhoPorUserAsync(user);
+                if (carrinhoResult.IsSuccess)
+                    carrinho = carrinhoResult.Dados ?? new ();
+
             }
             else
             {

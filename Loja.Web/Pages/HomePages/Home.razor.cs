@@ -10,6 +10,7 @@ public partial class HomePage : ComponentBase
     
     public ContatoRequisicao contato = new ContatoRequisicao();
     public bool valid;
+    public bool IsBusy = false;
     
     [Inject] public IJSRuntime JSRuntime { get; set; } = null!;
     [Inject] public ISnackbar Snackbar { get; set; } = null!;

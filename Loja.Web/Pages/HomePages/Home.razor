@@ -8,34 +8,35 @@
 else
 {
     <div class="background-home-page">
-    <div style="display: flex; flex-direction: column; width: 500px; margin-left: 10vw; margin-right: 30px;">
-        <section style="margin-bottom: 5px;"><p class="aproveite-background">APROVEITE JÁ</p></section>
-        <section style="margin-bottom: 20px;">
-            <h1 class="titulo-background">TVs Usadas com Qualidade e Preço Baixo!</h1></section>
-        <section style="margin-bottom: 25px;">
-            <p class="texto-background">Garanta já a sua TV usada em ótimo estado por um preço que cabe no seu bolso! Diversos modelos e tamanhos disponíveis. Aproveite antes que acabe!</p></section>
+        <div class="background-home-text">
+            <section style="margin-bottom: 5px;"><p class="aproveite-background">APROVEITE JÁ</p></section>
+            <section style="margin-bottom: 20px;">
+                <h1 class="titulo-background">TVs Usadas com Qualidade e Preço Baixo!</h1></section>
+            <section style="margin-bottom: 25px;">
+                <p class="texto-background">Garanta já a sua TV usada em ótimo estado por um preço que cabe no seu bolso! Diversos modelos e tamanhos disponíveis. Aproveite antes que acabe!</p></section>
 
-        <MudButton Href="/loja" Variant="Variant.Filled" Color="Color.Primary" FullWidth="false" Style="width: 200px; height: 50px;">
-            <span class="comprar-agora">COMPRAR AGORA</span> <MudIcon Icon="@Icons.Material.Filled.ArrowForward" Color="Color.Secondary" class="ml-2" />
-        </MudButton>
+            <MudButton Href="/loja" Variant="Variant.Filled" Color="Color.Primary" FullWidth="false" Style="width: 200px; height: 50px;">
+                <span class="comprar-agora">COMPRAR AGORA</span> <MudIcon Icon="@Icons.Material.Filled.ArrowForward" Color="Color.Secondary" class="ml-2" />
+            </MudButton>
+        </div>
+        <img class="img-background" src="images/tv-image-4k.webp" style="width: 40%;"/>
+        <img class="img-background-celular" src="images/videoframe_4403-Photoroom.png" style="width: 40%;"/>
     </div>
-    <img src="images/tv-image-4k.webp" style="width: 40%;"/>
-</div>
 
 <div class="nosso-foco">
     <h1 data-aos="fade-up" data-aos-duration="1000" class="sobre-titulo">NOSSO FOCO</h1>
     <section class="nosso-foco-banners">
-        <div data-aos="fade-up" data-aos-duration="1000" class="nosso-foco-banner">
+        <div data-aos="flip-right" data-aos-duration="1000" class="nosso-foco-banner">
             <img src="images/ferramenta-image.png" style="width: 200px;"/>
             <h2 class="nosso-foco-titulo">Assistência Técnica Especializada</h2>
             <p class="nosso-foco-texto">Somos autorizados Philco e Britânia, oferecendo reparos com peças originais e técnicos qualificados.</p>
         </div>
-        <div data-aos="fade-up" data-aos-duration="1000" class="nosso-foco-banner">
+        <div data-aos="flip-up" data-aos-duration="1000" class="nosso-foco-banner">
             <img src="images/pngtree-electronics-tv-illustration-image_1430590-Photoroom.png" style="width: 200px"/>
             <h2 class="nosso-foco-titulo">Venda de Televisores Confiáveis</h2>
             <p class="nosso-foco-texto">Trabalhamos com produtos revisados e garantimos qualidade em cada venda. Produtos com garantia de 1 ano.</p>
         </div>
-        <div data-aos="fade-up" data-aos-duration="1000" class="nosso-foco-banner">
+        <div data-aos="flip-left" data-aos-duration="1000" class="nosso-foco-banner">
             <img src="images/istockphoto-1286244940-612x612-removebg-preview.png" style="width: 200px"/>
             <h2 class="nosso-foco-titulo">Rapidez e Eficiência</h2>
             <p class="nosso-foco-texto">Realizamos orçamentos ágeis e entregamos soluções e produtos no menor tempo possível.</p>
@@ -87,7 +88,7 @@ else
             <MudTextField FullWidth="true" Label="E-mail" @bind-Value="contato.Email" Required="true" RequiredError="O e-mail é obrigatório."
                           Variant="Variant.Outlined" Type="email" />
 
-            <MudTextField Style="height: 200px;" FullWidth="true" Label="Mensagem" @bind-Value="contato.Mensagem" Required="true" RequiredError="A mensagem é obrigatória."
+            <MudTextField FullWidth="true" Label="Mensagem" @bind-Value="contato.Mensagem" Required="true" RequiredError="A mensagem é obrigatória."
                           Variant="Variant.Outlined" Multiline="true" Rows="4" />
 
             <MudButton Style="width: 200px;" OnClick="EnviarFormulario" Disabled="valid" Color="Color.Primary" Variant="Variant.Filled" Class="mt-3">

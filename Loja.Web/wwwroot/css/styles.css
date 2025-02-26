@@ -8,6 +8,20 @@
     padding: 0 10vw;;
 }
 
+.img-background-celular
+{
+    display: none;
+}
+
+.background-home-text
+{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-left: 10vw;
+    margin-right: 30px;
+}
+
 .links-cabecalho
 {
     display: flex;
@@ -147,18 +161,18 @@
     width: 100%;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .nosso-foco-banner
 {
     display: flex;
-    margin: 0 90px;
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    min-width: 280px;
-    max-width: 280px;
+    margin: 0 30px;
+    min-width: 230px;
+    width: 15vw;
     height: 500px;
     border: 0.5px solid lightgray;
     border-radius: 10px;
@@ -1412,6 +1426,152 @@ main {
 
 /* Estilos para celulares (até 600px) */
 @media screen and (max-width: 600px) {
+    .entre-em-contato
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 10px;
+        margin-bottom: 180px;
+    }
+
+    .entre-em-contato-informacoes
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        text-align: center;
+    }
+
+    .entre-em-contato-formulario
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .contato-titulo
+    {
+        align-self: center;
+    }
+    
+    .sobre
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .custom-hr-home {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .section-metas-sobre
+    {
+        width: 98%;
+    }
+
+    .section-texto-sobre
+    {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .nosso-foco-banners
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .nosso-foco-banner
+    {
+        margin: 30px 20px;
+        width: 85vw;
+        height: 500px;
+    }
+    
+    .nosso-foco-titulo
+    {
+        font-size: 1.5rem;
+    }
+    
+    .nosso-foco-texto
+    {
+        font-size: 1rem;
+    }
+    
+    .sobre-titulo
+    {
+        font-size: 1.5em;
+        margin-bottom: 40px;
+    }
+    
+    .img-background-celular
+    {
+        display: flex;
+    }
+
+    .texto-background
+    {
+        font-size: 0.8rem;
+    }
+    
+    .aproveite-background
+    {
+        font-family: "Allerta", serif;
+        font-weight: 400;
+        font-size: 0.8rem;
+        font-style: normal;
+        color: darkred;
+    }
+
+    .titulo-background
+    {
+        font-family: "Allerta", serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1.8rem;
+        color: #bf0603;
+        max-width: 300px;
+    }
+    
+    .img-background
+    {
+        display: none;
+    }
+    
+    .background-home-text
+    {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    
+
+    .background-home-page
+    {
+        justify-content: start;
+        padding: 0;
+        min-height: 55vh;
+    }
+    
     .links-cabecalho
     {
         display: none;
@@ -1671,6 +1831,11 @@ main {
         display: flex;
         justify-content: start;
         align-items: center;
+    }
+    
+    .img-background-celular
+    {
+        display: none;
     }
     
     .div-para-esconder

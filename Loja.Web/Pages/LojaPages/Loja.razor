@@ -11,55 +11,76 @@
     }
     else
     {
-        foreach (var produto in SearchService.ProdutosFiltrados)
-        {
-            <MudItem>
-                <MudCard class="mudcard-principal-home">
-                    <NavLink href="@($"/produto/{produto.Slug}")">
-                        <MudCardContent class="mudcardcontent-principal-home">
-                            <h5 class="frete-info">FRETE GRÁTIS / 6x s/juros</h5>
-                            <h3>@produto.Titulo</h3>
-                        </MudCardContent>
-                    </NavLink>
+        <div class="div-filtro-produto">
+            <section class="filtro-section">
+                <MudCard Class="p-4">
+                    <MudText Typo="Typo.h6">Filtrar TVs</MudText>
 
-                    <MudCarousel class="carrossel-home" ShowArrows="true" EnableSwipeGesture="true" TData="Imagem" Indicators="true">
-                        @foreach (var imagem in produto.Imagens)
-                        {
-                            var imagemUrl = $"{WebConfiguration.BackendUrl}{imagem.Url}";
-                            <MudCarouselItem class="carrossel-item-home">
-                                <img class="img-produto-carrossel-home" src="@imagemUrl" alt="sla"/>
-                            </MudCarouselItem>
-                        }
-                    </MudCarousel>
+                    <!-- Filtro por Marca -->
+                    <MudCheckBox T="string" Label="Samsung" @bind-Checked="@filtroSamsung" OnChange="FiltrarTVs"/>
+                    <MudCheckBox T="string" Label="LG" @bind-Checked="@filtroLG" OnChange="FiltrarTVs"/>
+                    <MudCheckBox T="string" Label="Sony" @bind-Checked="@filtroSony" OnChange="FiltrarTVs"/>
 
-                    <MudCardContent  Class="mudcardcontent-info-home">
-                        <p class="produto-preco-antigo">De R$ @produto.Preco.ToString("F2")</p>
-                        <p class="produto-preco-novo">Por R$ @produto.Preco.ToString("F2")</p>
-                        <p class="desconto-pix">No PIX (5% de desconto)</p>
-                        <p>Ou R$ @produto.Preco.ToString("F2") em até 6x s/ juros no cartão</p>
+                    <!-- Filtro por Preço -->
+                    <MudText>Preço máximo: R$ @precoMax.ToString("N0")</MudText>
+                    <MudSlider Min="1000" Max="10000" Step="500" @bind-Value="@precoMax" />
 
-                        <div class="div-mudbuttons-comprar-carrinho">
-                            @if (_userLoggedIn)
-                            {
-                                <MudButton href="@($"/checkout/produto-{produto.Slug}")" Color="Color.Primary" Variant="Variant.Filled" Class="mudbutton-comprar" Style="color: white;">
-                                    COMPRAR
-                                </MudButton>
-                            }
-                            else
-                            {
-                                <MudButton href="/entrar" Color="Color.Primary" Variant="Variant.Filled" Class="mudbutton-comprar" Style="color: white;">
-                                    COMPRAR
-                                </MudButton>
-                            }
-
-                            <MudButton OnClick="() => AdicionarAoCarrinho(produto.Id)" Color="Color.Primary" Variant="Variant.Outlined" Class="mudbutton-carrinho">
-                                Adicionar ao Carrinho
-                            </MudButton>
-                        </div>
-                    </MudCardContent>
+                    <MudDivider Class="my-3"/>
                 </MudCard>
-            </MudItem>
-        }
+            </section>
+            
+            <section class="produtos-section">
+                @foreach (var produto in TVsFiltradas)
+                {
+                    <MudItem>
+                        <MudCard class="mudcard-principal-home">
+                            <NavLink href="@($"/produto/{produto.Slug}")">
+                                <MudCardContent class="mudcardcontent-principal-home">
+                                    <h5 class="frete-info">FRETE GRÁTIS / 6x s/juros</h5>
+                                    <h3>@produto.Titulo</h3>
+                                </MudCardContent>
+                            </NavLink>
+
+                            <MudCarousel class="carrossel-home" ShowArrows="true" EnableSwipeGesture="true" TData="Imagem" Indicators="true">
+                                @foreach (var imagem in produto.Imagens)
+                                {
+                                    var imagemUrl = $"{WebConfiguration.BackendUrl}{imagem.Url}";
+                                    <MudCarouselItem class="carrossel-item-home">
+                                        <img class="img-produto-carrossel-home" src="@imagemUrl" alt="sla"/>
+                                    </MudCarouselItem>
+                                }
+                            </MudCarousel>
+
+                            <MudCardContent  Class="mudcardcontent-info-home">
+                                <p class="produto-preco-antigo">De R$ @produto.Preco.ToString("F2")</p>
+                                <p class="produto-preco-novo">Por R$ @produto.Preco.ToString("F2")</p>
+                                <p class="desconto-pix">No PIX (5% de desconto)</p>
+                                <p>Ou R$ @produto.Preco.ToString("F2") em até 6x s/ juros no cartão</p>
+
+                                <div class="div-mudbuttons-comprar-carrinho">
+                                    @if (_userLoggedIn)
+                                    {
+                                        <MudButton href="@($"/checkout/produto-{produto.Slug}")" Color="Color.Primary" Variant="Variant.Filled" Class="mudbutton-comprar" Style="color: white;">
+                                            COMPRAR
+                                        </MudButton>
+                                    }
+                                    else
+                                    {
+                                        <MudButton href="/entrar" Color="Color.Primary" Variant="Variant.Filled" Class="mudbutton-comprar" Style="color: white;">
+                                            COMPRAR
+                                        </MudButton>
+                                    }
+
+                                    <MudButton OnClick="() => AdicionarAoCarrinho(produto.Id)" Color="Color.Primary" Variant="Variant.Outlined" Class="mudbutton-carrinho">
+                                        Adicionar ao Carrinho
+                                    </MudButton>
+                                </div>
+                            </MudCardContent>
+                        </MudCard>
+                    </MudItem>
+                }
+            </section>
+        </div>
     }
 </div>
 

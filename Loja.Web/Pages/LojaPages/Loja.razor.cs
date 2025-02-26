@@ -2,6 +2,7 @@
 using Dima.Web.Security;
 using Dima.Web.Services;
 using Loja.Core.Handlers;
+using Loja.Core.Models;
 using Loja.Core.Requisicoes.CarrinhoItens;
 using Microsoft.AspNetCore.Components;
 using MudBlazor;
@@ -41,6 +42,11 @@ public partial class LojaPage : ComponentBase
             if (result.IsSuccess)
             {
                 SearchService.FiltrarProdutos();
+            }
+
+            foreach (var tv in SearchService.ProdutosFiltrados)
+            {
+                produtos.Add(tv);
             }
             
         }
@@ -126,5 +132,22 @@ public partial class LojaPage : ComponentBase
     public void Dispose()
     {
         SearchService.OnSearchChanged -= StateHasChanged;
+    }
+    
+    public bool filtroSamsung, filtroLG, filtroSony;
+    public decimal precoMax = 10000;
+
+    public List<Produto> produtos = new List<Produto>();
+
+    public List<Produto> TVsFiltradas = new List<Produto>();
+    
+    private void FiltrarTVs()
+    {
+        TVsFiltradas = produtos
+            .Where(tv => (!filtroSamsung || tv.Marca.Equals("Samsung", StringComparison.OrdinalIgnoreCase)) &&
+                         (!filtroLG || tv.Marca.Equals("LG", StringComparison.OrdinalIgnoreCase)) &&
+                         (!filtroSony || tv.Marca.Equals("Sony", StringComparison.OrdinalIgnoreCase)) &&
+                         tv.Preco <= precoMax)
+            .ToList();
     }
 }

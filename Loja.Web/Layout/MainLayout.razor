@@ -23,7 +23,7 @@
     <div class="links-cabecalho">
         <NavLink class="nav-link links" href="/" Match="NavLinkMatch.All">Início</NavLink>
         <NavLink class="nav-link links" href="/loja" Match="NavLinkMatch.All">Loja</NavLink>
-        <NavLink class="nav-link links" href="/blog" Match="NavLinkMatch.All">Blog</NavLink>
+        <NavLink class="nav-link links" href="/blog" Match="NavLinkMatch.All">Sobre</NavLink>
         <NavLink class="nav-link links" href="/contato" Match="NavLinkMatch.All">Contato</NavLink>
     </div>
     
@@ -95,24 +95,63 @@
 </header>
 
 <MudDrawerContainer Class="mud-height-full">
-    <MudDrawer Class="muddrawer-total" @bind-Open="@_open" Style="@(_open ? "" : "display: none;")" Width="300px" Fixed="true" Anchor="Anchor.End" Elevation="1" Variant="DrawerVariant.Temporary" ClipMode="DrawerClipMode.Never" OverlayAutoClose="true">
-        <MudDrawerHeader class="mud-drawer-header">
-            <MudButton StartIcon="@Icons.Material.Filled.Close" IconSize="Size.Large" Color="Color.Primary" Variant="Variant.Text" OnClick="@ToggleDrawer"/>
-            <MudText Typo="Typo.h6">Menu</MudText>
+    <MudDrawer Class="muddrawer-total" @bind-Open="@_open" Style="@(_open ? "position: fixed; top: 0; left: 0; height: 100vh; z-index: 1050; overflow-y: auto;" : "")" Width="300px" Fixed="true" Anchor="Anchor.Start" Elevation="1" Variant="DrawerVariant.Temporary" ClipMode="DrawerClipMode.Never" Overlay="false" OverlayAutoClose="true">
+        <MudDrawerHeader class="mud-drawer-header" Style="margin-top: 50px;">
+            <div class="header-muddrawer">
+                <section class="entrar-cadastrar-celular">
+                    @if (_userLoggedIn == false)
+                    {
+                        <section class="menu-entrar-cadastrar">
+                            <p><a href="/entrar" class="entrar-cadastrar-texto">Entrar</a> /</p>
+                            <a href="/cadastrar" class="entrar-cadastrar-texto">Cadastrar</a>
+                        </section>
+                    }
+                    else
+                    {
+                        <section style="gap: 10px;" class="profile-section">
+                            <MudAvatar Color="Color.Primary" Size="Size.Small" Style="color: white;">
+                                @Username[0].ToString().ToUpper()
+                            </MudAvatar>
+                            <p class="profile-name-text">@Username.Split(' ')[0]</p>
+                        </section>
+                    }
+                </section>
+                <a href="/carrinho" class="shopping-cart-div-celular">
+                    <section class="shopping-cart-background">
+                        @if (carrinho.UserId != 0)
+                        {
+                            <p class="quantidade-carrinho">@carrinho.CarrinhoItens.Count</p>
+                        }
+                        else
+                        {
+                            <p class="quantidade-carrinho">0</p>
+                        }
+                    </section>
+                    <section class="shopping-cart-valortotal-celular">
+                        @if (carrinho.UserId != 0)
+                        {
+                            <p class="valor-carrinho">@carrinho.ValorTotal.ToString("C")</p>
+                        }
+                        else
+                        {
+                            <p class="valor-carrinho">R$0.00</p>
+                        }
+                        <hr class="custom-hr-carrinho"/>
+                        <p class="valor-carrinho">Carrinho</p>
+                    </section>
+                </a>
+            </div>
         </MudDrawerHeader>
         <MudNavMenu>
-            <MudNavLink Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.AccountBox">
-                @if (_userLoggedIn)
-                {
-                    <h3>@_user.Identity.Name</h3>
-                }
-                else
-                {
-                    <NavLink href="/entrar">Entrar</NavLink>
-                }
-            </MudNavLink>
-            <MudNavLink Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.ShoppingCart">Orders</MudNavLink>
-            <MudNavLink Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.History">Order History</MudNavLink>
+            @if (_userLoggedIn)
+            {
+                <MudNavLink Href="/perfil" Match="NavLinkMatch.All">Meu Perfil</MudNavLink>
+                <MudNavLink Href="/carrinho" Match="NavLinkMatch.All">Carrinho</MudNavLink>
+            }
+            <MudNavLink Href="/" Match="NavLinkMatch.All">Home</MudNavLink>
+            <MudNavLink Href="/loja" Match="NavLinkMatch.All">Loja</MudNavLink>
+            <MudNavLink Href="sobre-nos" Match="NavLinkMatch.All">Sobre Nós</MudNavLink>
+            <MudNavLink Href="/contato" Match="NavLinkMatch.All">Contato</MudNavLink>
         </MudNavMenu>
     </MudDrawer>
 </MudDrawerContainer>

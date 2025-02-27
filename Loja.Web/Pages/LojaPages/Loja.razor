@@ -13,23 +13,42 @@
     {
         <div class="div-filtro-produto">
             <section class="filtro-section">
-                <MudCard Class="p-4">
-                    <MudText Typo="Typo.h6">Filtrar TVs</MudText>
+                <MudTextField  
+                    @bind-Value="Busca"
+                    Immediate="true"
+                    Label="Buscar..."
+                    Variant="Variant.Outlined"
+                    Adornment="Adornment.End"
+                    AdornmentIcon="@Icons.Material.Filled.Search"
+                    AdornmentColor="Color.Primary"
+                    Class="custom-label"/>
+                
+                <MudText Typo="Typo.h6">Filtrar TVs</MudText>
 
-                    <!-- Filtro por Marca -->
-                    <MudCheckBox T="string" Label="Samsung" @bind-Checked="@filtroSamsung" OnChange="FiltrarTVs"/>
-                    <MudCheckBox T="string" Label="LG" @bind-Checked="@filtroLG" OnChange="FiltrarTVs"/>
-                    <MudCheckBox T="string" Label="Sony" @bind-Checked="@filtroSony" OnChange="FiltrarTVs"/>
+                <MudCheckBox T="bool" Label="Samsung" Color="Color.Primary" @bind-Value="FiltroSamsung"/>
+                <MudCheckBox T="bool" Label="LG" Color="Color.Primary" @bind-Value="FiltroLG"/>
+                <MudCheckBox T="bool" Label="Sony" Color="Color.Primary" @bind-Value="FiltroSony"/>
+                <MudCheckBox T="bool" Label="TCL" Color="Color.Primary" @bind-Value="FiltroTCL"/>
+                <MudCheckBox T="bool" Label="Philco" Color="Color.Primary" @bind-Value="FiltroPhilco"/>
+                <MudCheckBox T="bool" Label="Philips" Color="Color.Primary" @bind-Value="FiltroPhilips"/>
+                <MudCheckBox T="bool" Label="AOC" Color="Color.Primary" @bind-Value="FiltroAOC"/>
+                <MudCheckBox T="bool" Label="Toshiba" Color="Color.Primary" @bind-Value="FiltroToshiba"/>
 
-                    <!-- Filtro por Preço -->
-                    <MudText>Preço máximo: R$ @precoMax.ToString("N0")</MudText>
-                    <MudSlider Min="1000" Max="10000" Step="500" @bind-Value="@precoMax" />
+                <hr class="custom-hr-produto"/>
 
-                    <MudDivider Class="my-3"/>
-                </MudCard>
+                <MudText>Preço máximo: R$ @PrecoMax.ToString("N0")</MudText>
+                <MudSlider Size="Size.Small" Min="1000" Max="10000" Step="500" @bind-Value="PrecoMax"/>
+
             </section>
-            
+
             <section class="produtos-section">
+                @if (TVsFiltradas.Count == 0)
+                {
+                    <div style="display: flex; flex-direction: column; width: 100%; height: 40%; align-items: center; justify-content: center;">
+                        <h1 class="titulo-produto-page">Nenhum produto encontrado.</h1>
+                        <p class="contato-texto">Tente outra marca...</p>
+                    </div>
+                }
                 @foreach (var produto in TVsFiltradas)
                 {
                     <MudItem>
@@ -37,7 +56,7 @@
                             <NavLink href="@($"/produto/{produto.Slug}")">
                                 <MudCardContent class="mudcardcontent-principal-home">
                                     <h5 class="frete-info">FRETE GRÁTIS / 6x s/juros</h5>
-                                    <h3>@produto.Titulo</h3>
+                                    <h3 class="titulo-produto-homepage">@produto.Titulo</h3>
                                 </MudCardContent>
                             </NavLink>
 
@@ -51,7 +70,7 @@
                                 }
                             </MudCarousel>
 
-                            <MudCardContent  Class="mudcardcontent-info-home">
+                            <MudCardContent Class="mudcardcontent-info-home">
                                 <p class="produto-preco-antigo">De R$ @produto.Preco.ToString("F2")</p>
                                 <p class="produto-preco-novo">Por R$ @produto.Preco.ToString("F2")</p>
                                 <p class="desconto-pix">No PIX (5% de desconto)</p>

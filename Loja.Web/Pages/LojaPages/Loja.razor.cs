@@ -47,6 +47,7 @@ public partial class LojaPage : ComponentBase
             foreach (var tv in SearchService.ProdutosFiltrados)
             {
                 produtos.Add(tv);
+                TVsFiltradas.Add(tv);
             }
             
         }
@@ -82,6 +83,8 @@ public partial class LojaPage : ComponentBase
             Snackbar.Add("Erro no authenticacao", Severity.Error);
         }
     }
+    
+     
     
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
@@ -134,20 +137,123 @@ public partial class LojaPage : ComponentBase
         SearchService.OnSearchChanged -= StateHasChanged;
     }
     
-    public bool filtroSamsung, filtroLG, filtroSony;
-    public decimal precoMax = 10000;
+    private string busca;
+    public string Busca
+    {
+        get => busca;
+        set { busca = value; OnBuscarMudou(); }
+    }
 
+    
     public List<Produto> produtos = new List<Produto>();
+    
+    private bool filtroSamsung;
+    public bool FiltroSamsung
+    {
+        get => filtroSamsung;
+        set { filtroSamsung = value; OnFiltroChanged(); }
+    }
+
+    private bool filtroLG;
+    public bool FiltroLG
+    {
+        get => filtroLG;
+        set { filtroLG = value; OnFiltroChanged(); }
+    }
+
+    private bool filtroSony;
+    public bool FiltroSony
+    {
+        get => filtroSony;
+        set { filtroSony = value; OnFiltroChanged(); }
+    }
+    
+    private bool filtroTCL;
+    public bool FiltroTCL
+    {
+        get => filtroTCL;
+        set { filtroTCL = value; OnFiltroChanged(); }
+    }
+    
+    private bool filtroPhilco;
+    public bool FiltroPhilco
+    {
+        get => filtroPhilco;
+        set { filtroPhilco = value; OnFiltroChanged(); }
+    }
+    
+    private bool filtroPhilips;
+    public bool FiltroPhilips
+    {
+        get => filtroPhilips;
+        set { filtroPhilips = value; OnFiltroChanged(); }
+    }
+    
+    private bool filtroAOC;
+    public bool FiltroAOC
+    {
+        get => filtroAOC;
+        set { filtroAOC = value; OnFiltroChanged(); }
+    }
+    
+    private bool filtroToshiba;
+    public bool FiltroToshiba
+    {
+        get => filtroToshiba;
+        set { filtroToshiba = value; OnFiltroChanged(); }
+    }
+
+    private decimal precoMax = 5000;
+    public decimal PrecoMax
+    {
+        get => precoMax;
+        set { precoMax = value; OnFiltroChanged(); }
+    }
 
     public List<Produto> TVsFiltradas = new List<Produto>();
     
-    private void FiltrarTVs()
+    public void OnFiltroChanged()
     {
+        if (!FiltroSamsung && !FiltroSony && !FiltroLG && !FiltroTCL && !FiltroPhilco && !FiltroPhilips && !FiltroAOC && !FiltroToshiba)
+        {
+            TVsFiltradas = produtos.Where(tv => tv.Preco <= PrecoMax).ToList();
+            return;
+        }
+        
+        if (FiltroSamsung && FiltroSony && FiltroLG && FiltroTCL && FiltroPhilco && FiltroPhilips && FiltroAOC && FiltroToshiba)
+        {
+            TVsFiltradas = produtos.Where(tv => tv.Preco <= PrecoMax).ToList();
+            return;
+        }
+        
         TVsFiltradas = produtos
-            .Where(tv => (!filtroSamsung || tv.Marca.Equals("Samsung", StringComparison.OrdinalIgnoreCase)) &&
-                         (!filtroLG || tv.Marca.Equals("LG", StringComparison.OrdinalIgnoreCase)) &&
-                         (!filtroSony || tv.Marca.Equals("Sony", StringComparison.OrdinalIgnoreCase)) &&
-                         tv.Preco <= precoMax)
+            .Where(tv =>
+                (FiltroSamsung && tv.Marca.Equals("Samsung", StringComparison.OrdinalIgnoreCase)) ||
+                (FiltroLG && tv.Marca.Equals("LG", StringComparison.OrdinalIgnoreCase)) ||
+                (FiltroSony && tv.Marca.Equals("Sony", StringComparison.OrdinalIgnoreCase)) ||
+                (FiltroTCL && tv.Marca.Equals("TCL", StringComparison.OrdinalIgnoreCase)) ||
+                (FiltroPhilco && tv.Marca.Equals("Philco", StringComparison.OrdinalIgnoreCase)) ||
+                (FiltroPhilips && tv.Marca.Equals("Philips", StringComparison.OrdinalIgnoreCase)) ||
+                (FiltroAOC && tv.Marca.Equals("Aoc", StringComparison.OrdinalIgnoreCase)) ||
+                (FiltroToshiba && tv.Marca.Equals("Toshiba", StringComparison.OrdinalIgnoreCase))
+            )
+            .Where(tv => tv.Preco <= PrecoMax)
             .ToList();
+        
     }
+    
+    public void OnBuscarMudou()
+    {
+        if (string.IsNullOrWhiteSpace(busca))
+        {
+            TVsFiltradas = produtos; 
+        }
+        else
+        {
+            TVsFiltradas = produtos
+                .Where(p => p.Titulo.Contains(busca, StringComparison.OrdinalIgnoreCase))
+                .ToList();
+        }
+    }
+    
 }

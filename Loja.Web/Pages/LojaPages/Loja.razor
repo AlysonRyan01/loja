@@ -40,6 +40,25 @@
                 <MudSlider Size="Size.Small" Min="1000" Max="10000" Step="500" @bind-Value="PrecoMax"/>
 
             </section>
+            
+            <section class="busca-filtro-celular">
+                <section class="busca-celular">
+                    <MudTextField
+                        @bind-Value="Busca"
+                        Immediate="true"
+                        Label="Buscar..."
+                        Variant="Variant.Outlined"
+                        Adornment="Adornment.End"
+                        AdornmentIcon="@Icons.Material.Filled.Search"
+                        AdornmentColor="Color.Primary"
+                        Class="custom-label"/>
+                </section>
+                <section class="filtro-celular">
+                    <MudButton OnClick="@ToggleDrawer" Style="width: 100%; height: 100%" StartIcon="@Icons.Material.Filled.FilterList" Color="Color.Primary">
+                        Filtrar
+                    </MudButton>
+                </section>
+            </section>
 
             <section class="produtos-section">
                 @if (TVsFiltradas.Count == 0)
@@ -102,5 +121,40 @@
         </div>
     }
 </div>
+
+<MudDrawerContainer Class="mud-height-full">
+    <MudDrawer Class="muddrawer-total" @bind-Open="@_open" Style="@(_open ? "position: fixed; top: 0; left: 0; height: 100vh; z-index: 1050; overflow-y: auto;" : "")" Width="300px" Fixed="true" Anchor="Anchor.Start" Elevation="1" Variant="DrawerVariant.Temporary" ClipMode="DrawerClipMode.Never" Overlay="false" OverlayAutoClose="true">
+        <MudNavMenu Style="padding: 10px;">
+            <section class="filtro-section-celular">
+                <MudTextField
+                    @bind-Value="Busca"
+                    Immediate="true"
+                    Label="Buscar..."
+                    Variant="Variant.Outlined"
+                    Adornment="Adornment.End"
+                    AdornmentIcon="@Icons.Material.Filled.Search"
+                    AdornmentColor="Color.Primary"
+                    Class="custom-label"/>
+
+                <MudText Typo="Typo.h6">Filtrar TVs</MudText>
+
+                <MudCheckBox T="bool" Label="Samsung" Color="Color.Primary" @bind-Value="FiltroSamsung"/>
+                <MudCheckBox T="bool" Label="LG" Color="Color.Primary" @bind-Value="FiltroLG"/>
+                <MudCheckBox T="bool" Label="Sony" Color="Color.Primary" @bind-Value="FiltroSony"/>
+                <MudCheckBox T="bool" Label="TCL" Color="Color.Primary" @bind-Value="FiltroTCL"/>
+                <MudCheckBox T="bool" Label="Philco" Color="Color.Primary" @bind-Value="FiltroPhilco"/>
+                <MudCheckBox T="bool" Label="Philips" Color="Color.Primary" @bind-Value="FiltroPhilips"/>
+                <MudCheckBox T="bool" Label="AOC" Color="Color.Primary" @bind-Value="FiltroAOC"/>
+                <MudCheckBox T="bool" Label="Toshiba" Color="Color.Primary" @bind-Value="FiltroToshiba"/>
+
+                <hr class="custom-hr-produto"/>
+
+                <MudText>Preço máximo: R$ @PrecoMax.ToString("N0")</MudText>
+                <MudSlider Size="Size.Small" Min="1000" Max="10000" Step="500" @bind-Value="PrecoMax"/>
+
+            </section>
+        </MudNavMenu>
+    </MudDrawer>
+</MudDrawerContainer>
 
 

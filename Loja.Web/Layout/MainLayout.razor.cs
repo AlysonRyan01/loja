@@ -45,6 +45,7 @@ public class MainLayoutPage : LayoutComponentBase
     [Inject] public SearchService SearchService { get; set; } = null!;
     [Inject] public ICarrinhoHandler CarrinhoHandler { get; set; } = null!;
     [Inject] public IIdentityHandler IdentityHandler { get; set; } = null!;
+    [Inject] public LayoutService LayoutService { get; set; } = null!;
 
     #endregion
     
@@ -54,6 +55,7 @@ public class MainLayoutPage : LayoutComponentBase
         IsBusy = true;
         try
         {
+            LayoutService.OnChange += AtualizarLayout;
             var result = await AuthenticationState.GetAuthenticationStateAsync();
             var user = result.User;
 
@@ -108,5 +110,15 @@ public class MainLayoutPage : LayoutComponentBase
     {
         SearchTerm = string.Empty;
         SearchService.SearchTerm = SearchTerm;
+    }
+    
+    private void AtualizarLayout()
+    {
+        StateHasChanged();
+    }
+
+    public async ValueTask DisposeAsync()
+    {
+        LayoutService.OnChange -= AtualizarLayout;
     }
 }

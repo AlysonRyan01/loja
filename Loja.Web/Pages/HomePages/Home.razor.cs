@@ -20,6 +20,7 @@ public partial class HomePage : ComponentBase
         if (firstRender)
         {
             await JSRuntime.InvokeVoidAsync("initAOS");
+            await JSRuntime.InvokeVoidAsync("initLeafletMap");
         }
     }
     

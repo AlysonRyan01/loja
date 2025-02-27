@@ -1,5 +1,6 @@
 ﻿using System.Security.Claims;
 using Dima.Web.Security;
+using Dima.Web.Services;
 using Loja.Core.Handlers;
 using Loja.Core.Models;
 using Loja.Core.Requisicoes.CarrinhoItens;
@@ -38,6 +39,7 @@ public partial class ProdutoPageCode : ComponentBase
     [Inject] public NavigationManager NavigationManager { get; set; } = null!;
     [Inject] public ISnackbar Snackbar { get; set; } = null!;
     [Inject] public ICookieAuthenticationStateProvider AuthenticationState { get; set; }
+    [Inject] public LayoutService LayoutService { get; set; } = null!;
     #endregion
     
     #region overrides
@@ -160,8 +162,12 @@ public partial class ProdutoPageCode : ComponentBase
             }
                 
             var result = await CarrinhoItemHandler.CriarCarrinhoItemAsync(request, _user);
-            if(result.IsSuccess)
+            if (result.IsSuccess)
+            {
                 Snackbar.Add("Produto adicionado ao carrinho!", Severity.Success);
+                LayoutService.NotifyStateChanged();
+            }
+                
             else
             {
                 Snackbar.Add(result.Mensagem ?? "Erro ao adicionar o produto ao carrinho", Severity.Error);

@@ -17,6 +17,7 @@ public partial class LojaPage : ComponentBase
     public bool IsBusy { get; set; } = false;
     public bool _userLoggedIn { get; set; } = false;
     public ClaimsPrincipal _user { get; set; }
+    public bool _open = false;
 
     #endregion
     
@@ -254,6 +255,11 @@ public partial class LojaPage : ComponentBase
                 .Where(p => p.Titulo.Contains(busca, StringComparison.OrdinalIgnoreCase))
                 .ToList();
         }
+    }
+    
+    public void ToggleDrawer()
+    {
+        _open = !_open;
     }
     
 }

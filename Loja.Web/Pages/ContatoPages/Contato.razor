@@ -1,0 +1,44 @@
+﻿@page "/contato"
+@inherits ContatoPage
+
+<div style="margin-top: 80px" class="entre-em-contato">
+    <section  class="entre-em-contato-informacoes">
+        <h1 class="contato-titulo">ENTRE EM CONTATO</h1>
+        <h2 class="contato-subtitulo">📩 Fale Conosco - Estamos Aqui Para Ajudar!</h2>
+        <p class="contato-texto">Tem alguma dúvida, precisa de um orçamento ou quer saber mais sobre nossos serviços? Entre em contato conosco pelo e-mail e teremos o prazer de atendê-lo.</p>
+        <p class="contato-email">📧<span style="font-weight: bolder">E-mail:</span> tvseletronica@tvseletronica.com.br</p>
+        <p class="contato-telefone">📞<span style="font-weight: bolder">Fone:</span> (41) 3292-3047</p>
+        <p class="contato-telefone">📞<span style="font-weight: bolder">WhatsApp:</span> (41) 99274-4920</p>
+        <p class="contato-texto">Nossa equipe está pronta para oferecer o melhor atendimento e solucionar suas dúvidas o mais rápido possível! 🚀</p>
+    </section>
+
+    <section class="entre-em-contato-formulario">
+        <MudForm Model="contato" Valid="valid" Style="width: 100%">
+            <MudTextField FullWidth="true" Label="Nome" @bind-Value="contato.Nome" Required="true" RequiredError="O nome é obrigatório." Variant="Variant.Outlined" />
+
+            <MudTextField FullWidth="true" Label="E-mail" @bind-Value="contato.Email" Required="true" RequiredError="O e-mail é obrigatório."
+                          Variant="Variant.Outlined" Type="email" />
+
+            <MudTextField FullWidth="true" Label="Mensagem" @bind-Value="contato.Mensagem" Required="true" RequiredError="A mensagem é obrigatória."
+                          Variant="Variant.Outlined" Multiline="true" Rows="4" />
+
+            <MudButton Style="width: 200px;" OnClick="EnviarFormulario" Disabled="valid" Color="Color.Primary" Variant="Variant.Filled" Class="mt-3">
+                <span style="color: white">Enviar Mensagem</span>
+            </MudButton>
+        </MudForm>
+    </section>
+</div>
+
+<hr class="custom-hr-home"/>
+
+<div class="localizacao-div">
+    <div class="localizacao-textos">
+        <h1 class="contato-titulo">LOCALIZAÇÃO</h1>
+        <p class="contato-subtitulo">Estamos localizados no centro da cidade, prontos para oferecer os melhores serviços para você. Fale conosco pelo telefone ou e-mail para mais informações!</p>
+        <p class="localizacao-texto"><strong>Endereço:</strong> Rua Centenário, 1531, Centro, Campo Largo, Paraná</p>
+        <p class="localizacao-texto"><strong>Telefone:</strong> (41) 3292-3047</p>
+        <p class="localizacao-texto"><strong>E-mail:</strong> tvseletronica@tvseletronica.com.br</p>
+        <p class="contato-telefone">📞<span style="font-weight: bolder">WhatsApp:</span> (41) 99274-4920</p>
+    </div>
+    <div id="map" class="mapa"></div>
+</div>

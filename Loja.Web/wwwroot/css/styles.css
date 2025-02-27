@@ -7,7 +7,42 @@
     justify-content: center;
     min-height: 100vh;
     width: 100%;
-    padding: 0 5vw;
+}
+
+.mapa
+{
+    width: 500px;
+    height: 500px;
+}
+
+.localizacao-div
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    padding: 0 30px;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.localizacao-textos
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%
+}
+
+.filtro-section-celular
+{
+    display: none;
+}
+
+.busca-filtro-celular
+{
+    display: none;
 }
 
 .filtro-section
@@ -230,7 +265,6 @@
     justify-content: space-between;
     width: 100%;
     padding: 0 10vw;
-    margin-bottom: 180px;
 }
 
 .entre-em-contato-informacoes
@@ -395,6 +429,15 @@
     font-weight: 500;
     font-style: normal;
     margin-bottom: 20px;
+}
+
+.localizacao-texto
+{
+    font-family: "Open Sans", serif;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .contato-email
@@ -811,6 +854,7 @@ main {
 
 .carrossel-home {
     height: 250px;
+    max-width: 300px;
 }
 
 .carrossel-item-home {
@@ -826,6 +870,7 @@ main {
 .img-produto-carrossel-home
 {
     max-height: 250px;
+    max-width: 300px;
 }
 
 .desconto-pix
@@ -923,7 +968,7 @@ main {
 
 .produto-preco-novo
 {
-    font-size: 1.2em;
+    font-size: 0.9rem;
     font-weight: bold;
     color: black;
 }
@@ -1493,6 +1538,116 @@ main {
 
 /* Estilos para celulares (até 600px) */
 @media screen and (max-width: 600px) {
+    
+    .localizacao-div
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .localizacao-textos
+    {
+        width: 100%;
+    }
+    
+    .mapa
+    {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .filtro-section
+    {
+        display: none;
+    }
+    
+    .filtro-section-celular
+    {
+        display: block;
+    }
+
+    .titulo-produto-homepage
+    {
+        font-size: 0.6rem;
+        font-weight: 600;
+    }
+
+    .div-filtro-produto
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100vh;
+        width: 100%;
+        padding: 0 0;
+    }
+
+    .mudcardcontent-principal-home
+    {
+        display: flex;
+        flex-direction: column;
+        wrap-option: wrap;
+        text-align: start;
+        min-height: 80px;
+        max-height: 100px
+    }
+    
+    .busca-filtro-celular
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 80px;
+        background-color: white;
+        border: 1px solid lightgray;
+    }
+    
+    .busca-celular
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45%;
+        height: 80%;
+    }
+
+    .filtro-celular
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45%;
+        height: 80%;
+    }
+
+    .produtos-section
+    {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+        min-height: 100vh;
+        gap: 0;
+        flex-wrap: wrap;
+    }
+
+    .frete-info
+    {
+        font-size: 0.5rem;
+    }
+
+    .mudcard-principal-home {
+        display: flex;
+        flex-direction: column;
+        max-width: 50vw;
+        min-width: 50vw;
+        min-height: 450px;
+        max-height: 500px;
+    }
+    
     .entre-em-contato
     {
         display: flex;
@@ -1760,16 +1915,8 @@ main {
         justify-content: space-around;
     }
     
-    .mudcard-principal-home {
-        display: flex;
-        flex-direction: column;
-        width: 100vw;
-        box-sizing: border-box;
-        height: auto;
-    }
-    
     .mudcardcontent-principal-home {
-        padding: 16px;
+        padding: 8px;
         flex-grow: 1;
         overflow: hidden;
         text-align: start;
@@ -1777,7 +1924,7 @@ main {
     }
     
     .carrossel-home {
-        height: 250px; 
+        height: 150px; 
     }
 
     .carrossel-item-home {
@@ -1788,7 +1935,7 @@ main {
 
     .img-produto-carrossel-home
     {
-        max-height: 250px;
+        max-height: 150px;
     }
     
     .mudcard-produto-info
@@ -1949,13 +2096,15 @@ main {
     {
         margin-top: 10px;
         color: white;
-        width: 50%;
+        width: 95%;
+        font-size: 0.8rem;
     }
 
     .mudbutton-carrinho
     {
         margin-top: 10px;
-        width: 50%;
+        width: 95%;
+        font-size: 0.6rem;
     }
     
 }
@@ -2178,6 +2327,16 @@ main {
     {
         margin-top: 10px;
         width: 100%;
+    }
+
+    .busca-filtro-celular
+    {
+        display: none;
+    }
+
+    .filtro-section-celular
+    {
+        display: none;
     }
     
 }

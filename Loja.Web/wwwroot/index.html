@@ -20,6 +20,8 @@
     <link href="Dima.Web.styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
 </head>
 
 <body>
@@ -63,6 +65,24 @@
     </script>
 
     <script src="js/aosInterop.js"></script>
+
+    <script>
+        function initLeafletMap() {
+            var location = [-25.462316349073628, -49.525080033352985]; 
+
+            var map = L.map('map').setView(location, 15);
+            
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; OpenStreetMap contributors'
+            }).addTo(map);
+            
+            L.marker(location).addTo(map)
+                .bindPopup("TVS ELETRÔNICA")
+                .openPopup();
+        }
+    </script>
+
+    <div id="map" style="width: 100%; height: 100%;"></div>
 </body>
 
 </html>

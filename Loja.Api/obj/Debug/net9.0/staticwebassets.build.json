@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RIHKr7AMqOGkq0blzzE5AjwzJ8SJR71bO8Ls5Eo/9Tg=",
+  "Hash": "ER11LqLxTLjBSUdtdSGJ73MCQMWtDOD3AoJGhP3jNNQ=",
   "Source": "Loja.Api",
   "BasePath": "_content/Loja.Api",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Loja.Api\\wwwroot",
       "Source": "Loja.Api",
-      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\1_7eb270f4-bfd4-4211-84c1-c1d32780cdcb.jpeg",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\1_7eb270f4-bfd4-4211-84c1-c1d32780cdcb.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/1_7eb270f4-bfd4-4211-84c1-c1d32780cdcb#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -38,10 +38,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\1_7eb270f4-bfd4-4211-84c1-c1d32780cdcb.jpeg"
     },
     {
-      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -59,10 +59,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg"
     },
     {
-      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\2_ad7f10de-6f83-437b-9021-d09a7179709b.jpeg",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\2_ad7f10de-6f83-437b-9021-d09a7179709b.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/2_ad7f10de-6f83-437b-9021-d09a7179709b#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -80,10 +80,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\2_ad7f10de-6f83-437b-9021-d09a7179709b.jpeg"
     },
     {
-      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/208201foto_70323120-89b5-4f67-8385-67c6916a06e7#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -101,10 +101,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg"
     },
     {
-      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\3_6a7b9665-bc25-42b0-8436-0b8dc7456e8c.jpeg",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\3_6a7b9665-bc25-42b0-8436-0b8dc7456e8c.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/3_6a7b9665-bc25-42b0-8436-0b8dc7456e8c#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -122,10 +122,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\3_6a7b9665-bc25-42b0-8436-0b8dc7456e8c.jpeg"
     },
     {
-      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\4_464e5590-19e1-444b-b650-d116bd81fb8c.jpeg",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\4_464e5590-19e1-444b-b650-d116bd81fb8c.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/4_464e5590-19e1-444b-b650-d116bd81fb8c#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -143,10 +143,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\4_464e5590-19e1-444b-b650-d116bd81fb8c.jpeg"
     },
     {
-      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\5_15703933-e327-4d26-8a53-89ce012f0689.jpeg",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\5_15703933-e327-4d26-8a53-89ce012f0689.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/5_15703933-e327-4d26-8a53-89ce012f0689#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -164,10 +164,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\5_15703933-e327-4d26-8a53-89ce012f0689.jpeg"
     },
     {
-      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\6_8c96036d-1a3b-42cf-b014-144a1d3c9fa2.jpeg",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\6_8c96036d-1a3b-42cf-b014-144a1d3c9fa2.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/6_8c96036d-1a3b-42cf-b014-144a1d3c9fa2#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -185,10 +185,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\6_8c96036d-1a3b-42cf-b014-144a1d3c9fa2.jpeg"
     },
     {
-      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\7_e21f49b4-5f87-48ff-80af-d6bd34518b55.jpeg",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\7_e21f49b4-5f87-48ff-80af-d6bd34518b55.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/7_e21f49b4-5f87-48ff-80af-d6bd34518b55#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -206,10 +206,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\7_e21f49b4-5f87-48ff-80af-d6bd34518b55.jpeg"
     },
     {
-      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\8_ba2b5c3a-3f28-4329-9303-6160469dc892.jpeg",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\8_ba2b5c3a-3f28-4329-9303-6160469dc892.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/8_ba2b5c3a-3f28-4329-9303-6160469dc892#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -227,10 +227,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\8_ba2b5c3a-3f28-4329-9303-6160469dc892.jpeg"
     },
     {
-      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\9_a806cce2-40d4-4a24-b3e0-7fce1cbd7bf8.jpeg",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\9_a806cce2-40d4-4a24-b3e0-7fce1cbd7bf8.jpeg",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/9_a806cce2-40d4-4a24-b3e0-7fce1cbd7bf8#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -248,10 +248,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\9_a806cce2-40d4-4a24-b3e0-7fce1cbd7bf8.jpeg"
     },
     {
-      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\image-Photoroom (1)_bb9fb8c6-7931-49e5-8b74-3762c92e7241.png",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\image-Photoroom (1)_bb9fb8c6-7931-49e5-8b74-3762c92e7241.png",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/image-Photoroom (1)_bb9fb8c6-7931-49e5-8b74-3762c92e7241#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -269,10 +269,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\image-Photoroom (1)_bb9fb8c6-7931-49e5-8b74-3762c92e7241.png"
     },
     {
-      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\image-Photoroom (2)_ff43838a-710b-4e03-8135-50e6694db443.png",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\image-Photoroom (2)_ff43838a-710b-4e03-8135-50e6694db443.png",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/image-Photoroom (2)_ff43838a-710b-4e03-8135-50e6694db443#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -290,10 +290,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\image-Photoroom (2)_ff43838a-710b-4e03-8135-50e6694db443.png"
     },
     {
-      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\image-Photoroom (6)_21063961-fcf3-4c48-8b51-e49dc752110a.png",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\image-Photoroom (6)_21063961-fcf3-4c48-8b51-e49dc752110a.png",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/image-Photoroom (6)_21063961-fcf3-4c48-8b51-e49dc752110a#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -311,10 +311,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\image-Photoroom (6)_21063961-fcf3-4c48-8b51-e49dc752110a.png"
     },
     {
-      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\image-Photoroom (6)_d5bd5dae-9402-4949-9bff-b691cb653b08.png",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\image-Photoroom (6)_d5bd5dae-9402-4949-9bff-b691cb653b08.png",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/image-Photoroom (6)_d5bd5dae-9402-4949-9bff-b691cb653b08#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -332,10 +332,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\image-Photoroom (6)_d5bd5dae-9402-4949-9bff-b691cb653b08.png"
     },
     {
-      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\image-Photoroom (7)_49b2a63e-d274-4e8b-ad8a-625df383b38e.png",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\image-Photoroom (7)_49b2a63e-d274-4e8b-ad8a-625df383b38e.png",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/image-Photoroom (7)_49b2a63e-d274-4e8b-ad8a-625df383b38e#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -353,10 +353,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\image-Photoroom (7)_49b2a63e-d274-4e8b-ad8a-625df383b38e.png"
     },
     {
-      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\image-Photoroom (7)_d9d88480-cad3-48a8-9d68-153f358323cd.png",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\image-Photoroom (7)_d9d88480-cad3-48a8-9d68-153f358323cd.png",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/image-Photoroom (7)_d9d88480-cad3-48a8-9d68-153f358323cd#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\image-Photoroom (7)_d9d88480-cad3-48a8-9d68-153f358323cd.png"
     },
     {
-      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\image-Photoroom (8)_c669b52f-6c26-43e4-9a8f-72917ce35841.png",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\image-Photoroom (8)_c669b52f-6c26-43e4-9a8f-72917ce35841.png",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/image-Photoroom (8)_c669b52f-6c26-43e4-9a8f-72917ce35841#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -395,10 +395,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\image-Photoroom (8)_c669b52f-6c26-43e4-9a8f-72917ce35841.png"
     },
     {
-      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\image-Photoroom (8)_c847c653-f503-4ea7-85cc-f818ea1d6de8.png",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\image-Photoroom (8)_c847c653-f503-4ea7-85cc-f818ea1d6de8.png",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/image-Photoroom (8)_c847c653-f503-4ea7-85cc-f818ea1d6de8#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\image-Photoroom (8)_c847c653-f503-4ea7-85cc-f818ea1d6de8.png"
     },
     {
-      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\image-Photoroom (9)_1f682716-d5f9-4acd-ab07-df49b39df9af.png",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\image-Photoroom (9)_1f682716-d5f9-4acd-ab07-df49b39df9af.png",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/image-Photoroom (9)_1f682716-d5f9-4acd-ab07-df49b39df9af#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -437,10 +437,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\image-Photoroom (9)_1f682716-d5f9-4acd-ab07-df49b39df9af.png"
     },
     {
-      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\image-Photoroom_75b59efd-43aa-409a-8230-1d68647f087a.png",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\image-Photoroom_75b59efd-43aa-409a-8230-1d68647f087a.png",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/image-Photoroom_75b59efd-43aa-409a-8230-1d68647f087a#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -458,10 +458,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\image-Photoroom_75b59efd-43aa-409a-8230-1d68647f087a.png"
     },
     {
-      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\tv-imagem-1-Photoroom_d45797ea-65aa-4804-9ec0-f3b981d3416f.png",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\tv-imagem-1-Photoroom_d45797ea-65aa-4804-9ec0-f3b981d3416f.png",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/tv-imagem-1-Photoroom_d45797ea-65aa-4804-9ec0-f3b981d3416f#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -479,10 +479,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\tv-imagem-1-Photoroom_d45797ea-65aa-4804-9ec0-f3b981d3416f.png"
     },
     {
-      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\tv-imagem-2-Photoroom_287ba327-c608-491d-a10c-9146c67c717b.png",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\tv-imagem-2-Photoroom_287ba327-c608-491d-a10c-9146c67c717b.png",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/tv-imagem-2-Photoroom_287ba327-c608-491d-a10c-9146c67c717b#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -500,10 +500,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\tv-imagem-2-Photoroom_287ba327-c608-491d-a10c-9146c67c717b.png"
     },
     {
-      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\tv-imagem-3-Photoroom_b64ef106-7f10-4884-b4a9-b51e59b28a95.png",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\tv-imagem-3-Photoroom_b64ef106-7f10-4884-b4a9-b51e59b28a95.png",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/tv-imagem-3-Photoroom_b64ef106-7f10-4884-b4a9-b51e59b28a95#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -521,10 +521,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\tv-imagem-3-Photoroom_b64ef106-7f10-4884-b4a9-b51e59b28a95.png"
     },
     {
-      "Identity": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\videoframe_4293_4cd7f45d-8e8f-4113-bcfa-eb84b45295a6.png",
+      "Identity": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\videoframe_4293_4cd7f45d-8e8f-4113-bcfa-eb84b45295a6.png",
       "SourceId": "Loja.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Projetos\\loja\\loja.api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\",
       "BasePath": "_content/Loja.Api",
       "RelativePath": "Imagens/videoframe_4293_4cd7f45d-8e8f-4113-bcfa-eb84b45295a6#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -545,7 +545,7 @@
   "Endpoints": [
     {
       "Route": "Imagens/1_7eb270f4-bfd4-4211-84c1-c1d32780cdcb.ctb77b5px1.jpeg",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\1_7eb270f4-bfd4-4211-84c1-c1d32780cdcb.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\1_7eb270f4-bfd4-4211-84c1-c1d32780cdcb.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -566,7 +566,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -590,7 +590,7 @@
     },
     {
       "Route": "Imagens/1_7eb270f4-bfd4-4211-84c1-c1d32780cdcb.jpeg",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\1_7eb270f4-bfd4-4211-84c1-c1d32780cdcb.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\1_7eb270f4-bfd4-4211-84c1-c1d32780cdcb.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -611,7 +611,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -627,7 +627,7 @@
     },
     {
       "Route": "Imagens/1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.5jcubahnln.jpeg",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -648,7 +648,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -672,7 +672,7 @@
     },
     {
       "Route": "Imagens/1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\1---FRONTAL-32S5135_242ad45b-8bb2-4cf8-89ce-a7c6d43779a2.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -693,7 +693,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -709,7 +709,7 @@
     },
     {
       "Route": "Imagens/2_ad7f10de-6f83-437b-9021-d09a7179709b.jpeg",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\2_ad7f10de-6f83-437b-9021-d09a7179709b.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\2_ad7f10de-6f83-437b-9021-d09a7179709b.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -730,7 +730,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -746,7 +746,7 @@
     },
     {
       "Route": "Imagens/2_ad7f10de-6f83-437b-9021-d09a7179709b.tg7vp68b0t.jpeg",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\2_ad7f10de-6f83-437b-9021-d09a7179709b.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\2_ad7f10de-6f83-437b-9021-d09a7179709b.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -767,7 +767,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -791,7 +791,7 @@
     },
     {
       "Route": "Imagens/208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -812,7 +812,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -828,7 +828,7 @@
     },
     {
       "Route": "Imagens/208201foto_70323120-89b5-4f67-8385-67c6916a06e7.tj4iqjy46o.jpeg",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\208201foto_70323120-89b5-4f67-8385-67c6916a06e7.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -849,7 +849,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -873,7 +873,7 @@
     },
     {
       "Route": "Imagens/3_6a7b9665-bc25-42b0-8436-0b8dc7456e8c.4skda0n099.jpeg",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\3_6a7b9665-bc25-42b0-8436-0b8dc7456e8c.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\3_6a7b9665-bc25-42b0-8436-0b8dc7456e8c.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -894,7 +894,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -918,7 +918,7 @@
     },
     {
       "Route": "Imagens/3_6a7b9665-bc25-42b0-8436-0b8dc7456e8c.jpeg",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\3_6a7b9665-bc25-42b0-8436-0b8dc7456e8c.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\3_6a7b9665-bc25-42b0-8436-0b8dc7456e8c.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -939,7 +939,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -955,7 +955,7 @@
     },
     {
       "Route": "Imagens/4_464e5590-19e1-444b-b650-d116bd81fb8c.jpeg",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\4_464e5590-19e1-444b-b650-d116bd81fb8c.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\4_464e5590-19e1-444b-b650-d116bd81fb8c.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -976,7 +976,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -992,7 +992,7 @@
     },
     {
       "Route": "Imagens/4_464e5590-19e1-444b-b650-d116bd81fb8c.ljsre08mhq.jpeg",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\4_464e5590-19e1-444b-b650-d116bd81fb8c.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\4_464e5590-19e1-444b-b650-d116bd81fb8c.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1013,7 +1013,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1037,7 +1037,7 @@
     },
     {
       "Route": "Imagens/5_15703933-e327-4d26-8a53-89ce012f0689.jpeg",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\5_15703933-e327-4d26-8a53-89ce012f0689.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\5_15703933-e327-4d26-8a53-89ce012f0689.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1058,7 +1058,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1074,7 +1074,7 @@
     },
     {
       "Route": "Imagens/5_15703933-e327-4d26-8a53-89ce012f0689.pp97xnipxl.jpeg",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\5_15703933-e327-4d26-8a53-89ce012f0689.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\5_15703933-e327-4d26-8a53-89ce012f0689.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1095,7 +1095,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1119,7 +1119,7 @@
     },
     {
       "Route": "Imagens/6_8c96036d-1a3b-42cf-b014-144a1d3c9fa2.gu2dg270nd.jpeg",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\6_8c96036d-1a3b-42cf-b014-144a1d3c9fa2.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\6_8c96036d-1a3b-42cf-b014-144a1d3c9fa2.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1140,7 +1140,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1164,7 +1164,7 @@
     },
     {
       "Route": "Imagens/6_8c96036d-1a3b-42cf-b014-144a1d3c9fa2.jpeg",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\6_8c96036d-1a3b-42cf-b014-144a1d3c9fa2.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\6_8c96036d-1a3b-42cf-b014-144a1d3c9fa2.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1185,7 +1185,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1201,7 +1201,7 @@
     },
     {
       "Route": "Imagens/7_e21f49b4-5f87-48ff-80af-d6bd34518b55.46igoj0l74.jpeg",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\7_e21f49b4-5f87-48ff-80af-d6bd34518b55.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\7_e21f49b4-5f87-48ff-80af-d6bd34518b55.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1222,7 +1222,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1246,7 +1246,7 @@
     },
     {
       "Route": "Imagens/7_e21f49b4-5f87-48ff-80af-d6bd34518b55.jpeg",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\7_e21f49b4-5f87-48ff-80af-d6bd34518b55.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\7_e21f49b4-5f87-48ff-80af-d6bd34518b55.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1267,7 +1267,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1283,7 +1283,7 @@
     },
     {
       "Route": "Imagens/8_ba2b5c3a-3f28-4329-9303-6160469dc892.e6q80b1zvu.jpeg",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\8_ba2b5c3a-3f28-4329-9303-6160469dc892.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\8_ba2b5c3a-3f28-4329-9303-6160469dc892.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1304,7 +1304,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1328,7 +1328,7 @@
     },
     {
       "Route": "Imagens/8_ba2b5c3a-3f28-4329-9303-6160469dc892.jpeg",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\8_ba2b5c3a-3f28-4329-9303-6160469dc892.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\8_ba2b5c3a-3f28-4329-9303-6160469dc892.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1349,7 +1349,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1365,7 +1365,7 @@
     },
     {
       "Route": "Imagens/9_a806cce2-40d4-4a24-b3e0-7fce1cbd7bf8.e596uqbwzg.jpeg",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\9_a806cce2-40d4-4a24-b3e0-7fce1cbd7bf8.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\9_a806cce2-40d4-4a24-b3e0-7fce1cbd7bf8.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1386,7 +1386,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1410,7 +1410,7 @@
     },
     {
       "Route": "Imagens/9_a806cce2-40d4-4a24-b3e0-7fce1cbd7bf8.jpeg",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\9_a806cce2-40d4-4a24-b3e0-7fce1cbd7bf8.jpeg",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\9_a806cce2-40d4-4a24-b3e0-7fce1cbd7bf8.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1431,7 +1431,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1447,7 +1447,7 @@
     },
     {
       "Route": "Imagens/image-Photoroom (1)_bb9fb8c6-7931-49e5-8b74-3762c92e7241.png",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\image-Photoroom (1)_bb9fb8c6-7931-49e5-8b74-3762c92e7241.png",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\image-Photoroom (1)_bb9fb8c6-7931-49e5-8b74-3762c92e7241.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1468,7 +1468,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 22:39:05 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1484,7 +1484,7 @@
     },
     {
       "Route": "Imagens/image-Photoroom (1)_bb9fb8c6-7931-49e5-8b74-3762c92e7241.vb9dnt2tr3.png",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\image-Photoroom (1)_bb9fb8c6-7931-49e5-8b74-3762c92e7241.png",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\image-Photoroom (1)_bb9fb8c6-7931-49e5-8b74-3762c92e7241.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1505,7 +1505,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 22:39:05 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1529,7 +1529,7 @@
     },
     {
       "Route": "Imagens/image-Photoroom (2)_ff43838a-710b-4e03-8135-50e6694db443.f89oe0qfpn.png",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\image-Photoroom (2)_ff43838a-710b-4e03-8135-50e6694db443.png",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\image-Photoroom (2)_ff43838a-710b-4e03-8135-50e6694db443.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1550,7 +1550,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 22:39:05 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1574,7 +1574,7 @@
     },
     {
       "Route": "Imagens/image-Photoroom (2)_ff43838a-710b-4e03-8135-50e6694db443.png",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\image-Photoroom (2)_ff43838a-710b-4e03-8135-50e6694db443.png",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\image-Photoroom (2)_ff43838a-710b-4e03-8135-50e6694db443.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1595,7 +1595,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 22:39:05 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1611,7 +1611,7 @@
     },
     {
       "Route": "Imagens/image-Photoroom (6)_21063961-fcf3-4c48-8b51-e49dc752110a.dhs6x9c69p.png",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\image-Photoroom (6)_21063961-fcf3-4c48-8b51-e49dc752110a.png",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\image-Photoroom (6)_21063961-fcf3-4c48-8b51-e49dc752110a.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1632,7 +1632,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 22:39:05 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1656,7 +1656,7 @@
     },
     {
       "Route": "Imagens/image-Photoroom (6)_21063961-fcf3-4c48-8b51-e49dc752110a.png",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\image-Photoroom (6)_21063961-fcf3-4c48-8b51-e49dc752110a.png",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\image-Photoroom (6)_21063961-fcf3-4c48-8b51-e49dc752110a.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1677,7 +1677,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 22:39:05 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1693,7 +1693,7 @@
     },
     {
       "Route": "Imagens/image-Photoroom (6)_d5bd5dae-9402-4949-9bff-b691cb653b08.dhs6x9c69p.png",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\image-Photoroom (6)_d5bd5dae-9402-4949-9bff-b691cb653b08.png",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\image-Photoroom (6)_d5bd5dae-9402-4949-9bff-b691cb653b08.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1714,7 +1714,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 22:39:05 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1738,7 +1738,7 @@
     },
     {
       "Route": "Imagens/image-Photoroom (6)_d5bd5dae-9402-4949-9bff-b691cb653b08.png",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\image-Photoroom (6)_d5bd5dae-9402-4949-9bff-b691cb653b08.png",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\image-Photoroom (6)_d5bd5dae-9402-4949-9bff-b691cb653b08.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1759,7 +1759,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 22:39:05 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1775,7 +1775,7 @@
     },
     {
       "Route": "Imagens/image-Photoroom (7)_49b2a63e-d274-4e8b-ad8a-625df383b38e.png",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\image-Photoroom (7)_49b2a63e-d274-4e8b-ad8a-625df383b38e.png",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\image-Photoroom (7)_49b2a63e-d274-4e8b-ad8a-625df383b38e.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1796,7 +1796,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 22:39:05 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1812,7 +1812,7 @@
     },
     {
       "Route": "Imagens/image-Photoroom (7)_49b2a63e-d274-4e8b-ad8a-625df383b38e.xomks6q2do.png",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\image-Photoroom (7)_49b2a63e-d274-4e8b-ad8a-625df383b38e.png",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\image-Photoroom (7)_49b2a63e-d274-4e8b-ad8a-625df383b38e.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1833,7 +1833,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 22:39:05 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1857,7 +1857,7 @@
     },
     {
       "Route": "Imagens/image-Photoroom (7)_d9d88480-cad3-48a8-9d68-153f358323cd.png",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\image-Photoroom (7)_d9d88480-cad3-48a8-9d68-153f358323cd.png",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\image-Photoroom (7)_d9d88480-cad3-48a8-9d68-153f358323cd.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1878,7 +1878,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 22:39:05 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1894,7 +1894,7 @@
     },
     {
       "Route": "Imagens/image-Photoroom (7)_d9d88480-cad3-48a8-9d68-153f358323cd.xomks6q2do.png",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\image-Photoroom (7)_d9d88480-cad3-48a8-9d68-153f358323cd.png",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\image-Photoroom (7)_d9d88480-cad3-48a8-9d68-153f358323cd.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1915,7 +1915,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 22:39:05 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1939,7 +1939,7 @@
     },
     {
       "Route": "Imagens/image-Photoroom (8)_c669b52f-6c26-43e4-9a8f-72917ce35841.ieg7h1ulii.png",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\image-Photoroom (8)_c669b52f-6c26-43e4-9a8f-72917ce35841.png",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\image-Photoroom (8)_c669b52f-6c26-43e4-9a8f-72917ce35841.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1960,7 +1960,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 22:39:05 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1984,7 +1984,7 @@
     },
     {
       "Route": "Imagens/image-Photoroom (8)_c669b52f-6c26-43e4-9a8f-72917ce35841.png",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\image-Photoroom (8)_c669b52f-6c26-43e4-9a8f-72917ce35841.png",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\image-Photoroom (8)_c669b52f-6c26-43e4-9a8f-72917ce35841.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2005,7 +2005,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 22:39:05 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2021,7 +2021,7 @@
     },
     {
       "Route": "Imagens/image-Photoroom (8)_c847c653-f503-4ea7-85cc-f818ea1d6de8.ieg7h1ulii.png",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\image-Photoroom (8)_c847c653-f503-4ea7-85cc-f818ea1d6de8.png",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\image-Photoroom (8)_c847c653-f503-4ea7-85cc-f818ea1d6de8.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2042,7 +2042,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 22:39:05 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2066,7 +2066,7 @@
     },
     {
       "Route": "Imagens/image-Photoroom (8)_c847c653-f503-4ea7-85cc-f818ea1d6de8.png",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\image-Photoroom (8)_c847c653-f503-4ea7-85cc-f818ea1d6de8.png",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\image-Photoroom (8)_c847c653-f503-4ea7-85cc-f818ea1d6de8.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2087,7 +2087,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 22:39:05 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2103,7 +2103,7 @@
     },
     {
       "Route": "Imagens/image-Photoroom (9)_1f682716-d5f9-4acd-ab07-df49b39df9af.png",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\image-Photoroom (9)_1f682716-d5f9-4acd-ab07-df49b39df9af.png",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\image-Photoroom (9)_1f682716-d5f9-4acd-ab07-df49b39df9af.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2124,7 +2124,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 22:39:05 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2140,7 +2140,7 @@
     },
     {
       "Route": "Imagens/image-Photoroom (9)_1f682716-d5f9-4acd-ab07-df49b39df9af.z3sgdwctpe.png",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\image-Photoroom (9)_1f682716-d5f9-4acd-ab07-df49b39df9af.png",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\image-Photoroom (9)_1f682716-d5f9-4acd-ab07-df49b39df9af.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2161,7 +2161,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 22:39:05 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2185,7 +2185,7 @@
     },
     {
       "Route": "Imagens/image-Photoroom_75b59efd-43aa-409a-8230-1d68647f087a.mnfxjpd9kj.png",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\image-Photoroom_75b59efd-43aa-409a-8230-1d68647f087a.png",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\image-Photoroom_75b59efd-43aa-409a-8230-1d68647f087a.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2206,7 +2206,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 22:39:05 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2230,7 +2230,7 @@
     },
     {
       "Route": "Imagens/image-Photoroom_75b59efd-43aa-409a-8230-1d68647f087a.png",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\image-Photoroom_75b59efd-43aa-409a-8230-1d68647f087a.png",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\image-Photoroom_75b59efd-43aa-409a-8230-1d68647f087a.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2251,7 +2251,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 22:39:05 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2267,7 +2267,7 @@
     },
     {
       "Route": "Imagens/tv-imagem-1-Photoroom_d45797ea-65aa-4804-9ec0-f3b981d3416f.890mhloipn.png",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\tv-imagem-1-Photoroom_d45797ea-65aa-4804-9ec0-f3b981d3416f.png",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\tv-imagem-1-Photoroom_d45797ea-65aa-4804-9ec0-f3b981d3416f.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2288,7 +2288,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2312,7 +2312,7 @@
     },
     {
       "Route": "Imagens/tv-imagem-1-Photoroom_d45797ea-65aa-4804-9ec0-f3b981d3416f.png",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\tv-imagem-1-Photoroom_d45797ea-65aa-4804-9ec0-f3b981d3416f.png",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\tv-imagem-1-Photoroom_d45797ea-65aa-4804-9ec0-f3b981d3416f.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2333,7 +2333,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2349,7 +2349,7 @@
     },
     {
       "Route": "Imagens/tv-imagem-2-Photoroom_287ba327-c608-491d-a10c-9146c67c717b.cv3rjiobe6.png",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\tv-imagem-2-Photoroom_287ba327-c608-491d-a10c-9146c67c717b.png",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\tv-imagem-2-Photoroom_287ba327-c608-491d-a10c-9146c67c717b.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2370,7 +2370,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2394,7 +2394,7 @@
     },
     {
       "Route": "Imagens/tv-imagem-2-Photoroom_287ba327-c608-491d-a10c-9146c67c717b.png",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\tv-imagem-2-Photoroom_287ba327-c608-491d-a10c-9146c67c717b.png",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\tv-imagem-2-Photoroom_287ba327-c608-491d-a10c-9146c67c717b.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2415,7 +2415,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2431,7 +2431,7 @@
     },
     {
       "Route": "Imagens/tv-imagem-3-Photoroom_b64ef106-7f10-4884-b4a9-b51e59b28a95.ddt2g9sya4.png",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\tv-imagem-3-Photoroom_b64ef106-7f10-4884-b4a9-b51e59b28a95.png",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\tv-imagem-3-Photoroom_b64ef106-7f10-4884-b4a9-b51e59b28a95.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2452,7 +2452,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2476,7 +2476,7 @@
     },
     {
       "Route": "Imagens/tv-imagem-3-Photoroom_b64ef106-7f10-4884-b4a9-b51e59b28a95.png",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\tv-imagem-3-Photoroom_b64ef106-7f10-4884-b4a9-b51e59b28a95.png",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\tv-imagem-3-Photoroom_b64ef106-7f10-4884-b4a9-b51e59b28a95.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2497,7 +2497,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:42:33 GMT"
+          "Value": "Mon, 24 Feb 2025 17:01:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2513,7 +2513,7 @@
     },
     {
       "Route": "Imagens/videoframe_4293_4cd7f45d-8e8f-4113-bcfa-eb84b45295a6.49iasgt23e.png",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\videoframe_4293_4cd7f45d-8e8f-4113-bcfa-eb84b45295a6.png",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\videoframe_4293_4cd7f45d-8e8f-4113-bcfa-eb84b45295a6.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2534,7 +2534,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Feb 2025 23:22:08 GMT"
+          "Value": "Thu, 27 Feb 2025 14:08:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2558,7 +2558,7 @@
     },
     {
       "Route": "Imagens/videoframe_4293_4cd7f45d-8e8f-4113-bcfa-eb84b45295a6.png",
-      "AssetFile": "C:\\Projetos\\loja\\loja.api\\wwwroot\\Imagens\\videoframe_4293_4cd7f45d-8e8f-4113-bcfa-eb84b45295a6.png",
+      "AssetFile": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Api\\wwwroot\\Imagens\\videoframe_4293_4cd7f45d-8e8f-4113-bcfa-eb84b45295a6.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2579,7 +2579,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Feb 2025 23:22:08 GMT"
+          "Value": "Thu, 27 Feb 2025 14:08:12 GMT"
         },
         {
           "Name": "Cache-Control",

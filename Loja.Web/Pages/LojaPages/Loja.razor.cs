@@ -115,8 +115,10 @@ public partial class LojaPage : ComponentBase
             }
                 
             var result = await CarrinhoItemHandler.CriarCarrinhoItemAsync(request, _user);
-            if(result.IsSuccess)
+            if (result.IsSuccess)
+            {
                 Snackbar.Add("Produto adicionado ao carrinho!", Severity.Success);
+            }
             else
             {
                 Snackbar.Add(result.Mensagem ?? "Erro ao adicionar o produto ao carrinho", Severity.Error);

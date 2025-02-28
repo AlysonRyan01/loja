@@ -39,7 +39,6 @@ public partial class ProdutoPageCode : ComponentBase
     [Inject] public NavigationManager NavigationManager { get; set; } = null!;
     [Inject] public ISnackbar Snackbar { get; set; } = null!;
     [Inject] public ICookieAuthenticationStateProvider AuthenticationState { get; set; }
-    [Inject] public LayoutService LayoutService { get; set; } = null!;
     #endregion
     
     #region overrides
@@ -165,7 +164,6 @@ public partial class ProdutoPageCode : ComponentBase
             if (result.IsSuccess)
             {
                 Snackbar.Add("Produto adicionado ao carrinho!", Severity.Success);
-                LayoutService.NotifyStateChanged();
             }
                 
             else

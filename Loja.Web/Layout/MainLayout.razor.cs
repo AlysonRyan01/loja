@@ -55,7 +55,7 @@ public class MainLayoutPage : LayoutComponentBase
         IsBusy = true;
         try
         {
-            LayoutService.OnChange += AtualizarLayout;
+            LayoutService.OnCarrinhoAtualizado += AtualizarCarrinho;
             var result = await AuthenticationState.GetAuthenticationStateAsync();
             var user = result.User;
 
@@ -70,10 +70,7 @@ public class MainLayoutPage : LayoutComponentBase
                     Username = identityResult.Dados.FullName;
                 }
                 
-                var carrinhoResult = await CarrinhoHandler.ObterCarrinhoPorUserAsync(user);
-                if (carrinhoResult.IsSuccess)
-                    carrinho = carrinhoResult.Dados ?? new ();
-
+                await AtualizarCarrinho();
             }
             else
             {
@@ -91,6 +88,7 @@ public class MainLayoutPage : LayoutComponentBase
             IsBusy = false;
         }
     }
+
     #endregion
     
     public void HandleKeyPress(KeyboardEventArgs e)
@@ -112,13 +110,15 @@ public class MainLayoutPage : LayoutComponentBase
         SearchService.SearchTerm = SearchTerm;
     }
     
-    private void AtualizarLayout()
+    private async Task AtualizarCarrinho()
     {
-        StateHasChanged();
-    }
+        if (_user != null)
+        {
+            var carrinhoResult = await CarrinhoHandler.ObterCarrinhoPorUserAsync(_user);
+            if (carrinhoResult.IsSuccess)
+                carrinho = carrinhoResult.Dados ?? new ();
 
-    public async ValueTask DisposeAsync()
-    {
-        LayoutService.OnChange -= AtualizarLayout;
+            StateHasChanged();
+        }
     }
 }

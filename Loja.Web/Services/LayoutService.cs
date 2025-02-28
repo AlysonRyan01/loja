@@ -2,7 +2,13 @@
 
 public class LayoutService
 {
-    public event Action OnChange;
+    public event Func<Task>? OnCarrinhoAtualizado;
 
-    public void NotifyStateChanged() => OnChange?.Invoke();
+    public async Task NotifyCarrinhoAtualizadoAsync()
+    {
+        if (OnCarrinhoAtualizado is not null)
+        {
+            await OnCarrinhoAtualizado.Invoke();
+        }
+    }
 }

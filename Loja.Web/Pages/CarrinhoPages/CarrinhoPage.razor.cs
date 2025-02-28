@@ -33,7 +33,6 @@ public partial class CarrinhoComponent : ComponentBase
     [Inject] public IDialogService DialogService { get; set; } = null!;
     [Inject] public ISnackbar Snackbar { get; set; } = null!;
     [Inject] public NavigationManager NavigationManager { get; set; } = null!;
-    [Inject] public LayoutService LayoutService { get; set; } = null!;
     
     #endregion
     
@@ -142,7 +141,6 @@ public partial class CarrinhoComponent : ComponentBase
                     QuantidadeProdutos += 1;
                 }
             }
-            LayoutService.NotifyStateChanged();
         }
         catch
         {
@@ -165,7 +163,6 @@ public partial class CarrinhoComponent : ComponentBase
                 await AtualizarCarrinhoItem();
                 await AtualizarCarrinho();
                 StateHasChanged();
-                LayoutService.NotifyStateChanged();
 
             }
             else

@@ -7,11 +7,14 @@
     justify-content: center;
     min-height: 100vh;
     width: 100%;
+    margin-bottom: 40px;
+    gap: 20px;
+    padding: 0 20px;
 }
 
 .mapa
 {
-    width: 500px;
+    width: 650px;
     height: 500px;
 }
 
@@ -21,8 +24,8 @@
     flex-direction: row;
     width: 100%;
     height: auto;
-    justify-content: center;
-    padding: 0 30px;
+    justify-content: space-between;
+    padding: 0 10vw;
     gap: 40px;
     margin-bottom: 80px;
 }
@@ -62,7 +65,8 @@
 .produtos-section
 {
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    align-items: start;
     flex-direction: row;
     width: 70%;
     min-height: 100vh;
@@ -749,7 +753,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: start;
-    margin-top: 50px;
 }
 
 .custom-hr {
@@ -766,14 +769,79 @@ main {
     margin-bottom: 10px;
 }
 
-
-.custom-hr-carrinho
-{
-    border: 0;
-    height: 0.1px;
-    background-color: lightgray;
+table {
     width: 100%;
+    border-collapse: collapse;
 }
+th, td {
+    padding: 10px;
+}
+
+.titulo-detalhes-produto
+{
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    text-align: start;
+    color: gray;
+}
+
+.titulo-quantidade
+{
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    text-align: center;
+    color: gray;
+}
+
+.foto-titulo
+{
+    text-align: start;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.img-foto-titulo
+{
+    width: 150px;
+}
+
+.titulo-botao
+{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    gap: 10px;
+}
+
+.titulo-produto-carrinho
+{
+    font-size: 0.6rem;
+}
+
+.botao-titulo-carrinho
+{
+    width: 30px;
+}
+
+.coluna-quantidade
+{
+    text-align: center;
+}
+
+.coluna-total
+{
+    text-align: end;
+}
+
+.titulo-total
+{
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    text-align: end;
+    color: gray;
+}
+
 
 .custom-hr-produto
 {
@@ -783,6 +851,16 @@ main {
     width: 100%;
     margin-bottom: 20px;
     margin-top: 20px;
+}
+
+.custom-hr-carrinho
+{
+    border: 0;
+    height: 0.1px;
+    background-color: lightgray;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .custom-hr-home {
@@ -926,7 +1004,86 @@ main {
 .div-principal-carrinho
 {
     display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 85vh;
+}
+
+.carrinho-itens-container
+{
+    width: 70%;
+    background-color: #FAFAFA;
+    min-height: 85vh;
+}
+
+.carrinho-itens-conteudo
+{
+    display: flex;
     flex-direction: column;
+    padding: 40px 10vw;
+    width: 100%;
+}
+
+.carrinho-h1
+{
+    font-family: "Allerta", sans-serif;
+    font-size: 1.5rem;
+}
+
+.carrinho-titulo
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.concluir-carrinho-container
+{
+    width: 30%;
+    background-color: #F6F6F6;
+    min-height: 85vh;
+}
+
+.concluir-carrinho-conteudo
+{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 3vw;
+    width: 100%;
+}
+
+.resumo-itens
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.resumo-quantidade
+{
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.envio-resumo
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.titulo-opcoes-envio
+{
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.carrinho-resumo-h1
+{
+    font-family: "Allerta", sans-serif;
+    font-size: 1.2rem;
 }
 
 .mudpaper-carrinho
@@ -1298,6 +1455,27 @@ main {
     width: 90px;
 }
 
+.valor-total
+{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    align-items: center;
+    justify-content: space-between;
+    align-self: center;
+    justify-self: center;
+}
+
+.valor-total-texto
+{
+    font-family: "Allerta", sans-serif;
+}
+
+.valor-total-preco
+{
+    font-family: "Open Sans", sans-serif;
+}
+
 .mudcard-coluna-fotos
 {
     display: flex;
@@ -1582,6 +1760,7 @@ main {
         min-height: 100vh;
         width: 100%;
         padding: 0 0;
+        gap: 0;
     }
 
     .mudcardcontent-principal-home
@@ -2117,6 +2296,12 @@ main {
         justify-content: start;
         align-items: center;
     }
+    
+    .mudcardcontent-principal-home
+    {
+        min-height: 80px;
+        max-height: 80px;
+    }
 
     .sobre
     {
@@ -2130,27 +2315,27 @@ main {
     .mudcard-principal-home {
         display: flex;
         flex-direction: column;
-        min-width: 250px;
-        max-width: 270px;
+        min-width: 200px;
+        max-width: 220px;
         box-sizing: border-box;
-        min-height: 500px;
-        max-height: 600px;
+        min-height: 400px;
+        max-height: 500px;
     }
     
     .carrossel-home {
         height: 200px;
-        max-width: 250px;
+        max-width: 200px;
     }
 
     .img-produto-carrossel-home
     {
         max-height: 200px;
-        max-width: 250px;
+        max-width: 200px;
     }
     
     .titulo-produto-homepage
     {
-        font-size: 0.9rem;
+        font-size: 0.6rem;
     }
 
     .frete-info
@@ -2321,12 +2506,14 @@ main {
         margin-top: 10px;
         color: white;
         width: 100%;
+        font-size: 0.8rem;
     }
 
     .mudbutton-carrinho
     {
         margin-top: 10px;
         width: 100%;
+        font-size: 0.6rem;
     }
 
     .busca-filtro-celular
@@ -2337,6 +2524,26 @@ main {
     .filtro-section-celular
     {
         display: none;
+    }
+    
+    .produto-preco-antigo
+    {
+        font-size: 0.7rem;
+    }
+
+    .produto-preco-novo
+    {
+        font-size: 0.8rem;
+    }
+
+    .desconto-pix
+    {
+        font-size: 0.7rem;
+    }
+    
+    .sem-juros-texto
+    {
+        font-size: 0.7rem;
     }
     
 }

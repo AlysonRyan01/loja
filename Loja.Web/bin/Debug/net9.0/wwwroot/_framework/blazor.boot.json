@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Loja.Web",
   "resources": {
-    "hash": "sha256-yu/QvMIff7rTyQmCk51WtLXs+QNLk2G3tlVHTPtzTi4=",
+    "hash": "sha256-tthDDTVVVuX04dpoMXwP8x+YEyIYw5+zvQw0uDPt0o0=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Authentication.1jy2czmvcw.wasm": "Microsoft.AspNetCore.Authentication.wasm",
       "Microsoft.AspNetCore.Authentication.Abstractions.teru10q8m9.wasm": "Microsoft.AspNetCore.Authentication.Abstractions.wasm",
@@ -229,25 +229,25 @@
       "netstandard.lij9csiyuf.wasm": "netstandard.wasm",
       "System.Private.CoreLib.u3k7k03qne.wasm": "System.Private.CoreLib.wasm",
       "dotnet.js": "dotnet.js",
-      "dotnet.native.8bti36lthm.js": "dotnet.native.js",
-      "dotnet.native.tr0cyonrwt.wasm": "dotnet.native.wasm",
-      "dotnet.runtime.tsg4gsv2hg.js": "dotnet.runtime.js",
+      "dotnet.native.hmanx9razn.js": "dotnet.native.js",
+      "dotnet.native.p4lwlf2bu1.wasm": "dotnet.native.wasm",
+      "dotnet.runtime.o8gq1i8bk6.js": "dotnet.runtime.js",
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "Loja.Core.xomga4929r.wasm": "Loja.Core.wasm",
-      "Loja.Core.qk7sttfdzb.pdb": "Loja.Core.pdb",
-      "Loja.Web.fwbsjrn3rz.wasm": "Loja.Web.wasm",
-      "Loja.Web.xf87pesvf9.pdb": "Loja.Web.pdb"
+      "Loja.Core.8ey6lnux7z.wasm": "Loja.Core.wasm",
+      "Loja.Core.2n03aas6ae.pdb": "Loja.Core.pdb",
+      "Loja.Web.l8iz9jn116.wasm": "Loja.Web.wasm",
+      "Loja.Web.2sw1zr3hhs.pdb": "Loja.Web.pdb"
     },
     "jsModuleNative": {
-      "dotnet.native.8bti36lthm.js": "sha256-HFADmT26AarHu4tMjFaTPxINmQjBJGtdPN+CKjtNMFE="
+      "dotnet.native.hmanx9razn.js": "sha256-d7UNSArplVrX3arY2Kmhxp1wN79ng8hLqIBrkiQ9Gbo="
     },
     "jsModuleRuntime": {
-      "dotnet.runtime.tsg4gsv2hg.js": "sha256-82FoDmY+LsehdN2u8aSGEutGEKXJHcYaSX/3zptbsCw="
+      "dotnet.runtime.o8gq1i8bk6.js": "sha256-uD1t4tsPtmIHsx30SC4OztehGGaHVDksFD38rL2e3P4="
     },
     "wasmNative": {
-      "dotnet.native.tr0cyonrwt.wasm": "sha256-F3/BArijJUydqmwcdWeW3LYyYHBRSu2+pyy8GL1jTV0="
+      "dotnet.native.p4lwlf2bu1.wasm": "sha256-+eNtxSEiakcWrx6VoLGcDvqDWS3/kWe0AtiYmQFwe7E="
     },
     "icu": {
       "icudt_CJK.tjcz0u77k5.dat": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
@@ -482,12 +482,12 @@
       "WindowsBase.ovqw333kan.wasm": "sha256-7LCr4nX9JSGuwzMr8Rk8TGvC6ApzQNxCDiMV/0I9JlI=",
       "mscorlib.l6md3pggqy.wasm": "sha256-jZgH0LixLeQKqaq33akQgDGhfE7vbXbHtvCId5HC0Yo=",
       "netstandard.lij9csiyuf.wasm": "sha256-DeeBl9s8G34N3IfYRQ+MoY807amodj8cvpuvUSNaWE4=",
-      "Loja.Core.xomga4929r.wasm": "sha256-Hz9AlD4rHn/z0Nw9NAVhrzg0JxupWJRXvIIBkYwDzeM=",
-      "Loja.Web.fwbsjrn3rz.wasm": "sha256-wWWJepFZ0ryy/iCJW3xjP0eZgpeBDVRb6RSlkbF+Sao="
+      "Loja.Core.8ey6lnux7z.wasm": "sha256-oASBXnQ+acczWIABNbA4QQ3vcEEgiP6Sx5PpkOsyBlw=",
+      "Loja.Web.l8iz9jn116.wasm": "sha256-Fcw7fcfVuCsgVi8n3OyjAatXvHTXNCq7PgcFPW6WZZk="
     },
     "pdb": {
-      "Loja.Core.qk7sttfdzb.pdb": "sha256-WhZK8VxJ5FY4+IPalnDSthYIixWqnl4fDNsabikn3QI=",
-      "Loja.Web.xf87pesvf9.pdb": "sha256-g6iiA6pdcFLuNUNVVziFK5+EE7wvuy6MJkW4I5XicoQ="
+      "Loja.Core.2n03aas6ae.pdb": "sha256-Auj1mV3+qJOvRDj42SY6CBzcj7N/Hx3aIX4nvxXasKE=",
+      "Loja.Web.2sw1zr3hhs.pdb": "sha256-Mhsy6czCFGc5tqYDDLI5wWiMgKg8Sb6cTOBKr1o71mU="
     }
   },
   "cacheBootResources": true,

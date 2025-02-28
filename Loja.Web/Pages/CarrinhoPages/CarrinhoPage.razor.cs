@@ -21,6 +21,7 @@ public partial class CarrinhoComponent : ComponentBase
     public List<Produto> Produtos { get; set; } = new();
     public int QuantidadeProdutos { get; set; }
     public ClaimsPrincipal _user { get; set; }
+    public string envio { get; set; }
 
     #endregion
     
@@ -163,7 +164,6 @@ public partial class CarrinhoComponent : ComponentBase
                 await AtualizarCarrinhoItem();
                 await AtualizarCarrinho();
                 StateHasChanged();
-
             }
             else
             {

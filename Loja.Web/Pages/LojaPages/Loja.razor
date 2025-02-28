@@ -3,7 +3,6 @@
 @inherits LojaPage
 <PageTitle>TVS - Home</PageTitle>
 
-<img src="images/banner.png" alt="banner" class="banner"/>
 <div class="produtos">
     @if (IsBusy)
     {
@@ -93,7 +92,7 @@
                                 <p class="produto-preco-antigo">De R$ @produto.Preco.ToString("F2")</p>
                                 <p class="produto-preco-novo">Por R$ @produto.Preco.ToString("F2")</p>
                                 <p class="desconto-pix">No PIX (5% de desconto)</p>
-                                <p>Ou R$ @produto.Preco.ToString("F2") em até 6x s/ juros no cartão</p>
+                                <p class="sem-juros-texto">Ou R$ @produto.Preco.ToString("F2") em até 6x s/ juros no cartão</p>
 
                                 <div class="div-mudbuttons-comprar-carrinho">
                                     @if (_userLoggedIn)

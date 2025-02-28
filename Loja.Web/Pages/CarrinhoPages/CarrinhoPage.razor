@@ -20,130 +20,76 @@ else
         else
         {
             <div class="div-principal-carrinho">
+                <div class="carrinho-itens-container">
+                    <section class="carrinho-itens-conteudo">
+                        <section class="carrinho-titulo">
+                            <h2 class="carrinho-h1">Carrinho</h2>
+                            <h2 class="carrinho-h1">@Carrinho.CarrinhoItens.Count Itens</h2>
+                        </section>
+                        
+                        <hr class="custom-hr-carrinho"/>
 
-                @foreach (var Itens in CarrinhoItens)
-                {
-                    <MudCard class="mudpaper-carrinho">
-                        <h4 class="produto-titulo">@Itens.Produto.Titulo</h4>
-                        <hr class="custom-hr">
-                        <MudCarousel Class="carrossel-produto-imagens" ShowArrows="true" EnableSwipeGesture="true" TData="Imagem" Indicators="true">
-                            @foreach (var imagem in Itens.Produto.Imagens)
+                        <table>
+                            <thead>
+                            <tr>
+                                <th class="titulo-detalhes-produto">DETALHES DO PRODUTO</th>
+                                <th class="titulo-quantidade">QUANTIDADE</th>
+                                <th class="titulo-total">TOTAL</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @foreach (var produto in CarrinhoItens)
                             {
-                                var imagemUrl = $"{WebConfiguration.BackendUrl}{imagem.Url}"; 
-                                <MudCarouselItem Class="carrossel-item-home">
-                                    <img class="img-carrossel-produto" src="@imagemUrl" alt="sla"/>
-                                </MudCarouselItem>
+                                <tr>
+                                    <td class="foto-titulo">
+                                        <section>
+                                            @if (produto.Produto.Imagens.Any())
+                                            {
+                                                var imagemUrl = $"{WebConfiguration.BackendUrl}{produto.Produto.Imagens.First().Url}";
+                                                <img class="img-foto-titulo" src="@imagemUrl" alt="Imagem do produto" />
+                                            }
+                                        </section>
+                                        <section class="titulo-botao">
+                                            <p class="titulo-produto-carrinho">@produto.Produto.Titulo</p>
+                                            <MudButton Class="botao-titulo-carrinho" FullWidth="false"  Size="Size.Small" OnClick="() => ExcluirDoCarrinho(produto.Id)"><span style="font-size: 0.7rem; color: gray">Remover</span></MudButton>
+                                        </section>
+                                    </td>
+                                    <td class="coluna-quantidade">
+                                        1
+                                    </td>
+                                    <td class="coluna-total">
+                                        @produto.PrecoTotal.ToString("C")
+                                    </td>
+                                </tr>
                             }
-                        </MudCarousel>
-                        <hr class="custom-hr">
-                        <MudCardContent class="mudcard-produto-info">
-                            <p class="produto-preco-antigo">De R$ @Itens.Produto.Preco.ToString("F2")</p>
-                            <p class="produto-preco-novo">Por R$ @Itens.Produto.Preco.ToString("F2")</p>
-
-                            <MudButton class="botao-excluir-carrinho" Style="color: white;" OnClick="() => ExcluirDoCarrinho(Itens.Id)" Color="Color.Primary" Variant="Variant.Filled">
-                                Excluir do carrinho
-                            </MudButton>
-                        </MudCardContent>
-                    </MudCard>
-                }
-            </div>
-            <div class="div-resumo-compra">
-                <MudPaper class="resumo-compra-mudpaper">
-                    <h3 class="resumo-compra-titulo">Resumo da compra</h3>
-                    <hr class="custom-hr">
-                    <div class="div-resumo-compra-quantidade-valor">
-                        <p>Produto(s): @QuantidadeProdutos</p>
-                        <p>R$ @Carrinho.ValorTotal.ToString("F2")</p>
-                    </div>
-                    <div class="div-resumo-compra-frete-valor">
-                        <p>Frete(s):</p>
-                        <p>Grátis</p>
-                    </div>
-                    <div class="div-resumo-compra-valortotal">
-                        <h2>Total:</h2>
-                        <h2>R$ @Carrinho.ValorTotal.ToString("F2")</h2>
-                    </div>
-                    <MudButton href="@($"/checkout/carrinho-{Carrinho.Slug}")" Style="color: white;" class="botao-continuar-resumo-compra" Color="Color.Tertiary" Variant="Variant.Filled">
-                        Continuar a compra
-                    </MudButton>
-                </MudPaper>
+                            </tbody>
+                        </table>
+                        
+                        <hr class="custom-hr-carrinho"/>
+                        
+                        <section class="valor-total">
+                            <h3 class="valor-total-texto">VALOR TOTAL</h3>
+                            <h3 class="valor-total-preco">@Carrinho.ValorTotal.ToString("C")</h3>
+                        </section>
+                    </section>
+                </div>
+                <div class="concluir-carrinho-container">
+                    <section class="concluir-carrinho-conteudo">
+                        <h2 class="carrinho-resumo-h1">Resumo Do Pedido</h2>
+                        <hr class="custom-hr-carrinho"/>
+                        <section class="resumo-itens">
+                            <p class="resumo-quantidade">ITENS: @Carrinho.CarrinhoItens.Count</p>
+                            <p class="resumo-quantidade">@Carrinho.ValorTotal.ToString("C")</p>
+                        </section>
+                        <section class="envio-resumo">
+                            <p class="titulo-opcoes-envio">OPÇÕES DE ENVIO</p>
+                            <MudSelect Style="background-color: white" @bind-Value="envio" Label="Envio" Variant="Variant.Outlined">
+                                <MudSelectItem Value="@("Correios")"/>
+                            </MudSelect>
+                        </section>
+                    </section>
+                </div>
             </div>
         }
     </div>
-    
-    <div class="div-principal-recomendacoes">
-        <h2 class="titulo-recomendacoes">Recomendações para você</h2>
-        <MudCarousel Class="carrossel-principal-recomendacoes" TData="Produto" ShowArrows="true" EnableSwipeGesture="true" Indicators="true">
-            @foreach (var grupo in Produtos.Chunk(4))
-            {
-                <MudCarouselItem Class="carrossel-item-principal-recomendacoes">
-                    @foreach (var itens in grupo)
-                    {
-                        <NavLink href="@($"/produto/{itens.Slug}")">
-                            <MudItem>
-                                <MudCard Class="mudcard-carrossel-item">
-                                    <MudCardContent Class="mudcard-produto-titulo-recomendacoes">
-                                        <h4 class="produto-titulo-recomendacoes">@itens.Titulo</h4>
-                                    </MudCardContent>
-                                    <hr class="custom-hr">
-                                    <MudCarousel Class="carrossel-secundario-recomendacoes" ShowArrows="false" EnableSwipeGesture="true" TData="Imagem" Indicators="true">
-                                        @foreach (var imagem in itens.Imagens)
-                                        {
-                                            var imagemUrl = $"{WebConfiguration.BackendUrl}{imagem.Url}";
-                                            <MudCarouselItem Class="carrossel-item-secundario-recomendacoes">
-                                                <img class="img-carrossel-produto-recomendacoes" src="@imagemUrl" alt="sla"/>
-                                            </MudCarouselItem>
-                                        }
-                                    </MudCarousel>
-                                    <hr class="custom-hr">
-                                    <MudCardContent Class="mudcardcontent-produto-info-recomendacoes">
-                                        <p class="produto-preco-antigo-recomendacoes">De R$ @itens.Preco.ToString("F2")</p>
-                                        <p class="produto-preco-novo-recomendacoes">Por R$ @itens.Preco.ToString("F2")</p>
-                                    </MudCardContent>
-                                </MudCard>
-                            </MudItem>
-                        </NavLink>
-                    }
-                </MudCarouselItem>
-            }
-        </MudCarousel>
-    </div>
-    <div class="div-principal-recomendacoes-celular">
-        <h2 class="titulo-recomendacoes">Recomendações para você</h2>
-        <MudCarousel Class="carrossel-principal-recomendacoes" TData="Produto" ShowArrows="true" EnableSwipeGesture="true" Indicators="true">
-            @foreach (var grupo in Produtos.Chunk(1))
-            {
-                <MudCarouselItem Class="carrossel-item-principal-recomendacoes">
-                    @foreach (var itens in grupo)
-                    {
-                        <NavLink href="@($"/produto/{itens.Slug}")">
-                            <MudItem>
-                                <MudCard Class="mudcard-carrossel-item">
-                                    <MudCardContent Class="mudcard-produto-titulo-recomendacoes">
-                                        <h4 class="produto-titulo-recomendacoes">@itens.Titulo</h4>
-                                    </MudCardContent>
-                                    <hr class="custom-hr">
-                                    <MudCarousel Class="carrossel-secundario-recomendacoes" ShowArrows="false" EnableSwipeGesture="true" TData="Imagem" Indicators="true">
-                                        @foreach (var imagem in itens.Imagens)
-                                        {
-                                            var imagemUrl = $"{WebConfiguration.BackendUrl}{imagem.Url}";
-                                            <MudCarouselItem Class="carrossel-item-secundario-recomendacoes">
-                                                <img class="img-carrossel-produto-recomendacoes" src="@imagemUrl" alt="sla"/>
-                                            </MudCarouselItem>
-                                        }
-                                    </MudCarousel>
-                                    <hr class="custom-hr">
-                                    <MudCardContent Class="mudcardcontent-produto-info-recomendacoes">
-                                        <p class="produto-preco-antigo-recomendacoes">De R$ @itens.Preco.ToString("F2")</p>
-                                        <p class="produto-preco-novo-recomendacoes">Por R$ @itens.Preco.ToString("F2")</p>
-                                    </MudCardContent>
-                                </MudCard>
-                            </MudItem>
-                        </NavLink>
-                    }
-                </MudCarouselItem>
-            }
-        </MudCarousel>
-    </div>
-
 }

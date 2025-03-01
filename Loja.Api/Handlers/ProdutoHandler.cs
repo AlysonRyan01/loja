@@ -166,6 +166,7 @@ public class ProdutoHandler(
         {
             var produto = await context
                 .Produtos
+                .AsNoTracking()
                 .Include(x => x.Imagens)
                 .FirstOrDefaultAsync(p => p.Slug == requisicao.Slug);
             

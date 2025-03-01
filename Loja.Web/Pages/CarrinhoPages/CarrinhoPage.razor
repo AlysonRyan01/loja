@@ -87,6 +87,21 @@ else
                                 <MudSelectItem Value="@("Correios")"/>
                             </MudSelect>
                         </section>
+                        <section class="codigo-resumo">
+                            <p class="titulo-opcoes-envio">CÓDIGO PROMOCIONAL</p>
+                            <MudTextField Style="background-color: white" @bind-Value="codigo" Label="Envio" Variant="Variant.Outlined">
+                                
+                            </MudTextField>
+                            <MudButton FullWidth="false" Color="Color.Tertiary" Variant="Variant.Filled" Class="mudbutton-comprar" Style="color: white; width: 100px;">
+                                APLICAR
+                            </MudButton>
+                        </section>
+                        
+                        <hr class="custom-hr-carrinho"/>
+                        <MudButton href="@($"/checkout/carrinho-{Carrinho.Slug}")" Color="Color.Primary" Variant="Variant.Filled" Class="mudbutton-comprar" Style="color: white; width: 70%; align-self: center; height: 40px;">
+                            IR PARA O PAGAMENTO
+                        </MudButton>
+                        
                     </section>
                 </div>
             </div>

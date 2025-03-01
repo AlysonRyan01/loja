@@ -103,7 +103,14 @@ else
             {
                 <section class="section-pagamento" @ref="PagamentoSection">
                     <h2 class="h2-userinfo">Pagamento</h2>
-                    <p style="font-size: 1.2rem">Valor total: @carrinho.ValorTotal.ToString("C")</p>
+                    @if (Slug.StartsWith("carrinho-"))
+                    {
+                        <p style="font-size: 1.2rem">Valor total: @carrinho.ValorTotal.ToString("C")</p>
+                    }
+                    else if (Slug.StartsWith("produto-"))
+                    {
+                        <p style="font-size: 1.2rem">Valor total: @produto.Preco.ToString("C")</p>
+                    }
                     <MudTextField Label="Nome no Cartão" @bind-Value="Cartao.Nome" FullWidth />
                     <MudTextField Mask="@(new PatternMask("000.000.000-00"))" Label="CPF" @bind-Value="Cartao.CPF" FullWidth />
                     <MudTextField Mask="@(new PatternMask("0000 0000 0000 0000"))" Label="Número do Cartão" @bind-Value="Cartao.Numero" FullWidth />
@@ -116,9 +123,9 @@ else
         </div>
 
         <div class="div-produtoinfo">
-            <h2 class="h2-produtos-checkout">Produtos:  <span style="font-weight: lighter; font-size: 1.2rem;">@carrinho.CarrinhoItens.Count</span></h2>
             @if (Slug.StartsWith("carrinho-"))
             {
+                <h2 class="h2-produtos-checkout">Produtos:  <span style="font-weight: lighter; font-size: 1.2rem;">@carrinho.CarrinhoItens.Count</span></h2>
                 foreach (var item in carrinho.CarrinhoItens)
                 {
                     <section class="section-produtos-carrinho">
@@ -134,114 +141,17 @@ else
             }
             else if ((Slug.StartsWith("produto-")))
             {
-                
+                <h2 class="h2-produtos-checkout">Produtos:  <span style="font-weight: lighter; font-size: 1.2rem;">1</span></h2>
+                <section class="section-produtos-carrinho">
+                    @if (produto?.Imagens?.FirstOrDefault() is { } primeiraImagem)
+                    {
+                        var imagemUrl = $"{WebConfiguration.BackendUrl}{primeiraImagem.Url}";
+                        <img class="img-produto-checkout" src="@imagemUrl" alt="Imagem do produto"/>
+                    }
+                    <p class="titulo-produto-checkout">@produto?.Titulo</p>
+                    <p class="preco-produto-checkout">@produto?.Preco.ToString("C")</p>
+                </section>
             }
         </div>
     </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="div-para-esconder">
-        <MudContainer MaxWidth="MaxWidth.ExtraLarge">
-            <MudGrid>
-                <!-- Coluna Principal (70% da tela) -->
-                <MudItem xs="12" md="9">
-                    <MudPaper Class="p-4">
-                        <MudGrid Spacing="3">
-                            <!-- Informações do Usuário -->
-                            <MudItem xs="12">
-                                <MudCard>
-                                    <MudCardContent>
-                                        <MudTypography Variant="h6">Informações do Usuário</MudTypography>
-                                        <MudTextField Label="Nome" @bind-Value="UserInfo.Name" FullWidth />
-                                        <MudTextField Label="Email" @bind-Value="UserInfo.Email" FullWidth />
-                                    </MudCardContent>
-                                </MudCard>
-                            </MudItem>
-
-                            <!-- Endereço do Pedido -->
-                            <MudItem xs="12">
-                                <MudCard>
-                                    <MudCardContent>
-                                        <MudTypography Variant="h6">Endereço de Entrega</MudTypography>
-                                        <MudTextField Label="Rua" @bind-Value="Endereco.Rua" FullWidth />
-                                        <MudTextField Label="Número" @bind-Value="Endereco.Numero" FullWidth />
-                                        <MudTextField Label="Cidade" @bind-Value="Endereco.Cidade" FullWidth />
-                                        <MudTextField Label="Estado" @bind-Value="Endereco.Estado" FullWidth />
-                                        <MudTextField Label="CEP" @bind-Value="Endereco.CEP" FullWidth />
-                                    </MudCardContent>
-                                </MudCard>
-                            </MudItem>
-
-                            <!-- Informações do Cartão de Crédito -->
-                            <MudItem xs="12">
-                                <MudCard>
-                                    <MudCardContent>
-                                        <MudTypography Variant="h6">Pagamento</MudTypography>
-                                        <MudTextField Label="Número do Cartão" @bind-Value="Cartao.Numero" FullWidth />
-                                        <MudTextField Label="Nome no Cartão" @bind-Value="Cartao.Nome" FullWidth />
-                                        <MudTextField Label="Data de Expiração" @bind-Value="Cartao.Expiracao" FullWidth />
-                                        <MudTextField Label="CVV" @bind-Value="Cartao.CVV" FullWidth />
-                                    </MudCardContent>
-                                </MudCard>
-                            </MudItem>
-                        </MudGrid>
-                    </MudPaper>
-                </MudItem>
-
-                <!-- Coluna Lateral (30% da tela) - Produtos no Carrinho -->
-                @if (Slug.StartsWith("carrinho-"))
-                {
-                    <MudItem xs="12" md="3">
-                        <MudPaper Class="p-4">
-                            <MudTypography Variant="h6">Resumo do Pedido</MudTypography>
-                            <MudList T="CarrinhoItem">
-                                @foreach (var item in carrinho.CarrinhoItens)
-                                {
-                                    <MudListItem T="string">
-                                        <MudListItemText>
-                                            <MudTypography>@item.Produto.Titulo</MudTypography>
-                                            <MudTypography Color="Color.Secondary">Quantidade: @item.Quantidade</MudTypography>
-                                            <MudTypography Color="Color.Primary">Preço: @item.Produto.Preco.ToString("C")</MudTypography>
-                                        </MudListItemText>
-                                    </MudListItem>
-                                }
-                            </MudList>
-                            <MudDivider />
-                            <MudTypography Variant="h6">Total: @Total.ToString("C")</MudTypography>
-                            <MudButton Variant="Variant.Filled" Color="Color.Primary" FullWidth>Finalizar Compra</MudButton>
-                        </MudPaper>
-                    </MudItem>
-                }
-                else if (Slug.StartsWith("produto-"))
-                {
-                    <MudItem xs="12" md="3">
-                        <MudPaper Class="p-4">
-                            <MudTypography Variant="h6">Resumo do Pedido</MudTypography>
-                            <MudCard>
-                                <MudCardContent>
-                                    <MudTypography Variant="h6">@produto.Titulo</MudTypography>
-                                    <MudTypography Color="Color.Secondary">Quantidade: 1</MudTypography>
-                                    <MudTypography Color="Color.Primary">Preço: @produto.Preco.ToString("C")</MudTypography>
-                                </MudCardContent>
-                            </MudCard>
-                            <MudDivider />
-                            <MudTypography Variant="h6">Total: @Total.ToString("C")</MudTypography>
-                            <MudButton Variant="Variant.Filled" Color="Color.Primary" FullWidth>Finalizar Compra</MudButton>
-                        </MudPaper>
-                    </MudItem>
-                }
-            </MudGrid>
-        </MudContainer>
-    </div>
-
 }

@@ -22,6 +22,7 @@ public partial class CarrinhoComponent : ComponentBase
     public int QuantidadeProdutos { get; set; }
     public ClaimsPrincipal _user { get; set; }
     public string envio { get; set; }
+    public string codigo { get; set; }
 
     #endregion
     

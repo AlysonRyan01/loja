@@ -44,4 +44,12 @@ public class AtualizarProdutoRequisicao
     
     [Required(ErrorMessage = "Informe se o produto está ativo")]
     public bool IsActive { get; set; } = true;
+    
+    [Required(ErrorMessage = "A largura é obrigatória.")]
+    [Range(1, int.MaxValue, ErrorMessage = "A largura deve ser maior que zero.")]
+    public int Largura { get; set; }
+
+    [Required(ErrorMessage = "A altura é obrigatória.")]
+    [Range(1, int.MaxValue, ErrorMessage = "A altura deve ser maior que zero.")]
+    public int Altura { get; set; }
 }

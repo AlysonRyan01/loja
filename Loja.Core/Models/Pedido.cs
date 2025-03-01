@@ -22,5 +22,7 @@ public class Pedido
     
     public Endereco Endereco { get; set; } = new();
     
-    public decimal ValorTotal => Itens?.Sum(item => item.PrecoTotal) ?? 0;
+    public decimal ValorFrete { get; set; } = 0;
+
+    public decimal ValorTotal => (Itens?.Sum(item => item.PrecoTotal) ?? 0) + ValorFrete;
 }

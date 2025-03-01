@@ -31,6 +31,7 @@ public partial class CheckoutPage : ComponentBase
     public CartaoDeCredito Cartao { get; set; } = new CartaoDeCredito();
     public ElementReference EnderecoSection;
     public ElementReference PagamentoSection;
+    public decimal Frete { get; set; }
     
     [Inject] public ICarrinhoHandler CarrinhoHandler { get; set; } = null!;
     [Inject] public IEnderecoHandler EnderecoHandler { get; set; } = null!;

@@ -59,5 +59,13 @@ public class ProdutoMap : IEntityTypeConfiguration<Produto>
             .IsRequired()
             .HasColumnType("NVARCHAR")
             .HasMaxLength(80);
+        
+        builder.Property(x => x.Largura)
+            .IsRequired()
+            .HasColumnType("INT");
+
+        builder.Property(x => x.Altura)
+            .IsRequired()
+            .HasColumnType("INT");
     }
 }

@@ -81,12 +81,6 @@ else
                             <p class="resumo-quantidade">ITENS: @Carrinho.CarrinhoItens.Count</p>
                             <p class="resumo-quantidade">@Carrinho.ValorTotal.ToString("C")</p>
                         </section>
-                        <section class="envio-resumo">
-                            <p class="titulo-opcoes-envio">OPÇÕES DE ENVIO</p>
-                            <MudSelect Style="background-color: white" @bind-Value="envio" Label="Envio" Variant="Variant.Outlined">
-                                <MudSelectItem Value="@("Correios")"/>
-                            </MudSelect>
-                        </section>
                         <section class="codigo-resumo">
                             <p class="titulo-opcoes-envio">CÓDIGO PROMOCIONAL</p>
                             <MudTextField Style="background-color: white" @bind-Value="codigo" Label="Envio" Variant="Variant.Outlined">

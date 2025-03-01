@@ -31,6 +31,8 @@ public class ProdutoHandler(
                 Garantia = requisicao.Garantia,
                 Preco = requisicao.Preco,
                 Imagens = imagens,
+                Altura = requisicao.Altura,
+                Largura = requisicao.Largura,
                 IsActive = requisicao.IsActive
             };
 
@@ -84,6 +86,8 @@ public class ProdutoHandler(
             produto.Garantia = requisicao.Garantia;
             produto.Descricao = requisicao.Descricao;
             produto.Preco = requisicao.Preco;
+            produto.Altura = requisicao.Altura;
+            produto.Largura = requisicao.Largura;
             produto.IsActive = requisicao.IsActive;
 
             context.Produtos.Update(produto);

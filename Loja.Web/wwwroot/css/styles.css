@@ -1914,6 +1914,7 @@ th, td {
         align-items: center;
         justify-content: center;
         width: 90%;
+        min-width: 0;
         text-align: center;
     }
 
@@ -1924,6 +1925,7 @@ th, td {
         align-items: center;
         justify-content: center;
         width: 90%;
+        min-width: 0;
     }
 
     .contato-titulo
@@ -2029,16 +2031,17 @@ th, td {
     {
         display: flex;
         flex-direction: column;
-        width: 500px;
-        margin-right: 20px;
-        margin-left: 20px;
+        width: 60%;
+        margin-left: 0;
+        margin-right: 0;
     }
     
 
     .background-home-page
     {
+        max-width: 100vw;
         justify-content: start;
-        padding: 0;
+        padding: 0 0 0  4vw;
         min-height: 55vh;
     }
     

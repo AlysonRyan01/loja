@@ -28,6 +28,7 @@ builder.Services.AddTransient<IProdutoHandler, ProdutoHandler>();
 builder.Services.AddTransient<ICarrinhoItemHandler, CarrinhoItemHandler>();
 builder.Services.AddTransient<ICarrinhoHandler, CarrinhoHandler>();
 builder.Services.AddTransient<IPedidoHandler, PedidoHandler>();
+builder.Services.AddTransient<ICorreioHandler, CorreioHandler>();
 builder.Services.AddSingleton<LayoutService>();
 
 builder.Services.AddSingleton<SearchService>();

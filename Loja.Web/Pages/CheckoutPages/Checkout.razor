@@ -1,6 +1,7 @@
 ﻿@page "/checkout/{Slug}"
 @using System.ComponentModel.DataAnnotations
 @using Loja.Core.Models
+@using Loja.Core.Respostas.MelhorEnvio
 @inherits CheckoutPage
 
 
@@ -91,7 +92,7 @@ else
                             @bind-Value="Endereco.CEP"
                             FullWidth
                             Required="true"
-                            Mask="@(new PatternMask("00000-000"))"
+                            Mask="CepMask"
                             RequiredError="O campo CEP é obrigatório"
                             Validation="ValidateCEP"/>
 
@@ -99,7 +100,34 @@ else
                     </MudForm>
                 </section>
             }
+
             @if (UserInfoIsValid && UserAddressIsValid)
+            {
+                <section class="section-endereco" @ref="FreteSection">
+                    <h2 class="h2-userinfo">Opções de envio</h2>
+                    @if (Fretes != null && Fretes.Any())
+                    {
+                        <MudSelect T="CalculoFreteResponse" Label="Selecione o Frete" @bind-Value="FreteSelecionado">
+                            @foreach (var frete in Fretes)
+                            {
+                                <MudSelectItem Value="frete">
+                                    @frete.Name - R$ @frete.Price - Prazo: @frete.DeliveryTime dias
+                                </MudSelectItem>
+                            }
+                        </MudSelect>
+                        
+                        @if (FreteSelecionado != null)
+                        {
+                            <MudText Typo="Typo.body1" GutterBottom="true">
+                                Frete selecionado: @FreteSelecionado.Name - R$ @FreteSelecionado.Price
+                            </MudText>
+                        }
+                    }
+                    <MudButton OnClick="FreteValidation" Disabled="@FreteIsValid" Color="Color.Primary">Validar</MudButton>
+                </section>
+            }
+            
+            @if (UserInfoIsValid && UserAddressIsValid && FreteIsValid)
             {
                 <section class="section-pagamento" @ref="PagamentoSection">
                     <h2 class="h2-userinfo">Pagamento</h2>
@@ -109,7 +137,7 @@ else
                     }
                     else if (Slug.StartsWith("produto-"))
                     {
-                        <p style="font-size: 1.2rem">Valor total: @produto.Preco.ToString("C")</p>
+                        <p style="font-size: 1.2rem">Valor total: @TotalProduto.ToString("C")</p>
                     }
                     <MudTextField Label="Nome no Cartão" @bind-Value="Cartao.Nome" FullWidth />
                     <MudTextField Mask="@(new PatternMask("000.000.000-00"))" Label="CPF" @bind-Value="Cartao.CPF" FullWidth />
@@ -139,7 +167,7 @@ else
                     </section>
                 }
                 <section class="envio-resumo">
-                    <p class="titulo-opcoes-envio">OPÇÕES DE ENVIO</p>
+                    
                 </section>
             }
             else if ((Slug.StartsWith("produto-")))
@@ -153,6 +181,9 @@ else
                     }
                     <p class="titulo-produto-checkout">@produto?.Titulo</p>
                     <p class="preco-produto-checkout">@produto?.Preco.ToString("C")</p>
+                </section>
+                <section class="envio-resumo">
+                    
                 </section>
             }
         </div>

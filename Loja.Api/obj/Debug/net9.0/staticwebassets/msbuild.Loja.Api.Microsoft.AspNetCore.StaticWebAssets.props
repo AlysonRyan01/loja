@@ -234,23 +234,77 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\image-Photoroom (2)_ff43838a-710b-4e03-8135-50e6694db443.png'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\image-Photoroom (6)_21063961-fcf3-4c48-8b51-e49dc752110a.png'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\image-Photoroom (3)_f3cc8893-4479-410f-bd92-66e23a556069.png'))">
       <SourceType>Package</SourceType>
       <SourceId>Loja.Api</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/Loja.Api</BasePath>
-      <RelativePath>Imagens/image-Photoroom (6)_21063961-fcf3-4c48-8b51-e49dc752110a.png</RelativePath>
+      <RelativePath>Imagens/image-Photoroom (3)_f3cc8893-4479-410f-bd92-66e23a556069.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>dhs6x9c69p</Fingerprint>
-      <Integrity>sZp5LPR4YVtC4T5B96m5VvRdAYjD0S4qsIJSxxMm+9g=</Integrity>
+      <Fingerprint>f26r7vs2qi</Fingerprint>
+      <Integrity>d9rE6KAp2oxoCGA3D4+ZPqb3PoOp0N+a9Yoz5+CjH4w=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\image-Photoroom (6)_21063961-fcf3-4c48-8b51-e49dc752110a.png'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\image-Photoroom (3)_f3cc8893-4479-410f-bd92-66e23a556069.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\image-Photoroom (4)_1d582ce1-a787-4123-a3bb-3bda2f823ea4.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Loja.Api</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Loja.Api</BasePath>
+      <RelativePath>Imagens/image-Photoroom (4)_1d582ce1-a787-4123-a3bb-3bda2f823ea4.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>4m84g7uvju</Fingerprint>
+      <Integrity>ZM9vNQqu1g3YaH84w9pOLPl0GUjAL1s2/zwXXvO47t8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\image-Photoroom (4)_1d582ce1-a787-4123-a3bb-3bda2f823ea4.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\image-Photoroom (5)_3635b991-0568-437d-83f1-cddd858f2b17.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Loja.Api</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Loja.Api</BasePath>
+      <RelativePath>Imagens/image-Photoroom (5)_3635b991-0568-437d-83f1-cddd858f2b17.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>qtm18j3q12</Fingerprint>
+      <Integrity>zg2hco2WT11x2GAeRzhVFvxqa5PFDdgxSY6Mnf1JSWA=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\image-Photoroom (5)_3635b991-0568-437d-83f1-cddd858f2b17.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\image-Photoroom (6)_09f9c41f-ef26-4368-83cd-99b84fd6da97.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Loja.Api</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Loja.Api</BasePath>
+      <RelativePath>Imagens/image-Photoroom (6)_09f9c41f-ef26-4368-83cd-99b84fd6da97.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>teqgqiyfx3</Fingerprint>
+      <Integrity>tas4eYfeKuU//ahIDX6cCInY0PuJWUmv7KfX6FaAUgk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\image-Photoroom (6)_09f9c41f-ef26-4368-83cd-99b84fd6da97.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\image-Photoroom (6)_d5bd5dae-9402-4949-9bff-b691cb653b08.png'))">
       <SourceType>Package</SourceType>
@@ -270,24 +324,6 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\image-Photoroom (6)_d5bd5dae-9402-4949-9bff-b691cb653b08.png'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\image-Photoroom (7)_49b2a63e-d274-4e8b-ad8a-625df383b38e.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>Loja.Api</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Loja.Api</BasePath>
-      <RelativePath>Imagens/image-Photoroom (7)_49b2a63e-d274-4e8b-ad8a-625df383b38e.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>xomks6q2do</Fingerprint>
-      <Integrity>H7xizHOdFszpbXbbPdV272qLihdG2lmmygwoxfX/S80=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\image-Photoroom (7)_49b2a63e-d274-4e8b-ad8a-625df383b38e.png'))</OriginalItemSpec>
-    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\image-Photoroom (7)_d9d88480-cad3-48a8-9d68-153f358323cd.png'))">
       <SourceType>Package</SourceType>
       <SourceId>Loja.Api</SourceId>
@@ -306,24 +342,6 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\image-Photoroom (7)_d9d88480-cad3-48a8-9d68-153f358323cd.png'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\image-Photoroom (8)_c669b52f-6c26-43e4-9a8f-72917ce35841.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>Loja.Api</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Loja.Api</BasePath>
-      <RelativePath>Imagens/image-Photoroom (8)_c669b52f-6c26-43e4-9a8f-72917ce35841.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>ieg7h1ulii</Fingerprint>
-      <Integrity>NjyTt3KGmsOd6RBsr0SiSZ5dCuSsNvc6+wtaNyFbszE=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\image-Photoroom (8)_c669b52f-6c26-43e4-9a8f-72917ce35841.png'))</OriginalItemSpec>
-    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\image-Photoroom (8)_c847c653-f503-4ea7-85cc-f818ea1d6de8.png'))">
       <SourceType>Package</SourceType>
       <SourceId>Loja.Api</SourceId>
@@ -341,24 +359,6 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\image-Photoroom (8)_c847c653-f503-4ea7-85cc-f818ea1d6de8.png'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\image-Photoroom (9)_1f682716-d5f9-4acd-ab07-df49b39df9af.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>Loja.Api</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Loja.Api</BasePath>
-      <RelativePath>Imagens/image-Photoroom (9)_1f682716-d5f9-4acd-ab07-df49b39df9af.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>z3sgdwctpe</Fingerprint>
-      <Integrity>sWAvEPLQHb6/iZh3M+OByLJPZqy7ywS2nFU0PgdS1Ao=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\image-Photoroom (9)_1f682716-d5f9-4acd-ab07-df49b39df9af.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\image-Photoroom_75b59efd-43aa-409a-8230-1d68647f087a.png'))">
       <SourceType>Package</SourceType>
@@ -431,24 +431,6 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\tv-imagem-3-Photoroom_b64ef106-7f10-4884-b4a9-b51e59b28a95.png'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\videoframe_4293_4cd7f45d-8e8f-4113-bcfa-eb84b45295a6.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>Loja.Api</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Loja.Api</BasePath>
-      <RelativePath>Imagens/videoframe_4293_4cd7f45d-8e8f-4113-bcfa-eb84b45295a6.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>49iasgt23e</Fingerprint>
-      <Integrity>6Kb7CBPIbYwZOgzq+jGjZjxetFw650jeYIvglwmhnfA=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Imagens\videoframe_4293_4cd7f45d-8e8f-4113-bcfa-eb84b45295a6.png'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>

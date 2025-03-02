@@ -95,9 +95,12 @@ builder.Services.AddTransient<IIdentityHandler, IdentityHandler>();
 builder.Services.AddTransient<ICarrinhoItemHandler, CarrinhoItemHandler>();
 builder.Services.AddTransient<ICarrinhoHandler, CarrinhoHandler>();
 builder.Services.AddTransient<IPedidoHandler, PedidoHandler>();
+builder.Services.AddTransient<ICorreioHandler, CorreioHandler>();
 
 builder.Services.AddTransient<IUploadImagemService, ImagemService>();
 builder.Services.AddTransient<IPedidoItemService, PedidoItemService>();
+
+builder.Services.AddHttpClient();
 
 var app = builder.Build();
 

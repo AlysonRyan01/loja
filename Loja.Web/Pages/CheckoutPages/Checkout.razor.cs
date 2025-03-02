@@ -1,11 +1,15 @@
-﻿using System.Security.Claims;
+﻿using System.Globalization;
+using System.Security.Claims;
+using Dima.Web.Handlers;
 using Dima.Web.Security;
 using Loja.Core.Handlers;
 using Loja.Core.Models;
 using Loja.Core.Models.Identity;
+using Loja.Core.Requisicoes.Correios;
 using Loja.Core.Requisicoes.Endereco;
 using Loja.Core.Requisicoes.Identity;
 using Loja.Core.Requisicoes.Produtos;
+using Loja.Core.Respostas.MelhorEnvio;
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
 using MudBlazor;
@@ -19,19 +23,28 @@ public partial class CheckoutPage : ComponentBase
     public MudForm UserAdressForm;
     public bool UserInfoIsValid { get; set; } = false;
     public bool UserAddressIsValid { get; set; } = false;
+    public bool FreteIsValid { get; set; } = false;
     [Parameter] public string Slug { get; set; } = String.Empty;
     public bool _userLoggedIn { get; set; }
     public ClaimsPrincipal _user { get; set; }
     public Carrinho? carrinho { get; set; } 
     public Produto? produto { get; set; } = new Produto();
-    public decimal Total { get; set; } 
+    public decimal TotalCarrinho { get; set; }
+    public decimal TotalProduto { get; set; }
     public bool IsBusy { get; set; } = false;
     public Endereco Endereco { get; set; } = new Endereco();
     public UserInfo UserInfo { get; set; } = new UserInfo();
     public CartaoDeCredito Cartao { get; set; } = new CartaoDeCredito();
     public ElementReference EnderecoSection;
+    public ElementReference FreteSection;
     public ElementReference PagamentoSection;
-    public decimal Frete { get; set; }
+    public List<CalculoFreteResponse> Fretes { get; set; }
+    public CalculoFreteResponse FreteSelecionado;
+    public AtualizarEnderecoRequisicao endereco { get; set; } = new();
+    public PatternMask CepMask = new PatternMask("00000-000")
+    {
+        MaskChars = new[] { new MaskChar('0', @"[0-9]") }
+    };
     
     [Inject] public ICarrinhoHandler CarrinhoHandler { get; set; } = null!;
     [Inject] public IEnderecoHandler EnderecoHandler { get; set; } = null!;
@@ -41,6 +54,7 @@ public partial class CheckoutPage : ComponentBase
     [Inject] public ISnackbar Snackbar { get; set; } = null!;
     [Inject] public NavigationManager NavigationManager { get; set; } = null!;
     [Inject] public IJSRuntime JSRuntime { get; set; } = null!;
+    [Inject] public ICorreioHandler CorreioHandler { get; set; } = null!;
     
     protected override async Task OnInitializedAsync()
     {
@@ -81,7 +95,7 @@ public partial class CheckoutPage : ComponentBase
                     if (carrinhoResult.IsSuccess)
                     {
                         carrinho = carrinhoResult.Dados;
-                        Total = carrinho.ValorTotal;
+                        TotalCarrinho = carrinho.ValorTotal;
                     }
                     else
                     {
@@ -105,7 +119,6 @@ public partial class CheckoutPage : ComponentBase
                 if (result.IsSuccess)
                 {
                     produto = result.Dados;
-                    Total = produto.Preco;
                 }
                 else
                 {
@@ -175,7 +188,7 @@ public partial class CheckoutPage : ComponentBase
                 return;
             }
             
-            var request = new AtualizarEnderecoRequisicao
+            endereco = new AtualizarEnderecoRequisicao
             {
                 UserId = UserInfo.Id,
                 Rua = Endereco.Rua,
@@ -183,23 +196,75 @@ public partial class CheckoutPage : ComponentBase
                 Bairro = Endereco.Bairro,
                 Cidade = Endereco.Cidade,
                 Estado = Endereco.Estado,
-                CEP = Endereco.CEP,
+                CEP = Endereco.CEP.Replace("-", "") ?? string.Empty,
                 Pais = "Brasil"
             };
             
-            var result = await IdentityHandler.UserAdressValidation(request);
+            var result = await IdentityHandler.UserAdressValidation(endereco);
 
             if (result.IsSuccess)
             {
                 UserAddressIsValid = true;
+                
+                var request = new CalcularFreteRequest
+                {
+                    CepDestino = endereco.CEP,
+                    Comprimento = produto.Largura.ToString(),
+                    Altura = produto.Altura.ToString(),
+                };
+                
+                var freteResult = await CorreioHandler.CalcularFreteAsync(request);
+
+                if (freteResult.IsSuccess)
+                {
+                    Fretes = freteResult.Dados;
+                }
+                
                 StateHasChanged();
                 Snackbar.Add("Endereço validado com sucesso!", Severity.Success);
-                await ScrollToPagamento();
+                await ScrollToFrete();
             }
             else
             {
                 Snackbar.Add("Dados invalidos!", Severity.Error);
             }
+        }
+        catch (Exception e)
+        {
+            Snackbar.Add(e.Message, Severity.Error);
+        }
+    }
+    
+    public async Task FreteValidation()
+    {
+        try
+        {
+            if (FreteSelecionado == null)
+            {
+                Snackbar.Add("Nenhum frete selecionado. Por favor, selecione um frete.", Severity.Error);
+                return;
+            }
+            
+            if (!string.IsNullOrEmpty(FreteSelecionado.Name) && !string.IsNullOrEmpty(FreteSelecionado.Price))
+            {
+                FreteIsValid = true;
+                
+                decimal valorFrete = decimal.Parse(FreteSelecionado.Price, CultureInfo.InvariantCulture);
+                TotalProduto = produto.Preco + valorFrete;
+                
+                Snackbar.Add("Frete validado com sucesso!", Severity.Success);
+                
+                StateHasChanged();
+                await Task.Delay(10);
+                
+                await ScrollToPagamento();
+            }
+            else
+            {
+                Snackbar.Add("Falha ao validar o frete, tente novamente", Severity.Error);
+            }
+
+
         }
         catch (Exception e)
         {
@@ -222,10 +287,12 @@ public partial class CheckoutPage : ComponentBase
     {
         if (string.IsNullOrWhiteSpace(cep))
             return "O campo CEP é obrigatório";
-    
-        if (cep.Length != 8)
+        
+        string cepSemHifen = cep.Replace("-", "");
+        
+        if (cepSemHifen.Length != 8)
             return "O CEP deve conter 8 caracteres.";
-
+        
         return null;
     }
 
@@ -248,6 +315,11 @@ public partial class CheckoutPage : ComponentBase
     private async Task ScrollToEndereco()
     {
         await JSRuntime.InvokeVoidAsync("scrollIntoView", EnderecoSection);
+    }
+    
+    private async Task ScrollToFrete()
+    {
+        await JSRuntime.InvokeVoidAsync("scrollIntoView", FreteSection);
     }
     
     private async Task ScrollToPagamento()

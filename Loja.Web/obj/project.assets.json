@@ -994,7 +994,7 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
-      "Microsoft.NET.Sdk.WebAssembly.Pack/9.0.1": {
+      "Microsoft.NET.Sdk.WebAssembly.Pack/9.0.0": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.Sdk.WebAssembly.Pack.props": {},
@@ -2185,7 +2185,7 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
-      "Microsoft.NET.Sdk.WebAssembly.Pack/9.0.1": {
+      "Microsoft.NET.Sdk.WebAssembly.Pack/9.0.0": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.Sdk.WebAssembly.Pack.props": {},
@@ -3736,10 +3736,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.NET.Sdk.WebAssembly.Pack/9.0.1": {
-      "sha512": "/+0fpalaBrtXNnoso2oIMi3W30+bDWe8lrXkRj6qKMKsTpDfJboxuVn+E9XDpuk2zTBqjd6ZDStD6F9KYMj7cQ==",
+    "Microsoft.NET.Sdk.WebAssembly.Pack/9.0.0": {
+      "sha512": "Ch6dilt/TAo3XryG/9LF8Zy4rAT+2HYnks8thWAeNzPNOJs4aSyC6E5yxuBiN49d2eES78h1mSR/KNyOfbptXQ==",
       "type": "package",
-      "path": "microsoft.net.sdk.webassembly.pack/9.0.1",
+      "path": "microsoft.net.sdk.webassembly.pack/9.0.0",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -3770,7 +3770,7 @@
         "build/Microsoft.NET.Sdk.WebAssembly.Pack.targets",
         "build/Wasm.web.config",
         "build/browser.runtimeconfig.template.json",
-        "microsoft.net.sdk.webassembly.pack.9.0.1.nupkg.sha512",
+        "microsoft.net.sdk.webassembly.pack.9.0.0.nupkg.sha512",
         "microsoft.net.sdk.webassembly.pack.nuspec",
         "tools/net472/Microsoft.NET.Sdk.WebAssembly.Pack.Tasks.dll",
         "tools/net472/Microsoft.NET.WebAssembly.Webcil.dll",
@@ -4094,38 +4094,45 @@
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 9.0.0",
       "Microsoft.Extensions.Http >= 9.0.1",
       "Microsoft.NET.ILLink.Tasks >= 9.0.0",
-      "Microsoft.NET.Sdk.WebAssembly.Pack >= 9.0.1",
+      "Microsoft.NET.Sdk.WebAssembly.Pack >= 9.0.0",
       "MudBlazor >= 8.0.0"
     ]
   },
   "packageFolders": {
-    "/Users/alysonryanullirsch/.nuget/packages/": {}
+    "C:\\Users\\TVS'PC\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Web/Loja.Web.csproj",
+      "projectUniqueName": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\Loja.Web.csproj",
       "projectName": "Loja.Web",
-      "projectPath": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Web/Loja.Web.csproj",
-      "packagesPath": "/Users/alysonryanullirsch/.nuget/packages/",
-      "outputPath": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Web/obj/",
+      "projectPath": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\Loja.Web.csproj",
+      "packagesPath": "C:\\Users\\TVS'PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\loja.web\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/alysonryanullirsch/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\TVS'PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/library-packs": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Core/Loja.Core.csproj": {
-              "projectPath": "/Users/alysonryanullirsch/Documents/APIs/loja/Loja.Core/Loja.Core.csproj"
+            "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Core\\Loja.Core.csproj": {
+              "projectPath": "C:\\Users\\TVS'PC\\Documents\\MeusProjetos\\loja\\Loja.Core\\Loja.Core.csproj"
             }
           }
         }
@@ -4172,7 +4179,7 @@
           "Microsoft.NET.Sdk.WebAssembly.Pack": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[9.0.1, )",
+            "version": "[9.0.0, )",
             "autoReferenced": true
           },
           "MudBlazor": {
@@ -4193,8 +4200,8 @@
         "warn": true,
         "downloadDependencies": [
           {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[9.0.1, 9.0.1]"
+            "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
+            "version": "[9.0.0, 9.0.0]"
           }
         ],
         "frameworkReferences": {
@@ -4202,7 +4209,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

@@ -89,12 +89,22 @@ else
                 <MudTextField FullWidth="true" Label="E-mail" @bind-Value="contato.Email" Required="true" RequiredError="O e-mail é obrigatório."
                               Variant="Variant.Outlined" Type="email" />
 
+                <MudTextField Mask="@(new PatternMask("(00) 00000-0000"))" FullWidth="true" Label="Telefone ou Celular" @bind-Value="contato.Telefone" Required="true" RequiredError="O Telefone é obrigatório."
+                              Variant="Variant.Outlined" Type="fone" />
+
                 <MudTextField FullWidth="true" Label="Mensagem" @bind-Value="contato.Mensagem" Required="true" RequiredError="A mensagem é obrigatória."
                               Variant="Variant.Outlined" Multiline="true" Rows="4" />
 
-                <MudButton Style="width: 200px;" OnClick="EnviarFormulario" Disabled="valid" Color="Color.Primary" Variant="Variant.Filled" Class="mt-3">
-                    <span style="color: white">Enviar Mensagem</span>
-                </MudButton>
+                @if (FormIsBusy)
+                {
+                    <MudProgressCircular Color="Color.Info" Indeterminate="true"/>
+                }
+                else
+                {
+                    <MudButton Style="width: 200px;" OnClick="EnviarFormulario" Color="Color.Primary" Variant="Variant.Filled" Class="mt-3">
+                        <span style="color: white">Enviar Mensagem</span>
+                    </MudButton>
+                }
             </MudForm>
         </section>
     </div>

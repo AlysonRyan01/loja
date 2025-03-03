@@ -29,13 +29,14 @@ builder.Services.AddTransient<ICarrinhoItemHandler, CarrinhoItemHandler>();
 builder.Services.AddTransient<ICarrinhoHandler, CarrinhoHandler>();
 builder.Services.AddTransient<IPedidoHandler, PedidoHandler>();
 builder.Services.AddTransient<ICorreioHandler, CorreioHandler>();
+builder.Services.AddTransient<IEmailHandler, EmailHandler>();
 builder.Services.AddSingleton<LayoutService>();
 
 builder.Services.AddSingleton<SearchService>();
 
 builder.Services.AddMudServices(config =>
 {
-    config.SnackbarConfiguration.VisibleStateDuration = 1000; // Tempo em milissegundos (2 segundos)
+    config.SnackbarConfiguration.VisibleStateDuration = 1000;
     config.SnackbarConfiguration.HideTransitionDuration = 500;
     config.SnackbarConfiguration.ShowTransitionDuration = 500;
     config.SnackbarConfiguration.MaxDisplayedSnackbars = 3;

@@ -755,6 +755,9 @@ main {
     display: flex;
     justify-content: center;
     align-items: start;
+    width: 100vw;
+    min-height: 85vh;
+    background-color: white;
 }
 
 .custom-hr {
@@ -995,20 +998,54 @@ th, td {
 
 .carrinho-vazio-mudpaper
 {
-    width: 50vw;
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    gap: 40px;
+}
+
+.carrinho-vazio-texto
+{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    gap: 20px;
 }
 
 .carrinho-vazio-titulo
 {
-    justify-self: center;
-    padding: 20px;
-    color: gray;
+    font-family: "Allerta", serif;
+    font-size: 3rem;
+    font-weight: 700;
+    font-style: normal;
+    padding-top: 20px;
+}
+
+.carrinho-vazio-paragrafo
+{
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.carrinho-vazio-imagem
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F5F5;
 }
 
 .carrinho-vazio-img
 {
-    width: 100%;
+    width: 250px;
 }
 
 .div-principal-carrinho
@@ -1727,6 +1764,35 @@ th, td {
 
 /* Estilos para celulares (até 600px) */
 @media screen and (max-width: 600px) {
+
+    .carrinho-vazio-titulo
+    {
+        font-family: "Allerta", serif;
+        font-size: 1.8rem;
+        font-weight: 700;
+        font-style: normal;
+        padding-top: 10px;
+    }
+
+    .carrinho-vazio-paragrafo
+    {
+        font-family: "Open Sans", sans-serif;
+        font-size:0.9rem;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .carrinho-vazio-texto
+    {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        gap: 10px;
+        padding: 10px;
+    }
     
     .localizacao-div
     {
@@ -2153,14 +2219,6 @@ th, td {
         width: 100vw;
         height: 40vh;
     }
-    
-    .carrinho
-    {
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        width: 100%;
-    }
 
     .div-resumo-compra
     {
@@ -2182,17 +2240,6 @@ th, td {
         border-radius: 10px;
         width: 100%;
         height: 100%;
-    }
-
-    .carrinho-vazio-mudpaper
-    {
-        width: 100vw;
-        border-radius: 0;
-    }
-    
-    .carrinho-vazio-img
-    {
-        width: 100%;
     }
     
     .div-principal-recomendacoes
@@ -2444,16 +2491,7 @@ th, td {
         width: 100vw;
         height: 40vh;
     }
-
-    .carrinho
-    {
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        width: 100%;
-        margin-top: 50px;
-    }
-
+    
     .div-resumo-compra
     {
         margin-top: 30px;
@@ -2477,22 +2515,6 @@ th, td {
     }
 
     .div-principal-recomendacoes-celular
-    {
-        display: none;
-    }
-
-    .carrinho-vazio-mudpaper
-    {
-        width: 100vw;
-        border-radius: 0;
-    }
-
-    .carrinho-vazio-img
-    {
-        width: 100%;
-    }
-
-    .carrinho-vazio-titulo
     {
         display: none;
     }
@@ -2608,6 +2630,11 @@ th, td {
     .sem-juros-texto
     {
         font-size: 0.7rem;
+    }
+
+    .carrinho-vazio-img
+    {
+        min-width: 60vw;
     }
     
 }

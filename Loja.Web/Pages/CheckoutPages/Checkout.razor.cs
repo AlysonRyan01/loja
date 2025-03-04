@@ -1,6 +1,5 @@
 ﻿using System.Globalization;
 using System.Security.Claims;
-using Dima.Web.Handlers;
 using Dima.Web.Security;
 using Loja.Core.Handlers;
 using Loja.Core.Models;

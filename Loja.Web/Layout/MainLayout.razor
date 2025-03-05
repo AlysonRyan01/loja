@@ -56,17 +56,17 @@
                         </div>
                     </ActivatorContent>
                     <ChildContent>
-                        <MudMenuItem Style="width: 300px;" Label="Meu Perfil" />
-                        <MudMenuItem Style="width: 300px;" Label="Carrinho" />
-                        <MudMenuItem Style="width: 300px;" Label="Pedidos" />
-                        <MudMenuItem Style="width: 300px;" Label="Sair" />
+                        <MudMenuItem Href="/perfil" Style="width: 300px;" Label="Meu Perfil" />
+                        <MudMenuItem Href="/carrinho" Style="width: 300px;" Label="Carrinho" />
+                        <MudMenuItem Href="/pedidos" Style="width: 300px;" Label="Pedidos" />
+                        <MudMenuItem Href="/logout" Style="width: 300px;" Label="Sair" />
                     </ChildContent>
                 </MudMenu>
 
             }
         </div>
         
-        <a href="/carrinho" class="shopping-cart-div">
+        <a href="/carrinho/{@carrinho.Slug}" class="shopping-cart-div">
             <section class="shopping-cart-background">
                 @if (carrinho.UserId != 0)
                 {

@@ -64,7 +64,7 @@ public class MainLayoutPage : LayoutComponentBase
                 _userLoggedIn = true;
                 _user = user;
                 
-                var identityResult = await IdentityHandler.UserInfo(user);
+                var identityResult = await IdentityHandler.UserInfo(null);
                 if (identityResult.IsSuccess)
                 {
                     Username = identityResult.Dados.FullName;

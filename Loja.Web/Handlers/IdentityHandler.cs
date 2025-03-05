@@ -39,7 +39,7 @@ public class IdentityHandler(IHttpClientFactory httpClientFactory) : IIdentityHa
             : new Resposta<string>(null, 400, "Não foi possível realizar o logout");
     }
 
-    public async Task<Resposta<UserInfo>> UserInfo(ClaimsPrincipal user)
+    public async Task<Resposta<UserInfo>> UserInfo(ClaimsPrincipal principal)
         => await client.GetFromJsonAsync<Resposta<UserInfo>>($"v1/identity/manage/info")
            ?? new Resposta<UserInfo>(null, 400, "Não foi possível recuperar os dados do usuario");
 

@@ -70,7 +70,7 @@ public partial class CheckoutPage : ComponentBase
                 
                 string userId = _user.FindFirst(ClaimTypes.NameIdentifier)?.Value;
                 
-                var userInfoResult = await IdentityHandler.UserInfo(user);
+                var userInfoResult = await IdentityHandler.UserInfo(null);
 
                 if (userInfoResult.IsSuccess)
                 {

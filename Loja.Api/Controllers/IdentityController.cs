@@ -1,4 +1,5 @@
-﻿using Loja.Core.Handlers;
+﻿using System.Security.Claims;
+using Loja.Core.Handlers;
 using Loja.Core.Requisicoes.Endereco;
 using Loja.Core.Requisicoes.Identity;
 using Loja.Core.Respostas;
@@ -15,6 +16,11 @@ public class IdentityController(IIdentityHandler handler, ILogger<ProdutoControl
     {
         try
         {
+            var user = HttpContext.User;
+            
+            if (user.Identity.IsAuthenticated)
+                return BadRequest(new Resposta<string>("Você já está logado.", 500, "Você já está logado."));
+            
             if(!ModelState.IsValid)
                 return BadRequest(new Resposta<string>("Erro de validacao", 401, "Erro de validacao"));
             
@@ -35,6 +41,11 @@ public class IdentityController(IIdentityHandler handler, ILogger<ProdutoControl
     {
         try
         {
+            var user = HttpContext.User;
+            
+            if (user.Identity.IsAuthenticated)
+                return BadRequest(new Resposta<string>("Você já está logado.", 500, "Você já está logado."));
+            
             if(!ModelState.IsValid)
                 return BadRequest(new Resposta<string>("Erro de validacao", 401, "Erro de validacao"));
             
@@ -55,6 +66,11 @@ public class IdentityController(IIdentityHandler handler, ILogger<ProdutoControl
     {
         try
         {
+            var user = HttpContext.User;
+            
+            if (!user.Identity.IsAuthenticated)
+                return BadRequest(new Resposta<string>("Erro ao fazer o logout.", 500, "Erro ao fazer o logout."));
+            
             var result = await handler.LogoutAsync();
             return result.IsSuccess ? Ok(result) : BadRequest(result);
         }
@@ -72,6 +88,9 @@ public class IdentityController(IIdentityHandler handler, ILogger<ProdutoControl
         {
             var user = HttpContext.User;
             
+            if (!user.Identity.IsAuthenticated)
+                return BadRequest(new Resposta<string>("Erro ao obter as informações.", 500, "Erro ao obter as informações."));
+            
             var result = await handler.UserInfo(user);
             
             return result.IsSuccess ? Ok(result) : BadRequest(result);
@@ -88,7 +107,12 @@ public class IdentityController(IIdentityHandler handler, ILogger<ProdutoControl
     {
         try
         {
-            var result = await handler.UserRoles(User);
+            var user = HttpContext.User;
+            
+            if (!user.Identity.IsAuthenticated)
+                return BadRequest(new Resposta<string>("Erro ao obter as claims.", 500, "Erro ao obter as claims."));
+            
+            var result = await handler.UserRoles(user);
             
             return result.IsSuccess ? Ok(result.Dados) : BadRequest(result.Dados);
         }
@@ -104,6 +128,13 @@ public class IdentityController(IIdentityHandler handler, ILogger<ProdutoControl
     {
         try
         {
+            var user = HttpContext.User;
+            
+            if (!user.Identity.IsAuthenticated)
+                return BadRequest(new Resposta<string>("Erro ao atualizar o usuario.", 500, "Erro ao atualizar o usuario."));
+            
+            request.UserId = user.FindFirst(ClaimTypes.NameIdentifier).Value;
+            
             var result = await handler.UserInfoValidation(request);
             
             return result.IsSuccess ? Ok(result) : BadRequest(result);
@@ -119,6 +150,13 @@ public class IdentityController(IIdentityHandler handler, ILogger<ProdutoControl
     {
         try
         {
+            var user = HttpContext.User;
+            
+            if (!user.Identity.IsAuthenticated)
+                return BadRequest(new Resposta<string>("Erro ao atualizar o usuario.", 500, "Erro ao atualizar o usuario."));
+            
+            request.UserId = user.FindFirst(ClaimTypes.NameIdentifier).Value;
+            
             var result = await handler.UserAdressValidation(request);
             
             return result.IsSuccess ? Ok(result) : BadRequest(result);

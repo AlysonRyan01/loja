@@ -12,6 +12,11 @@
     padding: 0 5vw;
 }
 
+.carrinho-mobile
+{
+    display: none;
+}
+
 .mapa
 {
     width: 650px;
@@ -815,6 +820,7 @@ th, td {
 {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 150px;
     gap: 10px;
 }
@@ -866,6 +872,16 @@ th, td {
     width: 100%;
     margin-bottom: 30px;
     margin-top: 30px;
+}
+
+.custom-hr-carrinho-pagamento
+{
+    border: 0;
+    height: 0.1px;
+    background-color: lightgray;
+    width: 100%;
+    margin-bottom: 35px;
+    margin-top: 20px;
 }
 
 .custom-hr-carrinho-home
@@ -1765,6 +1781,18 @@ th, td {
 /* Estilos para celulares (até 600px) */
 @media screen and (max-width: 600px) {
 
+    .carrinho-vazio-mudpaper
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: 100vw;
+        gap: 40px;
+        min-height: 75vh;
+        background-color: white;
+    }
+
     .carrinho-vazio-titulo
     {
         font-family: "Allerta", serif;
@@ -1774,12 +1802,131 @@ th, td {
         padding-top: 10px;
     }
 
+    .carrinho
+    {
+        display: none;
+    }
+    
+    .carrinho-mobile
+    {
+        display: flex;
+        background-color: white;
+        flex-direction: column;
+        width: 100vw;
+        min-height: 50vh;
+    }
+    
+    .carrinho-produto-banners
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+        min-height: 50vh;
+        align-items: center;
+    }
+    
+    .carrinho-titulo-mobile
+    {
+        font-family: "Allerta", serif;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    
+    .titulo-itens
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .carrinho-produto-banner
+    {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 13vh;
+        background-color: #F5F5F5;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+    }
+    
+    .foto-titulo-carrinho-mobile
+    {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .img-foto-titulo-mobile
+    {
+        height: 100%;
+    }
+    
+    .produto-titulo-carrinho
+    {
+        font-size: 0.7rem;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 500;
+    }
+
     .carrinho-vazio-paragrafo
     {
         font-family: "Open Sans", sans-serif;
         font-size:0.9rem;
         font-weight: 500;
         font-style: normal;
+    }
+    
+    .titulo-valor
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .remover-valor
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .produto-valor
+    {
+        font-size: 0.9rem;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 700;
+    }
+    
+    .pagamento-mobile
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 15px 30px;
+        min-height: 20vh;
+        background-color: #F5F5F5;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .valortotal-carrinho
+    {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .valortotal-texto
+    {
+        font-size: 1.2rem;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 700;
     }
 
     .carrinho-vazio-texto
@@ -2353,6 +2500,11 @@ th, td {
 
 /* Estilos para tablets (entre 600px e 1024px) */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
+    .carrinho-mobile
+    {
+        display: none;
+    }
+    
     .nosso-foco-banner
     {
         display: flex;

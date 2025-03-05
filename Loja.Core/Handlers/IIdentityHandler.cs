@@ -12,7 +12,7 @@ public interface IIdentityHandler
     Task<Resposta<string>> LoginAsync(LoginRequest request);
     Task<Resposta<string>> RegisterAsync(RegisterRequest request);
     Task<Resposta<string>> LogoutAsync();
-    Task<Resposta<UserInfo>> UserInfo(ClaimsPrincipal user);
+    Task<Resposta<UserInfo>> UserInfo(ClaimsPrincipal claimsPrincipal);
     Task<Resposta<IEnumerable<RoleClaim>>> UserRoles(ClaimsPrincipal logedUser);
     Task<Resposta<User>> UserInfoValidation(UserInfoValidationRequest request);
     Task<Resposta<Endereco>> UserAdressValidation(AtualizarEnderecoRequisicao request);

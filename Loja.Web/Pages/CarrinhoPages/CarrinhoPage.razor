@@ -107,4 +107,61 @@ else
             </div>
         }
     </div>
+    
+    <div class="carrinho-mobile">
+        @if (!CarrinhoItens.Any())
+        {
+            <div class="carrinho-vazio-mudpaper">
+                <section class="carrinho-vazio-imagem">
+                    <img class="carrinho-vazio-img" src="images/empty-cart.png" alt="nenhum item encontrado no carrinho"/>
+                </section>
+                <section class="carrinho-vazio-texto">
+                    <h1 class="carrinho-vazio-titulo">Seu Carrinho Está <span style="color: #bf0603">Vazio!</span></h1>
+                    <p class="carrinho-vazio-paragrafo">Adicione alguns produtos para continuar com o checkout.</p>
+                </section>
+                <MudButton Variant="Variant.Filled" Href="/loja" FullWidth="false" Style="width: 250px; min-height: 60px;" Color="Color.Primary"><span style="color: white; font-size: 1.1rem; font-weight: 500;">VOLTAR À LOJA</span></MudButton>
+            </div>
+        }
+        else
+        {
+            <section class="carrinho-produto-banners">
+                <section class="titulo-itens">
+                    <p class="carrinho-titulo-mobile">Carrinho</p>
+                    <p class="carrinho-titulo-mobile">@Carrinho.CarrinhoItens.Count Itens</p>
+                </section>
+
+                <hr class="custom-hr-carrinho"/>
+
+                @foreach (var item in CarrinhoItens)
+                {
+                    <div class="carrinho-produto-banner">
+                        <section class="foto-titulo-carrinho-mobile">
+                            @if (item.Produto.Imagens.Any())
+                            {
+                                var imagemUrl = $"{WebConfiguration.BackendUrl}{item.Produto.Imagens.First().Url}";
+                                <img class="img-foto-titulo-mobile" src="@imagemUrl" alt="Imagem do produto"/>
+                            }
+                            <section class="titulo-valor">
+                                <p class="produto-titulo-carrinho">@item.Produto.Titulo</p>
+                                <section class="remover-valor">
+                                    <MudButton Variant="Variant.Filled" Color="Color.Primary" Class="botao-titulo-carrinho" FullWidth="false" Size="Size.Small" OnClick="() => ExcluirDoCarrinho(item.Id)"><span style="font-size: 0.7rem; color: white;">Remover</span></MudButton>
+                                    <p class="produto-valor">@item.Produto.Preco.ToString("C")</p>
+                                </section>
+                            </section>
+                        </section>
+                    </div>
+                }
+            </section>
+            <section class="pagamento-mobile">
+                <section class="valortotal-carrinho">
+                    <p class="valortotal-texto">Valor Total:</p>
+                    <p class="valortotal-texto">@Carrinho.ValorTotal.ToString("C")</p>
+                </section>
+
+                <hr class="custom-hr-carrinho-pagamento"/>
+
+                <MudButton Style="align-self: center; width: 80%" Variant="Variant.Filled" Color="Color.Primary" FullWidth="false" Size="Size.Medium" href="@($"/checkout/carrinho-{Carrinho.Slug}")"><span style="font-size: 1.2rem; color: white;">CONTINUAR</span></MudButton>
+            </section>
+        }
+    </div>
 }

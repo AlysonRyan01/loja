@@ -2,4 +2,119 @@
 @using System.ComponentModel.DataAnnotations
 @inherits PerfilPage
 
+@if (IsBusy)
+{
+    <MudProgressCircular Color="Color.Info" Indeterminate="true"/>
+}
+else
+{
+    <div class="perfil-container">
+        <section class="perfil-card">
+            <section class="perfil-image">
+                <MudAvatar Color="Color.Primary" Style="color: white; width: 120px; height: 120px; font-size: 3rem">
+                    @Username[0].ToString().ToUpper()
+                </MudAvatar>
+                
+                <p class="email-avatar">@UserInfo.Email</p>
+            </section>
 
+            <section class="perfil-mudtexts">
+                <section class="perfil-info">
+                    <h2 class="h2-userinfo-perfil">Informações pessoais</h2>
+                    <MudForm Style="width: 100%;" Model="UserInfo" @ref="UserInfoForm">
+                        <MudTextField Margin="Margin.Dense" Variant="Variant.Outlined" Label="Nome" @bind-Value="UserInfo.FullName" FullWidth Required="true"
+                                      RequiredError="O nome é obrigatório" />
+
+                        <MudTextField Margin="Margin.Dense" Variant="Variant.Outlined" Label="Email" @bind-Value="UserInfo.Email" FullWidth
+                                      Validation="@(new EmailAddressAttribute().IsValid)" />
+
+                        <MudTextField Margin="Margin.Dense" Variant="Variant.Outlined" Label="Telefone"
+                                      FullWidth
+                                      Validation="ValidatePhone"
+                                      Mask="@(new PatternMask("(00) 00000-0000"))" @bind-Value="UserInfo.PhoneNumber"/>
+
+                        @if (UserInfoIsBusy)
+                        {
+                            <MudProgressCircular Color="Color.Info" Indeterminate="true"/>
+                        }
+                        else
+                        {
+                            <MudButton OnClick="UserInfoValidation" Disabled="@UserInfoIsValid" FullWidth="false" Style="width: 50%; margin-top: 20px;" Variant="Variant.Filled" Color="Color.Primary"><span style="color: white;">Atualizar Informações</span></MudButton>                        }
+                    </MudForm>
+                </section>
+                <section class="perfil-info">
+                    <h2 class="h2-userinfo-perfil">Endereço</h2>
+                    <MudForm Style="width: 100%;" Model="Endereco" @ref="UserEnderecoForm">
+                        <div style="display: flex; width: 100%">
+                            <MudTextField Style="margin-right: 10px;"
+                                          Margin="Margin.Dense"
+                                          Variant="Variant.Outlined"
+                                          Label="Rua"
+                                          @bind-Value="Endereco.Rua"
+                                          FullWidth
+                                          Required="true"
+                                          RequiredError="O campo Rua é obrigatório" />
+
+                            <MudTextField
+                                Style="width: 90px;"
+                                Margin="Margin.Dense"
+                                Variant="Variant.Outlined"
+                                Label="Número"
+                                @bind-Value="Endereco.Numero"
+                                Required="true"
+                                RequiredError="O campo Número é obrigatório" />
+                        </div>
+
+                        <MudTextField
+                            Margin="Margin.Dense"
+                            Variant="Variant.Outlined"
+                            Label="Bairro"
+                            @bind-Value="Endereco.Bairro"
+                            FullWidth
+                            Required="true"
+                            RequiredError="O campo Bairro é obrigatório" />
+
+                        <MudTextField
+                            Margin="Margin.Dense"
+                            Variant="Variant.Outlined"
+                            Label="Cidade"
+                            @bind-Value="Endereco.Cidade"
+                            FullWidth
+                            Required="true"
+                            RequiredError="O campo Cidade é obrigatório" />
+
+                        <MudTextField
+                            Margin="Margin.Dense"
+                            Variant="Variant.Outlined"
+                            Label="Estado"
+                            @bind-Value="Endereco.Estado"
+                            FullWidth
+                            Required="true"
+                            RequiredError="O campo Estado é obrigatório" />
+
+                        <MudTextField
+                            Style="width: 200px;"
+                            Margin="Margin.Dense"
+                            Variant="Variant.Outlined"
+                            Label="CEP"
+                            @bind-Value="Endereco.CEP"
+                            FullWidth
+                            Required="true"
+                            Mask="CepMask"
+                            RequiredError="O campo CEP é obrigatório"
+                            Validation="ValidateCEP"/>
+
+                        @if (EnderecoIsBusy)
+                        {
+                            <MudProgressCircular Color="Color.Info" Indeterminate="true"/>
+                        }
+                        else
+                        {
+                            <MudButton OnClick="AtualizarEndereco" Disabled="EnderecoIsValid" FullWidth="false" Style="width: 50%; margin-top: 20px;" Variant="Variant.Filled" Color="Color.Primary"><span style="color: white;">Atualizar Endereço</span></MudButton>
+                        }
+                    </MudForm>
+                </section>
+            </section>
+        </section>
+    </div>
+}

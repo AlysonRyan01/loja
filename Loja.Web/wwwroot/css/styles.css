@@ -1,5 +1,65 @@
 ﻿/*MAIN LAYOUT CSS*/
 
+.perfil-container
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    min-height: 80vh;
+    margin: 30px 0;
+}
+
+.perfil-card
+{
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.perfil-image
+{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    gap: 20px;
+    align-items: center;
+    justify-content: start;
+    border-right: 0.5px solid lightgray;
+}
+
+.perfil-mudtexts
+{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 10px;
+    align-items: center;
+    justify-content: start;
+}
+
+.perfil-info
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    align-items: start;
+    justify-content: start;
+    margin-bottom: 15px;
+}
+
+.email-avatar
+{
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+}
+
 .div-filtro-produto
 {
     display: flex;
@@ -1407,6 +1467,11 @@ th, td {
 .h2-userinfo
 {
     margin-bottom: 10px;
+}
+
+.h2-userinfo-perfil
+{
+    
 }
 
 .section-endereco

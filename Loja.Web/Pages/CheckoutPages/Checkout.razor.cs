@@ -1,5 +1,6 @@
 ﻿using System.Globalization;
 using System.Security.Claims;
+using System.Text.RegularExpressions;
 using Dima.Web.Security;
 using Loja.Core.Handlers;
 using Loja.Core.Models;
@@ -152,7 +153,7 @@ public partial class CheckoutPage : ComponentBase
                 UserId = UserInfo.Id,
                 Email = UserInfo.Email,
                 FullName = UserInfo.FullName,
-                PhoneNumber = UserInfo.PhoneNumber
+                PhoneNumber = Regex.Replace(UserInfo.PhoneNumber, @"\D", "")
             };
             
             var result = await IdentityHandler.UserInfoValidation(request);
@@ -273,10 +274,12 @@ public partial class CheckoutPage : ComponentBase
     
     public string ValidatePhone(string phone)
     {
-        if (string.IsNullOrWhiteSpace(phone))
+        string phoneReal = Regex.Replace(phone, @"\D", "");
+        
+        if (string.IsNullOrWhiteSpace(phoneReal))
             return "O telefone é obrigatório";
         
-        if (phone.Length != 11)
+        if (phoneReal.Length != 11)
             return "O telefone precisa ter 11 números";
         
         return null;

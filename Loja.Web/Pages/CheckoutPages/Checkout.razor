@@ -9,7 +9,7 @@
 
 @if (IsBusy)
 {
-    <MudProgressCircular Color="Color.Info" Indeterminate="true" />
+    <MudProgressCircular Size="Size.Large" Class="align-self-center" Color="Color.Info" Indeterminate="true" />
 }
 else
 {
@@ -29,7 +29,14 @@ else
                                   Validation="ValidatePhone"
                                   Mask="@(new PatternMask("(00) 00000-0000"))" @bind-Value="UserInfo.PhoneNumber"/>
 
-                    <MudButton OnClick="UserInfoValidation" Disabled="@UserInfoIsValid" Color="Color.Primary">Validar</MudButton>
+                    @if (UserInfoIsBusy)
+                    {
+                        <MudProgressCircular Size="Size.Small" Class="align-self-center" Color="Color.Info" Indeterminate="true" />
+                    }
+                    else
+                    {
+                        <MudButton OnClick="UserInfoValidation" Disabled="@UserInfoIsValid" Color="Color.Primary">Validar</MudButton>
+                    }
                 </MudForm>
             </section>
             @if (UserInfoIsValid)
@@ -96,7 +103,14 @@ else
                             RequiredError="O campo CEP é obrigatório"
                             Validation="ValidateCEP"/>
 
-                        <MudButton OnClick="UserAdressValidation" Disabled="@UserAddressIsValid" Color="Color.Primary">Validar</MudButton>
+                        @if (EnderecoIsBusy)
+                        {
+                            <MudProgressCircular Size="Size.Small" Class="align-self-center" Color="Color.Info" Indeterminate="true" />
+                        }
+                        else
+                        {
+                            <MudButton OnClick="UserAdressValidation" Disabled="@UserAddressIsValid" Color="Color.Primary">Validar</MudButton>
+                        }
                     </MudForm>
                 </section>
             }
@@ -123,7 +137,14 @@ else
                             </MudText>
                         }
                     }
-                    <MudButton OnClick="FreteValidation" Disabled="@FreteIsValid" Color="Color.Primary">Validar</MudButton>
+                    @if (FreteIsBusy)
+                    {
+                        <MudProgressCircular Size="Size.Small" Class="align-self-center" Color="Color.Info" Indeterminate="true" />
+                    }
+                    else
+                    {
+                        <MudButton OnClick="FreteValidation" Disabled="@FreteIsValid" Color="Color.Primary">Validar</MudButton>
+                    }
                 </section>
             }
             

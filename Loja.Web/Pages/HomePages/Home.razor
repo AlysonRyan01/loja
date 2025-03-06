@@ -1,9 +1,9 @@
 ﻿@page "/"
 @inherits HomePage
 
-@if (IsBusy == true)
+@if (IsBusy)
 {
-    
+    <MudProgressCircular Size="Size.Large" Class="align-self-center" Color="Color.Info" Indeterminate="true" />
 }
 else
 {

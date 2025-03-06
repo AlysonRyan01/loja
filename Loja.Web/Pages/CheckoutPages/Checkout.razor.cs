@@ -32,6 +32,9 @@ public partial class CheckoutPage : ComponentBase
     public decimal TotalCarrinho { get; set; }
     public decimal TotalProduto { get; set; }
     public bool IsBusy { get; set; } = false;
+    public bool UserInfoIsBusy { get; set; } = false;
+    public bool EnderecoIsBusy { get; set; } = false;
+    public bool FreteIsBusy { get; set; } = false;
     public Endereco Endereco { get; set; } = new Endereco();
     public UserInfo UserInfo { get; set; } = new UserInfo();
     public CartaoDeCredito Cartao { get; set; } = new CartaoDeCredito();
@@ -138,6 +141,7 @@ public partial class CheckoutPage : ComponentBase
 
     public async Task UserInfoValidation()
     {
+        UserInfoIsBusy = true;
         try
         {
             await UserInfoForm.Validate();
@@ -147,7 +151,7 @@ public partial class CheckoutPage : ComponentBase
                 Console.WriteLine("Preencha o formulario corretamente");
                 return;
             }
-            
+
             var request = new UserInfoValidationRequest
             {
                 UserId = UserInfo.Id,
@@ -155,7 +159,7 @@ public partial class CheckoutPage : ComponentBase
                 FullName = UserInfo.FullName,
                 PhoneNumber = Regex.Replace(UserInfo.PhoneNumber, @"\D", "")
             };
-            
+
             var result = await IdentityHandler.UserInfoValidation(request);
 
             if (result.IsSuccess)
@@ -174,10 +178,15 @@ public partial class CheckoutPage : ComponentBase
         {
             Snackbar.Add(e.Message, Severity.Error);
         }
+        finally
+        {
+            UserInfoIsBusy = false;
+        }
     }
     
     public async Task UserAdressValidation()
     {
+        EnderecoIsBusy = true;
         try
         {
             await UserAdressForm.Validate();
@@ -187,7 +196,7 @@ public partial class CheckoutPage : ComponentBase
                 Console.WriteLine("Preencha o formulario corretamente");
                 return;
             }
-            
+
             endereco = new AtualizarEnderecoRequisicao
             {
                 UserId = UserInfo.Id,
@@ -199,27 +208,27 @@ public partial class CheckoutPage : ComponentBase
                 CEP = Endereco.CEP.Replace("-", "") ?? string.Empty,
                 Pais = "Brasil"
             };
-            
+
             var result = await IdentityHandler.UserAdressValidation(endereco);
 
             if (result.IsSuccess)
             {
                 UserAddressIsValid = true;
-                
+
                 var request = new CalcularFreteRequest
                 {
                     CepDestino = endereco.CEP,
                     Comprimento = produto.Largura.ToString(),
                     Altura = produto.Altura.ToString(),
                 };
-                
+
                 var freteResult = await CorreioHandler.CalcularFreteAsync(request);
 
                 if (freteResult.IsSuccess)
                 {
                     Fretes = freteResult.Dados;
                 }
-                
+
                 StateHasChanged();
                 Snackbar.Add("Endereço validado com sucesso!", Severity.Success);
                 await ScrollToFrete();
@@ -233,10 +242,15 @@ public partial class CheckoutPage : ComponentBase
         {
             Snackbar.Add(e.Message, Severity.Error);
         }
+        finally
+        {
+            EnderecoIsBusy = false;
+        }
     }
     
     public async Task FreteValidation()
     {
+        FreteIsBusy = true;
         try
         {
             if (FreteSelecionado == null)
@@ -244,19 +258,19 @@ public partial class CheckoutPage : ComponentBase
                 Snackbar.Add("Nenhum frete selecionado. Por favor, selecione um frete.", Severity.Error);
                 return;
             }
-            
+
             if (!string.IsNullOrEmpty(FreteSelecionado.Name) && !string.IsNullOrEmpty(FreteSelecionado.Price))
             {
                 FreteIsValid = true;
-                
+
                 decimal valorFrete = decimal.Parse(FreteSelecionado.Price, CultureInfo.InvariantCulture);
                 TotalProduto = produto.Preco + valorFrete;
-                
+
                 Snackbar.Add("Frete validado com sucesso!", Severity.Success);
-                
+
                 StateHasChanged();
                 await Task.Delay(10);
-                
+
                 await ScrollToPagamento();
             }
             else
@@ -269,6 +283,10 @@ public partial class CheckoutPage : ComponentBase
         catch (Exception e)
         {
             Snackbar.Add(e.Message, Severity.Error);
+        }
+        finally
+        {
+            FreteIsBusy = false;
         }
     }
     

@@ -4,7 +4,7 @@
 
 @if (IsBusy)
 {
-    <MudProgressCircular Color="Color.Info" Indeterminate="true"/>
+    <MudProgressCircular Size="Size.Large" Class="align-self-center" Color="Color.Info" Indeterminate="true" />
 }
 else
 {
@@ -15,7 +15,10 @@ else
                     @Username[0].ToString().ToUpper()
                 </MudAvatar>
                 
-                <p class="email-avatar">@UserInfo.Email</p>
+                <section style="display: flex; flex-direction: column; gap: 15px;">
+                    <MudButton FullWidth="false" Style="width: 180px;" Size="Size.Large" Variant="Variant.Outlined" Color="Color.Primary"><span style="font-size: 0.8rem;">Alterar Senha</span></MudButton>
+                    <MudButton FullWidth="false" Style="width: 180px;" Size="Size.Large" Variant="Variant.Outlined" Color="Color.Primary"><span style="font-size: 0.8rem;">Sair</span></MudButton>
+                </section>
             </section>
 
             <section class="perfil-mudtexts">
@@ -39,7 +42,7 @@ else
                         }
                         else
                         {
-                            <MudButton OnClick="UserInfoValidation" Disabled="@UserInfoIsValid" FullWidth="false" Style="width: 50%; margin-top: 20px;" Variant="Variant.Filled" Color="Color.Primary"><span style="color: white;">Atualizar Informações</span></MudButton>                        }
+                            <MudButton OnClick="UserInfoValidation" Disabled="@UserInfoIsValid" FullWidth="false" Size="Size.Large" Style="margin-top: 20px; width: 280px;" Variant="Variant.Filled" Color="Color.Primary"><span style="color: white; font-size: 0.8rem;">Atualizar Informações</span></MudButton>                        }
                     </MudForm>
                 </section>
                 <section class="perfil-info">
@@ -110,7 +113,7 @@ else
                         }
                         else
                         {
-                            <MudButton OnClick="AtualizarEndereco" Disabled="EnderecoIsValid" FullWidth="false" Style="width: 50%; margin-top: 20px;" Variant="Variant.Filled" Color="Color.Primary"><span style="color: white;">Atualizar Endereço</span></MudButton>
+                            <MudButton OnClick="AtualizarEndereco" Disabled="EnderecoIsValid" FullWidth="false" Size="Size.Large" Style="margin-top: 20px; width: 280px;" Variant="Variant.Filled" Color="Color.Primary"><span style="color: white; font-size: 0.8rem;">Atualizar Endereço</span></MudButton>
                         }
                     </MudForm>
                 </section>
